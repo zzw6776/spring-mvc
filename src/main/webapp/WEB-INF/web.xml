@@ -4,4 +4,22 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+        <servlet-name>SpringMVCLesson</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class> 
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:springservlet-config.xml</param-value>
+        </init-param>
+        <load-on-startup>2</load-on-startup>load-on-startup必须放在最后
+    </servlet> 
+    <!-- Spring MVC配置文件结束 -->
+    
+    <servlet-mapping>
+      <servlet-name>SpringMVCLesson</servlet-name>  <!-- 指定配置的是哪个servlet -->
+        <url-pattern>/</url-pattern> <!-- 指定拦截哪些请求到该servlet -->     
+    </servlet-mapping>
+   
+  
+  
 </web-app>
