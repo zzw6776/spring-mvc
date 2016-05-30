@@ -10,7 +10,7 @@ public class MhtmlMapping {
 	@RequestMapping(value="/")
 	public String s(){
 		
-		return "中国移动ID类短信网关错误代码表 _ 短信运营者";
+		return "test2";
 		
 	}
 
