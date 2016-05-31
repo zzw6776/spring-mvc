@@ -29,17 +29,40 @@
 			<version>1.1.2</version>
 		</dependency>
 		<!-- spring支持 -->
-<!-- http://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-webmvc</artifactId>
-    <version>4.2.6.RELEASE</version>
-</dependency>
+		<!-- http://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>4.2.6.RELEASE</version>
+		</dependency>
 
 
 
 	</dependencies>
 	<build>
+		<plugins>
+			<plugin>
+				<!-- 参考资料为 /course/maven/maven 自动部署到 tomcat7 - 一个人的天空@ - 博客园.mhtml -->
+				<!-- 部署命令为mvn tomcat7:redeploy -->
+				<!-- 执行内部tomcat命令为 mvn tomcat7:run -->
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<port>80</port>
+					<!-- 当用http://zzw6776.tk/manager/html测试时发现上传到2000多k会自动断开，而text不会，原因未知 -->
+					<url>http://zzw6776.tk/manager/text</url>
+					<!-- 在maven的setting.xml的 <servers>配置账号，或者直接写账号 -->
+					<!-- <username>tomcat</username> <password>password</password> -->
+					<server>tomcat</server>
+					<path>/</path>
+				</configuration>
+			</plugin>
+		</plugins>
 		<finalName>springMVC-demo</finalName>
 	</build>
+	
+	<properties>  
+        <finalName>SSHMJ-FRANK</finalName>  
+</properties>  
 </project>
