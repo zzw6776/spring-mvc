@@ -9,7 +9,7 @@ public class MhtmlMapping {
 	
 	@RequestMapping(value="/")
 	public String s(){
-		
+		System.out.println("12312312312321");
 		return "test2";
 		
 	}
