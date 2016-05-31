@@ -1,6 +1,8 @@
 #!/bin/bash
 echo -e "*********************** start git pull ***********************"
 git pull
+echo -e "*********************** start mvn package ***********************"
+mvn package
 echo -e "*********************** start MV ***********************"
 mv -bf target/springMVC-demo.war ~/apache-tomcat-7.0.69/webapps/ROOT.war
 echo -e "*********************** start RM ***********************"
