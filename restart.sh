@@ -1,6 +1,8 @@
 #!/bin/bash
 echo -e "*********************** start git pull ***********************"
 git pull
+echo -e "*********************** start mvn clean ***********************"
+mvn clean
 echo -e "*********************** start mvn package ***********************"
 mvn package
 echo -e "*********************** start MV ***********************"
