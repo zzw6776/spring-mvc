@@ -12,7 +12,7 @@
 			<param-value>classpath:springservlet-config.xml</param-value>
 		</init-param>
 		<load-on-startup>2</load-on-startup>
-		load-on-startup必须放在最后
+		<!-- load-on-startup必须放在最后 -->
 	</servlet>
 	<!-- Spring MVC配置文件结束 -->
 

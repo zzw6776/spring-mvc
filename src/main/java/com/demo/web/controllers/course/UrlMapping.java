@@ -1,4 +1,4 @@
-package com.demo.web.controllers;
+package com.demo.web.controllers.course;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,9 +14,11 @@ public class UrlMapping {
 	
 	
 	// 正常映射
-	@RequestMapping(value = "/", method = { RequestMethod.GET })
-	public String index() {
-		return "redirect:/html/index.html";
+	@RequestMapping(value = "/test", method = { RequestMethod.GET })
+	@ResponseBody
+	public String test() {
+		
+		return "success";
 	}
 
 	// 多路径映射一个方法
