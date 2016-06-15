@@ -88,5 +88,5 @@
 		<!-- <property name="suffix" value=".html"/> -->
 	</bean>
 
-
+ <import resource="mongodb-context.xml"/> 
 </beans>

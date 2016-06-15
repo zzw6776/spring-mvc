@@ -14,11 +14,10 @@ public class UrlMapping {
 	
 	
 	// 正常映射
-	@RequestMapping(value = "/test", method = { RequestMethod.GET })
+	@RequestMapping(value = "/getResource", method = { RequestMethod.GET })
 	@ResponseBody
 	public String test() {
-		
-		return "success";
+		return UrlMapping.class.getResource("/").toString();
 	}
 
 	// 多路径映射一个方法
