@@ -89,4 +89,6 @@
 	</bean>
 
  <import resource="mongodb-context.xml"/> 
+ <import resource="dataSource-config.xml"/>
+ <import resource="mybatis-config.xml"/>
 </beans>
