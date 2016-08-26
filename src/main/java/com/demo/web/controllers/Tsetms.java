@@ -8,7 +8,7 @@ public class Tsetms {
 
 	@RequestMapping("jsp")
 	public String name() {
-		return "1.jsp";
+		return "index.jsp";
 	}
 	
 	@RequestMapping("html")
