@@ -12,7 +12,19 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.10</version>
-			 <scope>test</scope>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- 日志支持 -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.5</version>
 		</dependency>
 		<!-- mybatis支持 -->
 		<dependency>

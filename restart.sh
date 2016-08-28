@@ -4,7 +4,7 @@ git pull
 echo -e "*********************** start mvn clean ***********************"
 mvn clean
 echo -e "*********************** start mvn package ***********************"
-mvn package
+mvn package -DskipTests
 echo -e "*********************** start MV ***********************"
 mv -bf target/springMVC-demo.war ~/apache-tomcat-7.0.69/webapps/ROOT.war
 echo -e "*********************** start RM ***********************"
