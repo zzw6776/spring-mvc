@@ -7,8 +7,8 @@ import org.springframework.transaction.annotation.Transactional;
 import com.demo.mybatis3.dao.MybatisTestMapper;
 import com.demo.mybatis3.domain.MybayisTest;
 
-//@Service
-//@Transactional
+@Service
+@Transactional
 public class DataBaseTestService {
 
 	@Autowired

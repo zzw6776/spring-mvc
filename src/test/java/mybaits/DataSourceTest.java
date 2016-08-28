@@ -3,7 +3,7 @@ package mybaits;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.demo.service.impl.DataBaseTestService;
+import com.demo.service.DataBaseTestService;
 
 import base.baseTest;
 
