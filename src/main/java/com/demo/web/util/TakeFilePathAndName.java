@@ -1,16 +1,10 @@
 package com.demo.web.util;
 
 import java.io.File;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
-import org.springframework.util.StringUtils;
-
 import com.demo.web.vo.FileVo;
-
-import junit.awtui.Logo;
 
 public class TakeFilePathAndName {
 	// static Logger log =
