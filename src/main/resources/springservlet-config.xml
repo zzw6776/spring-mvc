@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:util="http://www.springframework.org/schema/util" xmlns:mvc="http://www.springframework.org/schema/mvc"
 	xsi:schemaLocation="
   http://www.springframework.org/schema/beans
@@ -27,8 +29,15 @@
 
 	<!-- 开启controller注解支持 -->
 	<!-- use-default-filters="false" 只扫描指定的注解 -->
-	<context:component-scan base-package="com.demo.web.controllers" use-default-filters="false">
-		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+	<context:component-scan base-package="com.demo.web.controllers"
+		use-default-filters="false">
+		<context:include-filter type="annotation"
+			expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>
+	<!-- 扫描全部包，排除controller -->
+	<context:component-scan base-package="com">
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
 
 	<!-- 视图解析器 -->
@@ -67,28 +76,34 @@
 		</property>
 	</bean>
 
-	<bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+	<bean id="jspViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
 		<property name="prefix" value="/WEB-INF/jsp/" />
 		<!-- 自定义视图自带后缀，无需配置后缀 -->
 		<!-- <property name="suffix" value=".jsp"/> -->
 	</bean>
 
-	<bean id="htmlViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+	<bean id="htmlViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
 		<property name="prefix" value="/WEB-INF/html/" />
 		<!-- 自定义视图自带后缀，无需配置后缀 -->
 		<!-- <property name="suffix" value=".html"/> -->
 	</bean>
 
-	<bean id="mhtViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+	<bean id="mhtViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
 		<property name="prefix" value="/WEB-INF/course/" />
 		<!-- 自定义视图自带后缀，无需配置后缀 -->
 		<!-- <property name="suffix" value=".html"/> -->
 	</bean>
 
- <import resource="mongodb-context.xml"/> 
- <import resource="dataSource-config.xml"/>
- <import resource="mybatis-config.xml"/>
+	<import resource="mongodb-context.xml" />
+	<import resource="dataSource-config.xml" />
+	<import resource="mybatis-config.xml" />
 </beans>
