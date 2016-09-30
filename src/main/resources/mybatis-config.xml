@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
     http://www.springframework.org/schema/beans/spring-beans-3.2.xsd 
     http://www.springframework.org/schema/aop 
@@ -15,25 +16,25 @@
 		<!-- 它指定了一系列包名列表，用逗号隔开，包内含有需要创建别名的JavaBeans。 -->
 		<property name="typeAliasesPackage" value="com.mybatis3.domain" />
 		<!-- 它指定了一系列的类型处理器类的完全限定名的类名列表，用逗号隔开。 -->
-	<!-- 	<property name="typeHandlers" value="com.mybatis3.typehandlers.PhoneTypeHandler" /> -->
+		<!-- <property name="typeHandlers" value="com.mybatis3.typehandlers.PhoneTypeHandler" /> -->
 		<!-- 它指定了一系列包名列表，用逗号隔开，包内含有需要被注册的类型处理器类。 -->
 		<property name="typeHandlersPackage" value="com.mybatis3.typehandlers" />
 		<!-- 它指定了SQL映射器Mapper XML配置文件的位置 -->
 		<property name="mapperLocations" value="classpath*:sqlMap/*.xml" />
 		<!-- 它指定了MyBatisSqlSessionFactory配置文件所在的位置。 -->
-	<!-- 	<property name="configLocation" value="WEB-INF/mybatisconfig.xml" /> -->
+		<!-- <property name="configLocation" value="WEB-INF/mybatisconfig.xml" /> -->
 	</bean>
 
 
-<bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">
-    <property name="basePackage" value="com.demo.mybatis3.dao"/>
-        <property name="properties">
-        <value>
-            style=normal
-              mappers=tk.mybatis.mapper.common.Mapper,tk.mybatis.mapper.common.MySqlMapper
-        </value>
-    </property>
-</bean>
+	<bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.demo.mybatis3.dao" />
+		<property name="properties">
+			<value>
+				style=normal
+				mappers=tk.mybatis.mapper.common.Mapper,tk.mybatis.mapper.common.MySqlMapper
+			</value>
+		</property>
+	</bean>
 	<!-- mybatis映射文件所对应的Mapper，也就是dao -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.demo.mybatis3.dao" />

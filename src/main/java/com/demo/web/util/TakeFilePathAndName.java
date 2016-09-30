@@ -20,9 +20,11 @@ public class TakeFilePathAndName {
 		List<FileVo> fileVos = new ArrayList<FileVo>();
 		File file = new File(path + userPath);
 		File[] array = file.listFiles();
-		for (File userFile : array) {
-			System.out.println(userFile.getName() + "~~~~~~~~~~~~~~~" + userFile.isDirectory());
-			fileVos.add(new FileVo(userPath + "/" + userFile.getName(), userFile.isDirectory()));
+		if (array != null) {
+			for (File userFile : array) {
+				System.out.println(userFile.getName() + "~~~~~~~~~~~~~~~" + userFile.isDirectory());
+				fileVos.add(new FileVo(userPath + "/" + userFile.getName(), userFile.isDirectory()));
+			}
 		}
 		return fileVos;
 	}

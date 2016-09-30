@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
 
-public abstract class MongoGenDao<T> {
+public abstract class MGenericDao<T> {
 
 	@Autowired
 	protected MongoTemplate mongoTemplate;
@@ -16,12 +16,14 @@ public abstract class MongoGenDao<T> {
 	private Class<T> type;
 
 	@SuppressWarnings("unchecked")
-	public MongoGenDao() {
+	public MGenericDao() {
 		Type type = getClass().getGenericSuperclass();
-		while (type != null && (!(type instanceof ParameterizedType) || !(MongoGenDao.class.equals(((ParameterizedType) type).getRawType())))) {
+		while (type != null && (!(type instanceof ParameterizedType) || !(MGenericDao.class.equals(((ParameterizedType) type).getRawType())))) {
 			type = ((Class<?>) type).getGenericSuperclass();
 		}
-		this.type = (Class<T>) ((ParameterizedType) type).getActualTypeArguments()[0];
+		if (type!=null) {
+			this.type = (Class<T>) ((ParameterizedType) type).getActualTypeArguments()[0];
+		}
 	}
 
 	public void insert(T t) {

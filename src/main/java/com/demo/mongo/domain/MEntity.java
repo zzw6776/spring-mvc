@@ -2,8 +2,8 @@ package com.demo.mongo.domain;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="testzzw")
-public class MongoTest {
+@Document(collection="MEntity")
+public class MEntity {
 
 	private String id;
 	private String message;

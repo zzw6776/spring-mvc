@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.demo.mybatis3.dao.MybayisTestMapper" >
-  <resultMap id="BaseResultMap" type="com.demo.mybatis3.domain.MybayisTest" >
+<mapper namespace="com.demo.mybatis3.dao.BDao" >
+  <resultMap id="BaseResultMap" type="com.demo.mybatis3.domain.BEntity" >
     <!--
       WARNING - @mbggenerated
     -->

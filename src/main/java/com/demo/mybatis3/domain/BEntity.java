@@ -2,8 +2,8 @@ package com.demo.mybatis3.domain;
 
 import javax.persistence.*;
 
-@Table(name = "mybayis_test")
-public class MybayisTest {
+@Table(name = "BEntity")
+public class BEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
