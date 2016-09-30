@@ -1,5 +1,7 @@
 package mybaits;
 
+import static org.junit.Assert.assertEquals;
+
 import java.util.List;
 
 import org.junit.Test;
@@ -7,8 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.demo.mybatis3.dao.BDao;
 import com.demo.mybatis3.domain.BEntity;
-import com.demo.service.DataBaseTestService;
-import static org.junit.Assert.*;
+
 import base.BaseTest;
 
 public class BTest extends BaseTest {

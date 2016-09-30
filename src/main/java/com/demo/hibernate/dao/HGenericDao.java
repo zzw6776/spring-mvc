@@ -75,7 +75,9 @@ public abstract class HGenericDao<T, I extends Serializable> {
 				|| !(HGenericDao.class.equals(((ParameterizedType) type).getRawType())))) {
 			type = ((Class<?>) type).getGenericSuperclass();
 		}
-		this.type = (Class<T>) ((ParameterizedType) type).getActualTypeArguments()[0];
+		if (type!=null) {
+			this.type = (Class<T>) ((ParameterizedType) type).getActualTypeArguments()[0];
+		}
 	}
 
 	public T find(I id) {
@@ -137,7 +139,7 @@ public abstract class HGenericDao<T, I extends Serializable> {
 
 	@SuppressWarnings("rawtypes")
 	protected List findByQueryAndNamedParams(String queryString, String[] paramNames, Object[] values) {
-		if (paramNames.length != values.length) {
+		if (paramNames!=null&&values!=null&&paramNames.length != values.length) {
 			throw new IllegalArgumentException("Length of paramNames must match with values");
 		}
 		Session session = getCurrentSession();
