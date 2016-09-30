@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class HibernateTest {
+public class HibernateTestEntity {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -15,6 +15,17 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- @ResponseBody自动转换json -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.4.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.4.3</version>
+		</dependency>
 		<!-- 日志支持 -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -71,14 +82,14 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>4.3.0.RELEASE</version>
+			<version>4.3.2.RELEASE</version>
 		</dependency>
 
 		<!-- http://mvnrepository.com/artifact/org.springframework/spring-core -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>4.3.0.RELEASE</version>
+			<version>4.3.2.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -129,14 +140,14 @@
 			<version>5.1.35</version>
 		</dependency>
 
-
-
+<!-- 5.2spring没支持  junit测试报错 -->
 		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>5.2.2.Final</version>
+			<version>5.1.2.Final</version>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
 		<dependency>
 			<groupId>org.springframework</groupId>
