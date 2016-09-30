@@ -14,4 +14,4 @@ echo -e "*********************** start tomcat ***********************"
 echo -e "*********************** start tomcat ***********************"
 ~/apache-tomcat-7.0.69/bin/startup.sh
 
-
+service mysqld restart
