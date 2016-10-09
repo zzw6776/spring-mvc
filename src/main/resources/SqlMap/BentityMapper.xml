@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.demo.mybatis3.dao.BDao">
+	<resultMap id="BaseResultMap" type="com.demo.mybatis3.domain.BEntity">
+		<!-- WARNING - @mbggenerated -->
+		<id column="id" property="id" jdbcType="INTEGER" />
+		<result column="message" property="message" jdbcType="VARCHAR" />
+		<result column="parentID" property="parentID" jdbcType="INTEGER" />
+	</resultMap>
+
+	<resultMap id="ChildResultMap" type="com.demo.web.vo.BEntityVo">
+		<!-- WARNING - @mbggenerated -->
+		<id column="id" property="id" jdbcType="INTEGER" />
+		<result column="message" property="message" jdbcType="VARCHAR" />
+		<collection property="child" column="id" select="selectChlidrenBypid"></collection>
+	</resultMap>
+
+	<select id="selectChlidrenBypid" resultMap="ChildResultMap" parameterType="java.lang.Integer">
+		select * from
+		BEntity where parentID = #{id,jdbcType=BIGINT}
+	</select>
+</mapper>
