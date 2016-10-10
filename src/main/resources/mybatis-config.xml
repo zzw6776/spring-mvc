@@ -14,13 +14,13 @@
 		<!-- 它指定了一系列的完全限定名的类名列表，用逗号隔开，这些别名将通过默认的别名规则创建（将首字母小写的非无完全限定类名作为别名）。 -->
 		<!-- <property name="typeAliases" value="com.mybatis3.domain.Student, com.mybatis3.domain.Tutor" /> -->
 		<!-- 它指定了一系列包名列表，用逗号隔开，包内含有需要创建别名的JavaBeans。 -->
-		<property name="typeAliasesPackage" value="com.mybatis3.domain" />
+		<property name="typeAliasesPackage" value="com.demo.mybatis3.domain" />
 		<!-- 它指定了一系列的类型处理器类的完全限定名的类名列表，用逗号隔开。 -->
 		<!-- <property name="typeHandlers" value="com.mybatis3.typehandlers.PhoneTypeHandler" /> -->
 		<!-- 它指定了一系列包名列表，用逗号隔开，包内含有需要被注册的类型处理器类。 -->
-		<property name="typeHandlersPackage" value="com.mybatis3.typehandlers" />
+		<property name="typeHandlersPackage" value="com.demo.mybatis3.typehandlers" />
 		<!-- 它指定了SQL映射器Mapper XML配置文件的位置 -->
-		<property name="mapperLocations" value="classpath*:sqlMap/*.xml" />
+		<property name="mapperLocations" value="classpath*:SqlMap/*.xml" />
 		<!-- 它指定了MyBatisSqlSessionFactory配置文件所在的位置。 -->
 		<!-- <property name="configLocation" value="WEB-INF/mybatisconfig.xml" /> -->
 	</bean>
