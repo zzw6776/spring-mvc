@@ -103,4 +103,5 @@
 	<import resource="dataSource-config.xml" />
 	<import resource="mybatis-config.xml" />
 	<import resource="hibernate-config.xml" />
+	<import resource="shiro-config.xml" />
 </beans>
