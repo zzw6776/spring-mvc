@@ -2,6 +2,7 @@ package com.demo.web.controllers;
 
 import java.util.List;
 
+import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,7 @@ import com.demo.hibernate.entity.HEntity;
 import com.demo.mongo.dao.MDao;
 import com.demo.mongo.domain.MEntity;
 import com.demo.service.DataBaseTestService;
+import com.demo.service.impl.ShiroServiceImpl;
 
 @Controller
 @RequestMapping("/")
@@ -21,31 +23,22 @@ public class Tsetms {
 	@Autowired
 	DataBaseTestService service;
 
+	@Autowired
+	ShiroServiceImpl shiroservice;
 	
-	@RequestMapping("hibernateTest")
-	@ResponseBody
-	public List<HEntity> namehiber(){
-		List<HEntity> bEntities = service.findAll();
-		return bEntities;
-		
+	@RequestMapping("login")
+	public void login(String account,String password){
+		shiroservice.login(account, password);
 	}
 	
-	@RequestMapping("mongoTest")
-	@ResponseBody
-	public String name213() {
-		MEntity mongoTest = new MEntity();
-		mongoTest.setId("123");
-		mongoTest.setMessage("test");
-		mongoTestDao.save(mongoTest);
-		return "123";
-	}
-
 	@RequestMapping("jsp")
+	@RequiresRoles("admin")
 	public String name() {
 		return "index.jsp";
 	}
 
 	@RequestMapping("html")
+	@RequiresRoles("adminasd")
 	public String name1() {
 		return "index.html";
 	}
