@@ -34,6 +34,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.DetachedCriteria;
+import org.hibernate.criterion.Example;
 import org.hibernate.jdbc.ReturningWork;
 import org.hibernate.jdbc.Work;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -75,7 +76,7 @@ public abstract class HGenericDao<T, I extends Serializable> {
 				|| !(HGenericDao.class.equals(((ParameterizedType) type).getRawType())))) {
 			type = ((Class<?>) type).getGenericSuperclass();
 		}
-		if (type!=null) {
+		if (type != null) {
 			this.type = (Class<T>) ((ParameterizedType) type).getActualTypeArguments()[0];
 		}
 	}
@@ -92,11 +93,17 @@ public abstract class HGenericDao<T, I extends Serializable> {
 		return criteria.getExecutableCriteria(session).list();
 	}
 
-	
+	@SuppressWarnings("unchecked")
+	public List<T> select(T t) {
+		Session session = getCurrentSession();
+		return session.createCriteria(getType()).add(Example.create(t)).list();
+	}
+
 	@SuppressWarnings("unchecked")
 	public List<T> findByHql(String hql) {
-		return (List<T>)getCurrentSession().createQuery(hql).list();
+		return (List<T>) getCurrentSession().createQuery(hql).list();
 	}
+
 	public void update(T obj) {
 		getCurrentSession().update(obj);
 	}
@@ -139,7 +146,7 @@ public abstract class HGenericDao<T, I extends Serializable> {
 
 	@SuppressWarnings("rawtypes")
 	protected List findByQueryAndNamedParams(String queryString, String[] paramNames, Object[] values) {
-		if (paramNames!=null&&values!=null&&paramNames.length != values.length) {
+		if (paramNames != null && values != null && paramNames.length != values.length) {
 			throw new IllegalArgumentException("Length of paramNames must match with values");
 		}
 		Session session = getCurrentSession();
