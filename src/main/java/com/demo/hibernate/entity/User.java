@@ -17,6 +17,7 @@ public class User {
 
 	private String password;
 
+	private String roleId;
 	public String getId() {
 		return id;
 	}
