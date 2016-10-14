@@ -14,12 +14,12 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.demo.hibernate.dao.ShiroResourceDao;
 import com.demo.hibernate.dao.ShiroRoleDao;
 import com.demo.hibernate.dao.UserDao;
 import com.demo.hibernate.entity.User;
-
 public class UserRealm extends AuthorizingRealm {
 
 	@Autowired
@@ -33,9 +33,10 @@ public class UserRealm extends AuthorizingRealm {
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
 		String account = (String) principals.getPrimaryPrincipal();
 		String resourceIds = roleDao.queryResoureceByAccount(account);// 多个资源以逗号区分
+		String role = roleDao.queryRoleByAccount(account);// 多个资源以逗号区分
 		List<String> permissions = resourceDao.queryPermissionByIds(resourceIds);
 		SimpleAuthorizationInfo authorizationInfo = new SimpleAuthorizationInfo();
-		authorizationInfo.setRoles(CollectionUtils.asSet(account));
+		authorizationInfo.setRoles(CollectionUtils.asSet(role));
 		authorizationInfo.setStringPermissions(new HashSet<String>(permissions));
 		return authorizationInfo;
 	}

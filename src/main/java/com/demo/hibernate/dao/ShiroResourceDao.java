@@ -16,7 +16,7 @@ public class ShiroResourceDao extends HGenericDao<ShiroResource,String>{
 	 */
 	
 	public List<String> queryPermissionByIds(String ids) {
-		String hql = "Select permission from ShiroResource where id in :ids";
+		String hql = "Select permission from ShiroResource where id in ?";
 		return findByQuery(hql, ids);
 	}
 }
