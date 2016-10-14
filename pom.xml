@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>zzw.demo</groupId>
+	<groupId>com.demo</groupId>
 	<artifactId>springMVC-demo</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>springMVC-demo Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
@@ -131,24 +131,6 @@
 			<artifactId>spring-aspects</artifactId>
 			<version>4.3.2.RELEASE</version>
 		</dependency>
-<!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-aop</artifactId>
-    <version>4.3.3.RELEASE</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
-<dependency>
-    <groupId>org.aspectj</groupId>
-    <artifactId>aspectjweaver</artifactId>
-    <version>1.8.9</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
-<dependency>
-    <groupId>org.aspectj</groupId>
-    <artifactId>aspectjrt</artifactId>
-    <version>1.8.9</version>
-</dependency>
 
 		<!-- log4j支持 -->
 		<!-- http://mvnrepository.com/artifact/log4j/log4j -->
