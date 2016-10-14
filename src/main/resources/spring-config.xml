@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans    
+                        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd    
+                        http://www.springframework.org/schema/context    
+                        http://www.springframework.org/schema/context/spring-context-4.2.xsd    
+                        http://www.springframework.org/schema/mvc    
+                        http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+                        http://www.springframework.org/schema/util    
+                        http://www.springframework.org/schema/util/spring-util-4.2.xsd
+                        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<!-- 可以理解为启用Spring注解 -->
+	<context:annotation-config />
+	<!-- 扫描全部包，排除controller -->
+	<context:component-scan base-package="com" use-default-filters="false">
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>
+	<!-- 自动扫描 -->
+	<!-- <context:component-scan base-package="cmcc.mobile.yiqi.api.service.impl" /> -->
+
+
+	<import resource="mongodb-context.xml" />
+	<import resource="dataSource-config.xml" />
+	<import resource="mybatis-config.xml" />
+	<import resource="hibernate-config.xml" />
+	<import resource="shiro-config.xml" />
+
+
+</beans>
