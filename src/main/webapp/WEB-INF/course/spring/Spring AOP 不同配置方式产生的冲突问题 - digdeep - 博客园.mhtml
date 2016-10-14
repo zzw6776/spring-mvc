@@ -1,0 +1,3169 @@
+From: <Saved by Blink>
+Subject: Spring AOP ????????????? - digdeep - ???
+Date: Sat, 14 Oct 2016 06:32:01 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----"
+
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: text/html
+Content-ID: <frame-252-a0bdb3c2-8298-4349-b482-3d5acb62508e@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.cnblogs.com/digdeep/p/4624998.html
+
+<!DOCTYPE html><html lang=3D"zh-cn"><head><meta http-equiv=3D"Content-Type"=
+ content=3D"text/html; charset=3DUTF-8">
+
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1"=
+>
+<title>Spring AOP =E4=B8=8D=E5=90=8C=E9=85=8D=E7=BD=AE=E6=96=B9=E5=BC=8F=E4=
+=BA=A7=E7=94=9F=E7=9A=84=E5=86=B2=E7=AA=81=E9=97=AE=E9=A2=98 - digdeep - =
+=E5=8D=9A=E5=AE=A2=E5=9B=AD</title>
+<link type=3D"text/css" rel=3D"stylesheet" href=3D"http://www.cnblogs.com/b=
+undles/blog-common.css?v=3DRdf1BBttS5_qVaET1myrajVTd62BSCCoJA9fZxGv1ZM1">
+<link id=3D"MainCss" type=3D"text/css" rel=3D"stylesheet" href=3D"http://ww=
+w.cnblogs.com/skins/Cogitation/bundle-Cogitation.css?v=3DKxzCsGje7vptXKdp2H=
+ZBpXmgRp_h-PvgHFxMy8F9r3o1">
+<link id=3D"mobile-style" media=3D"only screen and (max-device-width: 980px=
+)" type=3D"text/css" rel=3D"stylesheet" href=3D"http://www.cnblogs.com/skin=
+s/Cogitation/bundle-Cogitation-mobile.css?v=3D35ET15jmlo8kcQ-axRS7HKcmBPzMu=
+D32QRSxrRgNkw01">
+<link title=3D"RSS" type=3D"application/rss+xml" rel=3D"alternate" href=3D"=
+http://www.cnblogs.com/digdeep/rss">
+<link title=3D"RSD" type=3D"application/rsd+xml" rel=3D"EditURI" href=3D"ht=
+tp://www.cnblogs.com/digdeep/rsd.xml">
+<link type=3D"application/wlwmanifest+xml" rel=3D"wlwmanifest" href=3D"http=
+://www.cnblogs.com/digdeep/wlwmanifest.xml">
+ =20
+
+
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"chrome-extension://fidic=
+gekecdkdmkjghdgadgdmcfodfid/themes/default/content.css"></head>
+<body>
+<a name=3D"top"></a>
+
+<div id=3D"top">
+=09
+<div>
+	<table>
+		<tbody><tr>
+			<td class=3D"HeaderTitles">
+				<h1 class=3D"HeaderTitle"><a id=3D"Header1_HeaderTitle" class=3D"Header=
+MainTitle" href=3D"http://www.cnblogs.com/digdeep/">digdeep</a></h1>
+				<p id=3D"tagline">=E5=87=A1=E6=98=AF=E8=BF=87=E5=8E=BB=EF=BC=8C=E7=9A=
+=86=E6=98=AF=E5=BA=8F=E5=B9=95=E3=80=82Read the fucking manual and source c=
+ode.</p>
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+<div class=3D"HeaderBar">
+	<table id=3D"HeaderBar" class=3D"HeaderBar" cellpadding=3D"0" cellspacing=
+=3D"0">
+		<tbody><tr>
+			<td class=3D"HeaderBarTab" nowrap=3D"">
+&nbsp;
+<a id=3D"blog_nav_sitehome" href=3D"http://www.cnblogs.com/">=E5=8D=9A=E5=
+=AE=A2=E5=9B=AD</a> ::
+<a id=3D"blog_nav_myhome" href=3D"http://www.cnblogs.com/digdeep/">=E9=A6=
+=96=E9=A1=B5</a> ::
+<a href=3D"http://q.cnblogs.com/" class=3D"menu">=E5=8D=9A=E9=97=AE</a> ::
+<a href=3D"http://home.cnblogs.com/ing/" class=3D"menu">=E9=97=AA=E5=AD=98<=
+/a> ::
+<a id=3D"blog_nav_newpost" rel=3D"nofollow" href=3D"https://i.cnblogs.com/E=
+ditPosts.aspx?opt=3D1">=E6=96=B0=E9=9A=8F=E7=AC=94</a> ::
+<a id=3D"blog_nav_contact" accesskey=3D"9" rel=3D"nofollow" href=3D"https:/=
+/msg.cnblogs.com/send/digdeep">=E8=81=94=E7=B3=BB</a> ::
+<a id=3D"blog_nav_rss" href=3D"http://www.cnblogs.com/digdeep/rss">=E8=AE=
+=A2=E9=98=85</a>
+<a id=3D"blog_nav_rss_image" class=3D"XMLLink" href=3D"http://www.cnblogs.c=
+om/digdeep/rss"><img src=3D"http://www.cnblogs.com/images/xml.gif" alt=3D"=
+=E8=AE=A2=E9=98=85"></a> ::
+<a id=3D"blog_nav_admin" rel=3D"nofollow" href=3D"https://i.cnblogs.com/">=
+=E7=AE=A1=E7=90=86</a> ::
+
+</td>
+			<td><img id=3D"Header1_BlueTab" src=3D"http://www.cnblogs.com/skins/Cogi=
+tation/Images/BlueTabRight.gif" align=3D"absmiddle"></td>
+			<td class=3D"HeaderBarTabBack" nowrap=3D"" width=3D"100%">
+				<div id=3D"blog_stats">
+<div class=3D"BlogStatsBar">
+	<table class=3D"BlogStatsBar">
+		<tbody><tr>
+			<td width=3D"100%">
+			</td>
+			<td class=3D"BlogStatsBar" nowrap=3D"">
+				&nbsp;
+				235=20
+				=E9=9A=8F=E7=AC=94&nbsp;::
+				0 =E6=96=87=E7=AB=A0
+				::
+				106 =E8=AF=84=E8=AE=BA
+				::
+				0 =E5=BC=95=E7=94=A8
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+</div>
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+
+</div>
+<div id=3D"leftmenu">=09
+
+	    <div id=3D"blog-calendar"><table id=3D"blogCalendar" class=3D"Cal" cel=
+lspacing=3D"0" cellpadding=3D"0" title=3D"Calendar">
+	<tbody><tr><td colspan=3D"7"><table class=3D"CalTitle" cellspacing=3D"0">
+		<tbody><tr><td class=3D"CalNextPrev"><a href=3D"javascript:void(0);" oncl=
+ick=3D"loadBlogCalendar('2016/09/01');return false;">&lt;</a></td><td align=
+=3D"center">2016=E5=B9=B410=E6=9C=88</td><td class=3D"CalNextPrev" align=3D=
+"right"><a href=3D"javascript:void(0);" onclick=3D"loadBlogCalendar('2016/1=
+1/01');return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class=3D"CalDayHeader" align=3D"center" =
+abbr=3D"=E6=97=A5" scope=3D"col">=E6=97=A5</th><th class=3D"CalDayHeader" a=
+lign=3D"center" abbr=3D"=E4=B8=80" scope=3D"col">=E4=B8=80</th><th class=3D=
+"CalDayHeader" align=3D"center" abbr=3D"=E4=BA=8C" scope=3D"col">=E4=BA=8C<=
+/th><th class=3D"CalDayHeader" align=3D"center" abbr=3D"=E4=B8=89" scope=3D=
+"col">=E4=B8=89</th><th class=3D"CalDayHeader" align=3D"center" abbr=3D"=E5=
+=9B=9B" scope=3D"col">=E5=9B=9B</th><th class=3D"CalDayHeader" align=3D"cen=
+ter" abbr=3D"=E4=BA=94" scope=3D"col">=E4=BA=94</th><th class=3D"CalDayHead=
+er" align=3D"center" abbr=3D"=E5=85=AD" scope=3D"col">=E5=85=AD</th></tr><t=
+r><td class=3D"CalOtherMonthDay" align=3D"center">25</td><td class=3D"CalOt=
+herMonthDay" align=3D"center">26</td><td class=3D"CalOtherMonthDay" align=
+=3D"center">27</td><td class=3D"CalOtherMonthDay" align=3D"center">28</td><=
+td class=3D"CalOtherMonthDay" align=3D"center">29</td><td class=3D"CalOther=
+MonthDay" align=3D"center">30</td><td class=3D"CalWeekendDay" align=3D"cent=
+er">1</td></tr><tr><td class=3D"CalWeekendDay" align=3D"center">2</td><td a=
+lign=3D"center">3</td><td align=3D"center">4</td><td align=3D"center">5</td=
+><td align=3D"center">6</td><td align=3D"center">7</td><td class=3D"CalWeek=
+endDay" align=3D"center">8</td></tr><tr><td class=3D"CalWeekendDay" align=
+=3D"center">9</td><td align=3D"center">10</td><td align=3D"center">11</td><=
+td align=3D"center">12</td><td align=3D"center">13</td><td class=3D"CalToda=
+yDay" align=3D"center">14</td><td class=3D"CalWeekendDay" align=3D"center">=
+15</td></tr><tr><td class=3D"CalWeekendDay" align=3D"center">16</td><td ali=
+gn=3D"center">17</td><td align=3D"center">18</td><td align=3D"center">19</t=
+d><td align=3D"center">20</td><td align=3D"center">21</td><td class=3D"CalW=
+eekendDay" align=3D"center">22</td></tr><tr><td class=3D"CalWeekendDay" ali=
+gn=3D"center">23</td><td align=3D"center">24</td><td align=3D"center">25</t=
+d><td align=3D"center">26</td><td align=3D"center">27</td><td align=3D"cent=
+er">28</td><td class=3D"CalWeekendDay" align=3D"center">29</td></tr><tr><td=
+ class=3D"CalWeekendDay" align=3D"center">30</td><td align=3D"center">31</t=
+d><td class=3D"CalOtherMonthDay" align=3D"center">1</td><td class=3D"CalOth=
+erMonthDay" align=3D"center">2</td><td class=3D"CalOtherMonthDay" align=3D"=
+center">3</td><td class=3D"CalOtherMonthDay" align=3D"center">4</td><td cla=
+ss=3D"CalOtherMonthDay" align=3D"center">5</td></tr>
+</tbody></table></div>
+	=09
+<h3>=E5=85=AC=E5=91=8A</h3>
+<div class=3D"News">
+	<div id=3D"blog-news"><div id=3D"profile_block">=E6=98=B5=E7=A7=B0=EF=BC=
+=9A<a href=3D"http://home.cnblogs.com/u/digdeep/">digdeep</a><br>=E5=9B=AD=
+=E9=BE=84=EF=BC=9A<a href=3D"http://home.cnblogs.com/u/digdeep/" title=3D"=
+=E5=85=A5=E5=9B=AD=E6=97=B6=E9=97=B4=EF=BC=9A2014-12-03">1=E5=B9=B410=E4=B8=
+=AA=E6=9C=88</a><br>=E7=B2=89=E4=B8=9D=EF=BC=9A<a href=3D"http://home.cnblo=
+gs.com/u/digdeep/followers/">78</a><br>=E5=85=B3=E6=B3=A8=EF=BC=9A<a href=
+=3D"http://home.cnblogs.com/u/digdeep/followees/">42</a><div id=3D"p_b_foll=
+ow"><a href=3D"javascript:void(0);" onclick=3D"follow('03c9a2db-e87a-e411-b=
+908-9dcfd8948a71')">+=E5=8A=A0=E5=85=B3=E6=B3=A8</a></div></div></div>
+</div>
+
+		<div id=3D"blog-sidecolumn"><div id=3D"sidebar_search" class=3D"sidebar-b=
+lock">
+<div id=3D"sidebar_search" class=3D"mySearch">
+<h3 class=3D"catListTitle">=E6=90=9C=E7=B4=A2</h3>
+<div id=3D"sidebar_search_box">
+<div id=3D"widget_my_zzk" class=3D"div_my_zzk"><input type=3D"text" id=3D"q=
+" onkeydown=3D"return zzk_go_enter(event);" class=3D"input_my_zzk">&nbsp;<i=
+nput onclick=3D"zzk_go()" type=3D"button" value=3D"=E6=89=BE=E6=89=BE=E7=9C=
+=8B" id=3D"btnZzk" class=3D"btn_my_zzk"></div>
+<div id=3D"widget_my_google" class=3D"div_my_zzk"><input type=3D"text" name=
+=3D"google_q" id=3D"google_q" onkeydown=3D"return google_go_enter(event)" c=
+lass=3D"input_my_zzk">&nbsp;<input onclick=3D"google_go()" type=3D"button" =
+value=3D"=E8=B0=B7=E6=AD=8C=E6=90=9C=E7=B4=A2" class=3D"btn_my_zzk"></div>
+</div>
+</div>
+
+</div><div id=3D"sidebar_shortcut" class=3D"sidebar-block">
+<h3 class=3D"catListTitle">=E5=B8=B8=E7=94=A8=E9=93=BE=E6=8E=A5</h3>
+<ul>
+<li><a href=3D"http://www.cnblogs.com/digdeep/p/" title=3D"=E6=88=91=E7=9A=
+=84=E5=8D=9A=E5=AE=A2=E7=9A=84=E9=9A=8F=E7=AC=94=E5=88=97=E8=A1=A8">=E6=88=
+=91=E7=9A=84=E9=9A=8F=E7=AC=94</a></li><li><a href=3D"http://www.cnblogs.co=
+m/digdeep/MyComments.html" title=3D"=E6=88=91=E5=8F=91=E8=A1=A8=E8=BF=87=E7=
+=9A=84=E8=AF=84=E8=AE=BA=E5=88=97=E8=A1=A8">=E6=88=91=E7=9A=84=E8=AF=84=E8=
+=AE=BA</a></li><li><a href=3D"http://www.cnblogs.com/digdeep/OtherPosts.htm=
+l" title=3D"=E6=88=91=E8=AF=84=E8=AE=BA=E8=BF=87=E7=9A=84=E9=9A=8F=E7=AC=94=
+=E5=88=97=E8=A1=A8">=E6=88=91=E7=9A=84=E5=8F=82=E4=B8=8E</a></li><li><a hre=
+f=3D"http://www.cnblogs.com/digdeep/RecentComments.html" title=3D"=E6=88=91=
+=E7=9A=84=E5=8D=9A=E5=AE=A2=E7=9A=84=E8=AF=84=E8=AE=BA=E5=88=97=E8=A1=A8">=
+=E6=9C=80=E6=96=B0=E8=AF=84=E8=AE=BA</a></li><li><a href=3D"http://www.cnbl=
+ogs.com/digdeep/tag/" title=3D"=E6=88=91=E7=9A=84=E5=8D=9A=E5=AE=A2=E7=9A=
+=84=E6=A0=87=E7=AD=BE=E5=88=97=E8=A1=A8">=E6=88=91=E7=9A=84=E6=A0=87=E7=AD=
+=BE</a></li>
+</ul>
+<div id=3D"itemListLin_con" style=3D"display:none;">
+
+</div></div><div id=3D"sidebar_toptags" class=3D"sidebar-block">
+<h3 class=3D"catListTitle">=E6=88=91=E7=9A=84=E6=A0=87=E7=AD=BE</h3>
+<div id=3D"MyTag">
+<ul>
+<li><a href=3D"http://www.cnblogs.com/digdeep/tag/HTTPS/">HTTPS</a>(3)</li>=
+<li><a href=3D"http://www.cnblogs.com/digdeep/tag/ssl/">ssl</a>(2)</li><li>=
+<a href=3D"http://www.cnblogs.com/digdeep/tag/tls/">tls</a>(2)</li><li><a h=
+ref=3D"http://www.cnblogs.com/digdeep/tag/%E9%AB%98%E6%B8%85%E7%BC%A9%E7%95=
+%A5%E5%9B%BE/">=E9=AB=98=E6=B8=85=E7=BC=A9=E7=95=A5=E5=9B=BE</a>(1)</li><li=
+><a href=3D"http://www.cnblogs.com/digdeep/tag/%E7%BC%A9%E7%95%A5%E5%9B%BE/=
+">=E7=BC=A9=E7=95=A5=E5=9B=BE</a>(1)</li><li><a href=3D"http://www.cnblogs.=
+com/digdeep/tag/Javaweb/">Javaweb</a>(1)</li><li><a href=3D"http://www.cnbl=
+ogs.com/digdeep/tag/Java%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/">Java=E5=9B=
+=BE=E7=89=87=E5=A4=84=E7=90=86</a>(1)</li><li><a href=3D"http://www.cnblogs=
+.com/digdeep/tag/jsonp%E8%B7%A8%E5%9F%9F%E5%8E%9F%E7%90%86/">jsonp=E8=B7=A8=
+=E5=9F=9F=E5=8E=9F=E7=90=86</a>(1)</li><li><a href=3D"http://www.cnblogs.co=
+m/digdeep/tag/js%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E5%87%BD%E6%95%B0names=
+pace/">js=E5=91=BD=E5=90=8D=E7=A9=BA=E9=97=B4=E5=87=BD=E6=95=B0namespace</a=
+>(1)</li><li><a href=3D"http://www.cnblogs.com/digdeep/tag/pdf%2Fitext/">pd=
+f/itext</a>(1)</li><li><a href=3D"http://www.cnblogs.com/digdeep/tag/">=E6=
+=9B=B4=E5=A4=9A</a></li>
+</ul>
+</div></div><div id=3D"sidebar_categories">
+		<h3>=E9=9A=8F=E7=AC=94=E5=88=86=E7=B1=BB</h3>
+	=09
+				<ul>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_0" href=3D"http://www.cnblogs.com/=
+digdeep/category/649594.html">eclipse/maven/svn/git(10)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_1" href=3D"http://www.cnblogs.com/=
+digdeep/category/639151.html">HTML5/CSS3(5)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_2" href=3D"http://www.cnblogs.com/=
+digdeep/category/685994.html">HTTP/HTTPS(10)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_3" href=3D"http://www.cnblogs.com/=
+digdeep/category/639150.html">Java(49)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_4" href=3D"http://www.cnblogs.com/=
+digdeep/category/671095.html">Java =E5=A4=9A=E7=BA=BF=E7=A8=8B=E4=B8=8E=E5=
+=B9=B6=E5=8F=91(18)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_5" href=3D"http://www.cnblogs.com/=
+digdeep/category/707532.html">Java =E5=8A=A0=E5=AF=86/=E8=A7=A3=E5=AF=86(5)=
+</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_6" href=3D"http://www.cnblogs.com/=
+digdeep/category/691870.html">Java =E8=AE=BE=E8=AE=A1=E6=A8=A1=E5=BC=8F(1)<=
+/a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_7" href=3D"http://www.cnblogs.com/=
+digdeep/category/789579.html">Java-dubbo/dubbox(3)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_8" href=3D"http://www.cnblogs.com/=
+digdeep/category/644918.html">Java-ibatis/mybatis(13)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_9" href=3D"http://www.cnblogs.com/=
+digdeep/category/687632.html">Java-IO/NIO/network(5)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_10" href=3D"http://www.cnblogs.com=
+/digdeep/category/797939.html">Java-jni/jna(4)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_11" href=3D"http://www.cnblogs.com=
+/digdeep/category/639155.html">Java-jsp/servlet(23)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_12" href=3D"http://www.cnblogs.com=
+/digdeep/category/684055.html">Java-jvm(5)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_13" href=3D"http://www.cnblogs.com=
+/digdeep/category/706490.html">Java-shiro(2)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_14" href=3D"http://www.cnblogs.com=
+/digdeep/category/703408.html">Java-SiteMesh(1)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_15" href=3D"http://www.cnblogs.com=
+/digdeep/category/683618.html">Java-spring/springmvc(20)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_16" href=3D"http://www.cnblogs.com=
+/digdeep/category/789580.html">Java-ZooKeeper</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_17" href=3D"http://www.cnblogs.com=
+/digdeep/category/639152.html">js(27)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_18" href=3D"http://www.cnblogs.com=
+/digdeep/category/735957.html">js-inside(4)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_19" href=3D"http://www.cnblogs.com=
+/digdeep/category/647901.html">js-node.js(1)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_20" href=3D"http://www.cnblogs.com=
+/digdeep/category/677206.html">js-React(2)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_21" href=3D"http://www.cnblogs.com=
+/digdeep/category/705009.html">js-require.js(4)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_22" href=3D"http://www.cnblogs.com=
+/digdeep/category/639154.html">Linux(18)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_23" href=3D"http://www.cnblogs.com=
+/digdeep/category/684125.html">Linux C/C++(2)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_24" href=3D"http://www.cnblogs.com=
+/digdeep/category/743804.html">Linux TCP/IP(3)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_25" href=3D"http://www.cnblogs.com=
+/digdeep/category/652673.html">LVS/Keepalived(4)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_26" href=3D"http://www.cnblogs.com=
+/digdeep/category/789765.html">memcached/redis</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_27" href=3D"http://www.cnblogs.com=
+/digdeep/category/639153.html">MySQL(19)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_28" href=3D"http://www.cnblogs.com=
+/digdeep/category/746428.html">MySQL =E5=A4=87=E4=BB=BD/=E6=81=A2=E5=A4=8D(=
+5)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_29" href=3D"http://www.cnblogs.com=
+/digdeep/category/739916.html">MySQL =E5=BC=80=E5=8F=91(5)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_30" href=3D"http://www.cnblogs.com=
+/digdeep/category/739915.html">MySQL =E4=BC=98=E5=8C=96(14)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_31" href=3D"http://www.cnblogs.com=
+/digdeep/category/745580.html">MySQL =E5=8E=9F=E7=90=86/=E6=BA=90=E7=A0=81(=
+6)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_32" href=3D"http://www.cnblogs.com=
+/digdeep/category/647601.html">nginx/lua/openresty(6)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_33" href=3D"http://www.cnblogs.com=
+/digdeep/category/644944.html">Oracle(3)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_34" href=3D"http://www.cnblogs.com=
+/digdeep/category/644945.html">SQL Server(6)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_35" href=3D"http://www.cnblogs.com=
+/digdeep/category/716200.html">web=E5=AE=89=E5=85=A8(12)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_36" href=3D"http://www.cnblogs.com=
+/digdeep/category/799883.html">Windows(3)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_37" href=3D"http://www.cnblogs.com=
+/digdeep/category/648639.html">=E5=85=B6=E4=BB=96(3)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_0_Link_38" href=3D"http://www.cnblogs.com=
+/digdeep/category/661933.html">=E5=BE=AE=E4=BF=A1=E5=BC=80=E5=8F=91(8)</a> =
+</li>
+		=09
+				</ul>
+		=09
+=09
+		<h3>=E9=9A=8F=E7=AC=94=E6=A1=A3=E6=A1=88</h3>
+	=09
+				<ul>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_0" href=3D"http://www.cnblogs.com/=
+digdeep/archive/2016/09.html">2016=E5=B9=B49=E6=9C=88 (2)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_1" href=3D"http://www.cnblogs.com/=
+digdeep/archive/2016/08.html">2016=E5=B9=B48=E6=9C=88 (4)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_2" href=3D"http://www.cnblogs.com/=
+digdeep/archive/2016/07.html">2016=E5=B9=B47=E6=9C=88 (3)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_3" href=3D"http://www.cnblogs.com/=
+digdeep/archive/2016/06.html">2016=E5=B9=B46=E6=9C=88 (5)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_4" href=3D"http://www.cnblogs.com/=
+digdeep/archive/2016/05.html">2016=E5=B9=B45=E6=9C=88 (3)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_5" href=3D"http://www.cnblogs.com/=
+digdeep/archive/2016/04.html">2016=E5=B9=B44=E6=9C=88 (11)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_6" href=3D"http://www.cnblogs.com/=
+digdeep/archive/2016/03.html">2016=E5=B9=B43=E6=9C=88 (9)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_7" href=3D"http://www.cnblogs.com/=
+digdeep/archive/2016/02.html">2016=E5=B9=B42=E6=9C=88 (4)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_8" href=3D"http://www.cnblogs.com/=
+digdeep/archive/2016/01.html">2016=E5=B9=B41=E6=9C=88 (2)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_9" href=3D"http://www.cnblogs.com/=
+digdeep/archive/2015/12.html">2015=E5=B9=B412=E6=9C=88 (6)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_10" href=3D"http://www.cnblogs.com=
+/digdeep/archive/2015/11.html">2015=E5=B9=B411=E6=9C=88 (9)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_11" href=3D"http://www.cnblogs.com=
+/digdeep/archive/2015/10.html">2015=E5=B9=B410=E6=9C=88 (23)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_12" href=3D"http://www.cnblogs.com=
+/digdeep/archive/2015/09.html">2015=E5=B9=B49=E6=9C=88 (31)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_13" href=3D"http://www.cnblogs.com=
+/digdeep/archive/2015/08.html">2015=E5=B9=B48=E6=9C=88 (15)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_14" href=3D"http://www.cnblogs.com=
+/digdeep/archive/2015/07.html">2015=E5=B9=B47=E6=9C=88 (12)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_15" href=3D"http://www.cnblogs.com=
+/digdeep/archive/2015/06.html">2015=E5=B9=B46=E6=9C=88 (21)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_16" href=3D"http://www.cnblogs.com=
+/digdeep/archive/2015/05.html">2015=E5=B9=B45=E6=9C=88 (20)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_17" href=3D"http://www.cnblogs.com=
+/digdeep/archive/2015/04.html">2015=E5=B9=B44=E6=9C=88 (18)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_18" href=3D"http://www.cnblogs.com=
+/digdeep/archive/2015/03.html">2015=E5=B9=B43=E6=9C=88 (13)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_19" href=3D"http://www.cnblogs.com=
+/digdeep/archive/2015/02.html">2015=E5=B9=B42=E6=9C=88 (1)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_20" href=3D"http://www.cnblogs.com=
+/digdeep/archive/2015/01.html">2015=E5=B9=B41=E6=9C=88 (12)</a> </li>
+		=09
+				<li><a id=3D"CatList_LinkList_1_Link_21" href=3D"http://www.cnblogs.com=
+/digdeep/archive/2014/12.html">2014=E5=B9=B412=E6=9C=88 (11)</a> </li>
+		=09
+				</ul>
+		=09
+	</div><div id=3D"sidebar_recentcomments" class=3D"sidebar-block"><div id=
+=3D"recent_comments_wrap">
+<h3 class=3D"catListTitle">=E6=9C=80=E6=96=B0=E8=AF=84=E8=AE=BA</h3>
+<div class=3D"RecentComment" id=3D"RecentComments">
+	<div id=3D"RecentCommentsBlock"><ul>
+        <li class=3D"recent_comment_title"><a href=3D"http://www.cnblogs.co=
+m/digdeep/p/5743378.html#3520789">1. Re:=E5=BE=AE=E4=BF=A1=E8=B0=83=E7=94=
+=A8=E7=85=A7=E7=9B=B8=E6=8B=8D=E7=85=A7=E7=AD=89 js =E6=8E=A5=E5=8F=A3=E7=
+=9A=84=E6=9D=83=E9=99=90=E9=85=8D=E7=BD=AE =E5=92=8C =E7=85=A7=E7=89=87=E4=
+=B8=8A=E4=BC=A0=E5=92=8C=E4=B8=8B=E8=BD=BD=E5=AE=9E=E7=8E=B0</a></li>
+        <li class=3D"recent_comment_body">=E5=BE=88=E6=A3=92=E5=AF=B9=E6=88=
+=91=E5=BE=88=E6=9C=89=E5=B8=AE=E5=8A=A9</li>
+        <li class=3D"recent_comment_author">--=E5=B0=8F=E4=BA=BA=E7=89=A9=
+=E5=B0=8F=E4=B8=96=E7=95=8C</li>
+        <li class=3D"recent_comment_title"><a href=3D"http://www.cnblogs.co=
+m/digdeep/p/4947694.html#3519542">2. Re:MySQL =E4=B8=80=E8=87=B4=E6=80=A7=
+=E8=AF=BB =E6=B7=B1=E5=85=A5=E7=A0=94=E7=A9=B6</a></li>
+        <li class=3D"recent_comment_body">=E6=80=BB=E7=BB=93=E5=9C=B0=E4=B8=
+=8D=E9=94=99</li>
+        <li class=3D"recent_comment_author">--=E5=A4=A9=E5=A3=AB=E6=A2=A6</=
+li>
+        <li class=3D"recent_comment_title"><a href=3D"http://www.cnblogs.co=
+m/digdeep/p/4612053.html#3479305">3. Re:Java =E6=9D=83=E9=99=90=E6=A1=86=E6=
+=9E=B6 Shiro =E5=AE=9E=E6=88=98=E4=B8=80=EF=BC=9A=E7=90=86=E8=AE=BA=E5=9F=
+=BA=E7=A1=80</a></li>
+        <li class=3D"recent_comment_body">=E5=86=99=E7=9A=84=E7=9C=9F=E5=BF=
+=83=E4=B8=8D=E9=94=99!=E8=B5=9E</li>
+        <li class=3D"recent_comment_author">--learnerzhang</li>
+        <li class=3D"recent_comment_title"><a href=3D"http://www.cnblogs.co=
+m/digdeep/p/5539131.html#3442982">4. Re:=E5=88=A9=E7=94=A8 filter =E6=9C=BA=
+=E5=88=B6 =E7=BB=99 =E9=9D=99=E6=80=81=E8=B5=84=E6=BA=90 url =E5=8A=A0=E4=
+=B8=8A=E6=97=B6=E9=97=B4=E6=88=B3=EF=BC=8C=E6=9D=A5=E9=98=B2=E6=AD=A2js=E5=
+=92=8Ccss=E6=96=87=E4=BB=B6=E7=9A=84=E7=BC=93=E5=AD=98=EF=BC=8C=E5=88=A9=E4=
+=BA=8E=E5=BC=80=E5=8F=91=E8=B0=83=E8=AF=95</a></li>
+        <li class=3D"recent_comment_body">=E4=BA=86=E8=A7=A3=E4=BA=86=EF=BC=
+=8C=E7=9B=B8=E5=8F=89=E4=BA=86=E3=80=82=E8=BF=99=E6=A0=B7=E7=A1=AE=E5=AE=9E=
+=E6=96=B9=E4=BE=BF=E3=80=82</li>
+        <li class=3D"recent_comment_author">--NZuoF</li>
+        <li class=3D"recent_comment_title"><a href=3D"http://www.cnblogs.co=
+m/digdeep/p/5539131.html#3441351">5. Re:=E5=88=A9=E7=94=A8 filter =E6=9C=BA=
+=E5=88=B6 =E7=BB=99 =E9=9D=99=E6=80=81=E8=B5=84=E6=BA=90 url =E5=8A=A0=E4=
+=B8=8A=E6=97=B6=E9=97=B4=E6=88=B3=EF=BC=8C=E6=9D=A5=E9=98=B2=E6=AD=A2js=E5=
+=92=8Ccss=E6=96=87=E4=BB=B6=E7=9A=84=E7=BC=93=E5=AD=98=EF=BC=8C=E5=88=A9=E4=
+=BA=8E=E5=BC=80=E5=8F=91=E8=B0=83=E8=AF=95</a></li>
+        <li class=3D"recent_comment_body">@NZuoF=E4=BD=A0=E6=B2=A1=E6=9C=89=
+=E7=9C=8B=E5=88=B0 chrome =E6=B5=8F=E8=A7=88=E5=99=A8 =E8=B0=83=E8=AF=95=E4=
+=B8=AD=E7=9A=84=E8=B7=AF=E5=BE=84=E5=8F=91=E7=94=9F=E4=BA=86=E5=8F=98=E5=8C=
+=96=E5=90=97=EF=BC=9F=E9=A1=B5=E9=9D=A2=E7=9A=84=E8=B7=AF=E5=BE=84=E6=98=AF=
+=E6=B2=A1=E6=9C=89=E4=BE=BF=EF=BC=8C=E4=BD=86=E6=98=AF=E6=B5=8F=E8=A7=88=E5=
+=99=A8=E8=8E=B7=E5=8F=96=E6=97=B6=E7=9A=84=E8=B7=AF=E5=BE=84=E5=8F=98=E4=BA=
+=86=E3=80=82=E5=BD=93=E7=84=B6=E5=8F=AF=E4=BB=A5=E6=AD=A3=E5=B8=B8=E8=AE=BF=
+=E9=97=AE=EF=BC=8C=E5=8F=AA=E6=98=AF=E4=BF=AE=E6=94=B9=E4=BA=86url=E7=9A=84=
+=E5=8F=82=E6=95=B0=E9=83=A8=E5=88=86=EF=BC=8C=E4=B9=9F=E5=B0=B1=E6=98=AF qu=
+ery=E9=83=A8=E5=88=86=E3=80=82=E6=9C=8D=E5=8A=A1=E5=99=A8=E4=B8=8A=E7=9A=84=
+......</li>
+        <li class=3D"recent_comment_author">--digdeep</li>
+</ul>
+</div>
+</div>
+</div></div><div id=3D"sidebar_topviewedposts" class=3D"sidebar-block"><div=
+ id=3D"topview_posts_wrap">
+<h3 class=3D"catListTitle">=E9=98=85=E8=AF=BB=E6=8E=92=E8=A1=8C=E6=A6=9C</h=
+3>
+<div class=3D"RecentComment" id=3D"TopViewPosts">=20
+	<div id=3D"TopViewPostsBlock"><ul><li><a href=3D"http://www.cnblogs.com/di=
+gdeep/p/4512368.html">1. Spring, MyBatis =E5=A4=9A=E6=95=B0=E6=8D=AE=E6=BA=
+=90=E7=9A=84=E9=85=8D=E7=BD=AE=E5=92=8C=E7=AE=A1=E7=90=86(5140)</a></li><li=
+><a href=3D"http://www.cnblogs.com/digdeep/p/5026066.html">2. =E4=BD=BF=E7=
+=94=A8=E5=9B=BD=E5=86=85 maven =E9=95=9C=E5=83=8F =E4=BB=A3=E6=9B=BF=E5=9B=
+=BD=E5=A4=96 mirror(4773)</a></li><li><a href=3D"http://www.cnblogs.com/dig=
+deep/p/4608933.html">3. Mybatis =E6=95=B0=E6=8D=AE=E5=BA=93=E7=89=A9=E7=90=
+=86=E5=88=86=E9=A1=B5=E6=8F=92=E4=BB=B6 PageHelper(3335)</a></li><li><a hre=
+f=3D"http://www.cnblogs.com/digdeep/p/4414205.html">4. facebook=E5=BC=80=E6=
+=BA=90=E5=89=8D=E7=AB=AFUI=E6=A1=86=E6=9E=B6React=E5=88=9D=E6=8E=A2(2499)</=
+a></li><li><a href=3D"http://www.cnblogs.com/digdeep/p/4610844.html">5. Spr=
+ingMVC =E7=9A=84 Controller =E8=BF=94=E5=9B=9E=E5=90=84=E7=A7=8D=E8=A7=86=
+=E5=9B=BE=E7=9A=84=E5=A4=84=E7=90=86=E6=96=B9=E5=BC=8F(2432)</a></li></ul><=
+/div>
+</div>
+</div></div><div id=3D"sidebar_topcommentedposts" class=3D"sidebar-block"><=
+div id=3D"topfeedback_posts_wrap">
+<h3 class=3D"catListTitle">=E8=AF=84=E8=AE=BA=E6=8E=92=E8=A1=8C=E6=A6=9C</h=
+3>
+<div class=3D"RecentComment" id=3D"TopCommentsPosts">
+	<div id=3D"TopFeedbackPostsBlock"><ul><li><a href=3D"http://www.cnblogs.co=
+m/digdeep/p/4459781.html">1. Java=E4=B8=AD=E5=85=B3=E4=BA=8E BigDecimal =E7=
+=9A=84=E4=B8=80=E4=B8=AA=E5=AF=BC=E8=87=B4double=E7=B2=BE=E5=BA=A6=E6=8D=9F=
+=E5=A4=B1=E7=9A=84"bug"(25)</a></li><li><a href=3D"http://www.cnblogs.com/d=
+igdeep/p/4512368.html">2. Spring, MyBatis =E5=A4=9A=E6=95=B0=E6=8D=AE=E6=BA=
+=90=E7=9A=84=E9=85=8D=E7=BD=AE=E5=92=8C=E7=AE=A1=E7=90=86(14)</a></li><li><=
+a href=3D"http://www.cnblogs.com/digdeep/p/4358328.html">3. =E5=BE=AE=E4=BF=
+=A1=E5=BC=80=E5=8F=91(01)=E4=B9=8B=E5=A6=82=E4=BD=95=E6=88=90=E4=B8=BA=E5=
+=BC=80=E5=8F=91=E8=80=85(8)</a></li><li><a href=3D"http://www.cnblogs.com/d=
+igdeep/p/4207097.html">4. =E8=82=AF=E7=88=B9=E7=9A=84 StringUtils.isNumeric=
+(String str)(6)</a></li><li><a href=3D"http://www.cnblogs.com/digdeep/p/444=
+8148.html">5. Java=E5=A4=9A=E7=BA=BF=E7=A8=8B=E4=B8=AD=E7=9A=84=E6=AD=BB=E9=
+=94=81=E9=97=AE=E9=A2=98(6)</a></li></ul></div>
+</div></div></div><div id=3D"sidebar_topdiggedposts" class=3D"sidebar-block=
+"><div id=3D"topdigg_posts_wrap">
+<h3 class=3D"catListTitle">=E6=8E=A8=E8=8D=90=E6=8E=92=E8=A1=8C=E6=A6=9C</h=
+3>
+<div class=3D"RecentComment">
+	<div id=3D"TopDiggPostsBlock"><ul><li><a href=3D"http://www.cnblogs.com/di=
+gdeep/p/4528353.html">1. Spring AOP =E6=B7=B1=E5=85=A5=E5=89=96=E6=9E=90(5)=
+</a></li><li><a href=3D"http://www.cnblogs.com/digdeep/p/4512368.html">2. S=
+pring, MyBatis =E5=A4=9A=E6=95=B0=E6=8D=AE=E6=BA=90=E7=9A=84=E9=85=8D=E7=BD=
+=AE=E5=92=8C=E7=AE=A1=E7=90=86(5)</a></li><li><a href=3D"http://www.cnblogs=
+.com/digdeep/p/4610844.html">3. SpringMVC =E7=9A=84 Controller =E8=BF=94=E5=
+=9B=9E=E5=90=84=E7=A7=8D=E8=A7=86=E5=9B=BE=E7=9A=84=E5=A4=84=E7=90=86=E6=96=
+=B9=E5=BC=8F(3)</a></li><li><a href=3D"http://www.cnblogs.com/digdeep/p/553=
+9131.html">4. =E5=88=A9=E7=94=A8 filter =E6=9C=BA=E5=88=B6 =E7=BB=99 =E9=9D=
+=99=E6=80=81=E8=B5=84=E6=BA=90 url =E5=8A=A0=E4=B8=8A=E6=97=B6=E9=97=B4=E6=
+=88=B3=EF=BC=8C=E6=9D=A5=E9=98=B2=E6=AD=A2js=E5=92=8Ccss=E6=96=87=E4=BB=B6=
+=E7=9A=84=E7=BC=93=E5=AD=98=EF=BC=8C=E5=88=A9=E4=BA=8E=E5=BC=80=E5=8F=91=E8=
+=B0=83=E8=AF=95(2)</a></li><li><a href=3D"http://www.cnblogs.com/digdeep/p/=
+4175969.html">5. =E6=B7=B1=E5=85=A5=E5=89=96=E6=9E=90js=E5=91=BD=E5=90=8D=
+=E7=A9=BA=E9=97=B4=E5=87=BD=E6=95=B0namespace(2)</a></li></ul></div>
+</div></div></div></div>
+=09
+</div>
+<div id=3D"main">
+=09
+<div id=3D"post_detail">
+<div class=3D"post">
+	<div class=3D"postTitle">
+		<a id=3D"cb_post_title_url" href=3D"http://www.cnblogs.com/digdeep/p/4624=
+998.html">Spring AOP =E4=B8=8D=E5=90=8C=E9=85=8D=E7=BD=AE=E6=96=B9=E5=BC=8F=
+=E4=BA=A7=E7=94=9F=E7=9A=84=E5=86=B2=E7=AA=81=E9=97=AE=E9=A2=98</a>
+	</div>
+=09
+	<div class=3D"postText">
+		<div id=3D"cnblogs_post_body"><p>Spring AOP=E7=9A=84=E5=8E=9F=E7=90=86=E6=
+=98=AF JDK =E5=8A=A8=E6=80=81=E4=BB=A3=E7=90=86=E5=92=8CCGLIB=E5=AD=97=E8=
+=8A=82=E7=A0=81=E5=A2=9E=E5=BC=BA=E6=8A=80=E6=9C=AF=EF=BC=8C=E5=89=8D=E8=80=
+=85=E9=9C=80=E8=A6=81=E8=A2=AB=E4=BB=A3=E7=90=86=E7=B1=BB=E5=AE=9E=E7=8E=B0=
+=E7=9B=B8=E5=BA=94=E6=8E=A5=E5=8F=A3=EF=BC=8C=E4=B9=9F=E5=8F=AA=E6=9C=89=E6=
+=8E=A5=E5=8F=A3=E4=B8=AD=E7=9A=84=E6=96=B9=E6=B3=95=E5=8F=AF=E4=BB=A5=E8=A2=
+=ABJDK=E5=8A=A8=E6=80=81=E4=BB=A3=E7=90=86=E6=8A=80=E6=9C=AF=E6=89=80=E5=A4=
+=84=E7=90=86=EF=BC=9B=E5=90=8E=E8=80=85=E5=AE=9E=E9=99=85=E4=B8=8A=E6=98=AF=
+=E7=94=9F=E6=88=90=E4=B8=80=E4=B8=AA=E5=AD=90=E7=B1=BB=EF=BC=8C=E6=9D=A5=E8=
+=A6=86=E7=9B=96=E8=A2=AB=E4=BB=A3=E7=90=86=E7=B1=BB=EF=BC=8C=E9=82=A3=E4=B9=
+=88=E7=88=B6=E7=B1=BB=E7=9A=84final=E6=96=B9=E6=B3=95=E5=B0=B1=E4=B8=8D=E8=
+=83=BD=E4=BB=A3=E7=90=86=EF=BC=8C=E5=9B=A0=E4=B8=BA=E7=88=B6=E7=B1=BB=E7=9A=
+=84final=E6=96=B9=E6=B3=95=E4=B8=8D=E8=83=BD=E8=A2=AB=E5=AD=90=E7=B1=BB=E6=
+=89=80=E8=A6=86=E7=9B=96=E3=80=82=E4=B8=80=E8=88=AC=E8=80=8C=E8=A8=80Spring=
+=E9=BB=98=E8=AE=A4=E4=BC=98=E5=85=88=E4=BD=BF=E7=94=A8JDK=E5=8A=A8=E6=80=81=
+=E4=BB=A3=E7=90=86=E6=8A=80=E6=9C=AF=EF=BC=8C=E5=8F=AA=E6=9C=89=E5=9C=A8=E8=
+=A2=AB=E4=BB=A3=E7=90=86=E7=B1=BB=E6=B2=A1=E6=9C=89=E5=AE=9E=E7=8E=B0=E6=8E=
+=A5=E5=8F=A3=E6=97=B6=EF=BC=8C=E6=89=8D=E4=BC=9A=E9=80=89=E6=8B=A9=E4=BD=BF=
+=E7=94=A8CGLIB=E6=8A=80=E6=9C=AF=E6=9D=A5=E5=AE=9E=E7=8E=B0AOP=E3=80=82</p>
+<p>=E4=BD=86=E6=98=AF=E4=B9=9F=E6=8F=90=E4=BE=9B=E4=BA=86=E9=85=8D=E7=BD=AE=
+=E5=8F=82=E6=95=B0=E6=9D=A5=E5=BC=BA=E5=88=B6=E9=80=89=E6=8B=A9=E4=BD=BF=E7=
+=94=A8 CGLIB =E6=8A=80=E6=9C=AF=EF=BC=8C=E5=A6=82=E4=B8=8B=EF=BC=9A</p>
+<div class=3D"cnblogs_code">
+<pre><span style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #8000=
+00;">aop:config </span><span style=3D"color: #ff0000;">proxy-target-class</=
+span><span style=3D"color: #0000ff;">=3D"true"</span> <span style=3D"color:=
+ #0000ff;">/&gt;</span> </pre>
+</div>
+<p><span style=3D"color: #ff0000;">proxy-target-class<span style=3D"color: =
+#0000ff;">=3D"true"</span></span> =E8=A1=A8=E7=A4=BA=E5=BC=BA=E5=88=B6=E4=
+=BD=BF=E7=94=A8 CGLIB =E6=8A=80=E6=9C=AF=E6=9D=A5=E5=AE=9E=E7=8E=B0AOP=EF=
+=BC=8C=E5=9B=A0=E4=B8=BACGLIB=E6=98=AF=E7=94=9F=E6=88=90=E5=AD=90=E7=B1=BB=
+=E4=B9=9F=E5=B0=B1=E6=98=AF=E4=BB=A3=E7=90=86=E7=B1=BB=E6=9D=A5=E5=AE=9E=E7=
+=8E=B0=E7=9A=84=EF=BC=8C=E6=89=80=E4=BB=A5proxy-target-class=EF=BC=8C=E8=A1=
+=A8=E7=A4=BA=E6=98=AF=E5=90=A6=E4=BB=A3=E7=90=86=E7=9B=AE=E6=A0=87=E7=B1=BB=
+=E3=80=82<span style=3D"color: #0000ff;">&lt;<span style=3D"color: #800000;=
+">aop:config<span style=3D"color: #ff0000;"><span style=3D"color: #0000ff;"=
+> <span style=3D"color: #0000ff;">/&gt; <span style=3D"color: #000000;">=E5=
+=B0=B1=E4=BC=9A=E7=94=B1spring=E6=9D=A5=E9=80=89=E6=8B=A9=EF=BC=8Cspring=E4=
+=BC=98=E5=85=88=E4=BD=BF=E7=94=A8JDK=E5=8A=A8=E6=80=81=E4=BB=A3=E7=90=86=E6=
+=9D=A5=E5=AE=9E=E7=8E=B0AOP=E3=80=82</span></span></span></span></span></sp=
+an></p>
+<p><span style=3D"color: #0000ff;"><span style=3D"color: #800000;"><span st=
+yle=3D"color: #ff0000;"><span style=3D"color: #0000ff;"><span style=3D"colo=
+r: #0000ff;"><span style=3D"color: #000000;"><span style=3D"color: #0000ff;=
+">&lt;<span style=3D"color: #800000;">aop:config<span style=3D"color: #ff00=
+00;"><span style=3D"color: #0000ff;"> <span style=3D"color: #0000ff;">/&gt;=
+</span></span></span></span></span> =E9=82=A3=E4=B9=88=E8=BF=99=E5=8F=A5=E9=
+=85=8D=E7=BD=AE=EF=BC=8C=E4=BC=9A=E8=B5=B7=E5=88=B0=E4=BB=80=E4=B9=88=E4=BD=
+=9C=E7=94=A8=E5=91=A2=EF=BC=9F=E9=A6=96=E5=85=88=E5=AE=83=E6=98=AF aop =E5=
+=91=BD=E5=90=8D=E7=A9=BA=E9=97=B4=E4=B8=AD=E7=9A=84=E9=85=8D=E7=BD=AE=EF=BC=
+=8C=E6=89=80=E4=BB=A5=EF=BC=9A</span></span></span></span></span></span></p=
+>
+<div class=3D"cnblogs_code"><div class=3D"cnblogs_code_toolbar"><span class=
+=3D"cnblogs_code_copy"><a href=3D"javascript:void(0);" onclick=3D"copyCnblo=
+gsCode(this)" title=3D"=E5=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"><img src=3D"ht=
+tp://common.cnblogs.com/images/copycode.gif" alt=3D"=E5=A4=8D=E5=88=B6=E4=
+=BB=A3=E7=A0=81"></a></span></div>
+<pre><span style=3D"color: #008000;">/**</span><span style=3D"color: #00800=
+0;">
+ * </span><span style=3D"color: #008000;">NamespaceHandler for the </span><=
+span style=3D"color: #008000;">aop namespace.</span><span style=3D"color: #=
+008000;">
+ * </span><span style=3D"color: #808080;">@author</span><span style=3D"colo=
+r: #008000;"> Rob Harrop
+ * </span><span style=3D"color: #808080;">@author</span><span style=3D"colo=
+r: #008000;"> Adrian Colyer
+ * </span><span style=3D"color: #808080;">@author</span><span style=3D"colo=
+r: #008000;"> Juergen Hoeller
+ * </span><span style=3D"color: #808080;">@since</span><span style=3D"color=
+: #008000;"> 2.0
+ </span><span style=3D"color: #008000;">*/</span>
+<span style=3D"color: #0000ff;">public</span> <span style=3D"color: #0000ff=
+;">class</span> AopNamespaceHandler <span style=3D"color: #0000ff;">extends=
+</span><span style=3D"color: #000000;"> NamespaceHandlerSupport {
+    </span><span style=3D"color: #008000;">/**</span><span style=3D"color: =
+#008000;">
+     * Register the {</span><span style=3D"color: #808080;">@link</span><sp=
+an style=3D"color: #008000;"> BeanDefinitionParser BeanDefinitionParsers} f=
+or the
+     * '{</span><span style=3D"color: #808080;">@code</span><span style=3D"=
+color: #008000;"> config}', '{</span><span style=3D"color: #808080;">@code<=
+/span><span style=3D"color: #008000;"> spring-configured}', '{</span><span =
+style=3D"color: #808080;">@code</span><span style=3D"color: #008000;"> aspe=
+ctj-autoproxy}'
+     * and '{</span><span style=3D"color: #808080;">@code</span><span style=
+=3D"color: #008000;"> scoped-proxy}' tags.
+     </span><span style=3D"color: #008000;">*/</span><span style=3D"color: =
+#000000;">
+    @Override
+    </span><span style=3D"color: #0000ff;">public</span> <span style=3D"col=
+or: #0000ff;">void</span><span style=3D"color: #000000;"> init() {
+        </span><span style=3D"color: #008000;">//</span><span style=3D"colo=
+r: #008000;"> In 2.0 XSD as well as in 2.1 XSD.</span>
+        registerBeanDefinitionParser("config", <span style=3D"color: #0000f=
+f;">new</span><span style=3D"color: #000000;"> ConfigBeanDefinitionParser()=
+);
+        registerBeanDefinitionParser(</span>"aspectj-autoproxy", <span styl=
+e=3D"color: #0000ff;">new</span><span style=3D"color: #000000;"> AspectJAut=
+oProxyBeanDefinitionParser());
+        registerBeanDefinitionDecorator(</span>"scoped-proxy", <span style=
+=3D"color: #0000ff;">new</span><span style=3D"color: #000000;"> ScopedProxy=
+BeanDefinitionDecorator());
+        </span><span style=3D"color: #008000;">//</span><span style=3D"colo=
+r: #008000;"> Only in 2.0 XSD: moved to context namespace as of 2.1</span>
+        registerBeanDefinitionParser("spring-configured", <span style=3D"co=
+lor: #0000ff;">new</span><span style=3D"color: #000000;"> SpringConfiguredB=
+eanDefinitionParser());
+    }
+}</span></pre>
+<div class=3D"cnblogs_code_toolbar"><span class=3D"cnblogs_code_copy"><a hr=
+ef=3D"javascript:void(0);" onclick=3D"copyCnblogsCode(this)" title=3D"=E5=
+=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"><img src=3D"http://common.cnblogs.com/im=
+ages/copycode.gif" alt=3D"=E5=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"></a></span>=
+</div></div>
+<p>=E4=B8=8A=E9=9D=A2=E7=9A=84=E4=BB=A3=E7=A0=81=E8=A1=A8=E5=90=8D=EF=BC=8C=
+aop=E5=91=BD=E5=90=8D=E7=A9=BA=E9=97=B4=E6=9C=89=E4=B8=89=E4=B8=AA=E5=85=83=
+=E7=B4=A0=EF=BC=9A&lt;aop:config /&gt;, &lt;aop:aspectj-autoproxy /&gt;, &l=
+t;aop:scoped-proxy /&gt;,=E8=80=8Cspring-configured=E8=A2=AB=E7=A7=BB=E5=88=
+=B0=E4=BA=86context=E5=91=BD=E5=90=8D=E7=A9=BA=E9=97=B4=E4=BA=86=EF=BC=8C=
+=E4=B9=9F=E5=B0=B1=E6=98=AF=E5=8F=98=E6=88=90=E4=BA=86=EF=BC=9A &lt;context=
+:spring-configured /&gt;</p>
+<p>&lt;aop:config /&gt; =E6=89=80=E6=9C=89=E7=9A=84=E9=85=8D=E7=BD=AE=EF=BC=
+=8C=E7=94=B1 <span style=3D"color: #000000;">ConfigBeanDefinitionParser =E6=
+=9D=A5=E8=A7=A3=E6=9E=90=EF=BC=9A</span></p>
+<div class=3D"cnblogs_code"><div class=3D"cnblogs_code_toolbar"><span class=
+=3D"cnblogs_code_copy"><a href=3D"javascript:void(0);" onclick=3D"copyCnblo=
+gsCode(this)" title=3D"=E5=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"><img src=3D"ht=
+tp://common.cnblogs.com/images/copycode.gif" alt=3D"=E5=A4=8D=E5=88=B6=E4=
+=BB=A3=E7=A0=81"></a></span></div>
+<pre><span style=3D"color: #0000ff;">class</span> ConfigBeanDefinitionParse=
+r <span style=3D"color: #0000ff;">implements</span><span style=3D"color: #0=
+00000;"> BeanDefinitionParser {</span><span style=3D"color: #000000;">
+    @Override
+    </span><span style=3D"color: #0000ff;">public</span><span style=3D"colo=
+r: #000000;"> BeanDefinition parse(Element element, ParserContext parserCon=
+text) {
+        CompositeComponentDefinition compositeDef </span>=3D
+                <span style=3D"color: #0000ff;">new</span><span style=3D"co=
+lor: #000000;"> CompositeComponentDefinition(element.getTagName(), parserCo=
+ntext.extractSource(element));
+        parserContext.pushContainingComponent(compositeDef);
+
+        configureAutoProxyCreator(parserContext, element);<br>&nbsp;&nbsp;&=
+nbsp; /**<br>&nbsp;&nbsp; &nbsp; * Configures the auto proxy creator needed=
+ to support the BeanDefinitions<br>&nbsp;&nbsp; &nbsp; * created by the &lt=
+;aop:config/&gt; tag. Will force class proxying if the 'proxy-target-class'=
+ attribute is set to 'true'.<br>&nbsp;&nbsp; &nbsp; * @see AopNamespaceUtil=
+s<br>&nbsp;&nbsp; &nbsp; */<br>&nbsp;&nbsp; &nbsp;private void configureAut=
+oProxyCreator(ParserContext parserContext, Element element) {<br>&nbsp;&nbs=
+p; &nbsp;&nbsp;&nbsp; &nbsp;AopNamespaceUtils.registerAspectJAutoProxyCreat=
+orIfNecessary(parserContext, element);<br>&nbsp;&nbsp; &nbsp;}</span></pre>
+<div class=3D"cnblogs_code_toolbar"><span class=3D"cnblogs_code_copy"><a hr=
+ef=3D"javascript:void(0);" onclick=3D"copyCnblogsCode(this)" title=3D"=E5=
+=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"><img src=3D"http://common.cnblogs.com/im=
+ages/copycode.gif" alt=3D"=E5=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"></a></span>=
+</div></div>
+<p><span style=3D"color: #000000;">=E7=BB=A7=E7=BB=AD=E8=BF=BD=E8=B8=AA <sp=
+an style=3D"color: #000000;">AopNamespaceUtils.registerAspectJAutoProxyCrea=
+torIfNecessary(parserContext, element)</span>=EF=BC=9A</span></p>
+<div class=3D"cnblogs_code"><div class=3D"cnblogs_code_toolbar"><span class=
+=3D"cnblogs_code_copy"><a href=3D"javascript:void(0);" onclick=3D"copyCnblo=
+gsCode(this)" title=3D"=E5=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"><img src=3D"ht=
+tp://common.cnblogs.com/images/copycode.gif" alt=3D"=E5=A4=8D=E5=88=B6=E4=
+=BB=A3=E7=A0=81"></a></span></div>
+<pre><span style=3D"color: #008000;">/**</span><span style=3D"color: #00800=
+0;">
+ * Utility class for handling registration of auto-proxy creators used inte=
+rnally by the '</span><span style=3D"color: #008000;">aop' namespace tags.
+ * Only a single auto-proxy creator can be registered and multiple tags may=
+ wish
+ * to register different concrete implementations. As such this class deleg=
+ates to
+ * </span><span style=3D"color: #008000;">AopConfigUtils which wraps a simp=
+le escalation protocol. Therefore classes
+ * may request a particular auto-proxy creator and know that class, or a su=
+bclass
+ * thereof, will eventually be resident in the application context.
+ *
+ * </span><span style=3D"color: #808080;">@author</span><span style=3D"colo=
+r: #008000;"> Rob Harrop
+ * </span><span style=3D"color: #808080;">@author</span><span style=3D"colo=
+r: #008000;"> Juergen Hoeller
+ * </span><span style=3D"color: #808080;">@author</span><span style=3D"colo=
+r: #008000;"> Mark Fisher
+ * </span><span style=3D"color: #808080;">@since</span><span style=3D"color=
+: #008000;"> 2.0
+ * </span><span style=3D"color: #808080;">@see</span><span style=3D"color: =
+#008000;"> AopConfigUtils
+ </span><span style=3D"color: #008000;">*/</span>
+<span style=3D"color: #0000ff;">public</span> <span style=3D"color: #0000ff=
+;">abstract</span> <span style=3D"color: #0000ff;">class</span><span style=
+=3D"color: #000000;"> AopNamespaceUtils {
+    </span><span style=3D"color: #008000;">/**</span><span style=3D"color: =
+#008000;">
+     * The </span><span style=3D"color: #008000;"> proxy-target-class attri=
+bute as found on AOP-related XML tags.
+     </span><span style=3D"color: #008000;">*/</span>
+    <span style=3D"color: #0000ff;">public</span> <span style=3D"color: #00=
+00ff;">static</span> <span style=3D"color: #0000ff;">final</span> String PR=
+OXY_TARGET_CLASS_ATTRIBUTE =3D "proxy-target-class"<span style=3D"color: #0=
+00000;">;
+    </span><span style=3D"color: #008000;">/**</span><span style=3D"color: =
+#008000;">
+     * The </span><span style=3D"color: #008000;">expose-proxy attribute as=
+ found on AOP-related XML tags.
+     </span><span style=3D"color: #008000;">*/</span>
+    <span style=3D"color: #0000ff;">private</span> <span style=3D"color: #0=
+000ff;">static</span> <span style=3D"color: #0000ff;">final</span> String E=
+XPOSE_PROXY_ATTRIBUTE =3D "expose-proxy"<span style=3D"color: #000000;">;
+
+    </span><span style=3D"color: #0000ff;">public</span> <span style=3D"col=
+or: #0000ff;">static</span> <span style=3D"color: #0000ff;">void</span><spa=
+n style=3D"color: #000000;"> registerAutoProxyCreatorIfNecessary(ParserCont=
+ext parserContext, Element sourceElement) {
+        BeanDefinition beanDefinition </span>=3D<span style=3D"color: #0000=
+00;"> AopConfigUtils.registerAutoProxyCreatorIfNecessary(
+                parserContext.getRegistry(), parserContext.extractSource(so=
+urceElement));
+        useClassProxyingIfNecessary(parserContext.getRegistry(), sourceElem=
+ent);
+        registerComponentIfNecessary(beanDefinition, parserContext);
+    }
+    </span><span style=3D"color: #0000ff;">public</span> <span style=3D"col=
+or: #0000ff;">static</span> <span style=3D"color: #0000ff;">void</span><spa=
+n style=3D"color: #000000;"> registerAspectJAutoProxyCreatorIfNecessary(Par=
+serContext parserContext, Element sourceElement) {
+        BeanDefinition beanDefinition </span>=3D<span style=3D"color: #0000=
+00;"> AopConfigUtils.registerAspectJAutoProxyCreatorIfNecessary(
+                parserContext.getRegistry(), parserContext.extractSource(so=
+urceElement));
+        useClassProxyingIfNecessary(parserContext.getRegistry(), sourceElem=
+ent);
+        registerComponentIfNecessary(beanDefinition, parserContext);
+    }
+    </span><span style=3D"color: #0000ff;">public</span> <span style=3D"col=
+or: #0000ff;">static</span> <span style=3D"color: #0000ff;">void</span><spa=
+n style=3D"color: #000000;"> registerAspectJAnnotationAutoProxyCreatorIfNec=
+essary(ParserContext parserContext, Element sourceElement) {
+        BeanDefinition beanDefinition </span>=3D<span style=3D"color: #0000=
+00;"> AopConfigUtils.registerAspectJAnnotationAutoProxyCreatorIfNecessary(
+                parserContext.getRegistry(), parserContext.extractSource(so=
+urceElement));
+        useClassProxyingIfNecessary(parserContext.getRegistry(), sourceElem=
+ent);
+        registerComponentIfNecessary(beanDefinition, parserContext);
+    }</span></pre>
+<div class=3D"cnblogs_code_toolbar"><span class=3D"cnblogs_code_copy"><a hr=
+ef=3D"javascript:void(0);" onclick=3D"copyCnblogsCode(this)" title=3D"=E5=
+=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"><img src=3D"http://common.cnblogs.com/im=
+ages/copycode.gif" alt=3D"=E5=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"></a></span>=
+</div></div>
+<p>=E5=BE=88=E6=98=BE=E7=84=B6=E7=9A=84=E8=BF=99=E9=87=8C=E9=92=88=E5=AF=B9=
+Spring AOP=E7=9A=84=E4=B8=89=E7=A7=8D=E9=85=8D=E7=BD=AE=E6=96=B9=E6=B3=95=
+=E5=88=86=E5=88=AB=E6=8F=90=E4=BE=9B=E4=BA=86=E7=9B=B8=E5=BA=94=E7=9A=84=E6=
+=B3=A8=E5=86=8C <span style=3D"color: #000000;">AutoProxyCreator</span> =E7=
+=9A=84=E6=96=B9=E6=B3=95=EF=BC=9A</p>
+<p><span style=3D"color: #800000;"><strong>&lt;aop:config /&gt;</strong></s=
+pan> =E6=96=B9=E5=BC=8F=E5=AF=B9=E5=BA=94=E7=9A=84=E6=B3=A8=E5=86=8C<span s=
+tyle=3D"color: #000000;">AutoProxyCreator =E7=9A=84=E6=96=B9=E6=B3=95=E6=98=
+=AF=EF=BC=9A<span style=3D"color: #000000;">register<span style=3D"color: #=
+800000;"><strong>AspectJ</strong></span>AutoProxyCreatorIfNecessary=EF=BC=
+=9B</span></span></p>
+<p><span style=3D"color: #000000;"><span style=3D"color: #000000;"><strong>=
+<span style=3D"color: #800000;">&lt;aop:aspectj-autoproxy/&gt;</span></stro=
+ng> =E6=96=B9=E5=BC=8F=E5=AF=B9=E5=BA=94=E7=9A=84=E6=B3=A8=E5=86=8C<span st=
+yle=3D"color: #000000;">AutoProxyCreator =E7=9A=84=E6=96=B9=E6=B3=95=E6=98=
+=AF=EF=BC=9A<span style=3D"color: #000000;">register<span style=3D"color: #=
+800000;"><strong>AspectJAnnotation</strong></span>AutoProxyCreatorIfNecessa=
+ry=EF=BC=9B</span></span></span></span></p>
+<p><span style=3D"color: #000000;"><span style=3D"color: #000000;"><span st=
+yle=3D"color: #000000;"><span style=3D"color: #000000;"><strong><span style=
+=3D"color: #800000;">DefaultAdvisorAutoProxyCreator</span></strong> <span s=
+tyle=3D"color: #000000;"><span style=3D"color: #000000;">=E6=96=B9=E5=BC=8F=
+=E5=AF=B9=E5=BA=94=E7=9A=84=E6=B3=A8=E5=86=8C<span style=3D"color: #000000;=
+">AutoProxyCreator =E7=9A=84=E6=96=B9=E6=B3=95=E6=98=AF=EF=BC=9A<span style=
+=3D"color: #000000;"><span style=3D"color: #000000;">registerAutoProxyCreat=
+orIfNecessary</span>=EF=BC=9B</span></span></span></span><br></span></span>=
+</span></span></p>
+<p><span style=3D"color: #000000;"><span style=3D"color: #000000;"><span st=
+yle=3D"color: #000000;"><span style=3D"color: #000000;"><span style=3D"colo=
+r: #000000;"><span style=3D"color: #000000;"><span style=3D"color: #000000;=
+"><span style=3D"color: #000000;"><span style=3D"color: #000000;"><span sty=
+le=3D"color: #000000;"><span style=3D"color: #000000;"><span style=3D"color=
+: #000000;">=E6=B3=A8=EF=BC=9ADefaultAdvisorAutoProxyCreator</span></span><=
+/span></span>=E7=9A=84=E9=85=8D=E7=BD=AE=E6=96=B9=E5=BC=8F=E4=B8=80=E8=88=
+=AC=E5=A6=82=E4=B8=8B=E6=89=80=E7=A4=BA=EF=BC=9A</span></span></span></span=
+></span></span></span></span> </p>
+<div class=3D"cnblogs_code">
+<pre> <span style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #800=
+000;">bean </span><span style=3D"color: #ff0000;">id</span><span style=3D"c=
+olor: #0000ff;">=3D"lifecycleBeanPostProcessor"</span><span style=3D"color:=
+ #ff0000;"> class</span><span style=3D"color: #0000ff;">=3D"org.apache.shir=
+o.spring.LifecycleBeanPostProcessor"</span><span style=3D"color: #0000ff;">=
+/&gt;</span>
+ <span style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #800000;"=
+>bean </span><span style=3D"color: #ff0000;">class</span><span style=3D"col=
+or: #0000ff;">=3D"org.springframework.aop.framework.autoproxy.DefaultAdviso=
+rAutoProxyCreator"</span><span style=3D"color: #ff0000;"> depends-on</span>=
+<span style=3D"color: #0000ff;">=3D"lifecycleBeanPostProcessor" /</span><sp=
+an style=3D"color: #0000ff;">&gt;</span>
+</pre>
+</div>
+<p>=E8=BF=99=E4=B8=89=E4=B8=AA=E6=96=B9=E6=B3=95=E6=9C=80=E7=BB=88=E8=B0=83=
+=E7=94=A8=E7=9A=84=E9=83=BD=E6=98=AF AopConfigUtils =E7=B1=BB=E5=90=8C=E4=
+=B8=80=E4=B8=AA=E6=96=B9=E6=B3=95=EF=BC=9A</p>
+<div class=3D"cnblogs_code"><div class=3D"cnblogs_code_toolbar"><span class=
+=3D"cnblogs_code_copy"><a href=3D"javascript:void(0);" onclick=3D"copyCnblo=
+gsCode(this)" title=3D"=E5=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"><img src=3D"ht=
+tp://common.cnblogs.com/images/copycode.gif" alt=3D"=E5=A4=8D=E5=88=B6=E4=
+=BB=A3=E7=A0=81"></a></span></div>
+<pre>    <span style=3D"color: #0000ff;">private</span> <span style=3D"colo=
+r: #0000ff;">static</span> BeanDefinition registerOrEscalateApcAsRequired(C=
+lass&lt;?&gt;<span style=3D"color: #000000;"> cls, BeanDefinitionRegistry r=
+egistry, Object source) {
+        Assert.notNull(registry, </span>"BeanDefinitionRegistry must not be=
+ null"<span style=3D"color: #000000;">);
+        </span><span style=3D"color: #0000ff;">if</span><span style=3D"colo=
+r: #000000;"> (registry.containsBeanDefinition(AUTO_PROXY_CREATOR_BEAN_NAME=
+)) {
+            BeanDefinition apcDefinition </span>=3D<span style=3D"color: #0=
+00000;"> registry.getBeanDefinition(AUTO_PROXY_CREATOR_BEAN_NAME);
+            </span><span style=3D"color: #0000ff;">if</span> (!<span style=
+=3D"color: #000000;">cls.getName().equals(apcDefinition.getBeanClassName())=
+) {
+                </span><span style=3D"color: #0000ff;">int</span> currentPr=
+iority =3D<span style=3D"color: #000000;"> findPriorityForClass(apcDefiniti=
+on.getBeanClassName());
+                </span><span style=3D"color: #0000ff;">int</span> requiredP=
+riority =3D<span style=3D"color: #000000;"> findPriorityForClass(cls);
+                </span><span style=3D"color: #0000ff;">if</span> (currentPr=
+iority &lt;<span style=3D"color: #000000;"> requiredPriority) {
+                    apcDefinition.setBeanClassName(cls.getName());
+                }
+            }
+            </span><span style=3D"color: #0000ff;">return</span> <span styl=
+e=3D"color: #0000ff;">null</span><span style=3D"color: #000000;">;
+        }
+        RootBeanDefinition beanDefinition </span>=3D <span style=3D"color: =
+#0000ff;">new</span><span style=3D"color: #000000;"> RootBeanDefinition(cls=
+);
+        beanDefinition.setSource(source);
+        beanDefinition.getPropertyValues().add(</span>"order"<span style=3D=
+"color: #000000;">, Ordered.HIGHEST_PRECEDENCE);
+        beanDefinition.setRole(BeanDefinition.ROLE_INFRASTRUCTURE);
+        registry.registerBeanDefinition(AUTO_PROXY_CREATOR_BEAN_NAME, beanD=
+efinition);
+        </span><span style=3D"color: #0000ff;">return</span><span style=3D"=
+color: #000000;"> beanDefinition;
+    }</span></pre>
+<div class=3D"cnblogs_code_toolbar"><span class=3D"cnblogs_code_copy"><a hr=
+ef=3D"javascript:void(0);" onclick=3D"copyCnblogsCode(this)" title=3D"=E5=
+=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"><img src=3D"http://common.cnblogs.com/im=
+ages/copycode.gif" alt=3D"=E5=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"></a></span>=
+</div></div>
+<p>=E5=BE=88=E6=98=BE=E7=84=B6=EF=BC=8CAOP=E7=9A=84=E4=B8=89=E7=A7=8D=E6=96=
+=B9=E5=BC=8F=E9=85=8D=E7=BD=AE=EF=BC=8C=E6=97=A0=E8=AE=BA=E5=A6=82=E6=9E=9C=
+=E6=98=AF=E6=9C=80=E5=90=8E=E5=9C=A8bean factory=E4=B8=AD=E6=98=AF=E5=8F=AA=
+=E8=83=BD=E5=AD=98=E5=9C=A8=E4=B8=80=E4=B8=AA<span style=3D"color: #000000;=
+">AUTO_PROXY_CREATOR_BEAN</span>=E7=9A=84=EF=BC=8C=E5=AE=83=E7=9A=84name=E6=
+=88=96=E8=80=85=E8=AF=B4id=E5=B0=B1=E6=98=AF=EF=BC=9A</p>
+<div class=3D"cnblogs_code">
+<pre>    <span style=3D"color: #008000;">/**</span><span style=3D"color: #0=
+08000;">
+     * The bean name of the internally managed auto-proxy creator.
+     </span><span style=3D"color: #008000;">*/</span>
+    <span style=3D"color: #0000ff;">public</span> <span style=3D"color: #00=
+00ff;">static</span> <span style=3D"color: #0000ff;">final</span> String AU=
+TO_PROXY_CREATOR_BEAN_NAME =3D "org.springframework.aop.config.internalAuto=
+ProxyCreator";</pre>
+</div>
+<p>=E4=BD=86=E6=98=AF=EF=BC=8C=E5=A6=82=E6=9E=9C=E5=9C=A8=E5=A4=9A=E4=B8=AA=
+=E9=85=8D=E7=BD=AE=E6=96=87=E4=BB=B6=E4=B8=AD=EF=BC=8C=E6=B7=B7=E7=94=A8=E4=
+=BA=86=E4=B8=8A=E9=9D=A2=E6=89=80=E8=AF=B4=E7=9A=84AOP=E7=9A=84=E4=B8=89=E7=
+=A7=8D=E9=85=8D=E7=BD=AE=E6=96=B9=E6=B3=95=EF=BC=8C=E9=82=A3=E4=B9=88=E5=B0=
+=B1=E6=9C=89=E5=8F=AF=E8=83=BD=E4=BA=A7=E7=94=9F=E6=B7=B7=E4=B9=B1=EF=BC=8C=
+=E4=BA=A7=E7=94=9F=E9=94=99=E8=AF=AF=EF=BC=8C=E6=AF=94=E5=A6=82=E4=B8=8B=E9=
+=9D=A2=E7=9A=84=E5=87=A0=E4=B8=AA=E9=85=8D=E7=BD=AE=E5=B0=B1=E4=BC=9A=E6=8A=
+=A5=E9=94=99=EF=BC=9A</p>
+<p>1&gt;</p>
+<div class=3D"cnblogs_code"><div class=3D"cnblogs_code_toolbar"><span class=
+=3D"cnblogs_code_copy"><a href=3D"javascript:void(0);" onclick=3D"copyCnblo=
+gsCode(this)" title=3D"=E5=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"><img src=3D"ht=
+tp://common.cnblogs.com/images/copycode.gif" alt=3D"=E5=A4=8D=E5=88=B6=E4=
+=BB=A3=E7=A0=81"></a></span></div>
+<pre>  <span style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #80=
+0000;">aop:config </span><span style=3D"color: #0000ff;">/&gt;</span>=20
+   =20
+  <span style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #800000;=
+">bean </span><span style=3D"color: #ff0000;">id</span><span style=3D"color=
+: #0000ff;">=3D"lifecycleBeanPostProcessor"</span><span style=3D"color: #ff=
+0000;"> class</span><span style=3D"color: #0000ff;">=3D"org.apache.shiro.sp=
+ring.LifecycleBeanPostProcessor"</span><span style=3D"color: #0000ff;">/&gt=
+;</span>
+  <span style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #800000;=
+">bean </span><span style=3D"color: #ff0000;">class</span><span style=3D"co=
+lor: #0000ff;">=3D"org.springframework.aop.framework.autoproxy.DefaultAdvis=
+orAutoProxyCreator"</span><span style=3D"color: #ff0000;"> depends-on</span=
+><span style=3D"color: #0000ff;">=3D"lifecycleBeanPostProcessor"</span> <sp=
+an style=3D"color: #0000ff;">/&gt;</span>
+  <span style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #800000;=
+">bean </span><span style=3D"color: #ff0000;">class</span><span style=3D"co=
+lor: #0000ff;">=3D"org.apache.shiro.spring.security.interceptor.Authorizati=
+onAttributeSourceAdvisor"</span><span style=3D"color: #0000ff;">&gt;</span>
+      <span style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #800=
+000;">property </span><span style=3D"color: #ff0000;">name</span><span styl=
+e=3D"color: #0000ff;">=3D"securityManager"</span><span style=3D"color: #ff0=
+000;"> ref</span><span style=3D"color: #0000ff;">=3D"securityManager"</span=
+><span style=3D"color: #0000ff;">/&gt;</span>
+  <span style=3D"color: #0000ff;">&lt;/</span><span style=3D"color: #800000=
+;">bean</span><span style=3D"color: #0000ff;">&gt;</span></pre>
+<div class=3D"cnblogs_code_toolbar"><span class=3D"cnblogs_code_copy"><a hr=
+ef=3D"javascript:void(0);" onclick=3D"copyCnblogsCode(this)" title=3D"=E5=
+=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"><img src=3D"http://common.cnblogs.com/im=
+ages/copycode.gif" alt=3D"=E5=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"></a></span>=
+</div></div>
+<p>=E4=B8=8A=E9=9D=A2=E9=87=87=E7=94=A8=E4=BA=86 <span style=3D"color: #000=
+0ff;">&lt;<span style=3D"color: #800000;">aop:config <span style=3D"color: =
+#0000ff;">/&gt; <span style=3D"color: #000000;">=E6=9D=A5=E9=85=8D=E7=BD=AE=
+ <span style=3D"color: #000000;">AUTO_PROXY_CREATOR_BEAN</span>=EF=BC=8C=E8=
+=80=8C=E4=B8=8B=E9=9D=A2=E6=9C=89=E9=87=87=E7=94=A8=E4=BA=86<span style=3D"=
+color: #000000;"><span style=3D"color: #000000;"><span style=3D"color: #000=
+000;"><span style=3D"color: #000000;"><span style=3D"color: #000000;"><span=
+ style=3D"color: #000000;"><span style=3D"color: #000000;"><span style=3D"c=
+olor: #000000;"><span style=3D"color: #000000;"><span style=3D"color: #0000=
+00;"><span style=3D"color: #000000;"><span style=3D"color: #000000;">Defaul=
+tAdvisorAutoProxyCreator</span></span></span></span></span></span></span></=
+span></span></span></span></span>=E6=9D=A5=E9=85=8D=E7=BD=AE<span style=3D"=
+color: #0000ff;"><span style=3D"color: #800000;"><span style=3D"color: #000=
+0ff;"><span style=3D"color: #000000;"><span style=3D"color: #000000;">AUTO_=
+PROXY_CREATOR_BEAN</span></span></span></span></span>=EF=BC=8C=E5=8F=91=E5=
+=B8=83=E6=97=B6=E6=B2=A1=E6=9C=89=E6=8A=A5=E9=94=99=EF=BC=8C=E4=BD=86=E6=98=
+=AF=E8=BF=90=E8=A1=8C=E6=97=B6=E6=9C=80=E7=BB=88=E6=8A=A5=E9=94=99=EF=BC=9A=
+</span></span></span></span></p>
+<div class=3D"cnblogs_code">
+<pre><span style=3D"color: #000000;">java.lang.IllegalStateException: The m=
+apped controller method class 'com.xx.controller.xxController' is not an in=
+stance of the<br>actual controller bean instance 'com.sun.proxy.$Proxy45'. =
+If the controller requires proxying (e.g. due to @Transactional),<br>please=
+ use class-based proxying.<br>HandlerMethod details: <br>Controller [com.su=
+n.proxy.$Proxy45]<br>Method [public void com.xx.controller.xxController.xxo=
+(xxx)]<br></span></pre>
+</div>
+<p>2&gt;</p>
+<p>=E5=A6=82=E6=9E=9C=E5=B0=86=E4=B8=8A=E9=9D=A2=E7=9A=84 <span style=3D"co=
+lor: #0000ff;">&lt;<span style=3D"color: #800000;">aop:config <span style=
+=3D"color: #0000ff;">/&gt;&nbsp; </span></span></span>=E6=94=B9=E6=88=90 <s=
+pan style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #0000ff;"><s=
+pan style=3D"color: #800000;">aop:config</span></span> <span style=3D"color=
+: #800000;">proxy-target-class=3D"true"</span> <span style=3D"color: #0000f=
+f;">/&gt;&nbsp;</span> =E4=B9=9F=E6=98=AF=E4=B8=80=E6=A0=B7=E6=8A=A5=E7=9B=
+=B8=E5=90=8C=E7=9A=84=E9=94=99=E8=AF=AF=E3=80=82</p>
+<p>3&gt;</p>
+<p>=E4=BD=86=E6=98=AF=E5=A6=82=E6=9E=9C=E5=B0=86=E4=B8=8A=E9=9D=A2=E7=9A=84=
+<span style=3D"color: #0000ff;"><span style=3D"color: #800000;"><span style=
+=3D"color: #0000ff;"><span style=3D"color: #000000;"><span style=3D"color: =
+#000000;"><span style=3D"color: #000000;"><span style=3D"color: #000000;"><=
+span style=3D"color: #000000;"><span style=3D"color: #000000;"><span style=
+=3D"color: #000000;"><span style=3D"color: #000000;"><span style=3D"color: =
+#000000;"><span style=3D"color: #000000;"><span style=3D"color: #000000;"><=
+span style=3D"color: #000000;"><span style=3D"color: #000000;">DefaultAdvis=
+orAutoProxyCreator</span></span></span></span></span></span></span></span><=
+/span></span></span></span></span></span></span></span>=E4=BF=AE=E6=94=B9=
+=E6=88=90=E4=B8=8B=E9=9D=A2=E8=BF=99=E6=A0=B7=EF=BC=8C=E4=B8=8D=E7=AE=A1=E6=
+=98=AF <span style=3D"color: #0000ff;">&lt;<span style=3D"color: #800000;">=
+aop:config <span style=3D"color: #0000ff;">/&gt;&nbsp; =E8=BF=98=E6=98=AF <=
+span style=3D"color: #0000ff;">&lt;<span style=3D"color: #0000ff;"><span st=
+yle=3D"color: #800000;">aop:config <span style=3D"color: #800000;">proxy-ta=
+rget-class=3D"true" <span style=3D"color: #0000ff;">/&gt; =E5=8D=B4=E9=83=
+=BD=E6=98=AF=E5=8F=AF=E4=BB=A5=E7=9A=84=E3=80=82<br></span></span></span></=
+span></span></span></span></span></p>
+<div class=3D"cnblogs_code">
+<pre>   <span style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #8=
+00000;">bean </span><span style=3D"color: #ff0000;">class</span><span style=
+=3D"color: #0000ff;">=3D"org.springframework.aop.framework.autoproxy.Defaul=
+tAdvisorAutoProxyCreator"</span><span style=3D"color: #ff0000;"> depends-on=
+</span><span style=3D"color: #0000ff;">=3D"lifecycleBeanPostProcessor"</spa=
+n><span style=3D"color: #0000ff;">&gt;</span>
+       <span style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #80=
+0000;">property </span><span style=3D"color: #ff0000;">name</span><span sty=
+le=3D"color: #0000ff;">=3D"proxyTargetClass"</span><span style=3D"color: #f=
+f0000;"> value</span><span style=3D"color: #0000ff;">=3D"true"</span><span =
+style=3D"color: #0000ff;">/&gt;</span>
+   <span style=3D"color: #0000ff;">&lt;/</span><span style=3D"color: #80000=
+0;">bean</span><span style=3D"color: #0000ff;">&gt;</span></pre>
+</div>
+<p>4&gt;</p>
+<p>=E5=B0=86 &lt;aop:aspectj-autoproxy /&gt; =E4=B8=8E <span style=3D"color=
+: #0000ff;"><span style=3D"color: #800000;"><span style=3D"color: #0000ff;"=
+><span style=3D"color: #000000;"><span style=3D"color: #000000;"><span styl=
+e=3D"color: #000000;"><span style=3D"color: #000000;"><span style=3D"color:=
+ #000000;"><span style=3D"color: #000000;"><span style=3D"color: #000000;">=
+<span style=3D"color: #000000;"><span style=3D"color: #000000;"><span style=
+=3D"color: #000000;"><span style=3D"color: #000000;"><span style=3D"color: =
+#000000;"><span style=3D"color: #000000;">DefaultAdvisorAutoProxyCreator</s=
+pan></span></span></span></span></span></span></span></span></span></span><=
+/span></span></span></span></span> =E9=85=8D=E7=BD=AE=E5=9C=A8=E4=B8=80=E8=
+=B5=B7=EF=BC=8C=E5=93=AA=E6=80=95=E6=98=AF=E9=80=9A=E8=BF=87&lt;import reso=
+urce=3D"" /&gt; =E6=94=BE=E5=9C=A8=E4=B8=80=E8=B5=B7=EF=BC=8C=E9=83=BD=E4=
+=BC=9A=E6=8A=A5=E9=94=99=E3=80=82</p>
+<div class=3D"cnblogs_code"><div class=3D"cnblogs_code_toolbar"><span class=
+=3D"cnblogs_code_copy"><a href=3D"javascript:void(0);" onclick=3D"copyCnblo=
+gsCode(this)" title=3D"=E5=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"><img src=3D"ht=
+tp://common.cnblogs.com/images/copycode.gif" alt=3D"=E5=A4=8D=E5=88=B6=E4=
+=BB=A3=E7=A0=81"></a></span></div>
+<pre>    <span style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #=
+800000;">aop:aspectj-autoproxy </span><span style=3D"color: #ff0000;">expos=
+e-proxy</span><span style=3D"color: #0000ff;">=3D"true"</span><span style=
+=3D"color: #0000ff;">/&gt;</span>=20
+    <span style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #80000=
+0;">import </span><span style=3D"color: #ff0000;">resource</span><span styl=
+e=3D"color: #0000ff;">=3D"../shiro/spring-shiro.xml"</span><span style=3D"c=
+olor: #0000ff;">/&gt;</span> =20
+
+    <span style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #80000=
+0;">bean </span><span style=3D"color: #ff0000;">class</span><span style=3D"=
+color: #0000ff;">=3D"org.apache.shiro.spring.security.interceptor.Authoriza=
+tionAttributeSourceAdvisor"</span><span style=3D"color: #0000ff;">&gt;</spa=
+n>
+        <span style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #8=
+00000;">property </span><span style=3D"color: #ff0000;">name</span><span st=
+yle=3D"color: #0000ff;">=3D"securityManager"</span><span style=3D"color: #f=
+f0000;"> ref</span><span style=3D"color: #0000ff;">=3D"securityManager"</sp=
+an><span style=3D"color: #0000ff;">/&gt;</span>
+    <span style=3D"color: #0000ff;">&lt;/</span><span style=3D"color: #8000=
+00;">bean</span><span style=3D"color: #0000ff;">&gt;</span>   =20
+    <span style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #80000=
+0;">bean </span><span style=3D"color: #ff0000;">id</span><span style=3D"col=
+or: #0000ff;">=3D"lifecycleBeanPostProcessor"</span><span style=3D"color: #=
+ff0000;"> class</span><span style=3D"color: #0000ff;">=3D"org.apache.shiro.=
+spring.LifecycleBeanPostProcessor"</span><span style=3D"color: #0000ff;">/&=
+gt;</span>
+    <span style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #80000=
+0;">bean </span><span style=3D"color: #ff0000;">class</span><span style=3D"=
+color: #0000ff;">=3D"org.springframework.aop.framework.autoproxy.DefaultAdv=
+isorAutoProxyCreator"</span><span style=3D"color: #ff0000;"> depends-on</sp=
+an><span style=3D"color: #0000ff;">=3D"lifecycleBeanPostProcessor"</span><s=
+pan style=3D"color: #0000ff;">&gt;</span>
+        <span style=3D"color: #0000ff;">&lt;</span><span style=3D"color: #8=
+00000;">property </span><span style=3D"color: #ff0000;">name</span><span st=
+yle=3D"color: #0000ff;">=3D"proxyTargetClass"</span><span style=3D"color: #=
+ff0000;"> value</span><span style=3D"color: #0000ff;">=3D"true"</span><span=
+ style=3D"color: #0000ff;">/&gt;</span>
+    <span style=3D"color: #0000ff;">&lt;/</span><span style=3D"color: #8000=
+00;">bean</span><span style=3D"color: #0000ff;">&gt;</span></pre>
+<div class=3D"cnblogs_code_toolbar"><span class=3D"cnblogs_code_copy"><a hr=
+ef=3D"javascript:void(0);" onclick=3D"copyCnblogsCode(this)" title=3D"=E5=
+=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"><img src=3D"http://common.cnblogs.com/im=
+ages/copycode.gif" alt=3D"=E5=A4=8D=E5=88=B6=E4=BB=A3=E7=A0=81"></a></span>=
+</div></div>
+<p>=E6=8A=A5=E9=94=99=E4=BF=A1=E6=81=AF=EF=BC=9A</p>
+<div class=3D"cnblogs_code">
+<pre><span style=3D"color: #000000;">2015-07-06 17:50:02,270 WARN [org.spri=
+ngframework.beans.factory.support.DefaultListableBeanFactory] - <br>Bean cr=
+eation exception on FactoryBean type check: org.springframework.beans.facto=
+ry.BeanCurrentlyInCreationException: <br>Error creating bean with name 'shi=
+roFilter': Requested bean is currently in creation: Is there an unresolvabl=
+e circular reference?
+</span></pre>
+</div>
+<p>=E8=80=8C=E5=B0=86&lt;aop:aspectj-autoproxy /&gt; =E4=B8=8E <span style=
+=3D"color: #0000ff;"><span style=3D"color: #800000;"><span style=3D"color: =
+#0000ff;"><span style=3D"color: #000000;"><span style=3D"color: #000000;"><=
+span style=3D"color: #000000;"><span style=3D"color: #000000;"><span style=
+=3D"color: #000000;"><span style=3D"color: #000000;"><span style=3D"color: =
+#000000;"><span style=3D"color: #000000;"><span style=3D"color: #000000;"><=
+span style=3D"color: #000000;"><span style=3D"color: #000000;"><span style=
+=3D"color: #000000;"><span style=3D"color: #000000;">DefaultAdvisorAutoProx=
+yCreator </span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span>=E5=88=86=E5=BC=80=E9=85=8D=
+=E7=BD=AE=E5=9C=A8=E4=B8=8D=E5=90=8Cxml=E6=96=87=E4=BB=B6=E4=B8=AD=EF=BC=8C=
+=E5=88=99=E4=B8=8D=E5=AD=98=E5=9C=A8=E8=AF=A5=E9=97=AE=E9=A2=98=E3=80=82</p=
+>
+<p><span style=3D"color: #800000;"><strong>=E6=80=BB=E7=BB=93</strong></spa=
+n>=EF=BC=9A</p>
+<p>1. Spring AOP=E6=9C=89<span style=3D"color: #800000;">=E4=B8=89=E7=A7=8D=
+=E9=85=8D=E7=BD=AE=E6=96=B9=E5=BC=8F=EF=BC=8C&lt;aop:config /&gt;=EF=BC=8C&=
+lt;aop:aspectj-autoproxy /&gt;, </span><span style=3D"color: #0000ff;"><spa=
+n style=3D"color: #800000;"><span style=3D"color: #0000ff;"><span style=3D"=
+color: #000000;"><span style=3D"color: #000000;"><span style=3D"color: #000=
+000;"><span style=3D"color: #000000;"><span style=3D"color: #000000;"><span=
+ style=3D"color: #000000;"><span style=3D"color: #000000;"><span style=3D"c=
+olor: #000000;"><span style=3D"color: #000000;"><span style=3D"color: #0000=
+00;"><span style=3D"color: #000000;"><span style=3D"color: #000000;"><span =
+style=3D"color: #000000;"><span style=3D"color: #800000;">DefaultAdvisorAut=
+oProxyCreator</span>. =E5=A6=82=E6=9E=9C=E5=9C=A8=E4=B8=80=E4=B8=AA=E6=96=
+=87=E4=BB=B6=E4=B8=AD=E8=BF=9B=E8=A1=8C=E6=B7=B7=E7=94=A8=EF=BC=8C=E9=82=A3=
+=E4=B9=88=E5=B0=B1=E5=8F=AF=E8=83=BD=E4=BC=9A=E4=BA=A7=E7=94=9F=E9=94=99=E8=
+=AF=AF=E3=80=82=E6=9C=80=E5=A5=BD=E5=9C=A8=E5=90=8C=E4=B8=80=E4=B8=AA=E6=96=
+=87=E4=BB=B6=E4=B8=AD=E5=8F=AA=E9=87=87=E7=94=A8=E4=B8=80=E7=A7=8D=E9=85=8D=
+=E7=BD=AE=E6=96=B9=E5=BC=8F=EF=BC=8C<strong>=E6=8E=A8=E8=8D=90=E4=BD=BF=E7=
+=94=A8 &lt;aop:config /&gt; =E5=92=8C &lt;aop:aspectj-autoproxy /&gt;</stro=
+ng>=EF=BC=8C=E6=B7=98=E6=B1=B0<span style=3D"color: #0000ff;"><span style=
+=3D"color: #800000;"><span style=3D"color: #0000ff;"><span style=3D"color: =
+#000000;"><span style=3D"color: #000000;"><span style=3D"color: #000000;"><=
+span style=3D"color: #000000;"><span style=3D"color: #000000;"><span style=
+=3D"color: #000000;"><span style=3D"color: #000000;"><span style=3D"color: =
+#000000;"><span style=3D"color: #000000;"><span style=3D"color: #000000;"><=
+span style=3D"color: #000000;"><span style=3D"color: #000000;"><span style=
+=3D"color: #000000;">DefaultAdvisorAutoProxyCreator</span></span></span></s=
+pan></span></span></span></span></span></span></span></span></span></span><=
+/span></span>=E7=9A=84=E9=85=8D=E7=BD=AE=E6=96=B9=E5=BC=8F=E3=80=82</span><=
+/span></span></span></span></span></span></span></span></span></span></span=
+></span></span></span></span></p>
+<p><span style=3D"color: #0000ff;"><span style=3D"color: #800000;"><span st=
+yle=3D"color: #0000ff;"><span style=3D"color: #000000;"><span style=3D"colo=
+r: #000000;"><span style=3D"color: #000000;"><span style=3D"color: #000000;=
+"><span style=3D"color: #000000;"><span style=3D"color: #000000;"><span sty=
+le=3D"color: #000000;"><span style=3D"color: #000000;"><span style=3D"color=
+: #000000;"><span style=3D"color: #000000;"><span style=3D"color: #000000;"=
+><span style=3D"color: #000000;"><span style=3D"color: #000000;">2. Spring=
+=E7=9A=84=E6=9C=89=E5=BE=88=E5=A4=9A=E9=85=8D=E7=BD=AE=E9=83=BD=E6=98=AF=E5=
+=8F=AA=E5=9C=A8=E6=96=87=E4=BB=B6=E7=BA=A7=E8=B5=B7=E4=BD=9C=E7=94=A8=E7=9A=
+=84=E3=80=82</span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></p>
+<p><span style=3D"color: #0000ff;"><span style=3D"color: #800000;"><span st=
+yle=3D"color: #0000ff;"><span style=3D"color: #000000;"><span style=3D"colo=
+r: #000000;"><span style=3D"color: #000000;"><span style=3D"color: #000000;=
+"><span style=3D"color: #000000;"><span style=3D"color: #000000;"><span sty=
+le=3D"color: #000000;"><span style=3D"color: #000000;"><span style=3D"color=
+: #000000;"><span style=3D"color: #000000;"><span style=3D"color: #000000;"=
+><span style=3D"color: #000000;"><span style=3D"color: #000000;">ps: </span=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></p>
+<p><span style=3D"color: #0000ff;"><span style=3D"color: #800000;"><span st=
+yle=3D"color: #0000ff;"><span style=3D"color: #000000;"><span style=3D"colo=
+r: #000000;"><span style=3D"color: #000000;"><span style=3D"color: #000000;=
+"><span style=3D"color: #000000;"><span style=3D"color: #000000;"><span sty=
+le=3D"color: #000000;"><span style=3D"color: #000000;"><span style=3D"color=
+: #000000;"><span style=3D"color: #000000;"><span style=3D"color: #000000;"=
+><span style=3D"color: #000000;"><span style=3D"color: #000000;">=E5=9C=A8i=
+teye=E6=89=BE=E5=88=B0=E4=B8=80=E7=AF=87=E7=B1=BB=E4=BC=BC=E6=96=87=E7=AB=
+=A0 http://jinnianshilongnian.iteye.com/blog/1894465</span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></p>
+<p>&nbsp;</p></div><div id=3D"MySignature"></div>
+<div class=3D"clear"></div>
+<div id=3D"blog_post_info_block">
+<div id=3D"BlogPostCategory">=E5=88=86=E7=B1=BB: <a href=3D"http://www.cnbl=
+ogs.com/digdeep/category/683618.html" target=3D"_blank">Java-spring/springm=
+vc</a></div>
+<div id=3D"EntryTag"></div>
+<div id=3D"blog_post_info"><div id=3D"green_channel">
+        <a href=3D"javascript:void(0);" id=3D"green_channel_digg" onclick=
+=3D"DiggIt(4624998,cb_blogId,1);green_channel_success(this,'=E8=B0=A2=E8=B0=
+=A2=E6=8E=A8=E8=8D=90=EF=BC=81');">=E5=A5=BD=E6=96=87=E8=A6=81=E9=A1=B6</a>
+            <a id=3D"green_channel_follow" onclick=3D"follow('03c9a2db-e87a=
+-e411-b908-9dcfd8948a71');" href=3D"javascript:void(0);">=E5=85=B3=E6=B3=A8=
+=E6=88=91</a>
+    <a id=3D"green_channel_favorite" onclick=3D"AddToWz(cb_entryId);return =
+false;" href=3D"javascript:void(0);">=E6=94=B6=E8=97=8F=E8=AF=A5=E6=96=87</=
+a>
+    <a id=3D"green_channel_weibo" href=3D"javascript:void(0);" title=3D"=E5=
+=88=86=E4=BA=AB=E8=87=B3=E6=96=B0=E6=B5=AA=E5=BE=AE=E5=8D=9A" onclick=3D"Sh=
+areToTsina()"><img src=3D"http://common.cnblogs.com/images/icon_weibo_24.pn=
+g" alt=3D""></a>
+    <a id=3D"green_channel_wechat" href=3D"javascript:void(0);" title=3D"=
+=E5=88=86=E4=BA=AB=E8=87=B3=E5=BE=AE=E4=BF=A1" onclick=3D"shareOnWechat()">=
+<img src=3D"http://common.cnblogs.com/images/wechat.png" alt=3D""></a>
+</div>
+<div id=3D"author_profile">
+    <div id=3D"author_profile_info" class=3D"author_profile_info">
+            <a href=3D"http://home.cnblogs.com/u/digdeep/" target=3D"_blank=
+"><img src=3D"http://pic.cnblogs.com/face/sample_face.gif" class=3D"author_=
+avatar" alt=3D""></a>
+        <div id=3D"author_profile_detail" class=3D"author_profile_info">
+            <a href=3D"http://home.cnblogs.com/u/digdeep/">digdeep</a><br>
+            <a href=3D"http://home.cnblogs.com/u/digdeep/followees">=E5=85=
+=B3=E6=B3=A8 - 42</a><br>
+            <a href=3D"http://home.cnblogs.com/u/digdeep/followers">=E7=B2=
+=89=E4=B8=9D - 78</a>
+        </div>
+    </div>
+    <div class=3D"clear"></div>
+    <div id=3D"author_profile_honor"></div>
+    <div id=3D"author_profile_follow">
+                <a href=3D"javascript:void(0);" onclick=3D"follow('03c9a2db=
+-e87a-e411-b908-9dcfd8948a71');return false;">+=E5=8A=A0=E5=85=B3=E6=B3=A8<=
+/a>
+    </div>
+</div>
+<div id=3D"div_digg">
+    <div class=3D"diggit" onclick=3D"votePost(4624998,'Digg')">
+        <span class=3D"diggnum" id=3D"digg_count">0</span>
+    </div>
+    <div class=3D"buryit" onclick=3D"votePost(4624998,'Bury')">
+        <span class=3D"burynum" id=3D"bury_count">0</span>
+    </div>
+    <div class=3D"clear"></div>
+    <div class=3D"diggword" id=3D"digg_tips">
+    </div>
+</div>
+</div>
+<div class=3D"clear"></div>
+<div id=3D"post_next_prev"><a href=3D"http://www.cnblogs.com/digdeep/p/4620=
+471.html" class=3D"p_n_p_prefix">=C2=AB </a> =E4=B8=8A=E4=B8=80=E7=AF=87=EF=
+=BC=9A<a href=3D"http://www.cnblogs.com/digdeep/p/4620471.html" title=3D"=
+=E5=8F=91=E5=B8=83=E4=BA=8E2015-07-04 18:23">Java =E6=9D=83=E9=99=90=E6=A1=
+=86=E6=9E=B6 Shiro =E5=AE=9E=E6=88=98=E4=BA=8C=EF=BC=9A=E4=B8=8Espring=E9=
+=9B=86=E6=88=90=E3=80=81filter=E6=9C=BA=E5=88=B6</a><br><a href=3D"http://w=
+ww.cnblogs.com/digdeep/p/4627813.html" class=3D"p_n_p_prefix">=C2=BB </a> =
+=E4=B8=8B=E4=B8=80=E7=AF=87=EF=BC=9A<a href=3D"http://www.cnblogs.com/digde=
+ep/p/4627813.html" title=3D"=E5=8F=91=E5=B8=83=E4=BA=8E2015-07-07 18:18">=
+=E5=8A=A0=E5=AF=86=E8=A7=A3=E5=AF=86=E5=9F=BA=E7=A1=80=E9=97=AE=E9=A2=98=EF=
+=BC=9A=E5=AD=97=E8=8A=82=E6=95=B0=E7=BB=84=E5=92=8C(16=E8=BF=9B=E5=88=B6)=
+=E5=AD=97=E7=AC=A6=E4=B8=B2=E7=9A=84=E7=9B=B8=E4=BA=92=E8=BD=AC=E6=8D=A2</a=
+><br></div>
+</div>
+
+
+	</div>
+=09
+	<div class=3D"postfoot">
+		posted on <span id=3D"post-date">2015-07-06 17:59</span> <a href=3D"http:=
+//www.cnblogs.com/digdeep/">digdeep</a> =E9=98=85=E8=AF=BB(<span id=3D"post=
+_view_count">1292</span>) =E8=AF=84=E8=AE=BA(<span id=3D"post_comment_count=
+">0</span>)  <a href=3D"https://i.cnblogs.com/EditPosts.aspx?postid=3D46249=
+98" rel=3D"nofollow">=E7=BC=96=E8=BE=91</a> <a href=3D"http://www.cnblogs.c=
+om/digdeep/p/4624998.html#" onclick=3D"AddToWz(4624998);return false;">=E6=
+=94=B6=E8=97=8F</a>
+	</div>
+</div>
+
+
+</div><a name=3D"!comments"></a><div id=3D"blog-comments-placeholder"></div=
+>
+<div id=3D"comment_form" class=3D"commentform">
+<a name=3D"commentform"></a>
+<div id=3D"divCommentShow"></div>
+<div id=3D"comment_nav"><span id=3D"span_refresh_tips"></span><a href=3D"ja=
+vascript:void(0);" onclick=3D"return RefreshCommentList();" id=3D"lnk_Refre=
+shComments" runat=3D"server" clientidmode=3D"Static">=E5=88=B7=E6=96=B0=E8=
+=AF=84=E8=AE=BA</a><a href=3D"http://www.cnblogs.com/digdeep/p/4624998.html=
+#" onclick=3D"return RefreshPage();">=E5=88=B7=E6=96=B0=E9=A1=B5=E9=9D=A2</=
+a><a href=3D"http://www.cnblogs.com/digdeep/p/4624998.html#top">=E8=BF=94=
+=E5=9B=9E=E9=A1=B6=E9=83=A8</a></div>
+<div id=3D"comment_form_container"><div class=3D"login_tips">=E6=B3=A8=E5=
+=86=8C=E7=94=A8=E6=88=B7=E7=99=BB=E5=BD=95=E5=90=8E=E6=89=8D=E8=83=BD=E5=8F=
+=91=E8=A1=A8=E8=AF=84=E8=AE=BA=EF=BC=8C=E8=AF=B7 <a rel=3D"nofollow" href=
+=3D"javascript:void(0);" class=3D"underline" onclick=3D"return login('comme=
+ntform');">=E7=99=BB=E5=BD=95</a> =E6=88=96 <a rel=3D"nofollow" href=3D"jav=
+ascript:void(0);" class=3D"underline" onclick=3D"return register();">=E6=B3=
+=A8=E5=86=8C</a>=EF=BC=8C<a href=3D"http://www.cnblogs.com/">=E8=AE=BF=E9=
+=97=AE</a>=E7=BD=91=E7=AB=99=E9=A6=96=E9=A1=B5=E3=80=82</div></div>
+<div class=3D"ad_text_commentbox" id=3D"ad_text_under_commentbox"></div>
+<div id=3D"ad_t2"></div>
+<div id=3D"opt_under_post"></div>
+<div id=3D"ad_c1" class=3D"c_ad_block"></div>
+<div id=3D"under_post_news"><div class=3D"itnews c_ad_block"><b>=E6=9C=80=
+=E6=96=B0IT=E6=96=B0=E9=97=BB</b>:<br> =C2=B7  <a href=3D"http://news.cnblo=
+gs.com/n/555135/" target=3D"_blank">=E4=BB=8E=E4=B8=9A23=E5=B9=B4=E8=80=81=
+=E5=8F=B8=E6=9C=BA=E7=BB=99=E6=96=B0=E6=89=8B=E5=BC=80=E5=8F=91=E8=80=85=E7=
+=9A=84=E4=BA=94=E4=B8=AA=E5=BB=BA=E8=AE=AE</a><br> =C2=B7  <a href=3D"http:=
+//news.cnblogs.com/n/555134/" target=3D"_blank">=E8=B6=85=E7=BA=A7=E9=AB=98=
+=E9=93=81=E5=85=AC=E5=8F=B8=E5=86=8D=E8=8E=B75=E5=8D=83=E4=B8=87=E7=BE=8E=
+=E5=85=83=E8=9E=8D=E8=B5=84 =E6=98=8E=E5=B9=B4=E5=BC=80=E5=B1=95=E5=85=A8=
+=E9=9D=A2=E6=B5=8B=E8=AF=95</a><br> =C2=B7  <a href=3D"http://news.cnblogs.=
+com/n/555133/" target=3D"_blank">=E5=BE=AE=E8=BD=AF=E5=8F=91=E5=B8=83=E9=A6=
+=96=E4=B8=AAiMessage=E5=BA=94=E7=94=A8Halo Stickers</a><br> =C2=B7  <a href=
+=3D"http://news.cnblogs.com/n/555132/" target=3D"_blank">=E8=AF=BA=E5=9F=BA=
+=E4=BA=9A=E7=8C=9B=E8=BF=BD=E5=8D=8E=E4=B8=BA=EF=BC=81=E6=9C=80=E6=96=B05G=
+=E7=BD=91=E9=80=9F=E5=AE=9E=E6=B5=8B5Gbps=EF=BC=9A=E5=BC=806=E8=B7=AF4K</a>=
+<br> =C2=B7  <a href=3D"http://news.cnblogs.com/n/555131/" target=3D"_blank=
+">NASA=E6=B5=8B=E8=AF=95=E6=A6=82=E5=BF=B5=E9=A3=9E=E6=9C=BA=EF=BC=9A=E6=9C=
+=BA=E7=BF=BC=E8=9E=8D=E5=85=A5=E6=9C=BA=E8=BA=AB 10=E5=B9=B4=E5=86=85=E6=88=
+=96=E4=B8=8A=E5=A4=A9</a><br>=C2=BB <a href=3D"http://news.cnblogs.com/" ti=
+tle=3D"IT=E6=96=B0=E9=97=BB" target=3D"_blank">=E6=9B=B4=E5=A4=9A=E6=96=B0=
+=E9=97=BB...</a></div></div>
+<div id=3D"ad_c2" class=3D"c_ad_block"></div>
+<div id=3D"under_post_kb"><div class=3D"itnews c_ad_block" id=3D"kb_block">=
+<b>=E6=9C=80=E6=96=B0=E7=9F=A5=E8=AF=86=E5=BA=93=E6=96=87=E7=AB=A0</b>:<br>=
+<div id=3D"kb_recent"> =C2=B7  <a href=3D"http://kb.cnblogs.com/page/553682=
+/" target=3D"_blank">=E9=99=88=E7=9A=93=EF=BC=9A=E4=BB=80=E4=B9=88=E6=98=AF=
+=E5=B7=A5=E7=A8=8B=E5=B8=88=E6=96=87=E5=8C=96=EF=BC=9F</a><br> =C2=B7  <a h=
+ref=3D"http://kb.cnblogs.com/page/551422/" target=3D"_blank">=E6=B2=A1=E9=
+=82=A3=E4=B9=88=E9=9A=BE=EF=BC=8C=E8=B0=88CSS=E7=9A=84=E8=AE=BE=E8=AE=A1=E6=
+=A8=A1=E5=BC=8F</a><br> =C2=B7  <a href=3D"http://kb.cnblogs.com/page/55062=
+5/" target=3D"_blank">=E7=A8=8B=E5=BA=8F=E7=8C=BF=E5=AA=B3=E5=A6=87=E5=84=
+=BF=E6=B3=A8=E6=84=8F=E4=BA=8B=E9=A1=B9</a><br> =C2=B7  <a href=3D"http://k=
+b.cnblogs.com/page/540529/" target=3D"_blank">=E5=8F=AF=E6=98=AF=E5=A7=91=
+=E5=A8=98=EF=BC=8C=E4=BD=A0=E4=B8=BA=E4=BB=80=E4=B9=88=E8=A6=81=E7=BC=96=E7=
+=A8=8B=E5=91=A2=EF=BC=9F</a><br> =C2=B7  <a href=3D"http://kb.cnblogs.com/p=
+age/549631/" target=3D"_blank">=E7=9F=A5=E5=85=B6=E6=89=80=E4=BB=A5=E7=84=
+=B6=EF=BC=88=E4=BB=A5=E7=AE=97=E6=B3=95=E5=AD=A6=E4=B9=A0=E4=B8=BA=E4=BE=8B=
+=EF=BC=89</a><br></div>=C2=BB <a href=3D"http://kb.cnblogs.com/" target=3D"=
+_blank">=E6=9B=B4=E5=A4=9A=E7=9F=A5=E8=AF=86=E5=BA=93=E6=96=87=E7=AB=A0...<=
+/a></div></div>
+<div id=3D"HistoryToday" class=3D"c_ad_block"></div>
+
+</div>
+
+
+</div>
+<div class=3D"footer">
+
+<p id=3D"footer">
+	Powered by:=20
+	<br>
+=09
+	<a id=3D"Footer1_Hyperlink3" name=3D"Hyperlink1" href=3D"http://www.cnblog=
+s.com/" style=3D"font-family:Verdana;font-size:12px;">=E5=8D=9A=E5=AE=A2=E5=
+=9B=AD</a>
+	<br>
+	Copyright =C2=A9 digdeep
+</p>
+</div>
+<!--PageEndHtml Block Begin-->
+=E4=B8=8D=E6=87=82=E6=95=B0=E6=8D=AE=E5=BA=93=E5=92=8CWeb=E5=AE=89=E5=85=A8=
+=E7=9A=84=E6=9E=B6=E6=9E=84=E5=B8=88=E4=B8=8D=E6=98=AF=E4=B8=80=E4=B8=AA=E5=
+=A5=BD=E7=9A=84=E7=A8=8B=E5=BA=8F=E5=91=98=E3=80=82
+<!--PageEndHtml Block End-->
+
+
+</body></html>
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://static.cnblogs.com/images/icon_addcomment.gif
+
+R0lGODlhEAAQAOZbAOny/v3+/lqIuT1wIOLu/lOMKKnB2omqzbTJ34+8Z9vq/c7c6tfo/ZSwhJOx
+0WyVwJGugWCJSbLSlff5/Pv8/efu9Y26ZDdrGUFzJXCYwuDt/vP3+uvx94usztrk793s/m6XwYe5
+YN/s/qO92Iu6YnCWXpeyiOnv9tXm/bHTkKa9mZ241dDj/dzm8Ex7Mejx/lePLd3r/vn7/NHk/eXw
+/tDk/dPm/dTm/dzq/d7s/tbn/WaOT3ugx2+XwuTv/o+7arbUnNnp/dDmurHFq9zr/X2iyF+Mu+bw
+/pm21Obx/oe6YFyKuvD2/oWny7HWktrp/Yy8ZYKjk+Pv/uHu/r7Q4z9xItHk/LTUlYGrYViHuP//
+/////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5
+BAEAAFsALAAAAAAQABAAAAemgFuCg4SFhoeGGw5LWY2OWU0VhB0GFFqXmFoIGRSCEwIBTABJPlM5
+CjhaPC2CHA9aL0dSGh8KDChaBwutrzQEGjFPDDczubtbnwEAIkRBOjY1VlpFHoOUAZgELACaGTKD
+igKNK5dDJTsRKog9FVFYV0I/MBCGI0hGESlOWlAJA4UnQFDZ4gIIJgkXEG2pQkKJlhD+FJooYEGC
+hQL0FDbAcAFDgy2BAAA7
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://static.cnblogs.com/images/upup.gif
+
+R0lGODlhLgA0AMQAAP/00P/22vfqt/b29v/11f/45P/56P/34PjtwfXlqf/55v/11//00v/44vnw
+yfn5+f/22Pbnrf/21vny0Pn00//33vDw8P/12KioqP/10ufm61B1uv/33f/33P////H4+iH5BAAA
+AAAALAAAAAAuADQAAAX/oJeMZGmeaJqKQOu+cCzPcxLJmZvlcM4DPlosE4kwMsfdLrlEIo8MZvRJ
+jTKbxaZyy+16v94iYUwum8/odDlDjgjU8Lh8LBAs7mQ8YTHmS/aAfHyBeHeCg3l1dxAQFwsXkBeM
+jJILEJaNko2bk4+Pl4x3knUBpaanqKmqq6sCCAEdsR2ws6mytbSwprGns766HQgIHByxxR3FxMi3
+y8nIycTO0MqywtTH0Mu30s/PytLRt9bYxt3Hstzf4eDUsePlzc7bzebr8e3Bw+Tx2uj06t/unct3
+rVzAeeC8pQtXTR+8bAP/1Qs4beA7bRCZLVT4j6E7hxjNaezIkZ1FkOQO//pLGG0hvosp5a3k17Lj
+SwQVcurcybOnz58/ETg4QLSo0aNIkypV6sBBg6dPC0CdWkBqg6pTs1q1qpWrgwlVw4odS7as2bMT
+JihYy7at27dw48adQMGA3bt48+rdy5cv3b6AAwu2S8EDhcOIEytezLhxYw+QI0ueTLmy5cuYM2ve
+DPmD58+gQ4seTbq0htIPBqguzbq159OjH2jQgEHDANe4RcMWPUCDBwsYHuQe/pr0bA8PMNwmnnt3
+6N6/lYve8Jk69enVdYdO3ds38OWgr4sPv6G8+fOfndPGwB5DdPAf0J8vjz2+ds8eMFigPEB/aOvj
+VTfffOl91t96+0X2HYB58REYHmu7JWfZgp7RZ9+FDw4I2m79teebgrVVeGGAD5ZYoGcSVjbBBvCJ
+52CDDb4Y4Xq1SQYcBSWSaN91Ioa222+0WSDkkBiwmGOPJmJ4ooHsbVDkkw4I6CJ62cV4H2gPFHDA
+BVsWAB9zEIIppnFjlrnhbGimqeaabLbp5mwhAAA7
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://static.cnblogs.com/images/downdown.gif
+
+R0lGODlhLgA0AMQAAP////39/fn5+fj4+Pb29vX19fPz8/Ly8vHx8fDw8O/v7+7u7u3t7ezs7Ovr
+6+rq6ujo6Ofn5+bm5uXl5ePj4+Li4uHh4dzc3NfX19HR0c/Pz6qqqqioqKenp4WFhYODgyH5BAQU
+AP8ALAAAAAAuADQAAAX/IKCNZGmeaJqKUeu+cCzP80jfeN5mGeT/wKBwSCTyisik0sd7OJ/QqHRK
+pWYw1ax268RgHGDuFkwuO6Res3rNbre9jbh8Tq/b73fMpcHo+xl2f3iDdRcXC4iJiol/jY2LkIh/
+hpGQjpcMlYuTh5qMmI+ekn6UogugoaKcpqeofqyrpq6vsqSdqrOZtX2luLOwtsC/uwy9nrm6vsW3
+x7nCy6zR0ogXFgrX2Nna29zd3RYWCeLj5OXm5+jo4Ajs7e7v8PHy8hQUB/f4+fr7/P399QYCChxI
+sKDBgwcBIlzIsKGBCQAmSJxIsaLFixgxAtjIsaPHjyBDihxJsqTJjQVS8KpcybKly5cwIcCcSbOm
+Spk2c+pMiZOlAHYOFDhAQGBnzp4rN2z4wIEp0wpGayIFkOABB3MdPBh4+aHrB5pfb64UYJUDBwgd
+FXCYsNJr2LZu265EKoBDSAoftqp8O5MvX6QFzJpFyzHBWbhuu+5NmVgxz7EcAoA0XHQxS78FMItd
+edZsgo4HOFRmnNmy3NKoH6sEwAHBxwEcFlxOzZc06b8sIwg2S5WD3tNfa5cOG3xuSwEECPjoPdq2
+c8uaVb9ES3l25uKmoxcAPBdt3ebB/Tpu6dV4TAChBUSVClOADw4Smq93yX1scvnzWy7Zzz9ICAA7
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.cnblogs.com/bundles/blog-common.css?v=Rdf1BBttS5_qVaET1myrajVTd62BSCCoJA9fZxGv1ZM1
+
+@charset "utf-8";
+
+.syntaxhighlighter a, .syntaxhighlighter div, .syntaxhighlighter code, .syn=
+taxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table=
+ tr, .syntaxhighlighter table tbody, .syntaxhighlighter table thead, .synta=
+xhighlighter table caption, .syntaxhighlighter textarea { border-radius: 0p=
+x !important; background: none !important; border: 0px !important; bottom: =
+auto !important; float: none !important; height: auto !important; left: aut=
+o !important; line-height: 1.1em !important; margin: 0px !important; outlin=
+e: 0px !important; overflow: visible !important; padding: 0px !important; p=
+osition: static !important; right: auto !important; text-align: left !impor=
+tant; top: auto !important; vertical-align: baseline !important; width: aut=
+o !important; box-sizing: content-box !important; font-family: Consolas, "B=
+itstream Vera Sans Mono", "Courier New", Courier, monospace !important; fon=
+t-weight: normal !important; font-style: normal !important; font-size: 1em =
+!important; min-height: auto !important; }
+
+.syntaxhighlighter { width: 100% !important; margin: 1em 0px !important; po=
+sition: relative !important; overflow: auto !important; font-size: 1em !imp=
+ortant; }
+
+.syntaxhighlighter.source { overflow: hidden !important; }
+
+.syntaxhighlighter .bold { font-weight: bold !important; }
+
+.syntaxhighlighter .italic { font-style: italic !important; }
+
+.syntaxhighlighter .line { white-space: pre !important; }
+
+.syntaxhighlighter table { width: 100% !important; }
+
+.syntaxhighlighter table caption { text-align: left !important; padding: 0.=
+5em 0px 0.5em 1em !important; }
+
+.syntaxhighlighter table td.code { width: 100% !important; }
+
+.syntaxhighlighter table td.code .container { position: relative !important=
+; }
+
+.syntaxhighlighter table td.code .container textarea { box-sizing: border-b=
+ox !important; position: absolute !important; left: 0px !important; top: 0p=
+x !important; width: 100% !important; height: 100% !important; border: none=
+ !important; background: rgb(255, 255, 255) !important; padding-left: 1em !=
+important; overflow: hidden !important; white-space: pre !important; }
+
+.syntaxhighlighter table td.gutter .line { text-align: right !important; pa=
+dding: 0px 0.5em 0px 1em !important; }
+
+.syntaxhighlighter table td.code .line { padding: 0px 1em !important; }
+
+.syntaxhighlighter.nogutter td.code .container textarea, .syntaxhighlighter=
+.nogutter td.code .line { padding-left: 0px !important; }
+
+.syntaxhighlighter.show { display: block !important; }
+
+.syntaxhighlighter.collapsed table { display: none !important; }
+
+.syntaxhighlighter.collapsed .toolbar { padding: 0.1em 0.8em 0px !important=
+; font-size: 1em !important; position: static !important; width: auto !impo=
+rtant; height: auto !important; }
+
+.syntaxhighlighter.collapsed .toolbar span { display: inline !important; ma=
+rgin-right: 1em !important; }
+
+.syntaxhighlighter.collapsed .toolbar span a { padding: 0px !important; dis=
+play: none !important; }
+
+.syntaxhighlighter.collapsed .toolbar span a.expandSource { display: inline=
+ !important; }
+
+.syntaxhighlighter .toolbar { position: absolute !important; right: 1px !im=
+portant; top: 1px !important; width: 11px !important; height: 11px !importa=
+nt; font-size: 10px !important; z-index: 10 !important; }
+
+.syntaxhighlighter .toolbar span.title { display: inline !important; }
+
+.syntaxhighlighter .toolbar a { display: block !important; text-align: cent=
+er !important; text-decoration: none !important; padding-top: 1px !importan=
+t; }
+
+.syntaxhighlighter .toolbar a.expandSource { display: none !important; }
+
+.syntaxhighlighter.ie { font-size: 0.9em !important; padding: 1px 0px !impo=
+rtant; }
+
+.syntaxhighlighter.ie .toolbar { line-height: 8px !important; }
+
+.syntaxhighlighter.ie .toolbar a { padding-top: 0px !important; }
+
+.syntaxhighlighter.printing .line.alt1 .content, .syntaxhighlighter.printin=
+g .line.alt2 .content, .syntaxhighlighter.printing .line.highlighted .numbe=
+r, .syntaxhighlighter.printing .line.highlighted.alt1 .content, .syntaxhigh=
+lighter.printing .line.highlighted.alt2 .content { background: none !import=
+ant; }
+
+.syntaxhighlighter.printing .line .number { color: rgb(187, 187, 187) !impo=
+rtant; }
+
+.syntaxhighlighter.printing .line .content { color: rgb(0, 0, 0) !important=
+; }
+
+.syntaxhighlighter.printing .toolbar { display: none !important; }
+
+.syntaxhighlighter.printing a { text-decoration: none !important; }
+
+.syntaxhighlighter.printing .plain, .syntaxhighlighter.printing .plain a { =
+color: rgb(0, 0, 0) !important; }
+
+.syntaxhighlighter.printing .comments, .syntaxhighlighter.printing .comment=
+s a { color: rgb(0, 130, 0) !important; }
+
+.syntaxhighlighter.printing .string, .syntaxhighlighter.printing .string a =
+{ color: blue !important; }
+
+.syntaxhighlighter.printing .keyword { color: rgb(0, 102, 153) !important; =
+font-weight: bold !important; }
+
+.syntaxhighlighter.printing .preprocessor { color: gray !important; }
+
+.syntaxhighlighter.printing .variable { color: rgb(170, 119, 0) !important;=
+ }
+
+.syntaxhighlighter.printing .value { color: rgb(0, 153, 0) !important; }
+
+.syntaxhighlighter.printing .functions { color: rgb(255, 20, 147) !importan=
+t; }
+
+.syntaxhighlighter.printing .constants { color: rgb(0, 102, 204) !important=
+; }
+
+.syntaxhighlighter.printing .script { font-weight: bold !important; }
+
+.syntaxhighlighter.printing .color1, .syntaxhighlighter.printing .color1 a =
+{ color: gray !important; }
+
+.syntaxhighlighter.printing .color2, .syntaxhighlighter.printing .color2 a =
+{ color: rgb(255, 20, 147) !important; }
+
+.syntaxhighlighter.printing .color3, .syntaxhighlighter.printing .color3 a =
+{ color: red !important; }
+
+.syntaxhighlighter.printing .break, .syntaxhighlighter.printing .break a { =
+color: rgb(0, 0, 0) !important; }
+
+.syntaxhighlighter { background-color: rgb(255, 255, 255) !important; }
+
+.syntaxhighlighter .line.alt1 { background-color: rgb(255, 255, 255) !impor=
+tant; }
+
+.syntaxhighlighter .line.highlighted.alt1, .syntaxhighlighter .line.highlig=
+hted.alt2 { background-color: rgb(224, 224, 224) !important; }
+
+.syntaxhighlighter .line.highlighted.number { color: rgb(0, 0, 0) !importan=
+t; }
+
+.syntaxhighlighter table caption { color: rgb(0, 0, 0) !important; }
+
+.syntaxhighlighter .gutter { color: rgb(175, 175, 175) !important; }
+
+.syntaxhighlighter .gutter .line { border-right: 3px solid rgb(108, 226, 10=
+8) !important; }
+
+.syntaxhighlighter .gutter .line.highlighted { background-color: rgb(108, 2=
+26, 108) !important; color: rgb(255, 255, 255) !important; }
+
+.syntaxhighlighter.printing .line .content { border: none !important; }
+
+.syntaxhighlighter.collapsed { overflow: visible !important; }
+
+.syntaxhighlighter.collapsed .toolbar { color: blue !important; background:=
+ rgb(255, 255, 255) !important; border: 1px solid rgb(108, 226, 108) !impor=
+tant; }
+
+.syntaxhighlighter.collapsed .toolbar a { color: blue !important; }
+
+.syntaxhighlighter.collapsed .toolbar a:hover { color: red !important; }
+
+.syntaxhighlighter .toolbar { color: rgb(255, 255, 255) !important; backgro=
+und: rgb(108, 226, 108) !important; border: none !important; }
+
+.syntaxhighlighter .toolbar a { color: rgb(255, 255, 255) !important; }
+
+.syntaxhighlighter .toolbar a:hover { color: rgb(0, 0, 0) !important; }
+
+.syntaxhighlighter .plain, .syntaxhighlighter .plain a { color: rgb(0, 0, 0=
+) !important; }
+
+.syntaxhighlighter .comments, .syntaxhighlighter .comments a { color: rgb(0=
+, 130, 0) !important; }
+
+.syntaxhighlighter .string, .syntaxhighlighter .string a { color: blue !imp=
+ortant; }
+
+.syntaxhighlighter .keyword { color: rgb(0, 102, 153) !important; }
+
+.syntaxhighlighter .preprocessor { color: gray !important; }
+
+.syntaxhighlighter .variable { color: rgb(170, 119, 0) !important; }
+
+.syntaxhighlighter .value { color: rgb(0, 153, 0) !important; }
+
+.syntaxhighlighter .functions { color: rgb(255, 20, 147) !important; }
+
+.syntaxhighlighter .constants { color: rgb(0, 102, 204) !important; }
+
+.syntaxhighlighter .script { font-weight: bold !important; color: rgb(0, 10=
+2, 153) !important; }
+
+.syntaxhighlighter .color1, .syntaxhighlighter .color1 a { color: gray !imp=
+ortant; }
+
+.syntaxhighlighter .color2, .syntaxhighlighter .color2 a { color: rgb(255, =
+20, 147) !important; }
+
+.syntaxhighlighter .color3, .syntaxhighlighter .color3 a { color: red !impo=
+rtant; }
+
+.syntaxhighlighter .keyword { font-weight: bold !important; }
+
+.syntaxhighlighter code { white-space: pre-wrap; }
+
+.syntaxhighlighter .line { white-space: normal !important; line-height: 1.8=
+em !important; }
+
+.syntaxhighlighter code { line-height: 1.8em !important; }
+
+.syntaxhighlighter .toolbar { display: none; }
+
+.syntaxhighlighter.collapsed .toolbar { display: block; background: rgb(245=
+, 245, 245) !important; border: 1px solid rgb(204, 204, 204) !important; pa=
+dding: 0.5em 0.8em !important; }
+
+.syntaxhighlighter table td.code { width: auto !important; }
+
+.syntaxhighlighter .line.alt2 { background-color: rgb(244, 244, 244) !impor=
+tant; }
+
+.syntaxhighlighter .gutter { width: 35px !important; }
+
+.syntaxhighlighter .gutter .line { border-right: 2px solid rgb(108, 226, 10=
+8) !important; }
+
+.syntaxhighlighter table td.gutter .line { padding: 0px 0.5em !important; t=
+ext-align: right !important; }
+
+.syntaxhighlighter .keyword { font-weight: normal !important; color: rgb(0,=
+ 0, 255) !important; }
+
+.syntaxhighlighter a, .syntaxhighlighter div, .syntaxhighlighter code, .syn=
+taxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table=
+ tr, .syntaxhighlighter table tbody, .syntaxhighlighter table thead, .synta=
+xhighlighter table caption, .syntaxhighlighter textarea { font-size: 12px !=
+important; }
+
+.sh-gutter .line, .sh-gutter code { white-space: nowrap !important; }
+
+body { font-family: Helvetica, Verdana, Arial, sans-serif; }
+
+input[type=3D"button"] { -webkit-appearance: button; }
+
+img { border: 0px; }
+
+#MySignature { }
+
+.blog_topic { margin-top: 10px; margin-left: 2em; }
+
+#blog_post_info_block { margin-top: 20px; }
+
+#BlogPostCategory { margin-bottom: 10px; }
+
+#EntryTag { margin-top: 0px !important; }
+
+.topicListFooter { text-align: right; margin-right: 10px; margin-top: 10px;=
+ }
+
+#divRefreshComments { text-align: right; margin-right: 10px; margin-bottom:=
+ 5px; font-size: 12px; }
+
+.commentTextBox { width: 480px; height: 220px; }
+
+.commenttb { width: 320px; }
+
+.tb_comment_name { width: 200px; }
+
+#MyIng { margin-top: 5px; }
+
+.ing_title { font-weight: bold; text-align: center; }
+
+.ing_body { margin-top: 5px; margin-bottom: 5px; word-break: break-all; }
+
+.ing_date { text-align: center; color: gray; font-size: 11px; }
+
+.ing_footer { text-align: right; margin-right: 5px; }
+
+#divNewMsg { margin-top: 2px; text-align: center; }
+
+#divSendMsg { }
+
+.commentform table td input { margin: 2px auto; }
+
+.sendMsg2This:link, .sendMsg2This:visited, .sendMsg2This:active { font-size=
+: 12px; text-decoration: none; background: url("/images/icoMsg.gif") left t=
+op no-repeat; padding-left: 20px; }
+
+.sendMsg2This:hover { background: url("/images/icoMsg.gif") left bottom no-=
+repeat; }
+
+.RecentComment { overflow: hidden; }
+
+.cnblogs_code { background-color: rgb(245, 245, 245); border: 1px solid rgb=
+(204, 204, 204); padding: 5px; overflow: auto; margin: 5px 0px; color: rgb(=
+0, 0, 0); font-family: "Courier New" !important; font-size: 12px !important=
+; }
+
+span.cnblogs_code { padding: 3px; }
+
+.cnblogs_code div { background-color: rgb(245, 245, 245); }
+
+.cnblogs_code pre { word-wrap: break-word; white-space: pre-wrap; font-fami=
+ly: "Courier New" !important; font-size: 12px !important; }
+
+.cnblogs_code span { font-family: "Courier New" !important; font-size: 12px=
+ !important; line-height: 1.5 !important; }
+
+.cnblogs_code_Collapse { border-width: 1px; border-style: solid; border-col=
+or: gray; background-color: rgb(255, 255, 255); padding: 2px; }
+
+.cnblogs_code_collapse { border-width: 1px; border-style: solid; border-col=
+or: gray; background-color: rgb(255, 255, 255); padding: 2px; }
+
+.cnblogs_code_hide { display: none; }
+
+.code_img_closed { vertical-align: middle; padding-right: 5px; }
+
+.code_img_opened { vertical-align: middle; padding-right: 5px; }
+
+.cnblogs_code_open { margin-top: 5px; }
+
+.codeLineNumber { color: teal; padding-right: 10px; }
+
+.cnblogs_code ol { margin-left: 0px; color: teal; }
+
+.cnblogs_code ol li { list-style-image: none; }
+
+.cnblogs_code ol li span { color: rgb(0, 0, 0); }
+
+.cnblogs_code_toolbar a:hover, .cnblogs_code_toolbar a:link, .cnblogs_code_=
+toolbar a:visited, .cnblogs_code_toolbar a:active, .cnblogs_code_toolbar a:=
+link img, .cnblogs_code_toolbar a:visited img { background-color: rgb(245, =
+245, 245) !important; border: none !important; }
+
+.desc_img { float: right; }
+
+.MsoNormal { font-size: 13px; line-height: 150%; }
+
+.div_my_zzk { margin-top: 5px; margin-bottom: 5px; }
+
+.input_my_zzk { width: 100px; vertical-align: middle; height: 20px; }
+
+input.btn_my_zzk { vertical-align: middle; height: 22px; font-size: 12px; p=
+adding-left: 5px; padding-right: 5px; }
+
+pre { margin-top: 0px; margin-bottom: 0px; }
+
+pre { white-space: pre-wrap; word-wrap: break-word; }
+
+.divPostCommentBox { float: left; width: 500px; }
+
+.CommentBoxNav { width: 100px; float: right; margin-top: 20px; line-height:=
+ 120%; font-size: 12px; }
+
+.comment_pager { text-align: left; padding-bottom: 5px; }
+
+.comment_pager_current { color: red; }
+
+.dp-highlighter { font-family: Consolas, "Courier New", Courier, mono, seri=
+f; font-size: 12px; overflow: auto; word-break: break-word; margin: 18px 0p=
+x !important; }
+
+.dp-highlighter ol, .dp-highlighter ol li, .dp-highlighter ol li span { mar=
+gin: 0px; padding: 0px; border: none; }
+
+.dp-highlighter a, .dp-highlighter a:hover { background: none; border: none=
+; padding: 0px; margin: 0px; }
+
+.dp-highlighter .bar { display: none; }
+
+.dp-highlighter ol { list-style: decimal; background-color: rgb(255, 255, 2=
+55); color: rgb(92, 92, 92); margin: 0px 0px 1px 45px !important; padding: =
+0px !important; }
+
+.dp-highlighter.nogutter ol, .dp-highlighter.nogutter ol li { list-style: n=
+one !important; margin-left: 0px !important; }
+
+.dp-highlighter ol li, .dp-highlighter .columns div { list-style-type: deci=
+mal-leading-zero; list-style-image: initial; border-left: 3px solid rgb(108=
+, 226, 108); background-color: rgb(248, 248, 248); color: rgb(92, 92, 92); =
+line-height: 1.6; list-style-position: outside !important; padding: 0px 3px=
+ 0px 10px !important; margin: 0px !important; }
+
+.dp-highlighter.nogutter ol li, .dp-highlighter.nogutter .columns div { bor=
+der: 0px; }
+
+.dp-highlighter .columns { background-color: rgb(248, 248, 248); color: gra=
+y; overflow: hidden; width: 100%; }
+
+.dp-highlighter .columns div { padding-bottom: 5px; }
+
+.dp-highlighter ol li.alt { background-color: rgb(255, 255, 255); color: in=
+herit; }
+
+.dp-highlighter ol li span { color: rgb(0, 0, 0); background-color: inherit=
+; }
+
+.dp-highlighter.collapsed ol { margin: 0px; }
+
+.dp-highlighter.collapsed ol li { display: none; }
+
+.dp-highlighter.printing { border: none; }
+
+.dp-highlighter.printing .tools { display: none !important; }
+
+.dp-highlighter.printing li { display: list-item !important; }
+
+.dp-highlighter .tools { padding: 3px 8px 10px 10px; font-style: normal; fo=
+nt-variant: normal; font-weight: normal; font-stretch: normal; font-size: 9=
+px; line-height: normal; font-family: Verdana, Geneva, Arial, Helvetica, sa=
+ns-serif; color: silver; background-color: rgb(248, 248, 248); border-left:=
+ 3px solid rgb(108, 226, 108); }
+
+.dp-highlighter.nogutter .tools { border-left: 0px; }
+
+.dp-highlighter.collapsed .tools { border-bottom: 0px; }
+
+.dp-highlighter .tools a { font-size: 9px; color: rgb(160, 160, 160); backg=
+round-color: inherit; text-decoration: none; margin-right: 10px; }
+
+.dp-highlighter .tools a:hover { color: red; background-color: inherit; tex=
+t-decoration: underline; }
+
+.dp-about { background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); m=
+argin: 0px; padding: 0px; }
+
+.dp-about table { width: 100%; height: 100%; font-size: 11px; font-family: =
+Tahoma, Verdana, Arial, sans-serif !important; }
+
+.dp-about td { padding: 10px; vertical-align: top; }
+
+.dp-about .copy { border-bottom: 1px solid rgb(172, 168, 153); height: 95%;=
+ }
+
+.dp-about .title { color: red; background-color: inherit; font-weight: bold=
+; }
+
+.dp-about .para { margin: 0px 0px 4px; }
+
+.dp-about .footer { background-color: rgb(236, 234, 219); color: rgb(51, 51=
+, 51); border-top: 1px solid rgb(255, 255, 255); text-align: right; }
+
+.dp-about .close { font-size: 11px; background-color: rgb(236, 234, 219); c=
+olor: rgb(51, 51, 51); width: 60px; height: 22px; font-family: Tahoma, Verd=
+ana, Arial, sans-serif !important; }
+
+.dp-highlighter .comment, .dp-highlighter .comments { color: rgb(0, 130, 0)=
+; background-color: inherit; }
+
+.dp-highlighter .string { color: blue; background-color: inherit; }
+
+.dp-highlighter .keyword { color: rgb(0, 102, 153); font-weight: bold; back=
+ground-color: inherit; }
+
+.dp-highlighter .preprocessor { color: gray; background-color: inherit; }
+
+#commentform_title { background-image: url("http://static.cnblogs.com/image=
+s/icon_addcomment.gif"); background-repeat: no-repeat; padding: 0px 0px 0px=
+ 25px; margin-bottom: 10px; }
+
+div.commentform input.author, div.commentform input.email, div.commentform =
+input.url { background-image: url("http://static.cnblogs.com/images/icon_fo=
+rm.gif"); background-repeat: no-repeat; border: 1px solid rgb(204, 204, 204=
+); padding: 4px 4px 4px 30px; width: 300px; font-size: 13px; }
+
+div.commentform input.author { background-position: 3px -3px; }
+
+div.commentform input.email { background-position: 3px -33px; }
+
+div.commentform input.url { background-position: 3px -63px; }
+
+div.commentform textarea { width: 450px; height: 300px; font-size: 13px; bo=
+rder: 1px solid rgb(204, 204, 204); font-family: "PingFang SC", "Helvetica =
+Neue", Helvetica, Arial, sans-serif; }
+
+div.commentform p { margin-top: 10px; line-height: 20px; }
+
+.commentbox_title { width: 450px; }
+
+.commentbox_title_left { float: left; }
+
+.commentbox_title_right { float: right; height: 22px; }
+
+.login_tips { background-image: url("http://static.cnblogs.com/images/icon_=
+addcomment.gif"); background-repeat: no-repeat; margin-top: 10px; padding: =
+0px 0px 10px 25px; font-weight: bold; }
+
+.login_tips a { text-decoration: underline !important; }
+
+.clear { clear: both; }
+
+.comment_quote { padding: 5px; border: 1px solid rgb(204, 204, 204); }
+
+.comment_icon { vertical-align: middle; }
+
+#comment_nav { text-align: right; }
+
+#comment_nav a { padding-left: 10px; }
+
+.ad_commentbox_up { margin-left: 5px; }
+
+.ad_commentbox_up a { padding-left: 10px; }
+
+#digg_block { margin-top: 10px; }
+
+#author_profile { float: left; width: 280px; margin-top: 0px; margin-bottom=
+: 10px; color: rgb(0, 0, 0); margin-left: 0px; font-size: 12px; }
+
+#author_profile a:hover { text-decoration: underline; }
+
+.author_avatar { vertical-align: top; float: left; margin-right: 5px; paddi=
+ng-top: 5px; padding-left: 2px; border: 0px; }
+
+.author_profile_title { font-weight: bold; color: rgb(102, 102, 102); }
+
+.author_profile_info { float: left; line-height: 18px; }
+
+#author_profile_follow { }
+
+#author_profile_follow a:link { }
+
+#div_digg { float: right; margin-bottom: 10px; margin-right: 30px; font-siz=
+e: 12px; width: 125px; text-align: center; margin-top: 10px; }
+
+.diggit { float: left; width: 46px; height: 52px; background: url("http://s=
+tatic.cnblogs.com/images/upup.gif") no-repeat; text-align: center; cursor: =
+pointer; margin-top: 2px; padding-top: 5px; }
+
+.diggnum { font-size: 14px; color: rgb(7, 93, 179); font-family: Verdana; }
+
+.buryit { float: right; margin-left: 20px; width: 46px; height: 52px; backg=
+round: url("http://static.cnblogs.com/images/downdown.gif") no-repeat; text=
+-align: center; cursor: pointer; margin-top: 2px; padding-top: 5px; }
+
+.burynum { font-size: 14px; color: rgb(7, 93, 179); font-family: Verdana; }
+
+.diggword { margin-top: 5px; margin-left: 0px; font-size: 12px; color: gray=
+; }
+
+a.digg_gray:link { color: gray; text-decoration: underline; }
+
+a.digg_gray:visited { color: gray; text-decoration: underline; }
+
+a.digg_gray:hover { color: red; text-decoration: underline; }
+
+a.digg_gray:active { color: gray; text-decoration: underline; }
+
+a.site_hot:visited, a.site_hot:active, a.site_hot:link { color: red; text-d=
+ecoration: none; }
+
+a.site_hot:hover { color: red; text-decoration: underline; }
+
+.ad_bottom_text { line-height: 150%; }
+
+#profile_block { margin-top: 5px; line-height: 1.5; text-align: left; }
+
+.ing_date { color: gray; }
+
+.bq_post_comment { margin: 0px 0px 5px; font-style: normal; line-height: 18=
+0%; border: 1px solid rgb(221, 221, 221); padding: 10px; }
+
+.blog_comment_body { word-wrap: break-word; overflow: hidden; }
+
+.blog_comment_body img { max-width: 400px; }
+
+#post_next_prev { line-height: 1.8; font-size: 12px; }
+
+.post_next_prev_date { color: gray; }
+
+#post_next_prev a.p_n_p_prefix:link { text-decoration: none; }
+
+#post_next_prev a.p_n_p_prefix:hover { text-decoration: underline; }
+
+#side_ing_block { line-height: 1.5; overflow: hidden; }
+
+#side_ing_block ul li { background-image: url("http://static.cnblogs.com/im=
+ages/icon_voice.gif"); background-repeat: no-repeat; padding: 0px 0px 0px 2=
+0px; }
+
+a.ing_lnk:link, a.ing_lnk:active, a.ing_lnk:visited { color: gray; text-dec=
+oration: none; border: 0px; }
+
+.itnews { line-height: 150%; }
+
+.job_offer_list { line-height: 150%; }
+
+blockquote { background: none; border: 2px solid rgb(239, 239, 239); paddin=
+g: 5px 10px; margin-top: 10px; margin-bottom: 10px; }
+
+#cnblogs_post_body blockquote ul { margin-left: 25px; }
+
+.c_ad_block { margin-top: 10px; line-height: 1.5; }
+
+#grade_flag { font-size: 12px; }
+
+div.commentform textarea.comment_textarea { line-height: 1.6; }
+
+.c_b_p_desc { word-wrap: break-word; word-break: break-all; overflow: hidde=
+n; line-height: 1.5; }
+
+.c_b_p_desc_readmore { padding-left: 5px; }
+
+.c_b_p_link_desc { margin-top: 2px; word-break: break-word; }
+
+#green_channel { padding: 10px 0px; margin-bottom: 10px; margin-top: 10px; =
+border: 1px dashed silver; font-size: 12px; width: 350px; text-align: cente=
+r; }
+
+#green_channel a { background: url("data:image/png;base64,iVBORw0KGgoAAAANS=
+UhEUgAAAAEAAAAkCAYAAABIdFAMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccll=
+PAAAAHhJREFUeNo8zjsOxCAMBFB/KEAUFFR0Cbng3nQPw68ArZdAlOZppPFIBhH5EAB8b+Tlt9M=
+YQ6i1BuqFaq1CKSVcxZ2Acs6406KUgpt5/LCKuVgz5BDCSb13ZO99ZOdcZGvt4mJjzMVKqcha68=
+iIePB86GAiOv8CDADlIUQBs7MD3wAAAABJRU5ErkJggg%3D%3D") repeat-x; display: inl=
+ine-block; padding: 3px 8px; color: rgb(255, 255, 255); text-decoration: no=
+ne; font-weight: bold; cursor: pointer; margin-right: 10px; border-radius: =
+10px; box-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 3px; text-shadow: rgba(0,=
+ 0, 0, 0.247059) 0px -1px 1px; vertical-align: middle; }
+
+#green_channel a:hover { background-image: url("data:image/png;base64,iVBOR=
+w0KGgoAAAANSUhEUgAAAAEAAAAyCAYAAACd+7GKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFn=
+ZVJlYWR5ccllPAAAAClJREFUeNpi/v//vwMTAwPDfzjBgMpFI/7hFSOT9Y8qRuF3JLoHAQIMAHY=
+tMmRA+CugAAAAAElFTkSuQmCC"); }
+
+#green_channel #green_channel_digg { background-color: rgb(45, 174, 191); }
+
+#green_channel #green_channel_follow { background-color: rgb(227, 49, 0); }
+
+#green_channel #green_channel_favorite { background-color: rgb(255, 181, 21=
+); }
+
+#green_channel #green_channel_contact { background-color: rgb(238, 238, 238=
+); color: rgb(85, 85, 85); display: none; }
+
+#green_channel #green_channel_weibo img { vertical-align: middle; border: n=
+one; margin-left: 5px; box-shadow: none; }
+
+#green_channel #green_channel_weibo, #green_channel #green_channel_wechat {=
+ background: none; padding: 3px 2px; box-shadow: none; text-shadow: none; }
+
+#green_channel #green_channel_wechat img { width: 24px; height: 24px; borde=
+r: medium none; box-shadow: none; margin-left: 5px; vertical-align: middle;=
+ }
+
+#cnblogs_post_body { margin-bottom: 20px; }
+
+#cnblogs_post_body ul { margin-left: 30px; padding-left: 0px; }
+
+#cnblogs_post_body ol { padding-left: 40px; }
+
+#cnblogs_post_body ol li { list-style-type: decimal; }
+
+#cnblogs_post_body ul li { list-style-type: disc; }
+
+#cnblogs_post_body table, .cnblogs-post-body table { border: 1px solid silv=
+er; border-collapse: collapse; word-break: break-word; }
+
+#cnblogs_post_body th, #cnblogs_post_body td, .cnblogs-post-body th, .cnblo=
+gs-post-body td { border: 1px solid silver; border-collapse: collapse; padd=
+ing: 3px; }
+
+#cnblogs_post_body img { max-width: 900px; }
+
+.ad_text_commentbox { margin-top: 5px; margin-bottom: 5px; }
+
+a.comment_uploadimg_a { font-size: 12px; }
+
+#ad_t2 { margin-top: 5px; line-height: 1.8; }
+
+#ad_t2 a { margin-right: 10px; }
+
+#opt_under_post { line-height: 1.8; }
+
+#opt_under_post a { margin-right: 10px; }
+
+#ad_under_comment2 { margin-bottom: 5px; }
+
+#ad_under_comment2 img { margin-bottom: 5px; }
+
+.recent_comment_author { text-align: right; margin-right: 4px; }
+
+.cnblogs_code_toolbar { margin-top: 5px; }
+
+.cnblogs_code_toolbar span { padding-right: 5px; }
+
+.comment_btn { height: 26px; width: 68px; margin: 0px; padding: 0px; line-h=
+eight: 22px; }
+
+#commentbox_opt a { padding-left: 10px; }
+
+#taglist_title { margin-bottom: 10px; }
+
+#taglist td { padding: 5px 20px 5px 10px; }
+
+.Cal { width: 100%; }
+
+.CalTitle { width: 100%; }
+
+.new-comment-block { line-height: 1.5; }
+
+.new-comment-title span { margin-left: 5px; }
+
+.new-comment-title a { margin-left: 5px; }
+
+.pager { font-size: 12px; margin: 10px 0px; text-align: center; color: rgb(=
+46, 106, 177); line-height: 200%; }
+
+.pager a { border: 1px solid rgb(154, 175, 229); color: rgb(46, 106, 177); =
+margin: 0px 2px; padding: 2px 5px; text-decoration: none; }
+
+.pager span.current { background-color: rgb(46, 106, 177); border: 1px soli=
+d navy; color: rgb(255, 255, 255); font-weight: bold; margin: 0px 2px; padd=
+ing: 2px 5px; }
+
+.comment_vote { text-align: right; }
+
+.comment_vote a { padding-left: 10px; text-decoration: none !important; }
+
+.comment_actions a { padding-right: 10px; }
+
+.comment_actions a:last-child { padding-right: 0px; }
+
+.recent_comment_body { white-space: pre-wrap; word-wrap: break-word; }
+
+#taglist_main { margin-top: 20px; }
+
+#taglist_main #taglist .small { font-size: 12px; }
+
+#taglist_title_wrap { margin-left: auto; margin-right: auto; text-align: ce=
+nter; }
+
+#cnblogs_post_body { word-break: break-word; }
+
+#cnblogs_post_body p { margin: 10px auto; text-indent: 0px; }
+
+#cnblogs_post_body h1 { font-size: 28px; font-weight: bold; line-height: 1.=
+5; }
+
+#cnblogs_post_body h2 { font-size: 21px; font-weight: bold; line-height: 1.=
+5; }
+
+#cnblogs_post_body h3 { font-size: 16px; font-weight: bold; line-height: 1.=
+5; }
+
+#cnblogs_post_body h4 { font-size: 14px; font-weight: bold; }
+
+#cnblogs_post_body h5 { font-size: 12px; font-weight: bold; }
+
+#cnblogs_post_body h6 { font-size: 11px; font-weight: bold; }
+
+#div_digg .diggnum { line-height: 1.5em !important; }
+
+#div_digg .burynum { line-height: 1.5em !important; }
+
+#green_channel a:link, #green_channel a:visited, #green_channel a:active { =
+color: rgb(255, 255, 255) !important; border: none !important; }
+
+#myposts .myposts_title { font-size: 15px; }
+
+#myposts { margin-left: 20px; }
+
+#myposts .pager { text-align: right; margin-right: 10px; }
+
+#myposts .PostList { margin-right: 20px; margin-top: 10px; font-size: 13px;=
+ }
+
+#myposts .postTitle2 { font-size: 13px; }
+
+#myposts .postDesc2 { font-size: 12px; }
+
+#myposts .postText2 { font-size: 13px; margin-bottom: 5px; }
+
+#blog-news { overflow: hidden; }
+
+#MySignature { display: none; }
+
+.cnblogs-markdown .hljs { display: block; overflow-x: auto; padding: 0.5em;=
+ background: rgb(255, 255, 255); color: rgb(0, 0, 0); }
+
+.hljs-comment, .hljs-quote, .hljs-variable { color: green; }
+
+.hljs-keyword, .hljs-selector-tag, .hljs-built_in, .hljs-name, .hljs-tag { =
+color: rgb(0, 0, 255); }
+
+.hljs-string, .hljs-title, .hljs-section, .hljs-attribute, .hljs-literal, .=
+hljs-template-tag, .hljs-template-variable, .hljs-type, .hljs-addition { co=
+lor: rgb(163, 21, 21); }
+
+.hljs-deletion, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-meta { co=
+lor: rgb(43, 145, 175); }
+
+.hljs-doctag { color: gray; }
+
+.hljs-attr { color: red; }
+
+.hljs-symbol, .hljs-bullet, .hljs-link { color: rgb(0, 176, 232); }
+
+.hljs-emphasis { font-style: italic; }
+
+.hljs-strong { font-weight: bold; }
+
+.cnblogs-markdown code { line-height: 1.8; margin: 1px 5px; vertical-align:=
+ middle; display: inline-block; font-family: "Courier New", sans-serif !imp=
+ortant; font-size: 12px !important; background-color: rgb(245, 245, 245) !i=
+mportant; border: 1px solid rgb(204, 204, 204) !important; padding: 0px 5px=
+ !important; border-radius: 3px !important; }
+
+.cnblogs-markdown pre code { display: block; margin: auto; height: auto; li=
+ne-height: normal; }
+
+.cnblogs-markdown .hljs { font-family: "Courier New", sans-serif !important=
+; font-size: 12px !important; line-height: 1.5 !important; padding: 5px !im=
+portant; }
+
+.cnblogs-markdown pre { margin-top: 10px; margin-bottom: 10px; }
+
+.dropdown-menu a { color: rgb(0, 136, 204); text-decoration: none; }
+
+.typeahead { z-index: 1051; margin-top: 2px; }
+
+.dropdown-menu { position: absolute; top: 100%; left: 0px; z-index: 1000; d=
+isplay: none; padding: 0px; float: left; margin: 2px 0px 0px; list-style: n=
+one; background-color: rgb(255, 255, 255); text-shadow: none; }
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown=
+-menu > .active > a:focus { color: rgb(255, 255, 255); text-decoration: non=
+e; outline: 0px; background-color: rgb(64, 120, 192); }
+
+.dropdown-menu > li > a { display: block; padding: 3px 10px; clear: both; f=
+ont-weight: normal; line-height: 20px; color: rgb(51, 51, 51); white-space:=
+ nowrap; }
+
+.mention_name { font-size: 12px; }
+
+.mention_username { font-size: 12px; color: rgb(153, 153, 153); }
+
+.mention_image { float: left; margin-right: 5px; border-radius: 3px; width:=
+ 20px; height: 20px; }
+
+.active .mention_username { color: rgb(255, 255, 255); }
+
+.dropdown-menu > .tips { color: rgb(255, 255, 255); text-decoration: none; =
+outline: 0px; background-color: rgb(64, 120, 192); font-size: 12px; padding=
+: 3px 5px; clear: both; line-height: 20px; }
+
+.ui-dialog { position: relative; background-color: rgb(255, 255, 255); bord=
+er: 1px solid rgb(153, 153, 153); border-radius: 6px; outline: 0px; backgro=
+und-clip: padding-box; font-family: Helvetica, arial, sans-serif; font-size=
+: 14px; line-height: 1.42857; color: rgb(51, 51, 51); opacity: 0; transform=
+: scale(0); transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-=
+out; }
+
+.ui-popup-show .ui-dialog { opacity: 1; transform: scale(1); }
+
+.ui-popup-focus .ui-dialog { box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 8=
+px; }
+
+.ui-popup-modal .ui-dialog { box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 8=
+px, rgba(255, 255, 255, 0.298039) 0px 0px 256px; }
+
+.ui-dialog-grid { width: auto; margin: 0px; border: 0px none; border-collap=
+se: collapse; border-spacing: 0px; background: transparent; }
+
+.ui-dialog-header, .ui-dialog-body, .ui-dialog-footer { padding: 0px; borde=
+r: 0px none; text-align: left; background: transparent; }
+
+.ui-dialog-header { white-space: nowrap; border-bottom: 1px solid rgb(229, =
+229, 229); }
+
+.ui-dialog-close { position: relative; float: right; top: 13px; right: 13px=
+; padding: 0px 4px; font-size: 21px; font-weight: bold; line-height: 1; col=
+or: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 1px 0px; opacity: 0.2=
+; cursor: pointer; background: transparent; border: 0px; -webkit-appearance=
+: none; }
+
+.ui-dialog-close:hover, .ui-dialog-close:focus { color: rgb(0, 0, 0); text-=
+decoration: none; cursor: pointer; outline: 0px; opacity: 0.5; }
+
+.ui-dialog-title { margin: 0px; line-height: 1.42857; min-height: 16.4286px=
+; padding: 15px; overflow: hidden; white-space: nowrap; text-overflow: elli=
+psis; font-weight: bold; cursor: default; }
+
+.ui-dialog-body { padding: 20px; text-align: center; }
+
+.ui-dialog-content { display: inline-block; position: relative; vertical-al=
+ign: middle; text-align: left; }
+
+.ui-dialog-footer { padding: 0px 20px 20px; }
+
+.ui-dialog-statusbar { float: left; margin-right: 20px; padding: 6px 0px; l=
+ine-height: 1.42857; font-size: 14px; color: rgb(136, 136, 136); white-spac=
+e: nowrap; }
+
+.ui-dialog-statusbar label:hover { color: rgb(51, 51, 51); }
+
+.ui-dialog-statusbar input, .ui-dialog-statusbar .label { vertical-align: m=
+iddle; }
+
+.ui-dialog-button { float: right; white-space: nowrap; }
+
+.ui-dialog-footer button + button { margin-bottom: 0px; margin-left: 5px; }
+
+.ui-dialog-footer button { width: auto; overflow: visible; display: inline-=
+block; padding: 6px 12px; margin-bottom: 0px; font-size: 14px; font-weight:=
+ normal; line-height: 1.42857; text-align: center; white-space: nowrap; ver=
+tical-align: middle; cursor: pointer; background-image: none; border: 1px s=
+olid transparent; border-radius: 4px; -webkit-user-select: none; }
+
+.ui-dialog-footer button:focus { outline: -webkit-focus-ring-color auto 5px=
+; outline-offset: -2px; }
+
+.ui-dialog-footer button:hover, .ui-dialog-footer button:focus { color: rgb=
+(51, 51, 51); text-decoration: none; }
+
+.ui-dialog-footer button:active { background-image: none; outline: 0px; box=
+-shadow: rgba(0, 0, 0, 0.121569) 0px 3px 5px inset; }
+
+.ui-dialog-footer button[disabled] { pointer-events: none; cursor: not-allo=
+wed; opacity: 0.65; box-shadow: none; }
+
+.ui-dialog-footer button { color: rgb(51, 51, 51); background-color: rgb(25=
+5, 255, 255); border-color: rgb(204, 204, 204); }
+
+.ui-dialog-footer button:hover, .ui-dialog-footer button:focus, .ui-dialog-=
+footer button:active { color: rgb(51, 51, 51); background-color: rgb(235, 2=
+35, 235); border-color: rgb(173, 173, 173); }
+
+.ui-dialog-footer button:active { background-image: none; }
+
+.ui-dialog-footer button[disabled], .ui-dialog-footer button[disabled]:hove=
+r, .ui-dialog-footer button[disabled]:focus, .ui-dialog-footer button[disab=
+led]:active { background-color: rgb(255, 255, 255); border-color: rgb(204, =
+204, 204); }
+
+.ui-dialog-footer button.ui-dialog-autofocus { color: rgb(255, 255, 255); b=
+ackground-color: rgb(66, 139, 202); border-color: rgb(53, 126, 189); }
+
+.ui-dialog-footer button.ui-dialog-autofocus:hover, .ui-dialog-footer butto=
+n.ui-dialog-autofocus:focus, .ui-dialog-footer button.ui-dialog-autofocus:a=
+ctive { color: rgb(255, 255, 255); background-color: rgb(50, 118, 177); bor=
+der-color: rgb(40, 94, 142); }
+
+.ui-dialog-footer button.ui-dialog-autofocus:active { background-image: non=
+e; }
+
+.ui-popup-top-left .ui-dialog, .ui-popup-top .ui-dialog, .ui-popup-top-righ=
+t .ui-dialog { top: -8px; }
+
+.ui-popup-bottom-left .ui-dialog, .ui-popup-bottom .ui-dialog, .ui-popup-bo=
+ttom-right .ui-dialog { top: 8px; }
+
+.ui-popup-left-top .ui-dialog, .ui-popup-left .ui-dialog, .ui-popup-left-bo=
+ttom .ui-dialog { left: -8px; }
+
+.ui-popup-right-top .ui-dialog, .ui-popup-right .ui-dialog, .ui-popup-right=
+-bottom .ui-dialog { left: 8px; }
+
+.ui-dialog-arrow-a, .ui-dialog-arrow-b { position: absolute; display: none;=
+ width: 0px; height: 0px; overflow: hidden; border: 8px dashed transparent;=
+ }
+
+.ui-popup-follow .ui-dialog-arrow-a, .ui-popup-follow .ui-dialog-arrow-b { =
+display: block; }
+
+.ui-popup-top-left .ui-dialog-arrow-a, .ui-popup-top .ui-dialog-arrow-a, .u=
+i-popup-top-right .ui-dialog-arrow-a { bottom: -16px; border-top: 8px solid=
+ rgb(124, 124, 124); }
+
+.ui-popup-top-left .ui-dialog-arrow-b, .ui-popup-top .ui-dialog-arrow-b, .u=
+i-popup-top-right .ui-dialog-arrow-b { bottom: -15px; border-top: 8px solid=
+ rgb(255, 255, 255); }
+
+.ui-popup-top-left .ui-dialog-arrow-a, .ui-popup-top-left .ui-dialog-arrow-=
+b { left: 15px; }
+
+.ui-popup-top .ui-dialog-arrow-a, .ui-popup-top .ui-dialog-arrow-b { left: =
+50%; margin-left: -8px; }
+
+.ui-popup-top-right .ui-dialog-arrow-a, .ui-popup-top-right .ui-dialog-arro=
+w-b { right: 15px; }
+
+.ui-popup-bottom-left .ui-dialog-arrow-a, .ui-popup-bottom .ui-dialog-arrow=
+-a, .ui-popup-bottom-right .ui-dialog-arrow-a { top: -16px; border-bottom: =
+8px solid rgb(124, 124, 124); }
+
+.ui-popup-bottom-left .ui-dialog-arrow-b, .ui-popup-bottom .ui-dialog-arrow=
+-b, .ui-popup-bottom-right .ui-dialog-arrow-b { top: -15px; border-bottom: =
+8px solid rgb(255, 255, 255); }
+
+.ui-popup-bottom-left .ui-dialog-arrow-a, .ui-popup-bottom-left .ui-dialog-=
+arrow-b { left: 15px; }
+
+.ui-popup-bottom .ui-dialog-arrow-a, .ui-popup-bottom .ui-dialog-arrow-b { =
+margin-left: -8px; left: 50%; }
+
+.ui-popup-bottom-right .ui-dialog-arrow-a, .ui-popup-bottom-right .ui-dialo=
+g-arrow-b { right: 15px; }
+
+.ui-popup-left-top .ui-dialog-arrow-a, .ui-popup-left .ui-dialog-arrow-a, .=
+ui-popup-left-bottom .ui-dialog-arrow-a { right: -16px; border-left: 8px so=
+lid rgb(124, 124, 124); }
+
+.ui-popup-left-top .ui-dialog-arrow-b, .ui-popup-left .ui-dialog-arrow-b, .=
+ui-popup-left-bottom .ui-dialog-arrow-b { right: -15px; border-left: 8px so=
+lid rgb(255, 255, 255); }
+
+.ui-popup-left-top .ui-dialog-arrow-a, .ui-popup-left-top .ui-dialog-arrow-=
+b { top: 15px; }
+
+.ui-popup-left .ui-dialog-arrow-a, .ui-popup-left .ui-dialog-arrow-b { marg=
+in-top: -8px; top: 50%; }
+
+.ui-popup-left-bottom .ui-dialog-arrow-a, .ui-popup-left-bottom .ui-dialog-=
+arrow-b { bottom: 15px; }
+
+.ui-popup-right-top .ui-dialog-arrow-a, .ui-popup-right .ui-dialog-arrow-a,=
+ .ui-popup-right-bottom .ui-dialog-arrow-a { left: -16px; border-right: 8px=
+ solid rgb(124, 124, 124); }
+
+.ui-popup-right-top .ui-dialog-arrow-b, .ui-popup-right .ui-dialog-arrow-b,=
+ .ui-popup-right-bottom .ui-dialog-arrow-b { left: -15px; border-right: 8px=
+ solid rgb(255, 255, 255); }
+
+.ui-popup-right-top .ui-dialog-arrow-a, .ui-popup-right-top .ui-dialog-arro=
+w-b { top: 15px; }
+
+.ui-popup-right .ui-dialog-arrow-a, .ui-popup-right .ui-dialog-arrow-b { ma=
+rgin-top: -8px; top: 50%; }
+
+.ui-popup-right-bottom .ui-dialog-arrow-a, .ui-popup-right-bottom .ui-dialo=
+g-arrow-b { bottom: 15px; }
+
+@-webkit-keyframes ui-dialog-loading {=20
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes ui-dialog-loading {=20
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.ui-dialog-loading { vertical-align: middle; position: relative; display: b=
+lock; overflow: hidden; width: 32px; height: 32px; top: 50%; margin: -16px =
+auto 0px; font-size: 0px; text-indent: -999em; color: rgb(102, 102, 102); }
+
+.ui-dialog-loading { }
+
+.ui-dialog-loading::after { position: absolute; content: ""; width: 3px; he=
+ight: 3px; margin: 14.5px 0px 0px 14.5px; border-radius: 100%; box-shadow: =
+rgb(204, 204, 204) 0px -10px 0px 1px, rgb(204, 204, 204) 10px 0px, rgb(204,=
+ 204, 204) 0px 10px, rgb(204, 204, 204) -10px 0px, rgb(204, 204, 204) -7px =
+-7px 0px 0.5px, rgb(204, 204, 204) 7px -7px 0px 1.5px, rgb(204, 204, 204) 7=
+px 7px, rgb(204, 204, 204) -7px 7px; transform: rotate(360deg); animation: =
+ui-dialog-loading 1.5s linear infinite; }
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.cnblogs.com/skins/Cogitation/images/BlueTabFace.gif
+
+R0lGODlhAQAZAMQAABVnnxRikylnoBVqoxVfkAFOghVmnhRkmRZooAVMgBVknBVonhdpoY7C2gE/
+eBNjmBVqoRhqog5ikRZrpBdspQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAA
+AAAALAAAAAABABkAAAUUYJE4jUBIwXMoCwINEyVPU8QARggAOw==
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.cnblogs.com/skins/Cogitation/images/BlueTabBackground.gif
+
+R0lGODlhBgAHAIAAAAFOggAAACH5BAAAAAAALAAAAAAGAAcAAAIFhI+py1oAOw==
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.cnblogs.com/skins/Cogitation/images/BlueTabBack.gif
+
+R0lGODlhBgAZALMAABJtohRvpAFKfRt1qRlwpQFNfwNPgwFNgQBMfhtypwBMgBxzqABLfQBNgQJO
+ggFOgiH5BAAAAAAALAAAAAAGABkAAAQl8MlJq7046817bU4YWqJzOE1DqZSSOsZTFIggMMOwJAQR
+/IBgBAA7
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.cnblogs.com/skins/Cogitation/bundle-Cogitation.css?v=KxzCsGje7vptXKdp2HZBpXmgRp_h-PvgHFxMy8F9r3o1
+
+@charset "utf-8";
+
+body { font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, san=
+s-serif; margin: 0px; }
+
+p { font-size: 13px; line-height: 1.5; }
+
+span { line-height: 1.5; }
+
+td { font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, sans-=
+serif; }
+
+a:visited, a:active, a:link { color: navy; text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+h1 { margin: 10px 0px 5px; font-size: 18px; }
+
+h1 a:visited, h1 a:active, h1 a:link { color: rgb(0, 0, 0); }
+
+h1 a:hover { color: rgb(68, 119, 255); text-decoration: none; }
+
+h2 { margin-top: 10px; margin-bottom: 3px; font-size: 13px; }
+
+h3 { font-size: 12px; }
+
+h5 { margin: 0px; padding: 0px; }
+
+p { margin: 10px 0px; }
+
+#authors ul { list-style: none; padding: 0px; margin: 0px 5px; }
+
+div.News { font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica,=
+ sans-serif; padding: 5px 5px 5px 10px; }
+
+.HeaderTitle { font-size: 1.5em; margin: 0px; }
+
+.HeaderTitles { padding: 10px; width: 100%; }
+
+.HeaderTitles a:visited, .HeaderTitles a:active, .HeaderTitles a:link, .Hea=
+derTitles a:hover { color: rgb(255, 255, 255); text-decoration: none; font-=
+size: 18px; font-weight: normal; }
+
+.HeaderBar { font-weight: normal; font-size: 12px; border-collapse: collaps=
+e; background-image: url("images/BlueTabBack.gif"); background-repeat: repe=
+at-x; }
+
+.HeaderBar a:visited, .HeaderBar a:active, .HeaderBar a:link { color: rgb(2=
+45, 245, 245); text-decoration: none; font-weight: normal; }
+
+.HeaderBarTab { background-image: url("images/BlueTabFace.gif"); background=
+-repeat: repeat-x; border-collapse: collapse; padding: 0px; }
+
+.BlogStatsBar { text-align: right; font-weight: normal; font-size: 12px; co=
+lor: silver; border-collapse: collapse; }
+
+p.date img { vertical-align: middle; }
+
+p.date { font-size: 12px; font-weight: bold; margin-bottom: 0px; padding-to=
+p: 2px; padding-right: 0px; padding-bottom: 4px; text-align: right; }
+
+blockquote { }
+
+div.postTitle a:visited, div.postTitle a:active, div.postTitle a:link { col=
+or: navy; text-decoration: none; }
+
+div.post { border-width: 2px; border-style: solid; border-color: rgb(220, 2=
+20, 220); }
+
+div.postTitle { padding-left: 3px; font-weight: bolder; font-size: 13px; pa=
+dding-bottom: 3px; padding-top: 3px; border-bottom: 1px solid rgb(220, 220,=
+ 220); background-color: rgb(245, 245, 245); }
+
+div.postText { padding: 10px 10px 5px 3px; font-size: 13px; line-height: 1.=
+5; margin-left: 5px; }
+
+div.postText p { line-height: 1.5; }
+
+div.postFoot { background-color: rgb(245, 245, 245); border-top: 1px solid =
+rgb(220, 220, 220); font-size: 12px; padding: 1px 3px; text-align: right; }
+
+#top { background-image: url("images/BlueTabBackground.gif"); background-re=
+peat: repeat; color: rgb(245, 245, 245); border-top: 4px solid rgb(0, 0, 0)=
+; border-bottom: 4px solid rgb(0, 0, 0); padding: 0px; margin: 0px; }
+
+#tagline { font-size: 16px; margin: 0px; color: rgb(255, 255, 255); }
+
+#leftmenu { position: absolute; left: 0px; width: 200px; height: auto; back=
+ground-color: rgb(245, 245, 245); padding-top: 0px; }
+
+#leftmenu h3 { font-size: 12px; margin: 10px 0px 0px; padding-bottom: 2px; =
+padding-left: 3px; border-top: 1px solid rgb(220, 220, 220); padding-top: 3=
+px; }
+
+#leftmenu ul { list-style: none; margin: 0px 0px 10px 5px; padding-left: 5p=
+x; font-size: 12px; }
+
+#leftmenu a { padding: 1px; text-decoration: none; }
+
+#leftmenu a:active, #leftmenu a:visited, #leftmenu a:link { }
+
+#leftmenu a:hover { font-style: italic; }
+
+#main { margin-left: 200px; background-color: rgb(255, 255, 255); padding: =
+10px; border-left: 1px solid rgb(85, 85, 85); border-bottom: 4px solid rgb(=
+0, 0, 0); }
+
+#footer { margin: 0px; padding-top: 5px; text-align: center; font-size: 10p=
+x; }
+
+#CommentForm { font-size: 12px; font-family: Verdana, Geneva, Arial, Helvet=
+ica, sans-serif; }
+
+input, textarea { font-size: 12px; font-family: Verdana, Geneva, Arial, Hel=
+vetica, sans-serif; }
+
+.CommentForm { font-size: 12px; font-family: Verdana, Geneva, Arial, Helvet=
+ica, sans-serif; }
+
+.Button { border: 1px solid rgb(70, 130, 180); background-color: rgb(220, 2=
+20, 220); }
+
+.Cal { border: 1px solid rgb(24, 106, 162); width: 100%; font-family: Arial=
+; font-size: 12px; margin-top: 0px; margin-bottom: 10px; height: 180px; bac=
+kground-color: rgb(245, 245, 245); padding: 0px; }
+
+.CalTitle { background-color: rgb(1, 78, 130); border-color: rgb(170, 221, =
+255); font-family: Arial; font-size: 13px; font-weight: normal; color: rgb(=
+0, 0, 0); margin-left: 0px; padding: 0px; height: 100%; }
+
+.CalOtherMonthDay { color: gray; }
+
+.CalSelector { }
+
+.CalNextPrev { background-color: rgb(1, 78, 130); }
+
+.CalDayHeader { background-color: rgb(24, 106, 162); color: rgb(0, 0, 0); }
+
+.CalSelectedDay { }
+
+.CalWeekendDay { }
+
+.CalTodayDay { color: red; }
+
+h1 { margin: 10px 0px 5px; font-size: 24px; line-height: 200%; }
+
+h2 { margin-top: 10px; margin-bottom: 3px; font-size: 18px; }
+
+h3 { font-size: 16px; }
+
+h4 { font-size: 14px; }
+
+p { margin: 10px 0px; line-height: 150%; }
+
+.CalTitle { background-color: rgb(1, 78, 130); border-color: rgb(170, 221, =
+255); font-family: Arial; font-size: 13px; font-weight: normal; color: rgb(=
+255, 255, 255); margin-left: 0px; padding: 0px; height: 100%; }
+
+.CalNextPrev { background-color: rgb(1, 78, 130); color: rgb(255, 255, 255)=
+; }
+
+.CalDayHeader { background-color: rgb(24, 106, 162); color: rgb(255, 255, 2=
+55); }
+
+div.News { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; padd=
+ing: 5px 5px 5px 10px; }
+
+.HeaderBar { font-weight: normal; border-collapse: collapse; background-ima=
+ge: url("images/BlueTabBack.gif"); background-repeat: repeat-x; }
+
+.BlogStatsBar { text-align: right; font-weight: normal; color: silver; bord=
+er-collapse: collapse; }
+
+p.date { font-weight: bold; margin-bottom: 0px; padding-top: 2px; padding-r=
+ight: 0px; padding-bottom: 4px; text-align: right; }
+
+blockquote { }
+
+div.postFoot { background-color: rgb(245, 245, 245); border-top: 1px solid =
+rgb(220, 220, 220); padding: 1px 3px; text-align: right; }
+
+#leftmenu h3 { margin: 10px 0px 0px; padding-bottom: 2px; padding-left: 3px=
+; border-top: 1px solid rgb(220, 220, 220); }
+
+#leftmenu ul { list-style: none; margin: 0px 0px 10px 5px; padding-left: 5p=
+x; }
+
+#leftmenu a { padding: 1px; text-decoration: none; }
+
+#footer { margin: 0px; padding-top: 5px; text-align: center; }
+
+#CommentForm { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; =
+}
+
+input, textarea { font-family: Verdana, Geneva, Arial, Helvetica, sans-seri=
+f; }
+
+.CommentForm { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; =
+}
+
+#leftmenu { position: absolute; left: 0px; width: 200px; height: auto; back=
+ground-color: rgb(245, 245, 245); padding-top: 0px; }
+
+#main { margin-left: 200px; background-color: rgb(255, 255, 255); padding: =
+10px; border-left: 1px solid rgb(85, 85, 85); border-bottom: 4px solid rgb(=
+0, 0, 0); }
+
+.div_my_zzk { margin-left: 5px; }
+
+.commentOpt { padding-bottom: 5px; }
+
+.blog_comment_body { line-height: 1.8; }
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.cnblogs.com/skins/Cogitation/bundle-Cogitation-mobile.css?v=35ET15jmlo8kcQ-axRS7HKcmBPzMuD32QRSxrRgNkw01
+
+@charset "utf-8";
+
+body { font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans=
+-serif; font-size: 14px !important; }
+
+#blog_nav_rss { display: none !important; }
+
+#blog_nav_rss_image { display: none !important; }
+
+#blog_nav_newpost { display: none !important; }
+
+img { height: auto; max-width: 300px !important; }
+
+div.commentform textarea { width: 330px; height: 200px; }
+
+.commentbox_title { width: auto; }
+
+#green_channel { width: 320px; }
+
+body { display: flex; flex-flow: column; }
+
+#leftmenu { position: static; order: 2; width: auto; }
+
+#main { margin-left: 0px; order: 1; }
+
+.footer { display: none; }
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: chrome-extension://fidicgekecdkdmkjghdgadgdmcfodfid/themes/default/img/header-buttons.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAiCAYAAACp43wlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAA2RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEz
+NDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEu
+MC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVz
+b3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1N
+Ok9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpDQjJGMUU3RDA5MTVFMzExQjg1QkZCOTgyNUJE
+RTlCMiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGRjA2ODk4QTMwQTkxMUU0OUQ2OUM5NTFC
+OUM0ODAzMCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGRjA2ODk4OTMwQTkxMUU0OUQ2OUM5
+NTFCOUM0ODAzMCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3Mi
+PiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCMzExRjY1ODI0
+MTVFMzExQjgzNTg5Q0RCNUI4RTEwRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDQjJGMUU3
+RDA5MTVFMzExQjg1QkZCOTgyNUJERTlCMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRG
+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
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: chrome-extension://fidicgekecdkdmkjghdgadgdmcfodfid/themes/default/img/poparrow.png
+
+iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEz
+NDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlE
+PSJ4bXAuaWlkOjc1MzYyODU0NzYwRDExRTQ4QkVFRDQ3NzI5NUM1MTI0IiB4bXBNTTpEb2N1bWVu
+dElEPSJ4bXAuZGlkOjc1MzYyODU1NzYwRDExRTQ4QkVFRDQ3NzI5NUM1MTI0Ij4gPHhtcE1NOkRl
+cml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NzUzNjI4NTI3NjBEMTFFNDhCRUVE
+NDc3Mjk1QzUxMjQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NzUzNjI4NTM3NjBEMTFFNDhC
+RUVENDc3Mjk1QzUxMjQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1l
+dGE+IDw/eHBhY2tldCBlbmQ9InIiPz4UqbRwAAABK0lEQVR42pzST0uEQBgG8FFHBLU0Mdmr0CFa
+OkTsuUPd+god+nB9hW4VdF6WDkvRIey6iJiWEiiOPW8wIIOb0AvDuzM+v/HPrNb3PftP8SRJxtZP
+dV2/5ZxnTdMsMP9WA/oY0jTtYR9lWdbcNM1nrHlTkNBdFEWu4zg6LEOPDcN4xbXZNkjoHmiXkFwM
+goD5vj/Do79geqBCiXaGSJbneSwMwz3gJWUljP9CslzXZcj4yD5iekzBdxzJNbqBoU0NZK/Q15w0
+drnBcKbODkgg94V+Qndc48dZmqZFVVVbUV3XAhlC5/SU8p1WQohFlmUfZVlOoZV6HG/AR0VRbPI8
+V9HnEP3+5ZTNN13XHSL8hB7btk2oAroYojFIVbZtO8dHWGKDEOhSRVQ/AgwABfaNFLFN77sAAAAA
+SUVORK5CYII=
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: chrome-extension://fidicgekecdkdmkjghdgadgdmcfodfid/themes/default/content.css
+
+@charset "utf-8";
+
+#hldict-pop { position: absolute; font-family: "Helvetica Neue", Helvetica,=
+ Arial, sans-serif; font-size: 13px; line-height: 1.5em; background: transp=
+arent; color: black; z-index: 2014112700; }
+
+#hldict-pop-texture { height: 0px; border-right: none; border-bottom: none;=
+ border-left: none; border-image: initial; border-top: 1px solid rgb(204, 2=
+04, 204); box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px; }
+
+#hldict-pop-close { float: right; margin: 1px 1px 0px 0px; width: 15px; hei=
+ght: 15px; background: url("img/header-buttons.png") -5px -3px; cursor: poi=
+nter; display: none; }
+
+#hldict-pop-close.hldict-hover { background-position: -5px -19px; }
+
+#hldict-pop-content { padding: 10px; border-radius: 0px 0px 2px 2px; border=
+-top: none; background: white; box-shadow: rgba(0, 0, 0, 0.298039) 0px 2px =
+3px; }
+
+#hldict-poparrow-w { position: relative; height: 7px; }
+
+#hldict-poparrow-w.up { margin: 0px 0px -1px; }
+
+#hldict-poparrow-w.down { margin: -2px 0px 0px; }
+
+#hldict-poparrow { width: 14px; height: 7px; left: 50%; margin-left: -7px; =
+position: absolute; z-index: 20130907; }
+
+#hldict-poparrow.up { background: url("img/poparrow.png"); }
+
+#hldict-poparrow.down { background: url("img/poparrow.png") center bottom; =
+}
+
+#hldict-pop-title { font-size: 16px; color: rgb(153, 153, 153); }
+
+#hldict-pop-title strong { margin-right: 10px; color: rgb(221, 75, 57); fon=
+t-weight: bold; }
+
+#hldict-pop-title #hldict-pop-play { float: right; margin: 1px 0px 0px; cur=
+sor: pointer; width: 16px; height: 16px; background: url("img/sound.png"); =
+opacity: 0.55; display: none; }
+
+#hldict-pop-title #hldict-pop-play:hover { opacity: 1; }
+
+#hldict-pop-detail { padding: 10px 0px; font-size: 14px; text-align: left; =
+font-weight: normal; color: rgb(51, 51, 51); line-height: 1.8em; }
+
+#hldict-pop-more { color: rgb(66, 127, 237); text-align: right; cursor: poi=
+nter; padding: 0px 2px; }
+
+#hanlin-dict-w { position: fixed; right: 0px; top: 0px; width: 0px; height:=
+ 100%; z-index: 2014083000; }
+
+#hanlin-dict { border: none; margin: 0px; padding: 0px; }
+
+#hanlin-dict-minwidth { width: 67px; height: 0px; }
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.cnblogs.com/images/xml.gif
+
+R0lGODlhGgAKANUAAP+CLtyHTs9SBf9bAPjx6vns5LNWGPGugpQ7AMlhG/9tAPzCm+JhC/yzg+l1
+J/2rduGxkO3Tw/+aV/RcAP9tCd+QXPrp3fPVwfn///ySS/NkBP7hzeJdBf++kv/l0/ZUAP97Jf/I
+ov/9+e9jCvBpDuq4lviANN+ec+x/NONkD+/Zy//Xu/9wAv317vv5+PzMrOWnf/DBodusjf/Gn1wl
+AeG0lv13H/9fAP9pAP9gAP+FNKNHC/9iAP+xfv////9mACH5BAAAAAAALAAAAAAaAAoAAAaxwFlv
+SCwaj8NGADDI3QaDZxTapEpz2Bxvp+PxQJvFQOIxPTyZsedh22RuvziOy/vlGphGoSZY+C4jKz4Q
+Dj4VE3E/c12JL38CEzMFBTEbgw4ih4mLdT83HT4qHDwhESU+JwSEIgEfnZyeEi4lLgc3ISoOBwkt
+NYUwJgAUinRfFnwLBCgdEQwfEy0yDi0FFhcOOYs4CiwUowokDBQjGgoK3jgUKevlLDsGCPHy8/T1
+8jRBADs=
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.cnblogs.com/skins/Cogitation/Images/BlueTabRight.gif
+
+R0lGODlhLwAZAOYAAJvU8SNkjhFekQFNfwBCeA1ajiRsoBltpBRilUuUwhpwpgRRhVWdyXi53x5x
+qESDqRJbiTJ8rV6l0RpjlUCNvFOKrFakzSR0pBllmg9bkBhqoRtpnDaBrSl5sTuEsz6Kuh1upRdp
+oBZkmAJUjSZ5qip6ril3rzKEsyZ3rxVmnQpXiy15sVii0hNglGOq2kiSuRdonB91qCBxqQBQhwhU
+hQtWiY3E4h5mmQhViRpsohZhmAtimCR1rC1+sRFelid4sCx1pg5aiy18tRZsoiFunBJgkSh4rCBw
+qDR+sBRhkiJzqwZUhS15rRlimhZfj0+dyiR0qQJQgRtnmy95tRNdlg5XkARSgwJOiAxahyN0qx1l
+nwtYiSV2rSZ1rSFyqQ9djhNuoyt7rhBUgXSw0jeGtyl4o2GdwUeQwU6Xx0yZwyVypwNThiRzrBNT
+eQVWjUOOwBVwpSR0rxNjmBFkmI+71AlXiBtrny+ArwxZjQZThwNQhAlWigdUiAJPgwVShgFOgiH5
+BAAAAAAALAAAAAAvABkAAAf/gAN/f32EfYd6fQt6eWt+j5CQepOFg5aXmJcDV1d/M1YLVzN6CwtL
+C3mpqnmQi5SVmbGDBLR9azMLa3preQt8OHk0fMPDq5KJsLKXNnQVbZsLNDTAvzg4w9bWxKp+i4fJ
+yn8GFTYAFWIDfmu/eXvu7/Daxd3I4LJOThAPNmMBfSN+aqjYM1CFwYPvsvFhNQlZuEFFdsyBEMBM
+gwhL3G1Rgaejx44HDbpb+MibPUwIEEwQISeJhzEPqrgJ0nHLR5AhB84rleihHBEiUsCAscEIixdO
+qlTx8QVLkAx4nmYoABWPyD3DHjkUFIvlUBh27EgBkiDBjSoZBKhNq1ZAhi8F/6yKvKa1J9dMKfKm
+CKEhxxE7Bt4kIIIlCRUfRVr4aJuhcYG4Bq+x8qYMRgi+B3KEyAHiiBoKT8oEoaIjcQsELVpQWTvV
+qjaGPWPx1UAbhIMjuEFc+PAEiZMkOhAkSZm6xdq4VvdIdiUrxJAhOTiDkAHCi3U1H1h4AA5URErU
+xt1OHYh1sp7mzw8cAFE9ixceWXioIcPiwwQdUnRgaCGi+PHkJC1iCVeCpHeAAg44IIMXUGQRBxcQ
+kiFBAgY0oYWFwRHHWnJ0LXDIHwT+MYR6ByroRXw8cPHDD1wY4YEFaRgwAQZNSIEBUKi59Rh5OJTU
+xwADRGHJiAcqsKAS8XWBAv8KHXRQghEnWMAAEDdUicFK3hnXGoB+TIJJH0QqYKQXSPKw5A8oKNkB
+CRwwIEEEE0xgIwbfFbGWXMCUgskAYY6phBIpLsmkECX0YEQPaLjgwQ0bbHDjjTpoCZk19CTT55FI
+crFkkyZMMYUQHURwhguDbSCFjd4lcedAPZaSzGbSHXEkD12oucKtKzDRQ670ScDBDTPqkGoRXwRR
+QB3SrBFFFED+EQWs7OFGZpImVOtkGD2EIYQQ2CbgAhpMyChAEUFsIU0dVizLLJDsptBXdJ05YF2Z
+SlZrRJMrhFFCCSZ48AQLDKCRwBlnvEHBB2SQccId+pIQQwwKgLAXX/BGm+AknyhqigKLXZDARhcX
+hBEBEkiMHEEEYZBAwgUxKOGAAnCAIXMgADs=
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://common.cnblogs.com/images/copycode.gif
+
+R0lGODlhFAAUANQHADJKYpKluc3P05qy4jJdta/M92KQ3vv8/nKi4rK/0rLC6mJ6mtHe7sHN4ZW1
+9iJLmUp2wqKy0nKa8iJCgsLV9uLq8qKywnKa2oKy4lKC0qLC8qKqwnKS0oKn7cDI1AAAACH5BAEA
+AB8ALAAAAAAUABQAAAWE4CeOZGmeaKquLKkoSRwJrXLch7XQa4IfAc+ud6AUGIHCS+NwME6WX6Xw
+6xAaps2BiUFofpICwVMK3CoVxuDQZBgIhEf50EVc1rgKJSInmRkMDQ0dBx0IBhkZfGUAjY0cOAwU
+ChZ9KQYHiIkZG5YoEAcRohYbAZ4nEHAPq6sTLa+wsSUhADs=
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://common.cnblogs.com/images/icon_weibo_24.png
+
+iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAK
+TWlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjanVN3WJP3Fj7f92UPVkLY8LGXbIEAIiOsCMgQ
+WaIQkgBhhBASQMWFiApWFBURnEhVxILVCkidiOKgKLhnQYqIWotVXDjuH9yntX167+3t+9f7vOec
+5/zOec8PgBESJpHmomoAOVKFPDrYH49PSMTJvYACFUjgBCAQ5svCZwXFAADwA3l4fnSwP/wBr28A
+AgBw1S4kEsfh/4O6UCZXACCRAOAiEucLAZBSAMguVMgUAMgYALBTs2QKAJQAAGx5fEIiAKoNAOz0
+ST4FANipk9wXANiiHKkIAI0BAJkoRyQCQLsAYFWBUiwCwMIAoKxAIi4EwK4BgFm2MkcCgL0FAHaO
+WJAPQGAAgJlCLMwAIDgCAEMeE80DIEwDoDDSv+CpX3CFuEgBAMDLlc2XS9IzFLiV0Bp38vDg4iHi
+wmyxQmEXKRBmCeQinJebIxNI5wNMzgwAABr50cH+OD+Q5+bk4eZm52zv9MWi/mvwbyI+IfHf/ryM
+AgQAEE7P79pf5eXWA3DHAbB1v2upWwDaVgBo3/ldM9sJoFoK0Hr5i3k4/EAenqFQyDwdHAoLC+0l
+YqG9MOOLPv8z4W/gi372/EAe/tt68ABxmkCZrcCjg/1xYW52rlKO58sEQjFu9+cj/seFf/2OKdHi
+NLFcLBWK8ViJuFAiTcd5uVKRRCHJleIS6X8y8R+W/QmTdw0ArIZPwE62B7XLbMB+7gECiw5Y0nYA
+QH7zLYwaC5EAEGc0Mnn3AACTv/mPQCsBAM2XpOMAALzoGFyolBdMxggAAESggSqwQQcMwRSswA6c
+wR28wBcCYQZEQAwkwDwQQgbkgBwKoRiWQRlUwDrYBLWwAxqgEZrhELTBMTgN5+ASXIHrcBcGYBie
+whi8hgkEQcgIE2EhOogRYo7YIs4IF5mOBCJhSDSSgKQg6YgUUSLFyHKkAqlCapFdSCPyLXIUOY1c
+QPqQ28ggMor8irxHMZSBslED1AJ1QLmoHxqKxqBz0XQ0D12AlqJr0Rq0Hj2AtqKn0UvodXQAfYqO
+Y4DRMQ5mjNlhXIyHRWCJWBomxxZj5Vg1Vo81Yx1YN3YVG8CeYe8IJAKLgBPsCF6EEMJsgpCQR1hM
+WEOoJewjtBK6CFcJg4Qxwicik6hPtCV6EvnEeGI6sZBYRqwm7iEeIZ4lXicOE1+TSCQOyZLkTgoh
+JZAySQtJa0jbSC2kU6Q+0hBpnEwm65Btyd7kCLKArCCXkbeQD5BPkvvJw+S3FDrFiOJMCaIkUqSU
+Eko1ZT/lBKWfMkKZoKpRzame1AiqiDqfWkltoHZQL1OHqRM0dZolzZsWQ8ukLaPV0JppZ2n3aC/p
+dLoJ3YMeRZfQl9Jr6Afp5+mD9HcMDYYNg8dIYigZaxl7GacYtxkvmUymBdOXmchUMNcyG5lnmA+Y
+b1VYKvYqfBWRyhKVOpVWlX6V56pUVXNVP9V5qgtUq1UPq15WfaZGVbNQ46kJ1Bar1akdVbupNq7O
+UndSj1DPUV+jvl/9gvpjDbKGhUaghkijVGO3xhmNIRbGMmXxWELWclYD6yxrmE1iW7L57Ex2Bfsb
+di97TFNDc6pmrGaRZp3mcc0BDsax4PA52ZxKziHODc57LQMtPy2x1mqtZq1+rTfaetq+2mLtcu0W
+7eva73VwnUCdLJ31Om0693UJuja6UbqFutt1z+o+02PreekJ9cr1Dund0Uf1bfSj9Rfq79bv0R83
+MDQINpAZbDE4Y/DMkGPoa5hpuNHwhOGoEctoupHEaKPRSaMnuCbuh2fjNXgXPmasbxxirDTeZdxr
+PGFiaTLbpMSkxeS+Kc2Ua5pmutG003TMzMgs3KzYrMnsjjnVnGueYb7ZvNv8jYWlRZzFSos2i8eW
+2pZ8ywWWTZb3rJhWPlZ5VvVW16xJ1lzrLOtt1ldsUBtXmwybOpvLtqitm63Edptt3xTiFI8p0in1
+U27aMez87ArsmuwG7Tn2YfYl9m32zx3MHBId1jt0O3xydHXMdmxwvOuk4TTDqcSpw+lXZxtnoXOd
+8zUXpkuQyxKXdpcXU22niqdun3rLleUa7rrStdP1o5u7m9yt2W3U3cw9xX2r+00umxvJXcM970H0
+8PdY4nHM452nm6fC85DnL152Xlle+70eT7OcJp7WMG3I28Rb4L3Le2A6Pj1l+s7pAz7GPgKfep+H
+vqa+It89viN+1n6Zfgf8nvs7+sv9j/i/4XnyFvFOBWABwQHlAb2BGoGzA2sDHwSZBKUHNQWNBbsG
+Lww+FUIMCQ1ZH3KTb8AX8hv5YzPcZyya0RXKCJ0VWhv6MMwmTB7WEY6GzwjfEH5vpvlM6cy2CIjg
+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
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://common.cnblogs.com/images/wechat.png
+
+iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAAlwSFlzAAAL
+EwAACxMBAJqcGAAABA9pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KICAgPHJkZjpSREYg
+eG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4K
+ICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6eG1w
+TU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iCiAgICAgICAgICAgIHhtbG5zOnN0
+UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIgogICAg
+ICAgICAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICAgICAg
+ICAgIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIj4KICAgICAgICAg
+PHhtcE1NOkRlcml2ZWRGcm9tIHJkZjpwYXJzZVR5cGU9IlJlc291cmNlIj4KICAgICAgICAgICAg
+PHN0UmVmOmluc3RhbmNlSUQ+eG1wLmlpZDo0RUREMkQ4M0Q4REUxMUUzQkU2QUFFRDI0NThBOTQx
+QTwvc3RSZWY6aW5zdGFuY2VJRD4KICAgICAgICAgICAgPHN0UmVmOmRvY3VtZW50SUQ+eG1wLmRp
+ZDo0RUREMkQ4NEQ4REUxMUUzQkU2QUFFRDI0NThBOTQxQTwvc3RSZWY6ZG9jdW1lbnRJRD4KICAg
+ICAgICAgPC94bXBNTTpEZXJpdmVkRnJvbT4KICAgICAgICAgPHhtcE1NOkRvY3VtZW50SUQ+eG1w
+LmRpZDo0RUREMkQ4NkQ4REUxMUUzQkU2QUFFRDI0NThBOTQxQTwveG1wTU06RG9jdW1lbnRJRD4K
+ICAgICAgICAgPHhtcE1NOkluc3RhbmNlSUQ+eG1wLmlpZDo0RUREMkQ4NUQ4REUxMUUzQkU2QUFF
+RDI0NThBOTQxQTwveG1wTU06SW5zdGFuY2VJRD4KICAgICAgICAgPHhtcDpDcmVhdG9yVG9vbD5B
+ZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3M8L3htcDpDcmVhdG9yVG9vbD4KICAgICAgICAgPHRp
+ZmY6T3JpZW50YXRpb24+MTwvdGlmZjpPcmllbnRhdGlvbj4KICAgICAgPC9yZGY6RGVzY3JpcHRp
+b24+CiAgIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CpwBC28AAA44SURBVGgFxVoJcJTlGX7+K7ub
+XRISCBAgIeEKh6ByCQIiCiIiKvWqjm2tVuqBVqUqYz0iirW11pmOHWccrTLqWO8DPFEKeKENIqIg
+2CDhPsKVZLPZ8+/7fLvf5k9YEI/Bd+ff/3q/93ve8zt2DZCqYeJOuDDgzqyZ6dTtqB2XcqPHW8gr
+sgzDTbquYSrGo/flSr+G9Jt0k6kU3G0+I7B84fS3VxHB+c+dbz1/wfNJXhvVAl6OFG+mLjjltJZU
+5I4kkmPNfBOGQQ6++RnJBVxBl4q4zZZhv1Jsdrz9xTNf34DnYOECJLPwpiw4+cqIG3nYyAeSYVHO
+RUJgS3NFWb7M/dE+GQLXckI2UgfcLUGnYMYb0xbV0BMK2OkLJp4RQfPrKUucFXNbBHaeWP5oR82h
+jSKhLZ+kYErYIcuPJrO22Fc6/qXTX9puzlwwMz/qRufCLzwEb8B/SPAU5CHXdZES/3oPV+7Z209K
+zE7AFrG+eGMyZoTcPgdiu+awD2PKwonTWozmhYl4wjUUX/rrUAAIjtIskWcbDizDkvu0s/gu5SYl
+9uTjxuWOvD9R9KW9QGFJI8+wzLi5uXuw60g7noyPNILSTdxgVtu5gGsgBJ1n5AmLgaZUA7Yk16M2
+tS+dKTS6iO8uupSag9DRKlbKxUURKiN++nHKpO2m4LkJ5fke+yKNxwhgt1Nrrh4Mn+Ad+dDaBL00
+tlxKAjDAKcWowCTM8PdEgV0IUwptOBHGrtgOfB1ZjfdaPlDCBju90NXqqa5jbvRHe0WiVgosYNqm
+KQYttsX2h/QxwQekLIVTTVgSXY5jnArcUzoXo7uNQUVRJYoCRQg4AdimrQJFajaiiSgOtDRga8NW
+fLFrFd7c+RpeCb+BKrsbyuz+oBJJxIX/h9UIL1jp17QNk/q0JR0y+UYIa+JLRQ3goYp/4PTeU1FR
+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
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://pic.cnblogs.com/face/sample_face.gif
+
+R0lGODlhMAAwALMAANvb28PDw76+vsrKyvPz86ioqNDQ0OTk5LCwsOfn56Ghofj4+Ovr67W1tZqa
+mv///yH5BAAAAAAALAAAAAAwADAAAAT/8MlJq7046827/2AoMYBhnsAigkYgKE4sy4qxdgs873Nw
+b4ZdIWA4tHSxwS+DHAxmiIZzRlhaADJfcNd4PJPWSkDGeGxn3YWsEKYUYuyKcVBcNGSqtjoWWAAG
+DW87JjIHbQ8HMgYEPDOEMYZtiZAPjVmTDpFhmIYIOg13DVWIhYecEoIAOnmnkooPDGQxXRJnmlZ7
+DloxApMIJgxjMaNtCDEKCwIxRYM6cYdYMQjGmQ/Cx6+HEtTSAhMMRtwFedoMSJY0Zdrfd+hw6usU
+DAYN59IG5BSMDggA8R7cAiQYONBJgn9/AkxzJ+0fN4YN4ymDuObfE0F8CA78dyFaEgHTXBAI8MeR
+wsNGBYj9S0DRW8mHBQQ4AYDRQcl9SVR6fCZRhjgB1xwc5DjjC0qS8YwOmOjO5ToCAARArdlISckH
+J2U+RMoRZwGuBJaq5PjE6tUNY8+qXcu2rdu3cCMAADs=
+------MultipartBoundary--wkcfNkDxEa8b4zrj9FdWSzJR9bm8oCLmWFh2tZ8R5d------
