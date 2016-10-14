@@ -5,7 +5,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({ "classpath:springservlet-config.xml" })
+@ContextConfiguration({ "classpath:springservlet-config.xml","classpath:spring-config.xml" })
 @Transactional
 public abstract class BaseTest {
 

@@ -44,11 +44,11 @@
 	<!-- 定义使用事务的方法,用aop的格式 -->
 	<tx:advice id="txAdvice" transaction-manager="transactionManager">
 		<tx:attributes>
-			<tx:method name="find*" read-only="true" propagation="SUPPORTS" isolation="READ_COMMITTED" />
-			<tx:method name="get*" read-only="true" propagation="SUPPORTS" isolation="READ_COMMITTED" />
-			<tx:method name="search*" read-only="true" propagation="SUPPORTS" isolation="READ_COMMITTED" />
-			<tx:method name="select*" read-only="true" propagation="SUPPORTS" isolation="READ_COMMITTED" />
-			<tx:method name="*" propagation="REQUIRED" isolation="READ_COMMITTED" />
+			<tx:method name="find*" read-only="true" propagation="SUPPORTS"  />
+			<tx:method name="get*" read-only="true" propagation="SUPPORTS"  />
+			<tx:method name="search*" read-only="true" propagation="SUPPORTS"  />
+			<tx:method name="select*" read-only="true" propagation="SUPPORTS"  />
+			<tx:method name="*" propagation="REQUIRED"  />
 		</tx:attributes>
 	</tx:advice>
 	<!-- 定义一个切入点，使事务在它的切入点内有效 -->

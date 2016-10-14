@@ -19,9 +19,6 @@
 	<context:component-scan base-package="com">
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
-	<!-- 自动扫描 -->
-	<!-- <context:component-scan base-package="cmcc.mobile.yiqi.api.service.impl" /> -->
-
 
 	<import resource="mongodb-context.xml" />
 	<import resource="dataSource-config.xml" />
