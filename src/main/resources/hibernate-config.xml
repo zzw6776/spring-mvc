@@ -37,23 +37,5 @@
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 
-	<!-- 使用注解支持事务,使用注解的方式 -->
-	<tx:annotation-driven transaction-manager="transactionManager" />
 
-
-	<!-- 定义使用事务的方法,用aop的格式 -->
-	<tx:advice id="txAdvice" transaction-manager="transactionManager">
-		<tx:attributes>
-			<tx:method name="find*" read-only="true" propagation="SUPPORTS"  />
-			<tx:method name="get*" read-only="true" propagation="SUPPORTS"  />
-			<tx:method name="search*" read-only="true" propagation="SUPPORTS"  />
-			<tx:method name="select*" read-only="true" propagation="SUPPORTS"  />
-			<tx:method name="*" propagation="REQUIRED"  />
-		</tx:attributes>
-	</tx:advice>
-	<!-- 定义一个切入点，使事务在它的切入点内有效 -->
-	<aop:config proxy-target-class="true">
-		<aop:pointcut expression="execution(* com.demo..service.impl..*.*(..))" id="pointcut" />
-		<aop:advisor pointcut-ref="pointcut" advice-ref="txAdvice" />
-	</aop:config>
 </beans>

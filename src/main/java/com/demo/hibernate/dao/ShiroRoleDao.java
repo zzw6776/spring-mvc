@@ -1,10 +1,12 @@
 package com.demo.hibernate.dao;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.demo.hibernate.entity.ShiroRole;
 
 @Repository
+@Transactional
 public class ShiroRoleDao extends HGenericDao<ShiroRole, String> {
 
 	public String queryResoureceByAccount(String account) {

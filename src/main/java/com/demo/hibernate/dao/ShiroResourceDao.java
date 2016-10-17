@@ -3,10 +3,12 @@ package com.demo.hibernate.dao;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.demo.hibernate.entity.ShiroResource;
 @SuppressWarnings("unchecked")
 @Repository
+@Transactional
 public class ShiroResourceDao extends HGenericDao<ShiroResource,String>{
 
 	/**

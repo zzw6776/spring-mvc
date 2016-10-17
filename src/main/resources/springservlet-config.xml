@@ -14,7 +14,11 @@
   http://www.springframework.org/schema/mvc/spring-mvc.xsd
   http://www.springframework.org/schema/aop 
   http://www.springframework.org/schema/aop/spring-aop.xsd">
- 
+	<!-- shiro支持注解 -->
+ 	<aop:config proxy-target-class="true"/>
+		<bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+		<property name="securityManager" ref="securityManager" />
+	</bean>
 	<!-- 默认的注解映射的支持 -->
 	<mvc:annotation-driven />
 	<mvc:view-controller path="/" view-name="redirect:/jsp" />

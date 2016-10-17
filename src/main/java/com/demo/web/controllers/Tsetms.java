@@ -33,13 +33,12 @@ public class Tsetms {
 	}
 	
 	@RequestMapping("jsp")
-	@RequiresRoles("admin")
 	public String name() {
 		return "index.jsp";
 	}
 
 	@RequestMapping("html")
-	@RequiresRoles("adminasd")
+	@RequiresRoles("admin")
 	public String name1() {
 		return "index.html";
 	}
