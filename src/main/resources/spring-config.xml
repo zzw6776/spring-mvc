@@ -19,7 +19,7 @@
 	<context:component-scan base-package="com.demo" >
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
-
+<aop:aspectj-autoproxy proxy-target-class="true"/>
 	<import resource="mongodb-context.xml" />
 	<import resource="dataSource-config.xml" />
 	<import resource="mybatis-config.xml" />
