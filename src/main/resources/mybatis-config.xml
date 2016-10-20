@@ -31,7 +31,7 @@
 		<property name="properties">
 			<value>
 				style=normal
-				mappers=tk.mybatis.mapper.common.Mapper,tk.mybatis.mapper.common.MySqlMapper
+				mappers=tk.mybatis.mapper.common.Mapper,tk.mybatis.mapper.common.MySqlMapper,com.demo.mybatis3.tkMapper.InsertListOnDuplicateUpateMapper
 			</value>
 		</property>
 	</bean>
