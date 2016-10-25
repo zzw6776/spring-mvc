@@ -28,8 +28,8 @@ public class Love {
 	
 	@RequestMapping("/fileUpload")
 	@ResponseBody
-	public String upload(HttpServletRequest  request,MultipartFile wangEditorMobileFile) throws IOException {
-	String url=	FileUpload.uploadFile(wangEditorMobileFile, "");
+	public String upload(HttpServletRequest  request,MultipartFile wangEditorMobileFile,String path) throws IOException {
+	String url=	FileUpload.uploadFile(wangEditorMobileFile, path);
 		System.out.println(url);
 		return url;
 	}

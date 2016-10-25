@@ -25,15 +25,23 @@
         </textarea>
     </div>
 
+  <div class="container">
+        <textarea id="textarea2" style="width:100%;height:100%;">
+            <p>请输入内容...2</p>
+        </textarea>
+    </div>
+    
+    
     <script type="text/javascript" src="js/lib/zepto.js"></script>
     <script type="text/javascript" src="js/lib/zepto.touch.js"></script>
     <script type="text/javascript" src="js/wangEditor-mobile.js"></script>
     <script type="text/javascript">
         $(function () {
             // ___E 三个下划线
-            var editor = new ___E('textarea1');
-            editor.config.uploadImgUrl = '/fileUpload';
-            editor.config.uploadTimeout = 60 * 1000;
+            var editor = new ___E(name);
+            console.log('/fileUpload'+getQueryString('i'));
+            editor.config.uploadImgUrl = '/fileUpload?path='+getQueryString('user');
+            editor.config.uploadTimeout = 600 * 1000;
             editor.init();
         });
     </script>
