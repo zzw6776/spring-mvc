@@ -13,7 +13,7 @@ import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.SecretKeySpec;
 
 @SuppressWarnings("unused")
-public class AESUtil {
+public class EncryptUtil {
 
 	static final String algorithmStr = "AES/ECB/PKCS5Padding";
 

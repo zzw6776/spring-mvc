@@ -8,6 +8,7 @@ import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.context.ContextLoader;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.demo.util.FileUpload;
@@ -25,11 +26,18 @@ public class Love {
 		return "editor.html";
 	}
 	
-	@RequestMapping("/upload")
+	@RequestMapping("/fileUpload")
 	@ResponseBody
 	public String upload(HttpServletRequest  request,MultipartFile wangEditorMobileFile) throws IOException {
-		FileUpload.uploadFile(wangEditorMobileFile, "");
-		System.out.println("123");
-		return "123";
+	String url=	FileUpload.uploadFile(wangEditorMobileFile, "");
+		System.out.println(url);
+		return url;
+	}
+	
+	@RequestMapping("path")
+	@ResponseBody
+	public String asdasd(){
+		String temp=ContextLoader.getCurrentWebApplicationContext().getServletContext().getRealPath("/") ;
+		return temp;
 	}
 }

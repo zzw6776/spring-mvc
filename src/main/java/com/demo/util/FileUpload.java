@@ -10,46 +10,64 @@ import java.util.Date;
 
 import org.apache.commons.codec.binary.Base64;
 import org.springframework.util.StringUtils;
+import org.springframework.web.context.ContextLoader;
 import org.springframework.web.multipart.MultipartFile;
-import sun.misc.BASE64Decoder;
-import sun.misc.BASE64Encoder;
-public class FileUpload {
-	public static String FILE_PATH = FileUpload.class.getResource("/").getFile();
-	static {
-		FILE_PATH = FILE_PATH.substring(0, FILE_PATH.lastIndexOf("/"));
-		FILE_PATH = FILE_PATH.substring(0, FILE_PATH.lastIndexOf("/"));
-		FILE_PATH = FILE_PATH.substring(0, FILE_PATH.lastIndexOf("/"));
-	}
-	public static String OUT_FILE_PATH = FILE_PATH.substring(0, FILE_PATH.lastIndexOf("/"));
 
-	//图片上传
-	public static String uploadImg(MultipartFile file, String path,Boolean isCompress,Integer w,Integer h) throws IOException {
+import sun.misc.BASE64Encoder;
+
+@SuppressWarnings("restriction")
+public class FileUpload {
+	// 根据spring获取项目根目录
+	//兼容windows反斜杠
+	public static String FILE_PATH = ContextLoader.getCurrentWebApplicationContext().getServletContext()
+			.getRealPath("/").replaceAll("\\\\", "/");
+	public static String OUT_FILE_PATH = FILE_PATH.substring(0,
+			FILE_PATH.substring(0, FILE_PATH.length() - 1).lastIndexOf("/"));
+
+	/**
+	 * 
+	 * @param file
+	 * @param path  路径
+	 * @param isCompress 是否压缩 
+	 * @param w  宽
+	 * @param h  高
+	 * @return
+	 * @throws IOException
+	 */
+	public static String uploadImg(MultipartFile file, String path, Boolean isCompress, Integer w, Integer h)
+			throws IOException {
 		String Filepath = uploadFile(file, path);
 		if (isCompress) {
-			 ImgCompress imgCom = new ImgCompress(OUT_FILE_PATH+Filepath);
-			 imgCom.resizeFix(w, h);
+			ImgCompress imgCom = new ImgCompress(OUT_FILE_PATH + Filepath);
+			imgCom.resizeFix(w, h);
 		}
 		return Filepath;
 	}
-	
-	public static String uploadImgByBase64(String base64, String fileName, String path, String realName,Boolean isCompress,Integer w,Integer h) throws IOException {
+
+	public static String uploadImgByBase64(String base64, String fileName, String path, String realName,
+			Boolean isCompress, Integer w, Integer h) throws IOException {
 		String Filepath = uploadByBase64(base64, fileName, path, realName);
 		if (isCompress) {
-			 ImgCompress imgCom = new ImgCompress(OUT_FILE_PATH+Filepath);
-			 imgCom.resizeFix(w, h);
+			ImgCompress imgCom = new ImgCompress(OUT_FILE_PATH + Filepath);
+			imgCom.resizeFix(w, h);
 		}
 		return Filepath;
 	}
-	
+
 	// 文件上传
 	public static String uploadFile(MultipartFile file, String path) throws IOException {
-		//FILE_PATH = OUT_FILE_PATH;
 		String realPath = "/upload/" + path + "/";
 		String discPath = OUT_FILE_PATH + realPath;
 
 		String fileName = file.getOriginalFilename();
 		String type = fileName.substring(fileName.lastIndexOf(".") + 1);
-		fileName = RandomUtil.MD5(new Date().getTime() + file.getOriginalFilename()) + "." + type;
+		//若上传文件没有后缀名
+		if (type.length() == fileName.length()) {
+			type = file.getContentType().substring(file.getContentType().indexOf("/") + 1,
+					file.getContentType().length());
+		}
+
+		fileName = EncryptUtil.MD5(new Date().getTime() + file.getOriginalFilename(), true) + "." + type;
 		File tempFile = new File(discPath + fileName);
 		if (!tempFile.exists()) {
 			tempFile.mkdirs();
@@ -63,13 +81,19 @@ public class FileUpload {
 	}
 
 	public static String uploadByBase64(String base64, String fileName, String path) throws IOException {
-
 		return uploadByBase64(base64, fileName, path, null);
-
 	}
-
-	public static String uploadByBase64(String base64, String fileName, String path, String realName) throws IOException {
-
+/**
+ * 
+ * @param base64   
+ * @param fileName	文件名字
+ * @param path		路径
+ * @param realName	真实名字
+ * @return
+ * @throws IOException
+ */
+	public static String uploadByBase64(String base64, String fileName, String path, String realName)
+			throws IOException {
 		String realPath = "/upload/" + path + "/";
 		String discPath = OUT_FILE_PATH + realPath;
 		File discPathFile = new File(discPath);
@@ -77,7 +101,7 @@ public class FileUpload {
 			discPathFile.mkdirs();
 		}
 		String type = fileName.substring(fileName.lastIndexOf(".") + 1);
-		String md5Name = RandomUtil.MD5(new Date().getTime() + fileName);
+		String md5Name = EncryptUtil.MD5(new Date().getTime() + fileName, true);
 		String dateFileName = "";
 		if (!StringUtils.isEmpty(realName)) {
 			dateFileName = realName + "." + type;
@@ -101,36 +125,27 @@ public class FileUpload {
 		String contextPath = realPath + dateFileName;
 		return contextPath;
 	}
-	
+
 	public static void main(String[] args) throws IOException {
-		System.out.println(GetImageStr("d:/456.png"));
-//		File file = new File("d:/123");
-//		File[] array = file.listFiles();
-//		for (File userFile : array) {
-//			ImgCompress imgCom = new ImgCompress(userFile.getPath().toString());
-//			 imgCom.resizeFix(70, 70);
-//			System.out.println(userFile.getName() + "~~~~~~~~~~~~~~~" + userFile.isDirectory()+"~~"+userFile.getPath());
-//		}
+		String temp = ContextLoader.getCurrentWebApplicationContext().getServletContext().getRealPath("/");
+		System.out.println(temp);
 	}
-	 public static String GetImageStr(String file)
-	    {//将图片文件转化为字节数组字符串，并对其进行Base64编码处理
-	        String imgFile = file;//待处理的图片
-	        InputStream in = null;
-	        byte[] data = null;
-	        //读取图片字节数组
-	        try 
-	        {
-	            in = new FileInputStream(imgFile);        
-	            data = new byte[in.available()];
-	            in.read(data);
-	            in.close();
-	        } 
-	        catch (IOException e) 
-	        {
-	            e.printStackTrace();
-	        }
-	        //对字节数组Base64编码
-	        BASE64Encoder encoder = new BASE64Encoder();
-	        return encoder.encode(data);//返回Base64编码过的字节数组字符串
-	    }
+
+	public static String GetImageStr(String file) {// 将图片文件转化为字节数组字符串，并对其进行Base64编码处理
+		String imgFile = file;// 待处理的图片
+		InputStream in = null;
+		byte[] data = null;
+		// 读取图片字节数组
+		try {
+			in = new FileInputStream(imgFile);
+			data = new byte[in.available()];
+			in.read(data);
+			in.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		// 对字节数组Base64编码
+		BASE64Encoder encoder = new BASE64Encoder();
+		return encoder.encode(data);// 返回Base64编码过的字节数组字符串
+	}
 }

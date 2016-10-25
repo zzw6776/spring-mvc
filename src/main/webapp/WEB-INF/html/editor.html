@@ -32,7 +32,8 @@
         $(function () {
             // ___E 三个下划线
             var editor = new ___E('textarea1');
-            editor.config.uploadImgUrl = '/upload';
+            editor.config.uploadImgUrl = '/fileUpload';
+            editor.config.uploadTimeout = 60 * 1000;
             editor.init();
         });
     </script>
