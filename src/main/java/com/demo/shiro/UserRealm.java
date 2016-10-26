@@ -44,10 +44,13 @@ public class UserRealm extends AuthorizingRealm {
 	@Override
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
 		String account = (String) token.getPrincipal();
-		User user = userDao.find(account);
-		if (user == null) {
+		User queryUser = new User();
+		queryUser.setAccount(account);
+		List<User> users = userDao.select(queryUser);
+		if (users.isEmpty()) {
 			throw new UnknownAccountException();// 没找到帐号
 		}
+		User user = users.get(0);
 		SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(user.getAccount(), // 用户名
 				user.getPassword(), // 密码
 				getName() // realm name

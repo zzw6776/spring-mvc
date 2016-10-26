@@ -115,6 +115,10 @@ public abstract class HGenericDao<T, I extends Serializable> {
 	public void saveOrUpdate(T obj) {
 		getCurrentSession().saveOrUpdate(obj);
 	}
+	
+	public void save(T obj) {
+		getCurrentSession().save(obj);
+	}
 
 	// helper methods
 	@SuppressWarnings("rawtypes")

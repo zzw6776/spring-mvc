@@ -1,0 +1,107 @@
+﻿
+<!DOCTYPE html>
+<!--[if lt IE 10 ]><html class="no-js ie" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<head>
+<!-- Basic Page Needs
+  ================================================== -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon"
+	href="https://cdn.forestry.io/assets/favicon-d4b9fc12e3db383686dd41cb37236ba8b4e0782c10fc791ab73dfb2993fed201.png"
+	type="image/x-icon" />
+
+<!-- Mobile Specific
+  ================================================== -->
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>zzw.tk</title>
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token"
+	content="2kLExU8DVo2an8ZqJehQSQJzxgZyII83Cl40T9P0HHjrTGFtQPbxfFu1djra+hQg0bmfdBp+IgyV5uPmDeRarg==" />
+<body>
+	<header class="dashboard-header">
+		<div class="container">
+			<div class="col-md-12">
+				<h1 class="logo">
+					<a href="/">zzw.tk</a>
+				</h1>
+				<div class="dropdown account-dropdown pull-right">
+					<a class="account-button button" href="/signup">Sign up</a> <a
+						class="account-button button" href="/login">Login</a>
+				</div>
+			</div>
+		</div>
+		<link rel="stylesheet" media="all" href="css/forestry.css" />
+	</header>
+	<div class="container">
+		<div class="col-md-12">
+			<section class="main-col" style="margin: 0 auto;">
+				<div class="register">
+
+					<h2 class="page-heading">Create Account</h2>
+
+					<form class="registration-form" id="new_user"
+						action="/user/signUp" accept-charset="UTF-8" method="post">
+
+						<input type="hidden" name="mixpanel_id" id="mixpanel_id" value="" />
+						<div class="row">
+							<div class="form-group col-sm-6">
+								<input class="form-control" placeholder="Your Name"
+									autofocus="autofocus" type="text" name="name"
+									id="user_first_name" />
+							</div>
+							<div class="form-group col-sm-6">
+								<input class="form-control" placeholder="Account" type="text"
+									name="account" id="user_last_name" />
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="form-group col-sm-12">
+								<input class="form-control" placeholder="Email" type="email"
+									name="email" id="user_email" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-sm-12">
+								<input class="form-control" placeholder="Password"
+									autocomplete="off" type="password" name="password"
+									id="user_password" />
+							</div>
+						</div>
+
+						<div class="actions">
+							<input type="submit" name="commit" value="Get Started"
+								class="button primary huge" />
+
+
+
+						</div>
+						<p class="terms-privacy">
+							By creating an account you agree to our <a target="_new"
+								href="/terms">Terms and Conditions</a> and <a target="_new"
+								href="/privacy">Privacy Policy</a>
+						</p>
+					</form>
+				</div>
+
+			</section>
+		</div>
+	</div>
+	<footer class="site-footer">
+		<p>zzw.tk</p>
+		<p>
+			<a href="/terms">Terms</a> &bull; <a href="/privacy">Privacy</a>
+		</p>
+	</footer>
+
+	<div class="modal fade" id="modalTemplate" data-backdrop="static"
+		data-keyboard="false" role="dialog"></div>
+</body>
+</html>
