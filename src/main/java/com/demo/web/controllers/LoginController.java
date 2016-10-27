@@ -13,7 +13,7 @@ import com.demo.util.EncryptUtil;
 
 @Controller
 @RequestMapping("user")
-public class Login {
+public class LoginController {
 @Autowired
 UserServiceImpl userService;
 @Autowired
@@ -25,6 +25,7 @@ ShiroServiceImpl shiroService;
 		userService.save(user);
 		return true;
 	}
+	
 	@RequestMapping("login")
 	@ResponseBody
 	public Boolean login(User user) {
