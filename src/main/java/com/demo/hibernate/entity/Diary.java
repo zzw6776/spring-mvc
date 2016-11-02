@@ -22,7 +22,7 @@ public class Diary {
 
 	private Long createTime;
 
-	private Boolean isEncryptUtil;
+	private Boolean isEncrypt;
 
 	public String getId() {
 		return id;
@@ -48,12 +48,14 @@ public class Diary {
 		this.createTime = createTime;
 	}
 
-	public Boolean isEncryptUtil() {
-		return isEncryptUtil;
+	public Boolean getIsEncrypt() {
+		return isEncrypt;
 	}
 
-	public void setEncryptUtil(Boolean isEncryptUtil) {
-		this.isEncryptUtil = isEncryptUtil;
+	public void setIsEncrypt(Boolean isEncrypt) {
+		this.isEncrypt = isEncrypt;
 	}
+
+
 
 }
