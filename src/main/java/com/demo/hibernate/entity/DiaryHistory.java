@@ -9,8 +9,8 @@ import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
 
 @Entity
-@Table(name = "diary")
-public class Diary {
+@Table(name = "diary_history")
+public class DiaryHistory {
 
 	@Id
 	@GeneratedValue(generator = "uuid")

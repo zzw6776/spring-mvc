@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.demo.hibernate.entity.Diary;
+import com.demo.hibernate.entity.DiaryHistory;
+import com.demo.service.impl.DiaryHistoryServiceImpl;
 import com.demo.service.impl.DiaryServiceImpl;
 import com.demo.util.EncryptUtil;
 @RequestMapping("diary")
@@ -14,18 +16,18 @@ import com.demo.util.EncryptUtil;
 public class DiaryController {
 
 	@Autowired
-	DiaryServiceImpl diaryService;
+	DiaryHistoryServiceImpl diaryHistoryService;
 	
 	@RequestMapping("insert")
 	@ResponseBody
-	public void insert(Diary diary,String encryptKey) {
+	public void insert(DiaryHistory diary,String encryptKey) {
 		if (!StringUtils.isEmpty(encryptKey)) {
 			String message  = EncryptUtil.encode(diary.getMessage(), encryptKey);
 			diary.setMessage(message);
 			diary.setIsEncrypt(true);
 		}
 		diary.setCreateTime(System.currentTimeMillis());
-		diaryService.insert(diary);
+		diaryHistoryService.insert(diary);
 	}
 	
 }
