@@ -25,14 +25,9 @@ public class DiaryController {
 	@RequestMapping("insert")
 	@ResponseBody
 	public void insert(DiaryHistory diary,String encryptKey,HttpServletRequest request) {
-		Cookie[] cookies = request.getCookies();
 		if (StringUtils.isEmpty(diary.getuAccount())) {
-			for (Cookie cookie : cookies) {
-				if (cookie.getName().equals("JSESSIONID")) {
-					diary.setuAccount(cookie.getValue());
-				}
+					diary.setuAccount(request.getRemoteAddr());
 			}
-		}
 		if (!StringUtils.isEmpty(encryptKey)) {
 			String message  = EncryptUtil.encode(diary.getMessage(), encryptKey);
 			diary.setMessage(message);

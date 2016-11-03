@@ -42,6 +42,7 @@
              path: getQueryString('user'),
             // token2: '12345'
         };
+        editor.config.uploadTimeout = 600 * 1000;
         editor.config.uploadHeaders = {
             // 'Accept' : 'text/x-json'
         }
@@ -53,10 +54,10 @@
         // 表情显示项
         editor.config.emotionsShow = 'value';
         editor.config.emotions = {
-            'default': {
+/*             'default': {
                 title: '默认',
                 data: './emotions.data'
-            },
+            }, */
             'weibo': {
                 title: '微博表情',
                 data: [
