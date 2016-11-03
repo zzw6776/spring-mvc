@@ -1,5 +1,9 @@
 package com.demo.web.controllers;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
@@ -20,7 +24,15 @@ public class DiaryController {
 	
 	@RequestMapping("insert")
 	@ResponseBody
-	public void insert(DiaryHistory diary,String encryptKey) {
+	public void insert(DiaryHistory diary,String encryptKey,HttpServletRequest request) {
+		Cookie[] cookies = request.getCookies();
+		if (StringUtils.isEmpty(diary.getuAccount())) {
+			for (Cookie cookie : cookies) {
+				if (cookie.getName().equals("JSESSIONID")) {
+					diary.setuAccount(cookie.getValue());
+				}
+			}
+		}
 		if (!StringUtils.isEmpty(encryptKey)) {
 			String message  = EncryptUtil.encode(diary.getMessage(), encryptKey);
 			diary.setMessage(message);
