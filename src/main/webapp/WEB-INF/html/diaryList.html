@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CSS3垂直手风琴折叠菜单DEMO演示</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Iconos -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/diaryStyle.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+<div style="text-align:center;clear:both">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div>
+	<!-- Contenedor -->
+	<ul id="accordion" class="accordion">
+		
+	</ul>
+
+  <script src='../js/jquery.js'></script>
+
+  <script type="text/javascript">
+ function init (){
+	$.post('/diary/query?user=1').success(function(date){
+		  $.each( date, function(index, content)
+		  { 
+				var string = '<li><div id="';
+				string += content.id;
+				string += '" class="link"><i class="fa fa-paint-brush"></i>';
+				string += new Date(content.createTime).toLocaleString();
+				string += '<i class="fa fa-chevron-down"></i></div><ul class="submenu"><li><a  target="view_window" href="/html/editor.html'
+				string += '?dId=';
+				string += content.id;
+				string += '" id = "';
+				string += content.id;
+				string += '">'
+				string += content.message;
+				string += '</a></li></ul><li>';
+				$('#accordion').append(string);
+		  });
+		  index();
+	})
+  }
+ init();
+  
+  </script>
+
+
+  <script type="text/javascript">
+  
+  function index() {
+		var Accordion = function(el, multiple) {
+			this.el = el || {};
+			this.multiple = multiple || false;
+
+			// Variables privadas
+			var links = this.el.find('.link');
+			// Evento
+			links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+		}
+
+		Accordion.prototype.dropdown = function(e) {
+			
+			var $el = e.data.el;
+				$this = $(this),
+				$next = $this.next();
+
+			$next.slideToggle();
+			$this.parent().toggleClass('open');
+
+				var dId = e.currentTarget.id;
+			if ( !$('#'+dId).parent().is('.open')) {
+				 $.post('/diary/queryById',{dId:dId}).success(function(date){
+		        	  var diary = eval(date);
+		        	   $('#'+dId).html(diary.message);
+		           })
+			};
+			if (!e.data.multiple) {
+				$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+			};
+		}	
+
+		var accordion = new Accordion($('#accordion'), false);
+	}
+  
+  </script>
+
+</body>
+
+</html>

@@ -26,6 +26,18 @@ public class Diary {
 
 	private String uAccount;
 	
+	private Long updateTime;
+	
+	public Long getUpdateTime() {
+		return updateTime;
+	}
+
+	public void setUpdateTime(Long updateTime) {
+		this.updateTime = updateTime;
+	}
+
+
+
 	public String getuAccount() {
 		return uAccount;
 	}

@@ -20,20 +20,38 @@
     <p>笔记本</p>
      <p id = "status"></p>
     <div id="editor-container" class="container">
-        <div id="editor-trigger"></div>
-        <!-- <textarea id="editor-trigger" style="display:none;">
-            <p>请输入内容...</p>
-        </textarea> -->
+       <!--  <div id="editor-trigger"></div> -->
+         <textarea id="editor-trigger" style="display:none;">
+        </textarea>
     </div>
     <p><br></p>
 
     <script type="text/javascript" src="../js/lib/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="../js/wangEditor.js"></script>
-    <!--<script type="text/javascript" src="../js/wangEditor.min.js"></script>-->
+    <script type="text/javascript">
+           function getQueryString(name) {
+            var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+                return unescape(r[2]);
+            }
+            return '';
+        }
+           var dId= getQueryString('dId');
+           if(dId){
+           $.post('/diary/queryById',{dId:dId}).success(function(date){
+        	  var diary = eval(date);
+        	   $('#editor-trigger').html(diary.message);
+        	   createEditor();
+           })
+        	   
+           }
+           
+    </script>
     <script type="text/javascript">
         // 阻止输出log
         // wangEditor.config.printLog = false;
-
+function createEditor(){
         var editor = new wangEditor('editor-trigger');
 
         // 上传图片
@@ -177,14 +195,7 @@
         // };
         editor.create();
         
-        function getQueryString(name) {
-            var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
-            var r = window.location.search.substr(1).match(reg);
-            if (r != null) {
-                return unescape(r[2]);
-            }
-            return '';
-        }
+}
     </script>
 </body>
 </html>

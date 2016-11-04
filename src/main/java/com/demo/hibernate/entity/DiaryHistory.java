@@ -26,6 +26,18 @@ public class DiaryHistory {
 
 	private String uAccount;
 	
+	private String dId;
+	
+	
+	
+	public String getdId() {
+		return dId;
+	}
+
+	public void setdId(String dId) {
+		this.dId = dId;
+	}
+
 	public String getuAccount() {
 		return uAccount;
 	}

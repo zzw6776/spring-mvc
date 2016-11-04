@@ -1,5 +1,7 @@
 package com.demo.web.controllers;
 
+import java.util.List;
+
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -10,6 +12,7 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.demo.hibernate.dao.DiaryDao;
 import com.demo.hibernate.entity.Diary;
 import com.demo.hibernate.entity.DiaryHistory;
 import com.demo.service.impl.DiaryHistoryServiceImpl;
@@ -21,6 +24,9 @@ public class DiaryController {
 
 	@Autowired
 	DiaryHistoryServiceImpl diaryHistoryService;
+	
+	@Autowired
+	DiaryDao diaryDao;
 	
 	@RequestMapping("insert")
 	@ResponseBody
@@ -36,5 +42,27 @@ public class DiaryController {
 		diary.setCreateTime(System.currentTimeMillis());
 		diaryHistoryService.insert(diary);
 	}
-	
+	@RequestMapping("query")
+	@ResponseBody
+	public List<Diary> queryByUser(String user,String encryptKey) {
+		Diary diary = new Diary();
+		diary.setuAccount(user);
+		List<Diary>  diaries = diaryDao.select(diary);
+		if (!StringUtils.isEmpty(encryptKey)) {
+			for (Diary diary2 : diaries) {
+				if (diary2.getIsEncrypt()) {
+					diary2.setMessage(EncryptUtil.decode(diary2.getMessage(),encryptKey));
+				}
+			}
+		}
+		diaries.sort((d1,d2)->{
+			return d1.getCreateTime()-d2.getCreateTime()>0?-1:1;
+		});
+		return diaries;
+	}
+	@RequestMapping("queryById")
+	@ResponseBody
+	public Diary queryById(String dId) {
+		return diaryDao.find(dId);
+	}
 }

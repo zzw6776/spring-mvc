@@ -15,4 +15,7 @@ public class DiaryServiceImpl {
 	public void insert(Diary diary) {
 		diaryDao.save(diary);
 	}
+	
+	
+
 }
