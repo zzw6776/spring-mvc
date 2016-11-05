@@ -13,6 +13,7 @@ body {
 
 ul {
 	list-style-type: none;
+	word-wrap: break-word;
 }
 
 a {
@@ -37,8 +38,8 @@ h1 a {
  }
 
  .accordion {
- 	width: 100%;
- 	max-width: 360px;
+ 	width: 60%;
+ 	/*max-width: 360px;*/
  	margin: 30px auto 20px;
  	background: #FFF;
  	-webkit-border-radius: 4px;
