@@ -32,9 +32,6 @@ public class DiaryController {
 	@RequestMapping("insert")
 	@ResponseBody
 	public void insert(DiaryHistory diary,String encryptKey,HttpServletRequest request) {
-		if (StringUtils.isEmpty(diary.getuAccount())) {
-					diary.setuAccount(request.getRemoteAddr());
-			}
 		if (!StringUtils.isEmpty(encryptKey)) {
 			String message  = EncryptUtil.encode(diary.getMessage(), encryptKey);
 			diary.setMessage(message);

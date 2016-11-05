@@ -1,18 +1,31 @@
+dId = getQueryString('dId');
+user = getQueryString('user');
+key = getQueryString('key');
 
-	
+if (!user) {
+	$.ajax({
+		url : 'http://ipinfo.io/json',
+		type : 'get',
+		async : false,// 使用同步的方式,true为异步方式
+		success : function(data) {
+			var ipinfo = eval(data)
+			user = ipinfo.ip
 
+		},
+	});
+}
 
 function insertDiary() {
 	$('#status').text('更新中...')
 	count = 0;
 	isHaving = true;
 	var html = editor.$txt.html();
-	var encryptKey = getQueryString('key');
+	var encryptKey = key;
 	var data = {
 		message : html,
 		encryptKey : encryptKey,
-		uAccount : getQueryString('user'),
-		dId : getQueryString('dId')
+		uAccount : user,
+		dId : dId
 	};
 
 	$.post("/diary/insert", data).success(function() {
@@ -40,7 +53,7 @@ function getQueryString(name) {
 function createMobileEditor() {
 	// ___E 三个下划线
 	editor = new ___E('editor-trigger');
-	editor.config.uploadImgUrl = '/fileUpload?path=' + getQueryString('user');
+	editor.config.uploadImgUrl = '/fileUpload?path=' + user;
 	editor.config.uploadTimeout = 600 * 1000;
 	editor.init();
 }
@@ -70,7 +83,7 @@ function onchange() {
 		mo.observe($('.wangEditor-mobile-txt')[0], option);
 
 	})
-	
+
 	return editor;
 }
 
@@ -79,7 +92,7 @@ function createEditor() {
 	// 上传图片
 	editor.config.uploadImgUrl = '/fileUpload';
 	editor.config.uploadParams = {
-		path : getQueryString('user'),
+		path : user,
 	};
 	editor.config.uploadTimeout = 600 * 1000;
 	editor.config.uploadImgFileName = 'wangEditorMobileFile';
@@ -138,9 +151,6 @@ function createEditor() {
 }
 
 function initEditor(mobile) {
-	var dId = getQueryString('dId');
-	var user = getQueryString('user');
-	var key = getQueryString('key');
 
 	if (!dId && !user) {
 		createEditor();
@@ -150,9 +160,9 @@ function initEditor(mobile) {
 			dId : dId,
 			encryptKey : key
 		}).success(function(date) {
-			if(date){
-			var diary = eval(date);
-			$('#editor-trigger').html(diary.message);
+			if (date) {
+				var diary = eval(date);
+				$('#editor-trigger').html(diary.message);
 			}
 			if (mobile) {
 				createMobileEditor();
@@ -160,7 +170,7 @@ function initEditor(mobile) {
 			} else {
 				createEditor()
 			}
-			
+
 		})
 	}
 	if (user) {
@@ -168,9 +178,9 @@ function initEditor(mobile) {
 			user : user,
 			encryptKey : key
 		}).success(function(date) {
-			if(date){
-			var diary = eval(date);
-			$('#editor-trigger').html(diary.message);
+			if (date) {
+				var diary = eval(date);
+				$('#editor-trigger').html(diary.message);
 			}
 			if (mobile) {
 				createMobileEditor();
