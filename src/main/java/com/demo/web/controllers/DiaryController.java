@@ -50,7 +50,7 @@ public class DiaryController {
 		List<Diary>  diaries = diaryDao.select(diary);
 		if (!StringUtils.isEmpty(encryptKey)) {
 			for (Diary diary2 : diaries) {
-				if (diary2.getIsEncrypt()) {
+				if (diary2.getIsEncrypt()!=null&&diary2.getIsEncrypt()) {
 					diary2.setMessage(EncryptUtil.decode(diary2.getMessage(),encryptKey));
 				}
 			}
@@ -64,5 +64,15 @@ public class DiaryController {
 	@ResponseBody
 	public Diary queryById(String dId) {
 		return diaryDao.find(dId);
+	}
+	
+	@RequestMapping("queryByUserInToday")
+	@ResponseBody
+	public Diary queryByUserInToday(String user,String encryptKey) {
+		Diary diary = diaryDao.queryToday(user);
+		if (diary.getIsEncrypt()!=null&&diary.getIsEncrypt()&&!StringUtils.isEmpty(encryptKey)) {
+			diary.setMessage(EncryptUtil.decode(diary.getMessage(),encryptKey));
+		}
+		return diary;
 	}
 }

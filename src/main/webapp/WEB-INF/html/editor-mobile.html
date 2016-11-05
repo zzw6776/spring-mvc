@@ -23,7 +23,7 @@
 	<p id="status"></p>
 
 	<div class="container">
-		<textarea id="textarea2" name="meaage"
+		<textarea id="editor-trigger" name="meaage"
 			style="width: 100%; height: 100%;">
         </textarea>
 	</div>
@@ -33,82 +33,10 @@
 	<script type="text/javascript" src="../js/lib/zepto.touch.js"></script>
 	<script type="text/javascript" src="../js/wangEditor-mobile.js"></script>
 	<script type="text/javascript" src="../js/lib/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="../js/zzwEditor.js"></script>
 	<script type="text/javascript">
-		// ___E 三个下划线
-		var editor = new ___E('textarea2');
-		editor.config.uploadImgUrl = '/fileUpload?path='
-				+ getQueryString('user');
-		editor.config.uploadTimeout = 600 * 1000;
-		editor.init();
 
-		/* 		$('#submit').click(function() {
-		 var html = $('.wangEditor-mobile-txt').html();
-		 var encryptKey = getQueryString('key');
-		 var data = {
-		 message : html,
-		 encryptKey : encryptKey
-		 };
-		 $.post("/diary/insert", data)
-		 }) */
-
-		function getQueryString(name) {
-			var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
-			var r = window.location.search.substr(1).match(reg);
-			if (r != null) {
-				return unescape(r[2]);
-			}
-			return '';
-		}
-		function insertDiary() {
-			$('#status').text('更新中...')
-			count = 0;
-			isHaving = true;
-			var html = editor.$txt.html();
-			var encryptKey = getQueryString('key');
-			var data = {
-				message : html,
-				encryptKey : encryptKey,
-				uAccount: getQueryString('user')
-			};
-
-			$.post("/diary/insert", data).success(
-					function() {
-						$('#status').text(
-								'更新成功,最后更新时间为：' + new Date().toLocaleString())
-						isHaving = false;
-						if (count == 1) {
-							insertDiary()
-						}
-
-					}).error(function() {
-				isHaving = false;
-				$('#status').text('更新失败')
-			})
-		}
-		var count = 0;
-		var isHaving = false;
-		$(document).ready(function() {
-			var callback = function(records) {
-				if (!isHaving) {
-					insertDiary()
-				} else {
-					count = 1;
-				}
-				console.log(editor.$txt.html());
-			};
-
-			var mo = new MutationObserver(callback);
-
-			var option = {
-				'childList' : true,
-				'subtree' : true,
-				//  'attributes': true,
-				'characterData' : true
-			};
-
-			mo.observe($('.wangEditor-mobile-txt')[0], option);
-
-		})
+	 initEditor(1);
 	</script>
 </body>
 </html>

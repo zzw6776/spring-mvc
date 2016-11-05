@@ -39,7 +39,7 @@
     
   <script type="text/javascript">
  function init (){
-	$.post('/diary/query?user='+getQueryString('user')).success(function(date){
+	$.post('/diary/query?user='+getQueryString('user')+'&encryptKey='+getQueryString('key')).success(function(date){
 		  $.each( date, function(index, content)
 		  { 
 				var string = '<li><div class="link"><i class="fa fa-paint-brush"></i>';

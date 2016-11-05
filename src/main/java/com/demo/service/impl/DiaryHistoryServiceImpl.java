@@ -26,6 +26,7 @@ public class DiaryHistoryServiceImpl {
 			diaryHistory.setdId(diary.getId());
 			diary.setUpdateTime(System.currentTimeMillis());
 			diary.setMessage(diaryHistory.getMessage());
+			diary.setIsEncrypt(diaryHistory.getIsEncrypt());
 		}
 		diaryHistoryDao.save(diaryHistory);
 	}
