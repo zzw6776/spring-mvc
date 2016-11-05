@@ -1,5 +1,6 @@
 package com.demo.web.controllers;
 
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 import javax.servlet.http.Cookie;
@@ -44,7 +45,7 @@ public class DiaryController {
 	}
 	@RequestMapping("query")
 	@ResponseBody
-	public List<Diary> queryByUser(String user,String encryptKey) {
+	public List<Diary> queryByUser(String user,String encryptKey) throws UnsupportedEncodingException {
 		Diary diary = new Diary();
 		diary.setuAccount(user);
 		List<Diary>  diaries = diaryDao.select(diary);
@@ -62,7 +63,7 @@ public class DiaryController {
 	}
 	@RequestMapping("queryById")
 	@ResponseBody
-	public Diary queryById(String dId,String encryptKey) {
+	public Diary queryById(String dId,String encryptKey) throws UnsupportedEncodingException {
 		Diary diary =diaryDao.find(dId);
 		if (diary!=null&&diary.getIsEncrypt()!=null&&diary.getIsEncrypt()&&!StringUtils.isEmpty(encryptKey)) {
 			diary.setMessage(EncryptUtil.decode(diary.getMessage(),encryptKey));
@@ -72,7 +73,7 @@ public class DiaryController {
 	
 	@RequestMapping("queryByUserInToday")
 	@ResponseBody
-	public Diary queryByUserInToday(String user,String encryptKey) {
+	public Diary queryByUserInToday(String user,String encryptKey) throws UnsupportedEncodingException {
 		Diary diary = diaryDao.queryToday(user);
 		if (diary!=null&&diary.getIsEncrypt()!=null&&diary.getIsEncrypt()&&!StringUtils.isEmpty(encryptKey)) {
 			diary.setMessage(EncryptUtil.decode(diary.getMessage(),encryptKey));

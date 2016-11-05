@@ -90,7 +90,7 @@
 			
 			if (!e.data.multiple) {
 				if ( !$el.find('.submenu').parent().is('.open')) {
-					 $.post('/diary/queryById',{dId:$next.attr('id')}).success(function(date){
+					 $.post('/diary/queryById',{dId:$next.attr('id'),encryptKey:getQueryString('key')}).success(function(date){
 			        	  var diary = eval(date);
 			        	  $next.find('a').html(diary.message);
 			           })

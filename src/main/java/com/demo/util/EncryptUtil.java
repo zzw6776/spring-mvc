@@ -204,12 +204,13 @@ public class EncryptUtil {
 
 	/**
 	 * 解密
+	 * @throws UnsupportedEncodingException 
 	 */
-	public static String decode(String content, String key) {
+	public static String decode(String content, String key) throws UnsupportedEncodingException {
 		key = MD5(key, true);
 		// 解密之前,先将输入的字符串按照16进制转成二进制的字节数组,作为待解密的内容输入
 		byte[] b = decrypt(parseHexStr2Byte(content), key);
-		return new String(b);
+		return new String(b,"UTF-8");
 	}
 
 	public static String MD5(String sourceStr, boolean judgeMD) {
@@ -240,17 +241,17 @@ public class EncryptUtil {
 	}
 
 	// 测试用例
-	public static void test1() {
-		String content = "hello abcdefggsdfasdfasdf111111111111111111111111111111111111111111111";
+	public static void test1() throws UnsupportedEncodingException {
+		String content = "这周五";
 		String pStr = encode(content, "123");
 		System.out.println("加密前：" + content);
 		System.out.println("加密后:" + pStr);
 
-		String postStr = decode(pStr, "123");
+		String postStr = decode("C76132B76A5548EEE0D54131744289BD8637A13CDD202E60F62D47B87E8B4200750330C15E09E956D02078D12D8185F3", "zzw");
 		System.out.println("解密后：" + postStr);
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws UnsupportedEncodingException {
 		test1();
 	}
 }
