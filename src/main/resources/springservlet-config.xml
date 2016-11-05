@@ -30,6 +30,8 @@
 	<mvc:resources mapping="/images/**" location="/WEB-INF/images/" />
 	<mvc:resources mapping="/html/**" location="/WEB-INF/html/" />
 	<mvc:resources mapping="/course/**" location="/WEB-INF/course/" />
+	<mvc:resources mapping="/favicon.ico" location="/WEB-INF/images/" />
+	
 	<!-- 当上面要访问的静态资源不包括在上面的配置中时，则根据此配置来访问 -->
 	<mvc:default-servlet-handler />
 
