@@ -17,7 +17,7 @@ public class DiaryHistoryServiceImpl {
 	DiaryDao diaryDao;
 	
 	public void insert(DiaryHistory diaryHistory) {
-		Diary diary = diaryDao.queryToday();
+		Diary diary = diaryDao.queryToday(diaryHistory.getuAccount());
 		if (diary==null) {
 			diary = new Diary();
 			TypeUtil.ClassToClass(diaryHistory, diary);

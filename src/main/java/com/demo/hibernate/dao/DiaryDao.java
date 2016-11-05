@@ -9,9 +9,10 @@ import com.demo.hibernate.entity.Diary;
 public class DiaryDao extends HGenericDao<Diary,String>{
 
 	
-public	Diary queryToday(){
-		String hql = "from Diary where Date(from_unixtime(createTime/1000))=curdate()";
-		List<Diary> diary = findByHql(hql);
+@SuppressWarnings("unchecked")
+public	Diary queryToday(String uAccount){
+		String hql = "from Diary where Date(from_unixtime(createTime/1000))=curdate() and uAccount = ?";
+		List<Diary> diary = findByQuery(hql, uAccount);
 		if (diary.isEmpty()) {
 			return null;
 		}else {
