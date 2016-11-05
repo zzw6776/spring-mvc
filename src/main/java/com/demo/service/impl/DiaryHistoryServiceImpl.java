@@ -2,6 +2,7 @@ package com.demo.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import com.demo.hibernate.dao.DiaryDao;
 import com.demo.hibernate.dao.DiaryHistoryDao;
@@ -17,7 +18,12 @@ public class DiaryHistoryServiceImpl {
 	DiaryDao diaryDao;
 	
 	public void insert(DiaryHistory diaryHistory) {
-		Diary diary = diaryDao.queryToday(diaryHistory.getuAccount());
+		Diary diary;
+		if (!StringUtils.isEmpty(diaryHistory.getdId())) {
+			 diary = diaryDao.find(diaryHistory.getdId());
+		}else {
+			diary = diaryDao.queryToday(diaryHistory.getuAccount());
+		}
 		if (diary==null) {
 			diary = new Diary();
 			TypeUtil.ClassToClass(diaryHistory, diary);

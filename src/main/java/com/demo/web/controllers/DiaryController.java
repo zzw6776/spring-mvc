@@ -62,15 +62,19 @@ public class DiaryController {
 	}
 	@RequestMapping("queryById")
 	@ResponseBody
-	public Diary queryById(String dId) {
-		return diaryDao.find(dId);
+	public Diary queryById(String dId,String encryptKey) {
+		Diary diary =diaryDao.find(dId);
+		if (diary!=null&&diary.getIsEncrypt()!=null&&diary.getIsEncrypt()&&!StringUtils.isEmpty(encryptKey)) {
+			diary.setMessage(EncryptUtil.decode(diary.getMessage(),encryptKey));
+		}
+		return diary;
 	}
 	
 	@RequestMapping("queryByUserInToday")
 	@ResponseBody
 	public Diary queryByUserInToday(String user,String encryptKey) {
 		Diary diary = diaryDao.queryToday(user);
-		if (diary.getIsEncrypt()!=null&&diary.getIsEncrypt()&&!StringUtils.isEmpty(encryptKey)) {
+		if (diary!=null&&diary.getIsEncrypt()!=null&&diary.getIsEncrypt()&&!StringUtils.isEmpty(encryptKey)) {
 			diary.setMessage(EncryptUtil.decode(diary.getMessage(),encryptKey));
 		}
 		return diary;

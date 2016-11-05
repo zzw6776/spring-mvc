@@ -11,7 +11,8 @@ function insertDiary() {
 	var data = {
 		message : html,
 		encryptKey : encryptKey,
-		uAccount : getQueryString('user')
+		uAccount : getQueryString('user'),
+		dId : getQueryString('dId')
 	};
 
 	$.post("/diary/insert", data).success(function() {
@@ -146,10 +147,13 @@ function initEditor(mobile) {
 	}
 	if (dId) {
 		$.post('/diary/queryById', {
-			dId : dId
+			dId : dId,
+			encryptKey : key
 		}).success(function(date) {
+			if(date){
 			var diary = eval(date);
 			$('#editor-trigger').html(diary.message);
+			}
 			if (mobile) {
 				createMobileEditor();
 				onchange();
@@ -164,8 +168,10 @@ function initEditor(mobile) {
 			user : user,
 			encryptKey : key
 		}).success(function(date) {
+			if(date){
 			var diary = eval(date);
 			$('#editor-trigger').html(diary.message);
+			}
 			if (mobile) {
 				createMobileEditor();
 				onchange();

@@ -25,6 +25,7 @@
 	</ul>
 
   <script src='../js/jquery.js'></script>
+  	<script type="text/javascript" src="../js/zzwEditor.js"></script>
  <script type="text/javascript">
            function getQueryString(name) {
             var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
@@ -49,7 +50,8 @@
 					string +=	'><li><a  target="view_window" href="/html/editor.html'
 				string += '?dId=';
 				string += content.id;
-				
+				string +='&key=';
+				string += getQueryString('key');
 				string +='">';
 				string += content.message;
 				string += '</a></li></ul><li>';
