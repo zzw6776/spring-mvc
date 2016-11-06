@@ -173,7 +173,7 @@ function initEditor(mobile) {
 
 		})
 	}
-	if (user) {
+	else if (user) {
 		$.post('/diary/queryByUserInToday', {
 			user : user,
 			encryptKey : key
