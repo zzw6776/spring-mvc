@@ -19,6 +19,7 @@ import sun.misc.BASE64Encoder;
 public class FileUpload {
 	// 根据spring获取项目根目录
 	//兼容windows反斜杠
+	
 	public static String FILE_PATH = ContextLoader.getCurrentWebApplicationContext().getServletContext()
 			.getRealPath("/").replaceAll("\\\\", "/");
 	public static String OUT_FILE_PATH = FILE_PATH.substring(0,
