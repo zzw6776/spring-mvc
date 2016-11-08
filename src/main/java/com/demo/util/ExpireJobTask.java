@@ -17,9 +17,11 @@ public class ExpireJobTask {
 	private static final Logger logger = LoggerFactory.getLogger(ExpireJobTask.class);
 
 	@Scheduled(cron = "0 0 01 * * ?")
-	public void exportSql() throws Exception {
-		Process process = Runtime.getRuntime().exec("mysqldump -uroot --databases zzw>/root/spring-mvc/sql/"
-				+ new SimpleDateFormat("yyyy-MM-dd").format(new Date()) + ".sql");
+	public static void exportSql() throws Exception {
+		String common = "sh mysqldump -uroot --databases zzw>/root/spring-mvc/sql/"
+				+ new SimpleDateFormat("yyyy-MM-dd").format(new Date()) + ".sql";
+		logger.info(common);
+		Process process = Runtime.getRuntime().exec(common);
 		process.waitFor();
 		BufferedReader br = null;
 		try {
@@ -34,5 +36,8 @@ public class ExpireJobTask {
 		} finally {
 			br.close();
 		}
+	}
+	public static void main(String[] args) throws Exception {
+		exportSql();
 	}
 }
