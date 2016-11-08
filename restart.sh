@@ -1,4 +1,5 @@
 #!/bin/bash
+cd ~/spring-mvc
 echo -e "*********************** start git pull ***********************"
 git pull
 echo -e "*********************** start mvn clean ***********************"
