@@ -18,7 +18,7 @@ public class ExpireJobTask {
 
 	@Scheduled(cron = "0 0 01 * * ?")
 	public static void exportSql() throws Exception {
-		String common = "cmd mysqldump -uroot --databases zzw>/root/spring-mvc/sql/"
+		String common = "mysqldump -uroot --databases zzw>/root/spring-mvc/sql/"
 				+ new SimpleDateFormat("yyyy-MM-dd").format(new Date()) + ".sql";
 		logger.info(common);
 		String[] cmds = {"/bin/sh","-c",common};  
