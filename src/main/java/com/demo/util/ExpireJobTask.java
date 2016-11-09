@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Map;
+
+import javax.annotation.Resource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,10 +17,15 @@ import org.springframework.stereotype.Component;
 @Component
 @EnableScheduling
 public class ExpireJobTask {
+	
+	@Resource(name = "keyValue")
+	Map<String, String> keyValueMap;
+	
+	
 	private static final Logger logger = LoggerFactory.getLogger(ExpireJobTask.class);
 
 	@Scheduled(cron = "0 0 01 * * ?")
-	public static void exportSql() throws Exception {
+	public  void exportSql() throws Exception {
 		String common = "mysqldump -uroot --databases zzw>/root/spring-mvc/sql/"
 				+ new SimpleDateFormat("yyyy-MM-dd").format(new Date()) + ".sql";
 		logger.info(common);
@@ -37,7 +45,10 @@ public class ExpireJobTask {
 			br.close();
 		}
 	}
-	public static void main(String[] args) throws Exception {
-		exportSql();
+	
+	
+	@Scheduled(cron = "0 0 02 * * ?")
+	public  void backUpSql() throws Exception {
+		Dropbox.upload(keyValueMap.get("DropboxAccessToken"), "/root/spring-mvc/sql/"+ new SimpleDateFormat("yyyy-MM-dd").format(new Date()) + ".sql", "/sqlBack/"+new SimpleDateFormat("yyyy-MM-dd").format(new Date()) + ".sql");
 	}
 }

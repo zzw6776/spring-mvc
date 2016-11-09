@@ -39,6 +39,11 @@ public class Tsetms {
 	public void mysql() throws Exception {
 		expireJobTask.exportSql();
 	}
+	@RequestMapping("backUpSql")
+	public void backUpSql() throws Exception {
+		expireJobTask.backUpSql();
+	}
+	
 	
 	@RequestMapping("login")
 	public void login(String account,String password){
