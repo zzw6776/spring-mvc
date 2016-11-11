@@ -37,7 +37,7 @@ public class TakeFilePathAndName {
 			}
 
 		}
-		return null;
+		return fileVos;
 
 	}
 

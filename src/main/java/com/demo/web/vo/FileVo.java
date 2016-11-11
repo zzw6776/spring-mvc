@@ -1,9 +1,20 @@
 package com.demo.web.vo;
 
+import java.util.List;
+
 public class FileVo {
 
 	private String Url;
 	private Boolean isDirectory;
+	private List<FileVo> fileVos;
+	
+	
+	public List<FileVo> getFileVos() {
+		return fileVos;
+	}
+	public void setFileVos(List<FileVo> fileVos) {
+		this.fileVos = fileVos;
+	}
 	public String getUrl() {
 		return Url;
 	}
