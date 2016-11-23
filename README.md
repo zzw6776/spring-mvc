@@ -1,11 +1,11 @@
 # spring-mvc-mybatis
-
+-
+#简介
 spring-mvc集成了shiro，mybatis，hibernate，mongodb  
 都是很基础的东西，基本没怎么写注释
 
     fireFox请安装[unmht](http://www.unmht.org/unmht/en_index.html)以用来解析mhtml
 
-------
 
     [web.xml](https://github.com/zzw6776/spring-mvc/blob/master/src/main/webapp/WEB-INF/web.xml)会调用
 
