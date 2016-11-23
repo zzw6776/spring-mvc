@@ -1,17 +1,21 @@
 # spring-mvc-mybatis
 
-spring-mvc¼¯³ÉÁËshiro£¬mybatis£¬hibernate£¬mongodb
-¶¼ÊÇºÜ»ù´¡µÄ¶«Î÷£¬»ù±¾Ã»ÔõÃ´Ğ´×¢ÊÍ
+spring-mvcé›†æˆäº†shiroï¼Œmybatisï¼Œhibernateï¼Œmongodb  
+éƒ½æ˜¯å¾ˆåŸºç¡€çš„ä¸œè¥¿ï¼ŒåŸºæœ¬æ²¡æ€ä¹ˆå†™æ³¨é‡Š
+
+fireFoxè¯·å®‰è£…[unmht](http://www.unmht.org/unmht/en_index.html)ä»¥ç”¨æ¥è§£æmhtml
+
+
+[web.xml](https://github.com/zzw6776/spring-mvc/blob/master/src/main/webapp/WEB-INF/web.xml)ä¼šè°ƒç”¨
+
+
+é¡¹ç›®åŸºæœ¬å°±æ˜¯ä¸€ä¸ªç©ºæ¡†æ¶
 
 
 
-ÏîÄ¿»ù±¾¾ÍÊÇÒ»¸ö¿Õ¿ò¼Ü
+å·²æœ‰åŠŸèƒ½
 
-
-
-ÒÑÓĞ¹¦ÄÜ
-
-Ã¿ÈÕ¼ÇÊÂ±¾£º
+æ¯æ—¥è®°äº‹æœ¬ï¼š
 http://zzw6776.tk/html/editor.html
 
 http://zzw6776.tk/html/editor-mobile.html
@@ -19,12 +23,12 @@ http://zzw6776.tk/html/editor-mobile.html
 http://zzw6776.tk/html/editorList.html
 
 
-²ÎÊıÍ³Ò»Îª
-user   ÓÃ»§Ãû
-key    ¼ÓÃÜÃÜÔ¿
+å‚æ•°ç»Ÿä¸€ä¸º
+user   ç”¨æˆ·å
+key    åŠ å¯†å¯†é’¥
 
 
-µÇÂ½£º
+ç™»é™†ï¼š
 
 http://zzw6776.tk/html/login.html
 http://zzw6776.tk/html/register.html
