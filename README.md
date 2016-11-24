@@ -15,8 +15,10 @@ spring-mvc集成了shiro，mybatis，hibernate，mongodb
 ```xml
 URIEncoding="UTF-8"
 ```
-
-
+在<Host>标签下添加
+```xml
+<Context docBase="upload" path="/upload"/>
+```
 [web.xml](https://github.com/zzw6776/spring-mvc/blob/master/src/main/webapp/WEB-INF/web.xml)会调用
 
 
