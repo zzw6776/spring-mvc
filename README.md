@@ -9,6 +9,7 @@ spring-mvc集成了shiro，mybatis，hibernate，mongodb
 * fireFox请安装[unmht](http://www.unmht.org/unmht/en_index.html)以用来解析mhtml  
 * ie可直接打开  
 * chrome因[自身限制](https://developer.chrome.com/extensions/pageCapture)只能从本地浏览mhtml
+
 ###tomcat配置
 在server.xml的Connector标签下添加编码支持
     ```xml
