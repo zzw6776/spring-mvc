@@ -12,9 +12,9 @@ spring-mvc集成了shiro，mybatis，hibernate，mongodb
 
 ###tomcat配置
 在server.xml的Connector标签下添加编码支持
-    ```xml
+```xml
 URIEncoding="UTF-8"
-    ```
+```
 
 
 [web.xml](https://github.com/zzw6776/spring-mvc/blob/master/src/main/webapp/WEB-INF/web.xml)会调用
