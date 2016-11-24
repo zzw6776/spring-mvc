@@ -16,6 +16,7 @@ key    加密密钥
 ```
 当user不传时,系统默认取当前ip为用户名  
 后台不记录密钥,内容采用AES加密
+* 记事本链接地址
     * [电脑端链接](http://zzw6776.tk/html/editor.html)
     * [手机端链接](http://zzw6776.tk/html/editor-mobile.html)
     * [历史记录查看](http://zzw6776.tk/html/editorList.html)
