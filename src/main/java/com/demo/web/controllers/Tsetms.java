@@ -62,8 +62,9 @@ public class Tsetms {
 	}
 
 	@RequestMapping("mhtml")
-	public String name2() {
-		return "111.mhtml";
+	public String name2(String path) {
+		System.out.println(path);
+		return path+".mhtml";
 	}
 
 }
