@@ -37,7 +37,7 @@ URIEncoding="UTF-8"
             <param-name>listings</param-name>  
             <param-value>true</param-value>  
         </init-param>  
-		```
+```
 实现静态资源的列表展示
 
 ###[springservlet-config.xml](https://github.com/zzw6776/spring-mvc/blob/master/src/main/resources/springservlet-config.xml)
