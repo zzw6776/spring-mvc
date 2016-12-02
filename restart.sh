@@ -17,4 +17,5 @@ kill -9 $id
 echo -e "*********************** start tomcat ***********************"
 /usr/local/tomcat/bin/startup.sh
 
-service mysqld restart
+#service mysqld restart
+service mysql restart
