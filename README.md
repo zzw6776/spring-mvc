@@ -1,6 +1,6 @@
 # spring-mvc-mybatis
 * 相遇既有缘，免费分享shadowsocks账号~
-* [点击去获取账号](ss.zzw6776.tk)
+* [点击去获取账号](http://ss.zzw6776.tk)
 * 邀请码在页面右上方链接自行获取，若没有请联系我(zzw6776@gmail.com)。
 
 
