@@ -1,9 +1,10 @@
 # spring-mvc-mybatis
-
+* 相遇既有缘，免费分享shadowsocks账号~
+* [点击去获取账号](ss.zzw6776.tk)
+* 邀请码在页面右上方链接自行获取，若没有请联系我(zzw6776@gmail.com)。
 ##简介
 * spring-mvc集成了shiro，mybatis，hibernate，mongodb,所有对xml的引用都在[spring-config.xml](https://github.com/zzw6776/spring-mvc/blob/master/src/main/resources/spring-config.xml)里  
 * 有空再集成activiti
-* 因为公司里大多只用mybatis开发,所以该项目用hibernate比较多,稍微平衡下hibernate和mybatis的知识储备
 * 工作以来有个习惯,大部分看过的教程都会保存下来,如果你有兴趣,可以点击[这里](http://zzw6776.tk/course/)查看
 * 其实判定一个人是不是大神,不是看他会不会开发,而是应该看他开发的时间
 
