@@ -23,6 +23,17 @@
 		<property name="mapperLocations" value="classpath*:SqlMap/*.xml" />
 		<!-- 它指定了MyBatisSqlSessionFactory配置文件所在的位置。 -->
 		<!-- <property name="configLocation" value="WEB-INF/mybatisconfig.xml" /> -->
+		<property name="plugins">
+			<array>
+				<bean class="com.github.pagehelper.PageHelper">
+					<property name="properties">
+						<value>
+							dialect=mysql
+						</value>
+					</property>
+				</bean>
+			</array>
+		</property>
 	</bean>
 
 
@@ -40,5 +51,6 @@
 		<property name="basePackage" value="com.demo.mybatis3.dao" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 	</bean>
+
 
 </beans>

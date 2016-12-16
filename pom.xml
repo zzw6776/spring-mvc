@@ -14,7 +14,12 @@
 			<version>4.10</version>
 			<scope>test</scope>
 		</dependency>
-
+		<!-- mybatis分页插件支持 -->
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper</artifactId>
+			<version>4.1.6</version>
+		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
 		<dependency>

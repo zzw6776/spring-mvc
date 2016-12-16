@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.demo.mybatis3.dao.BDao;
 import com.demo.mybatis3.domain.BEntity;
 import com.demo.web.vo.BEntityVo;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 
 import base.BaseTest;
 import tk.mybatis.mapper.entity.Example;
@@ -53,4 +55,22 @@ public class BTest extends BaseTest {
 		List<BEntity> bEntities = bDao.selectByExample(example);
 		assertEquals(1,bEntities.size());
 	}
+	@Test
+	public void selectForPage() {
+		BEntity bEntity = new BEntity();
+		bEntity.setMessage("测试数据");
+		bDao.insertSelective(bEntity);
+		Integer id = bEntity.getId();
+		bEntity.setParentID(id);
+		bEntity.setId(null);
+		bEntity.setMessage("我是父数据");
+		bDao.insertSelective(bEntity);
+		PageHelper.startPage(1, 1);
+		List<BEntity> vo = bDao.selectAll();
+		PageInfo<BEntity>  pageInfo= new PageInfo<>(vo); 
+		assertEquals(2,pageInfo.getTotal());
+		assertEquals(2,pageInfo.getPages());
+	}
+	
+	
 }
