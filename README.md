@@ -122,6 +122,5 @@ URIEncoding="UTF-8"
 * [TypeUtil.java](https://github.com/mrzzw/spring-mvc/blob/master/src/main/java/com/demo/util/TypeUtil.java)
     * 类与类相同属性拷贝
 
-
-
-
+* [LogAop.java](https://github.com/mrzzw/spring-mvc/blob/master/src/main/java/com/demo/util/LogAop.java)
+    * aop日志实现
