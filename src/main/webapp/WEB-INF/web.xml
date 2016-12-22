@@ -76,6 +76,7 @@
 	<servlet-mapping>
 		<servlet-name>default</servlet-name>
 		<url-pattern>/course/*</url-pattern>
+		<url-pattern>*.pdf</url-pattern>
 	</servlet-mapping>
 
 	<mime-mapping>
