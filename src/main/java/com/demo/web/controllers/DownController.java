@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.demo.util.FileDownload;
+
 @RequestMapping("down")
 @Controller
 public class DownController {
@@ -13,7 +15,6 @@ public class DownController {
 	@RequestMapping
 	@ResponseBody
 	public boolean down(String url,String path){
-		
-		return false;
+		return	FileDownload.httpDownload(url, path);
 	}
 }
