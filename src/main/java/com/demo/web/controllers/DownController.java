@@ -17,4 +17,11 @@ public class DownController {
 	public boolean down(String url,String path){
 		return	FileDownload.httpDownload(url, path);
 	}
+	
+	
+	@RequestMapping("/resume")
+	@ResponseBody
+	public boolean upload(){
+		return	FileDownload.httpDownload("http://www.500d.me/editresume/export/500d_329950_69_336867_20161222172158.pdf", "/usr/local/tomcat/webapps/upload/resume.pdf");
+	}
 }
