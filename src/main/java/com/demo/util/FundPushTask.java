@@ -64,7 +64,7 @@ public class FundPushTask {
         }
     }
 
-    @Scheduled(cron = "0/5 * * * * ?")
+    @Scheduled(cron = "0 0 22 * * ?")
     public void test5(){
         try {
             jijin();
