@@ -24,6 +24,7 @@ import org.apache.http.util.EntityUtils;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
 
 @Component
 @EnableScheduling
@@ -65,12 +66,12 @@ public class FundPushTask {
         }
     }
 
-
-    @Scheduled(cron = "0/20 45-59 15 ? * 1-5")
+    @Scheduled(cron = "0/20 45-59 14 ? * 1-5")
     public void fundPushT() {
         try {
             HttpClient client = HttpClients.createDefault();
-            HttpPost httpGet = new HttpPost("https://jijinbaapi.eastmoney.com/gubaapi/v3/read/Article/Post/UserPostList.ashx");
+            HttpPost httpGet = new HttpPost(
+                "https://jijinbaapi.eastmoney.com/gubaapi/v3/read/Article/Post/UserPostList.ashx");
             List<NameValuePair> list_0 = new ArrayList<NameValuePair>();
             list_0.add(new BasicNameValuePair("deviceid", "837EC5754F503CFAAEE0929FD48974E7"));
             list_0.add(new BasicNameValuePair("ps", "20"));
@@ -81,12 +82,12 @@ public class FundPushTask {
             list_0.add(new BasicNameValuePair("p", "1"));
             UrlEncodedFormEntity entity = new UrlEncodedFormEntity(list_0, "utf8");
             httpGet.setEntity(entity);
-            HttpResponse  httpResponse = client.execute(httpGet);
+            HttpResponse httpResponse = client.execute(httpGet);
             String result = EntityUtils.toString(httpResponse.getEntity(), "utf8");
 
-            String r ="";
+            String r = "";
             JSONArray jsonObjects = JSON.parseObject(result).getJSONArray("re");
-            for(int i=0;i<jsonObjects.size();i++){
+            for (int i = 0; i < jsonObjects.size(); i++) {
                 JSONObject job = jsonObjects.getJSONObject(i);
                 String post_title = job.getString("post_title");
                 String post_id = job.getString("post_id");
@@ -95,22 +96,23 @@ public class FundPushTask {
                     + "&goPage=articleView&lastPage=personDetailView";
                 if (!ids.contains(post_id)) {
                     ids.add(post_id);
-                    r += "["+post_title+"]("+post_url+")  \n  \n";
-                    r += post_content+  "  \n  \n";
+                    r += "[" + post_title + "](" + post_url + ")  \n  \n";
+                    r += post_content + "  \n  \n";
                     r += "----------------------------    \n  \n";
                 }
 
             }
+            if (!StringUtils.isEmpty(r)) {
                 //http://sc.ftqq.com/?c=code#
                 HttpPost httpPost = new HttpPost(
                     "https://sc.ftqq.com/SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d.send");
                 List<NameValuePair> list = new ArrayList<NameValuePair>();
                 list.add(new BasicNameValuePair("text", "最新主题"));
                 list.add(new BasicNameValuePair("desp", r));
-
                 UrlEncodedFormEntity entity1 = new UrlEncodedFormEntity(list, "utf8");
                 httpPost.setEntity(entity1);
                 client.execute(httpPost);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
