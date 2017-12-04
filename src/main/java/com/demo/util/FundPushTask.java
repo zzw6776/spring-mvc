@@ -83,7 +83,7 @@ public class FundPushTask {
                 HttpPost httpPost = new HttpPost(
                         "https://sc.ftqq.com/SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d.send");
                 List<NameValuePair> list = new ArrayList<NameValuePair>();
-                list.add(new BasicNameValuePair("text", "基金2"));
+                list.add(new BasicNameValuePair("text", "基金"));
                 list.add(new BasicNameValuePair("desp", res));
                 UrlEncodedFormEntity entity = new UrlEncodedFormEntity(list, "utf8");
                 httpPost.setEntity(entity);
