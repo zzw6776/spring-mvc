@@ -1,10 +1,8 @@
 package com.demo.util;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.text.SimpleDateFormat;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -57,6 +55,35 @@ public class FundPushTask {
                 list.add(new BasicNameValuePair("text", "基金"));
                 list.add(new BasicNameValuePair("desp", res));
 
+                UrlEncodedFormEntity entity = new UrlEncodedFormEntity(list, "utf8");
+                httpPost.setEntity(entity);
+                client.execute(httpPost);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Scheduled(cron = "0/20 * 18-23 ? * 1-5")
+    public void fundPushTT() {
+        try {
+            HttpClient client = HttpClients.createDefault();
+            HttpGet httpGet = new HttpGet("https://fundmobapi.eastmoney.com/FundMApi/FundBaseTypeInformation.ashx?FCODE=004505&deviceid=Wap&plat=Wap&product=EFund&version=2.0.0");
+            HttpResponse httpResponse = null;
+            httpResponse = client.execute(httpGet);
+            String result = EntityUtils.toString(httpResponse.getEntity(), "utf8");
+            JSONObject jsonObject = JSON.parseObject(result).getJSONObject("Datas");
+            String now = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+            if (now.equals(jsonObject.getString("FSRQ"))) {
+                String RZDF = (String)jsonObject.get("RZDF");
+                String SHORTNAME = (String)jsonObject.get("SHORTNAME");
+                String res = "截至" + now + "," + SHORTNAME + "为" + RZDF.replace("-", "负");
+                //http://sc.ftqq.com/?c=code#
+                HttpPost httpPost = new HttpPost(
+                        "https://sc.ftqq.com/SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d.send");
+                List<NameValuePair> list = new ArrayList<NameValuePair>();
+                list.add(new BasicNameValuePair("text", "基金"));
+                list.add(new BasicNameValuePair("desp", res));
                 UrlEncodedFormEntity entity = new UrlEncodedFormEntity(list, "utf8");
                 httpPost.setEntity(entity);
                 client.execute(httpPost);
@@ -120,7 +147,7 @@ public class FundPushTask {
 
     public static void main(String[] args) throws IOException {
         FundPushTask fundPushTask = new FundPushTask();
-        fundPushTask.fundPushT();
+        fundPushTask.fundPushTT();
 
     }
 }
