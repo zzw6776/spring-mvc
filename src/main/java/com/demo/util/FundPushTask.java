@@ -29,7 +29,7 @@ import org.springframework.util.StringUtils;
 public class FundPushTask {
 
     private Set<String> ids = new HashSet<>();
-
+    private Set<String> times = new HashSet<>();
     @Scheduled(cron = "0 45 14,15 ? * 1-5")
     public void fundPush() {
         try {
@@ -74,7 +74,8 @@ public class FundPushTask {
             String result = EntityUtils.toString(httpResponse.getEntity(), "utf8");
             JSONObject jsonObject = JSON.parseObject(result).getJSONObject("Datas");
             String now = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
-            if (now.equals(jsonObject.getString("FSRQ"))) {
+            if (now.equals(jsonObject.getString("FSRQ"))&&!times.contains(now)) {
+                times.add(now);
                 String RZDF = (String)jsonObject.get("RZDF");
                 String SHORTNAME = (String)jsonObject.get("SHORTNAME");
                 String res = "截至" + now + "," + SHORTNAME + "为" + RZDF.replace("-", "负");
@@ -82,7 +83,7 @@ public class FundPushTask {
                 HttpPost httpPost = new HttpPost(
                         "https://sc.ftqq.com/SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d.send");
                 List<NameValuePair> list = new ArrayList<NameValuePair>();
-                list.add(new BasicNameValuePair("text", "基金"));
+                list.add(new BasicNameValuePair("text", "基金2"));
                 list.add(new BasicNameValuePair("desp", res));
                 UrlEncodedFormEntity entity = new UrlEncodedFormEntity(list, "utf8");
                 httpPost.setEntity(entity);
