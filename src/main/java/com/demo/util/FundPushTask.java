@@ -47,7 +47,7 @@ public class FundPushTask {
                 String name = (String)jsonObject.get("name");
                 String gszzl = (String)jsonObject.get("gszzl");
                 String jzrq = (String)jsonObject.get("jzrq");
-                String res = "截至" + new SimpleDateFormat("MM月dd日").format(new Date()) + "," + name + "  净值估算为" + gszzl.replace("-", "负");
+                String res = "截至" + new SimpleDateFormat("MM月dd日").format(new Date()) + "," + name + "  净值估算为" + gszzl.replace("-", "负")+"%";
                 //http://sc.ftqq.com/?c=code#
                 HttpPost httpPost = new HttpPost(
                     "https://sc.ftqq.com/SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d.send");
@@ -76,9 +76,9 @@ public class FundPushTask {
             String now = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
             if (now.equals(jsonObject.getString("FSRQ"))&&!times.contains(now)) {
                 times.add(now);
-                String RZDF = (String)jsonObject.get("RZDF");
-                String SHORTNAME = (String)jsonObject.get("SHORTNAME");
-                String res = "截至" + new SimpleDateFormat("MM月dd日").format(new Date()) + "," + SHORTNAME + "  实际净值为" + RZDF.replace("-", "负");
+                String rzdf = (String)jsonObject.get("RZDF");
+                String shortname = (String)jsonObject.get("SHORTNAME");
+                String res = "截至" + new SimpleDateFormat("MM月dd日").format(new Date()) + "," + shortname + "  实际净值为" + String.format("%.2f", new Double(rzdf)).toString().replace("-", "负")+"%";
                 //http://sc.ftqq.com/?c=code#
                 HttpPost httpPost = new HttpPost(
                         "https://sc.ftqq.com/SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d.send");
