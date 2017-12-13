@@ -10,6 +10,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
+import lombok.extern.log4j.Log4j;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
@@ -30,6 +31,7 @@ public class FundPushTask {
 
     private Set<String> ids = new HashSet<>();
     private Set<String> times = new HashSet<>();
+
     @Scheduled(cron = "0 45 14,15 ? * 1-5")
     public void fundPush() {
         try {
