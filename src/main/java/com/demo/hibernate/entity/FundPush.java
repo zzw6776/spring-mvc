@@ -22,7 +22,7 @@ public class FundPush {
     /**
      * 基金id
      */
-    private Long fundId;
+    private String fundId;
     /**
      * 对应推送的account集合,以,分割
      */

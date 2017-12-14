@@ -2,98 +2,137 @@ package com.demo.util;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import javax.annotation.Resource;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
-import lombok.extern.log4j.Log4j;
+import com.demo.hibernate.entity.FundPush;
+import com.demo.hibernate.entity.User;
+import com.demo.service.impl.FundPushServiceImpl;
+import com.demo.service.impl.UserServiceImpl;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 
 @Component
 @EnableScheduling
 public class FundPushTask {
 
+    @Autowired
+    private FundPushServiceImpl fundPushService;
+    @Autowired
+    private UserServiceImpl userService;
+    @Resource(name = "keyValue")
+    Map<String, String> keyValueMap;
+
     private Set<String> ids = new HashSet<>();
     private Set<String> times = new HashSet<>();
 
-    @Scheduled(cron = "0 45 14,15 ? * 1-5")
-    public void fundPush() {
-        try {
-            HttpClient client = HttpClients.createDefault();
-            HttpGet httpGet = new HttpGet("http://fundgz.1234567.com.cn/js/004505.js");
-            HttpResponse httpResponse = null;
-            httpResponse = client.execute(httpGet);
-            String result = EntityUtils.toString(httpResponse.getEntity(), "utf8");
-            String pattern = "jsonpgz\\((.*)\\);";
-            // 创建 Pattern 对象
-            Pattern p = Pattern.compile(pattern);
-            Matcher m = p.matcher(result);
-            if (m.find()) {
-                JSONObject jsonObject = JSON.parseObject(m.group(1));
-                String name = (String)jsonObject.get("name");
-                String gszzl = (String)jsonObject.get("gszzl");
-                String jzrq = (String)jsonObject.get("jzrq");
-                String res = "截至" + new SimpleDateFormat("MM月dd日").format(new Date()) + "," + name + "  净值估算为" + gszzl.replace("-", "负")+"%";
-                //http://sc.ftqq.com/?c=code#
-                HttpPost httpPost = new HttpPost(
-                    "https://sc.ftqq.com/SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d.send");
-                List<NameValuePair> list = new ArrayList<NameValuePair>();
-                list.add(new BasicNameValuePair("text", "基金"));
-                list.add(new BasicNameValuePair("desp", res));
+    private static final String GET_ESTIMATE_FUND_URL = "http://fundgz.1234567.com.cn/js/ID.js";
 
-                UrlEncodedFormEntity entity = new UrlEncodedFormEntity(list, "utf8");
-                httpPost.setEntity(entity);
-                client.execute(httpPost);
+    private static final String GET_ACTUAL_FUND_URL = "https://fundmobapi.eastmoney.com/FundMApi/FundBaseTypeInformation.ashx?FCODE=ID&deviceid=Wap&plat=Wap&product=EFund&version=2.0.0";
+
+    @Scheduled(cron = "0 45 14,15 ? * 1-5")
+    public void fundEstimatePush() {
+        if (!keyValueMap.get("FundEstimateSwitch").equals("true")) {
+            return;
+        }
+        List<FundPush> fundList = fundPushService.findAll();
+        for (FundPush fundPush : fundList) {
+            String fundId = fundPush.getFundId();
+            String result = HttpClientUtil.get(GET_ESTIMATE_FUND_URL.replace("ID",fundId));
+            String fundText = getEstimateFundTextByJson(result);
+            if (!StringUtils.isEmpty(fundText)) {
+                String[] accounds = fundPush.getAccounts().split(",");
+                for (String accound : accounds) {
+                    User user = new User();
+                    user.setAccount(accound);
+                    List<User> users = userService.select(user);
+                    if (!CollectionUtils.isEmpty(users)) {
+                        //accout为唯一索引,所以只可能有一条
+                        String scKey = users.get(0).getScKey();
+                        WeChatPushUtil.weChatPush(scKey,"基金估值",fundText);
+                    }
+                }
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 
-    @Scheduled(cron = "0/20 * 18-23 ? * 1-5")
-    public void fundPushTT() {
-        try {
-            HttpClient client = HttpClients.createDefault();
-            HttpGet httpGet = new HttpGet("https://fundmobapi.eastmoney.com/FundMApi/FundBaseTypeInformation.ashx?FCODE=004505&deviceid=Wap&plat=Wap&product=EFund&version=2.0.0");
-            HttpResponse httpResponse = null;
-            httpResponse = client.execute(httpGet);
-            String result = EntityUtils.toString(httpResponse.getEntity(), "utf8");
-            JSONObject jsonObject = JSON.parseObject(result).getJSONObject("Datas");
-            String now = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
-            if (now.equals(jsonObject.getString("FSRQ"))&&!times.contains(now)) {
-                times.add(now);
-                String rzdf = (String)jsonObject.get("RZDF");
-                String shortname = (String)jsonObject.get("SHORTNAME");
-                String res = "截至" + new SimpleDateFormat("MM月dd日").format(new Date()) + "," + shortname + "  实际净值为" + String.format("%.2f", new Double(rzdf)).toString().replace("-", "负")+"%";
-                //http://sc.ftqq.com/?c=code#
-                HttpPost httpPost = new HttpPost(
-                        "https://sc.ftqq.com/SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d.send");
-                List<NameValuePair> list = new ArrayList<NameValuePair>();
-                list.add(new BasicNameValuePair("text", "基金"));
-                list.add(new BasicNameValuePair("desp", res));
-                UrlEncodedFormEntity entity = new UrlEncodedFormEntity(list, "utf8");
-                httpPost.setEntity(entity);
-                client.execute(httpPost);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
+    private String getEstimateFundTextByJson(String result) {
+        String pattern = "jsonpgz\\((.*)\\);";
+        // 创建 Pattern 对象
+        Pattern p = Pattern.compile(pattern);
+        Matcher m = p.matcher(result);
+        if (m.find()) {
+            JSONObject jsonObject = JSON.parseObject(m.group(1));
+            String name = (String)jsonObject.get("name");
+            String gszzl = (String)jsonObject.get("gszzl");
+            String jzrq = (String)jsonObject.get("jzrq");
+            String res = "截至" + new SimpleDateFormat("MM月dd日").format(new Date()) + "," + name + "  净值估算为" + gszzl.replace("-", "负")+"%";
+            return res;
         }
+        return null;
+    }
+
+    @Scheduled(cron = "0/20 * 18-23 ? * 1-5")
+    public void fundActualPush() {
+            if (!keyValueMap.get("FundActualSwitch").equals("true")) {
+                return;
+            }
+            List<FundPush> fundList = fundPushService.findAll();
+            for (FundPush fundPush : fundList) {
+                String fundId = fundPush.getFundId();
+                String result = HttpClientUtil.get(GET_ACTUAL_FUND_URL.replace("ID",fundId));
+                String fundText = getActualFundText(result);
+                if (!StringUtils.isEmpty(fundText)) {
+                    String[] accounds = fundPush.getAccounts().split(",");
+                    for (String accound : accounds) {
+                        User user = new User();
+                        user.setAccount(accound);
+                        List<User> users = userService.select(user);
+                        if (!CollectionUtils.isEmpty(users)) {
+                            //accout为唯一索引,所以只可能有一条
+                            String scKey = users.get(0).getScKey();
+                            WeChatPushUtil.weChatPush(scKey,"基金净值",fundText);
+                        }
+                    }
+                }
+            }
+    }
+
+    private String getActualFundText(String result)   {
+        JSONObject jsonObject = JSON.parseObject(result).getJSONObject("Datas");
+        String now = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+        if (now.equals(jsonObject.getString("FSRQ"))&&!times.contains(now)) {
+            times.add(now);
+            String rzdf = (String)jsonObject.get("RZDF");
+            String shortname = (String)jsonObject.get("SHORTNAME");
+            String res = "截至" + new SimpleDateFormat("MM月dd日").format(new Date()) + "," + shortname + "  实际净值为" + String.format("%.2f", new Double(rzdf)).toString().replace("-", "负")+"%";
+            return res;
+        }
+        return null;
     }
 
     @Scheduled(cron = "0/20 45-59 14 ? * 1-5")
@@ -150,7 +189,6 @@ public class FundPushTask {
 
     public static void main(String[] args) throws IOException {
         FundPushTask fundPushTask = new FundPushTask();
-        fundPushTask.fundPushTT();
 
     }
 }

@@ -8,6 +8,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
+/**
+ * 文件下载工具类
+ */
 public class FileDownload {
 
 	public static void main(String[] args) throws IOException {

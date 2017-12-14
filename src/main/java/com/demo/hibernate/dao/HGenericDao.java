@@ -100,6 +100,12 @@ public abstract class HGenericDao<T, I extends Serializable> {
 	}
 
 	@SuppressWarnings("unchecked")
+	public T selectByUnique(T t) {
+		Session session = getCurrentSession();
+		return (T)session.createCriteria(getType()).add(Example.create(t)).uniqueResult();
+	}
+
+	@SuppressWarnings("unchecked")
 	public List<T> findByHql(String hql) {
 		return (List<T>) getCurrentSession().createQuery(hql).list();
 	}

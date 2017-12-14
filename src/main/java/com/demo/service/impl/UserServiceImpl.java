@@ -1,5 +1,7 @@
 package com.demo.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,5 +16,8 @@ public class UserServiceImpl {
 	public void save(User user) {
 		userDao.save(user);
 	}
-	
+
+	public List<User> select(User user) {
+		return userDao.select(user);
+	}
 }

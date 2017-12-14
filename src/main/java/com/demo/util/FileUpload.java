@@ -15,6 +15,9 @@ import org.springframework.web.multipart.MultipartFile;
 
 import sun.misc.BASE64Encoder;
 
+/**
+ * 文件上传工具类
+ */
 @SuppressWarnings("restriction")
 public class FileUpload {
 	// 根据spring获取项目根目录

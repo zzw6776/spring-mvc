@@ -12,7 +12,9 @@ import javax.crypto.KeyGenerator;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.SecretKeySpec;
 
-@SuppressWarnings("unused")
+/**
+ * 加密解密工具类
+ */
 public class EncryptUtil {
 
 	static final String algorithmStr = "AES/ECB/PKCS5Padding";
