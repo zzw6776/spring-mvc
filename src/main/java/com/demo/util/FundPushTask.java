@@ -62,7 +62,7 @@ public class FundPushTask {
         List<FundPush> fundList = fundPushService.findAll();
         for (FundPush fundPush : fundList) {
             String fundId = fundPush.getFundId();
-            String result = HttpClientUtil.get(GET_ESTIMATE_FUND_URL.replace("ID",fundId));
+            String result = HttpClientUtil.get(GET_ESTIMATE_FUND_URL.replace("ID", fundId));
             String fundText = getEstimateFundTextByJson(result);
             if (!StringUtils.isEmpty(fundText)) {
                 String[] accounds = fundPush.getAccounts().split(",");
@@ -73,7 +73,7 @@ public class FundPushTask {
                     if (!CollectionUtils.isEmpty(users)) {
                         //accout为唯一索引,所以只可能有一条
                         String scKey = users.get(0).getScKey();
-                        WeChatPushUtil.weChatPush(scKey,"基金估值",fundText);
+                        WeChatPushUtil.weChatPush(scKey, "基金估值", fundText);
                     }
                 }
             }
@@ -87,10 +87,10 @@ public class FundPushTask {
         Matcher m = p.matcher(result);
         if (m.find()) {
             JSONObject jsonObject = JSON.parseObject(m.group(1));
-            String name = (String)jsonObject.get("name");
-            String gszzl = (String)jsonObject.get("gszzl");
-            String jzrq = (String)jsonObject.get("jzrq");
-            String res = "截至" + new SimpleDateFormat("MM月dd日").format(new Date()) + "," + name + "  净值估算为" + gszzl.replace("-", "负")+"%";
+            String name = (String) jsonObject.get("name");
+            String gszzl = (String) jsonObject.get("gszzl");
+            String jzrq = (String) jsonObject.get("jzrq");
+            String res = "截至" + new SimpleDateFormat("MM月dd日").format(new Date()) + "," + name + "  净值估算为" + gszzl.replace("-", "负") + "%";
             return res;
         }
         return null;
@@ -98,14 +98,16 @@ public class FundPushTask {
 
     @Scheduled(cron = "0/20 * 18-23 ? * 1-5")
     public void fundActualPush() {
-            if (!keyValueMap.get("FundActualSwitch").equals("true")) {
-                return;
-            }
-            List<FundPush> fundList = fundPushService.findAll();
-            for (FundPush fundPush : fundList) {
-                String fundId = fundPush.getFundId();
-                String result = HttpClientUtil.get(GET_ACTUAL_FUND_URL.replace("ID",fundId));
-                String fundText = getActualFundText(result);
+        if (!keyValueMap.get("FundActualSwitch").equals("true")) {
+            return;
+        }
+        List<FundPush> fundList = fundPushService.findAll();
+        String now = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+        for (FundPush fundPush : fundList) {
+            String fundId = fundPush.getFundId();
+            String result = HttpClientUtil.get(GET_ACTUAL_FUND_URL.replace("ID", fundId));
+            if (!times.contains(fundId + now)) {
+                String fundText = getActualFundText(result,fundId,now);
                 if (!StringUtils.isEmpty(fundText)) {
                     String[] accounds = fundPush.getAccounts().split(",");
                     for (String accound : accounds) {
@@ -115,21 +117,22 @@ public class FundPushTask {
                         if (!CollectionUtils.isEmpty(users)) {
                             //accout为唯一索引,所以只可能有一条
                             String scKey = users.get(0).getScKey();
-                            WeChatPushUtil.weChatPush(scKey,"基金净值",fundText);
+                            WeChatPushUtil.weChatPush(scKey, "基金净值", fundText);
                         }
                     }
                 }
             }
+        }
     }
 
-    private String getActualFundText(String result)   {
+    private String getActualFundText(String result,String fundId,String now) {
         JSONObject jsonObject = JSON.parseObject(result).getJSONObject("Datas");
-        String now = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
-        if (now.equals(jsonObject.getString("FSRQ"))&&!times.contains(now)) {
-            times.add(now);
-            String rzdf = (String)jsonObject.get("RZDF");
-            String shortname = (String)jsonObject.get("SHORTNAME");
-            String res = "截至" + new SimpleDateFormat("MM月dd日").format(new Date()) + "," + shortname + "  实际净值为" + String.format("%.2f", new Double(rzdf)).toString().replace("-", "负")+"%";
+
+        if (now.equals(jsonObject.getString("FSRQ")) ) {
+            times.add(fundId+now);
+            String rzdf = (String) jsonObject.get("RZDF");
+            String shortname = (String) jsonObject.get("SHORTNAME");
+            String res = "截至" + now + "," + shortname + "  实际净值为" + String.format("%.2f", new Double(rzdf)).toString().replace("-", "负") + "%";
             return res;
         }
         return null;
@@ -140,7 +143,7 @@ public class FundPushTask {
         try {
             HttpClient client = HttpClients.createDefault();
             HttpPost httpGet = new HttpPost(
-                "https://jijinbaapi.eastmoney.com/gubaapi/v3/read/Article/Post/UserPostList.ashx");
+                    "https://jijinbaapi.eastmoney.com/gubaapi/v3/read/Article/Post/UserPostList.ashx");
             List<NameValuePair> list_0 = new ArrayList<NameValuePair>();
             list_0.add(new BasicNameValuePair("deviceid", "837EC5754F503CFAAEE0929FD48974E7"));
             list_0.add(new BasicNameValuePair("ps", "20"));
@@ -162,7 +165,7 @@ public class FundPushTask {
                 String post_id = job.getString("post_id");
                 String post_content = job.getString("post_content");
                 String post_url = "https://fundbarmob.eastmoney.com/index.html#aid=" + post_id
-                    + "&goPage=articleView&lastPage=personDetailView";
+                        + "&goPage=articleView&lastPage=personDetailView";
                 if (!ids.contains(post_id)) {
                     ids.add(post_id);
                     r += "[" + post_title + "](" + post_url + ")  \n  \n";
@@ -174,7 +177,7 @@ public class FundPushTask {
             if (!StringUtils.isEmpty(r)) {
                 //http://sc.ftqq.com/?c=code#
                 HttpPost httpPost = new HttpPost(
-                    "https://sc.ftqq.com/SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d.send");
+                        "https://sc.ftqq.com/SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d.send");
                 List<NameValuePair> list = new ArrayList<NameValuePair>();
                 list.add(new BasicNameValuePair("text", "最新主题"));
                 list.add(new BasicNameValuePair("desp", r));
