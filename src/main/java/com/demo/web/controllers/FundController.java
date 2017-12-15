@@ -27,6 +27,16 @@ public class FundController {
         return "成功";
     }
 
+    @RequestMapping("delete")
+    @ResponseBody
+    public String delete(String fundId, String account) {
+        if (StringUtils.isEmpty(fundId) || StringUtils.isEmpty(account)) {
+            return "参数缺失";
+        }
+        fundPushService.updateAndDelete(fundId,account);
+        return "成功";
+    }
+
     @RequestMapping("fundEstimatePush")
     @ResponseBody
     public String fundEstimatePush() {

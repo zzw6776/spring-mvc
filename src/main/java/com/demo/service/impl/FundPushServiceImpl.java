@@ -33,4 +33,19 @@ public class FundPushServiceImpl {
             fundPushDao.save(query);
         }
     }
+
+    public void updateAndDelete(String fundId,String account) {
+        FundPush query = new FundPush();
+        query.setFundId(fundId);
+        FundPush fundPush = fundPushDao.selectByUnique(query);
+        if (null != fundPush) {
+            Set<String> set = new HashSet<String>(Arrays.asList(fundPush.getAccounts().split(",")));
+            set.remove(account);
+            fundPush.setAccounts(StringUtils.join(set.toArray(), ","));
+            if (set.size() == 0) {
+                fundPushDao.delete(fundPush);
+            }
+        }
+
+    }
 }

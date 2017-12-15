@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import lombok.extern.log4j.Log4j;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -16,7 +17,7 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
-import org.springframework.util.StringUtils;
+import org.springframework.util.CollectionUtils;
 
 /**
  * httpClient工具类
@@ -55,16 +56,17 @@ public class HttpClientUtil {
         CloseableHttpClient client = HttpClients.createDefault();
         CloseableHttpResponse httpResponse = null;
         try {
-            HttpGet httpGet = new HttpGet(url);
-            List<NameValuePair> list = new ArrayList<NameValuePair>();
-            String v = "";
+
+            List<String> params = new ArrayList<>();
+
             for (String key : value.keySet()) {
-                v = v + "&" + key + "=" + value.get(key);
+                params.add(key + "=" + value.get(key));
             }
-            if (!StringUtils.isEmpty(v)) {
-                v = "?" + v.substring(1, v.length());
+            if (!CollectionUtils.isEmpty(params)) {
+                String v = "?" + StringUtils.join(params, "&");
                 url += v;
             }
+            HttpGet httpGet = new HttpGet(url);
             httpResponse = client.execute(httpGet);
             return EntityUtils.toString(httpResponse.getEntity(), "utf8");
         } catch (Exception e) {
@@ -84,6 +86,14 @@ public class HttpClientUtil {
 
     public static  String get(String url) {
        return get(url, new HashMap<>());
+    }
+
+    public static void main(String[] args) {
+        get("www.baidu.com");
+        Map<String, String> map = new HashMap<>();
+        map.put("a", "a");
+        map.put("b", "b");
+        get("www.baidu.com", map);
     }
 }
 
