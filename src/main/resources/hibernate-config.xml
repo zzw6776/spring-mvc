@@ -20,7 +20,7 @@
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
 				<!-- 必要时在数据库新建所有表格 -->
 				<prop key="hibernate.hbm2ddl.auto">update</prop>
-				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.show_sql">false</prop>
 				<!-- 用更漂亮的格式显示sql语句 -->
 				<prop key="hibernate.format_sql">false</prop>
 			</props>

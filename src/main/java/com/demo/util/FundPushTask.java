@@ -21,6 +21,7 @@ import com.demo.hibernate.entity.FundPush;
 import com.demo.hibernate.entity.User;
 import com.demo.service.impl.FundPushServiceImpl;
 import com.demo.service.impl.UserServiceImpl;
+import lombok.extern.java.Log;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
@@ -38,6 +39,7 @@ import org.springframework.util.StringUtils;
 
 @Component
 @EnableScheduling
+@Log
 public class FundPushTask {
 
     @Autowired
@@ -133,6 +135,7 @@ public class FundPushTask {
             String rzdf = (String) jsonObject.get("RZDF");
             String shortname = (String) jsonObject.get("SHORTNAME");
             String res = "截至" + now + "," + shortname + "  实际净值为" + String.format("%.2f", new Double(rzdf)).toString().replace("-", "负") + "%";
+            log.info(res);
             return res;
         }
         return null;
