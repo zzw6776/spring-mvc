@@ -138,7 +138,7 @@ public class FundPushTask {
         return null;
     }
 
-    @Scheduled(cron = "0/20 45-59 14 ? * 1-5")
+    //@Scheduled(cron = "0/20 45-59 14 ? * 1-5")
     public void fundPushT() {
         try {
             HttpClient client = HttpClients.createDefault();
