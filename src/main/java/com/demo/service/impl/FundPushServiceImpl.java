@@ -24,6 +24,11 @@ public class FundPushServiceImpl {
         return fundPushDao.findAll();
     }
 
+    public void update(FundPush fundPush) {
+        fundPushDao.update(fundPush);
+    }
+
+
     public void updateAndAdd(String fundId,String account) {
         String result = HttpClientUtil.get(FundPushTask.GET_ACTUAL_FUND_URL.replace("ID", fundId));
         String shortname = JSON.parseObject(result).getJSONObject("Datas").getString("SHORTNAME");

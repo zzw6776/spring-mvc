@@ -122,6 +122,7 @@ public class FundPushTask {
                         }
                     }
                     fundPush.setLastActualTime(now);
+                    fundPushService.update(fundPush);
                 }
             }
         }
