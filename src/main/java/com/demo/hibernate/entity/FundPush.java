@@ -27,5 +27,14 @@ public class FundPush {
      * 对应推送的account集合,以,分割
      */
     private String accounts;
+    /**
+     * 基金名字
+     */
+    private String fundName;
+    /**
+     * 最后确定净值时间
+     */
+    private String LastActualTime;
+
 
 }

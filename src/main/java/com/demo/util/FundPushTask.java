@@ -50,11 +50,10 @@ public class FundPushTask {
     Map<String, String> keyValueMap;
 
     private Set<String> ids = new HashSet<>();
-    private Set<String> times = new HashSet<>();
 
-    private static final String GET_ESTIMATE_FUND_URL = "http://fundgz.1234567.com.cn/js/ID.js";
+    public static final String GET_ESTIMATE_FUND_URL = "http://fundgz.1234567.com.cn/js/ID.js";
 
-    private static final String GET_ACTUAL_FUND_URL = "https://fundmobapi.eastmoney.com/FundMApi/FundBaseTypeInformation.ashx?FCODE=ID&deviceid=Wap&plat=Wap&product=EFund&version=2.0.0";
+    public static final String GET_ACTUAL_FUND_URL = "https://fundmobapi.eastmoney.com/FundMApi/FundBaseTypeInformation.ashx?FCODE=ID&deviceid=Wap&plat=Wap&product=EFund&version=2.0.0";
 
     @Scheduled(cron = "0 45 14,15 ? * 1-5")
     public void fundEstimatePush() {
@@ -108,8 +107,8 @@ public class FundPushTask {
         for (FundPush fundPush : fundList) {
             String fundId = fundPush.getFundId();
             String result = HttpClientUtil.get(GET_ACTUAL_FUND_URL.replace("ID", fundId));
-            if (!times.contains(fundId + now)) {
-                String fundText = getActualFundText(result,fundId,now);
+            if (!now.equals(fundPush.getLastActualTime())) {
+                String fundText = getActualFundText(result);
                 if (!StringUtils.isEmpty(fundText)) {
                     String[] accounds = fundPush.getAccounts().split(",");
                     for (String accound : accounds) {
@@ -122,16 +121,16 @@ public class FundPushTask {
                             WeChatPushUtil.weChatPush(scKey, "基金净值", fundText);
                         }
                     }
+                    fundPush.setLastActualTime(now);
                 }
             }
         }
     }
 
-    private String getActualFundText(String result,String fundId,String now) {
+    private String getActualFundText(String result) {
         JSONObject jsonObject = JSON.parseObject(result).getJSONObject("Datas");
-
+        String now = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
         if (now.equals(jsonObject.getString("FSRQ")) ) {
-            times.add(fundId+now);
             String rzdf = (String) jsonObject.get("RZDF");
             String shortname = (String) jsonObject.get("SHORTNAME");
             String res = "截至" + now + "," + shortname + "  实际净值为" + String.format("%.2f", new Double(rzdf)).toString().replace("-", "负") + "%";
