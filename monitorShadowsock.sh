@@ -3,5 +3,5 @@
 id=$(ps -ef|grep server.py |grep -v grep|awk '{print $2}')
 if [ ! $id ]; then
         #/etc/init.d/shadowsocks restart
-        /usr/local/shadowsocks/logrun.sh
+        /root/shadowsocksr/shadowsocks/logrun.sh
 fi
