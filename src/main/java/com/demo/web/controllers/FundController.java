@@ -1,5 +1,8 @@
 package com.demo.web.controllers;
 
+import java.util.List;
+
+import com.demo.hibernate.entity.FundPush;
 import com.demo.service.impl.FundPushServiceImpl;
 import com.demo.util.FundPushTask;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +19,13 @@ public class FundController {
     FundPushServiceImpl fundPushService;
     @Autowired
     FundPushTask fundPushTask;
+
+    @RequestMapping("select")
+    @ResponseBody
+    public List<FundPush> select() {
+        return fundPushService.findAll();
+    }
+
 
     @RequestMapping("add")
     @ResponseBody
