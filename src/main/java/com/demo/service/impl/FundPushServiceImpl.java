@@ -37,7 +37,7 @@ public class FundPushServiceImpl {
             fundPush.setFundName(shortname);
         } else {
             query.setAccounts(account);
-            fundPush.setFundName(shortname);
+            query.setFundName(shortname);
             fundPushDao.save(query);
         }
     }
