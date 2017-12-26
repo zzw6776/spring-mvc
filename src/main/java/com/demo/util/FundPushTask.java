@@ -21,7 +21,7 @@ import com.demo.hibernate.entity.FundPush;
 import com.demo.hibernate.entity.User;
 import com.demo.service.impl.FundPushServiceImpl;
 import com.demo.service.impl.UserServiceImpl;
-import lombok.extern.java.Log;
+import lombok.extern.log4j.Log4j;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
@@ -39,7 +39,7 @@ import org.springframework.util.StringUtils;
 
 @Component
 @EnableScheduling
-@Log
+@Log4j
 public class FundPushTask {
 
     @Autowired
@@ -99,42 +99,47 @@ public class FundPushTask {
 
     @Scheduled(cron = "0/20 * 18-23 ? * 1-5")
     public void fundActualPush() {
-        if (!keyValueMap.get("FundActualSwitch").equals("true")) {
-            return;
-        }
-        List<FundPush> fundList = fundPushService.findAll();
-        String now = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
-        for (FundPush fundPush : fundList) {
-            String fundId = fundPush.getFundId();
-            String result = HttpClientUtil.get(GET_ACTUAL_FUND_URL.replace("ID", fundId));
-            if (!now.equals(fundPush.getLastActualTime())) {
-                String fundText = getActualFundText(result);
-                if (!StringUtils.isEmpty(fundText)) {
-                    String[] accounds = fundPush.getAccounts().split(",");
-                    for (String accound : accounds) {
-                        User user = new User();
-                        user.setAccount(accound);
-                        List<User> users = userService.select(user);
-                        if (!CollectionUtils.isEmpty(users)) {
-                            //accout为唯一索引,所以只可能有一条
-                            String scKey = users.get(0).getScKey();
-                            WeChatPushUtil.weChatPush(scKey, "基金净值", fundText);
+        try {
+            if (!keyValueMap.get("FundActualSwitch").equals("true")) {
+                return;
+            }
+            List<FundPush> fundList = fundPushService.findAll();
+            String now = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+            for (FundPush fundPush : fundList) {
+                String fundId = fundPush.getFundId();
+                String result = HttpClientUtil.get(GET_ACTUAL_FUND_URL.replace("ID", fundId));
+                if (!now.equals(fundPush.getLastActualTime())) {
+                    String fundText = getActualFundText(result);
+                    if (!StringUtils.isEmpty(fundText)) {
+                        String[] accounds = fundPush.getAccounts().split(",");
+                        for (String accound : accounds) {
+                            User user = new User();
+                            user.setAccount(accound);
+                            List<User> users = userService.select(user);
+                            if (!CollectionUtils.isEmpty(users)) {
+                                //accout为唯一索引,所以只可能有一条
+                                String scKey = users.get(0).getScKey();
+                                WeChatPushUtil.weChatPush(scKey, "基金净值", fundText);
+                            }
                         }
+                        fundPush.setLastActualTime(now);
+                        fundPushService.update(fundPush);
                     }
-                    fundPush.setLastActualTime(now);
-                    fundPushService.update(fundPush);
                 }
             }
+        } catch (Exception e) {
+            log.error("获取基金净值失败",e);
         }
     }
 
     private String getActualFundText(String result) {
         JSONObject jsonObject = JSON.parseObject(result).getJSONObject("Datas");
         String now = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
-        if (now.equals(jsonObject.getString("FSRQ")) ) {
+        if (now.equals(jsonObject.getString("FSRQ"))) {
             String rzdf = (String) jsonObject.get("RZDF");
             String shortname = (String) jsonObject.get("SHORTNAME");
             String res = "截至" + now + "," + shortname + "  实际净值为" + String.format("%.2f", new Double(rzdf)).toString().replace("-", "负") + "%";
+
             log.info(res);
             return res;
         }
