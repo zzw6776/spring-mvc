@@ -99,16 +99,19 @@ public class FundPushTask {
 
     @Scheduled(cron = "0/20 * 18-23 ? * 1-5")
     public void fundActualPush() {
+        log.info("1");
         try {
             if (!keyValueMap.get("FundActualSwitch").equals("true")) {
                 return;
             }
             List<FundPush> fundList = fundPushService.findAll();
             String now = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+            log.info("2");
             for (FundPush fundPush : fundList) {
                 String fundId = fundPush.getFundId();
                 String result = HttpClientUtil.get(GET_ACTUAL_FUND_URL.replace("ID", fundId));
                 if (!now.equals(fundPush.getLastActualTime())) {
+                    log.info(fundPush.getFundName());
                     String fundText = getActualFundText(result);
                     if (!StringUtils.isEmpty(fundText)) {
                         String[] accounds = fundPush.getAccounts().split(",");
@@ -127,6 +130,7 @@ public class FundPushTask {
                     }
                 }
             }
+            log.info(3);
         } catch (Exception e) {
             log.error("获取基金净值失败",e);
         }
