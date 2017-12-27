@@ -108,9 +108,9 @@ public class FundPushTask {
             String now = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
             log.info("2");
             for (FundPush fundPush : fundList) {
-                String fundId = fundPush.getFundId();
-                String result = HttpClientUtil.get(GET_ACTUAL_FUND_URL.replace("ID", fundId));
                 if (!now.equals(fundPush.getLastActualTime())) {
+                    String fundId = fundPush.getFundId();
+                    String result = HttpClientUtil.get(GET_ACTUAL_FUND_URL.replace("ID", fundId));
                     log.info(fundPush.getFundName());
                     String fundText = getActualFundText(result);
                     if (!StringUtils.isEmpty(fundText)) {
