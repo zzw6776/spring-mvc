@@ -9,6 +9,7 @@ import java.util.Map;
 import lombok.extern.log4j.Log4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.NameValuePair;
+import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -35,6 +36,8 @@ public class HttpClientUtil {
             }
             UrlEncodedFormEntity entity = new UrlEncodedFormEntity(list, "utf8");
             httpPost.setEntity(entity);
+            RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(10000).setConnectTimeout(10000).build();//设置请求和传输超时时间
+            httpPost.setConfig(requestConfig);
             httpResponse = client.execute(httpPost);
             return EntityUtils.toString(httpResponse.getEntity(), "utf8");
         } catch (Exception e) {
@@ -67,6 +70,8 @@ public class HttpClientUtil {
                 url += v;
             }
             HttpGet httpGet = new HttpGet(url);
+            RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(10000).setConnectTimeout(10000).build();//设置请求和传输超时时间
+            httpGet.setConfig(requestConfig);
             httpResponse = client.execute(httpGet);
             return EntityUtils.toString(httpResponse.getEntity(), "utf8");
         } catch (Exception e) {
