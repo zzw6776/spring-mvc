@@ -55,7 +55,7 @@ public class FundPushTask {
 
     public static final String GET_ACTUAL_FUND_URL = "https://fundmobapi.eastmoney.com/FundMApi/FundBaseTypeInformation.ashx?FCODE=ID&deviceid=Wap&plat=Wap&product=EFund&version=2.0.0";
 
-    @Scheduled(cron = "0 45 14,15 ? * 1-5")
+    @Scheduled(cron = "0 45 14 ? * 1-5")
     public void fundEstimatePush() {
         if (!keyValueMap.get("FundEstimateSwitch").equals("true")) {
             return;
