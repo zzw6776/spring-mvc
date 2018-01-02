@@ -97,7 +97,7 @@ public class FundPushTask {
         return null;
     }
 
-    @Scheduled(cron = "0/20 * 18-23,1,2 ? * 1-5")
+    @Scheduled(cron = "0/20 * 18-23 ? * 1-5")
     public void fundActualPush() {
         try {
             if (!keyValueMap.get("FundActualSwitch").equals("true")) {
