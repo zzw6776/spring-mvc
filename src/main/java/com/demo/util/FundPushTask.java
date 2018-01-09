@@ -57,11 +57,13 @@ public class FundPushTask {
 
     @Scheduled(cron = "0 45 14 ? * 1-5")
     public void fundEstimatePush() {
+        log.info("估值播报开始");
         if (!keyValueMap.get("FundEstimateSwitch").equals("true")) {
             return;
         }
         List<FundPush> fundList = fundPushService.findAll();
         for (FundPush fundPush : fundList) {
+            log.info("估值播报开始:"+fundPush.getFundName());
             String fundId = fundPush.getFundId();
             String result = HttpClientUtil.get(GET_ESTIMATE_FUND_URL.replace("ID", fundId));
             String fundText = getEstimateFundTextByJson(result);
