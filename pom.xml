@@ -247,6 +247,14 @@
             <version>4.3.2.RELEASE</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.hibernate/ejb3-persistence -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>ejb3-persistence</artifactId>
+            <version>1.0.2.GA</version>
+            <type>pom</type>
+        </dependency>
+
 
     </dependencies>
     <build>
