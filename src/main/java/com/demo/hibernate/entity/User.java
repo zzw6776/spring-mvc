@@ -9,9 +9,8 @@ import javax.persistence.Table;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
-@Entity
+@Entity(name="user")
 @Data
-@Table(name="user")
 public class User {
 	@Id
 	@GeneratedValue(generator = "uuid")

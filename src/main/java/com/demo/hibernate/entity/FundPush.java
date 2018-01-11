@@ -9,9 +9,8 @@ import javax.persistence.Table;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
-@Entity
+@Entity(name="fund_push")
 @Data
-@Table(name="fund_push")
 public class FundPush {
 
     @Id

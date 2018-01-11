@@ -7,8 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
-@Entity
-@Table(name = "shiro_role")
+@Entity(name = "shiro_role")
 public class ShiroRole {
 	@Id
 	@GeneratedValue(generator = "uuid")

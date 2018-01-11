@@ -9,8 +9,7 @@ import javax.persistence.Table;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
 
-@Entity
-@Table(name = "diary_history")
+@Entity(name = "diary_history")
 public class DiaryHistory {
 
 	@Id

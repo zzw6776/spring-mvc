@@ -5,8 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "key_value")
+@Entity(name = "key_value")
 public class KeyValue {
 	@Id
 	@Column(name = "`key`",length=50)
