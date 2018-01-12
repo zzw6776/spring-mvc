@@ -1,0 +1,2229 @@
+From: <Saved by Blink>
+Subject: ????????? - Regular Expression Syntax Reference
+Date: Tue, 7 Sep 2015 05:44:26 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_5866_DA237640.3F1A5909"
+
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.regexlab.com/zh/regref.htm
+
+<html><!-- #BeginTemplate "news2.dwt" --><head><meta http-equiv=3D"Content-=
+Type" content=3D"text/html; charset=3DGBK">
+<meta http-equiv=3D"Content-Language" content=3D"zh-cn">
+<!-- #BeginEditable "charset" -->
+
+<!-- #EndEditable -->
+<style type=3D"text/css"></style>
+
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"http://www.regexlab.com/=
+sites/all/themes/regexlabt/css/styles.css">
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"http://www.regexlab.com/=
+images/newf_zh.css">
+<!-- #BeginEditable "doctitle" -->
+<title>=D5=FD=D4=F2=B1=ED=B4=EF=CA=BD=B2=CE=BF=BC=CE=C4=B5=B5 - Regular Exp=
+ression Syntax Reference</title>
+<meta name=3D"keywords" content=3D"regexp,regular,expression,reference,=D5=
+=FD=D4=F2,=B1=ED=B4=EF=CA=BD,=D3=EF=B7=A8,=B2=CE=BF=BC">
+
+
+<!-- #EndEditable -->
+
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"chrome-extension://fidic=
+gekecdkdmkjghdgadgdmcfodfid/themes/default/content.css"></head>
+
+<body topmargin=3D"0" leftmargin=3D"0" rightmargin=3D"0" bottommargin=3D"0"=
+ bgcolor=3D"#ffffff">
+
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" heig=
+ht=3D"100%">
+  <tbody><tr>
+    <td height=3D"1"><img border=3D"0" src=3D"http://www.regexlab.com/image=
+s/spacer.gif" width=3D"1" height=3D"1"></td>
+    <td height=3D"1" width=3D"780"><img border=3D"0" src=3D"http://www.rege=
+xlab.com/images/spacer.gif" width=3D"1" height=3D"1"></td>
+    <td height=3D"1"><img border=3D"0" src=3D"http://www.regexlab.com/image=
+s/spacer.gif" width=3D"1" height=3D"1"></td>
+  </tr>
+  <tr>
+    <td><img border=3D"0" src=3D"http://www.regexlab.com/images/spacer.gif"=
+ width=3D"1" height=3D"1"></td>
+    <td width=3D"780" valign=3D"top">
+    <table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+      <tbody><tr>
+        <td height=3D"90">
+        <table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0" height=3D"100%">
+          <tbody><tr>
+            <td rowspan=3D"2" width=3D"200">
+            <table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpaddin=
+g=3D"0" height=3D"76">
+              <tbody><tr>
+                <td><img border=3D"0" src=3D"http://www.regexlab.com/images=
+/spacer.gif" width=3D"1" height=3D"1"></td>
+                <td width=3D"183" background=3D"http://www.regexlab.com/ima=
+ges/logo_s.gif"><img border=3D"0" src=3D"http://www.regexlab.com/images/spa=
+cer.gif" width=3D"1" height=3D"1"></td>
+                <td><img border=3D"0" src=3D"http://www.regexlab.com/images=
+/spacer.gif" width=3D"1" height=3D"1"></td>
+              </tr>
+            </tbody></table>
+            </td>
+            <td height=3D"20" align=3D"right" nowrap=3D""><p style=3D"paddi=
+ng-bottom: 1px; padding-top: 1px"><span style=3D"padding-bottom: 1px; paddi=
+ng-top: 1px"><a href=3D"http://www.regexlab.com/integrate/logincheck" class=
+=3D"bb" onclick=3D"return feedback(this.href)">&nbsp;=B5=C7=C2=BC&nbsp;</a>=
+|<a href=3D"http://www.regexlab.com/user/register" class=3D"bb" onclick=3D"=
+return feedback(this.href)">&nbsp;=D7=A2=B2=E1&nbsp;</a>|<a href=3D"http://=
+www.regexlab.com/zh/feedback.jsp" class=3D"bb" onclick=3D"return feedback(t=
+his.href)">&nbsp;=B7=B4=C0=A1&nbsp;</a>|<a href=3D"http://www.regexlab.com/=
+zh/about.htm" class=3D"bb">&nbsp;=B9=D8=D3=DA&nbsp;</a></span></p></td>
+          </tr>
+          <tr>
+            <td height=3D"70"><table class=3D"tlc" height=3D"100%" cellpadd=
+ing=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td class=3D"tlc" valig=
+n=3D"top" align=3D"right">
+             =20
+              </td></tr></tbody></table>
+            </td>
+          </tr>
+        </tbody></table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0" style=3D"border-collapse: collapse" bordercolor=3D"#A7998B">
+          <tbody><tr>
+            <td><table id=3D"menuregion" border=3D"0" width=3D"100%" style=
+=3D"border-collapse: collapse" height=3D"28">
+          <tbody><tr>
+            <td background=3D"http://www.regexlab.com/images/menu_bk.gif" b=
+gcolor=3D"#DA8B5D">
+            <table border=3D"0" cellpadding=3D"0" height=3D"24" width=3D"10=
+0%">
+              <tbody><tr>
+                <td align=3D"center" width=3D"90"><table border=3D"0" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" height=3D"100%"><tbody><tr><t=
+d nowrap=3D"" onmouseover=3D"this.className=3D'high'" onmouseout=3D"this.cl=
+assName=3D''" align=3D"center"><b><a class=3D"wh" href=3D"http://www.regexl=
+ab.com/">=CA=D7=D2=B3</a></b></td></tr></tbody></table></td>
+                <td align=3D"center" bgcolor=3D"#FFFFFF" width=3D"1"><img b=
+order=3D"0" src=3D"http://www.regexlab.com/images/spacer.gif" width=3D"1" h=
+eight=3D"1"></td>
+                <td align=3D"center" width=3D"90"><table border=3D"0" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" height=3D"100%"><tbody><tr><t=
+d nowrap=3D"" onmouseover=3D"this.className=3D'high'" onmouseout=3D"this.cl=
+assName=3D''" align=3D"center"><b><a class=3D"wh" href=3D"http://www.regexl=
+ab.com/start/">=C8=EB=C3=C5</a></b></td></tr></tbody></table></td>
+                <td align=3D"center" bgcolor=3D"#FFFFFF" width=3D"1"><img b=
+order=3D"0" src=3D"http://www.regexlab.com/images/spacer.gif" width=3D"1" h=
+eight=3D"1"></td>
+                <!--
+                <td align=3D"center" width=3D"90"><table border=3D"0" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" height=3D"100%"><tr><td nowra=
+p onmouseover=3D"this.className=3D'high'" onmouseout=3D"this.className=3D''=
+" align=3D"center"><b><a class=3D"wh" href=3D"discuss/">=BD=BB=C1=F7</a></b=
+></td></tr></table></td>
+                <td align=3D"center" bgcolor=3D"#FFFFFF" width=3D"1"><img b=
+order=3D"0" src=3D"../images/spacer.gif" width=3D"1" height=3D"1"></td>
+                -->
+                <td align=3D"center" width=3D"90"><table border=3D"0" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" height=3D"100%"><tbody><tr><t=
+d nowrap=3D"" onmouseover=3D"this.className=3D'high'" onmouseout=3D"this.cl=
+assName=3D''" align=3D"center"><b><a class=3D"wh" href=3D"http://www.regexl=
+ab.com/zh/deelx/">=D2=FD=C7=E6</a></b></td></tr></tbody></table></td>
+                <td align=3D"center" bgcolor=3D"#FFFFFF" width=3D"1"><img b=
+order=3D"0" src=3D"http://www.regexlab.com/images/spacer.gif" width=3D"1" h=
+eight=3D"1"></td>
+                <td align=3D"center" width=3D"90"><table border=3D"0" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" height=3D"100%"><tbody><tr><t=
+d nowrap=3D"" onmouseover=3D"this.className=3D'high'" onmouseout=3D"this.cl=
+assName=3D''" align=3D"center"><b><a class=3D"wh" href=3D"http://www.regexl=
+ab.com/tools/">=B9=A4=BE=DF</a></b></td></tr></tbody></table></td>
+                <td align=3D"center" bgcolor=3D"#FFFFFF" width=3D"1"><img b=
+order=3D"0" src=3D"http://www.regexlab.com/images/spacer.gif" width=3D"1" h=
+eight=3D"1"></td>
+                <td align=3D"center" width=3D"90"><table border=3D"0" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" height=3D"100%"><tbody><tr><t=
+d nowrap=3D"" onmouseover=3D"this.className=3D'high'" onmouseout=3D"this.cl=
+assName=3D''" align=3D"center"><b><a class=3D"wh" href=3D"http://www.regexl=
+ab.com/applications/">=D3=A6=D3=C3</a></b></td></tr></tbody></table></td>
+                <td align=3D"center"><img border=3D"0" src=3D"http://www.re=
+gexlab.com/images/spacer.gif" width=3D"1" height=3D"1"></td>
+              </tr>
+            </tbody></table>
+            </td>
+          </tr>
+          </tbody></table></td>
+          </tr>
+          <tr>
+            <td><table id=3D"mainregion" border=3D"0" width=3D"100%" cellsp=
+acing=3D"0" cellpadding=3D"0">
+              <tbody><tr>
+                <td width=3D"20%" bgcolor=3D"#F3F3F3" valign=3D"top"><!-- #=
+BeginEditable "left" -->
+        <table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"8">
+          <tbody><tr>
+            <td>
+            <p><b><font size=3D"4">=B1=BE=D2=B3=B5=BC=B6=C1=A3=BA</font><br=
+>
+            <br>
+            </b>=A1=A4 <a href=3D"http://www.regexlab.com/zh/regref.htm#com=
+mon">=C6=D5=CD=A8=D7=D6=B7=FB</a><br>
+            =A1=A4 <a href=3D"http://www.regexlab.com/zh/regref.htm#escaped=
+">=BC=F2=B5=A5=B5=C4=D7=AA=D2=E5=D7=D6=B7=FB</a><br>
+            =A1=A4 <a href=3D"http://www.regexlab.com/zh/regref.htm#multi">=
+=D7=D6=B7=FB=BC=AF=BA=CF</a><br>
+            =A1=A4 <a href=3D"http://www.regexlab.com/zh/regref.htm#custom"=
+>=D7=D4=B6=A8=D2=E5=D7=D6=B7=FB=BC=AF=BA=CF</a><br>
+            =A1=A4 <a href=3D"http://www.regexlab.com/zh/regref.htm#times">=
+=C6=A5=C5=E4=B4=CE=CA=FD=D0=DE=CA=CE</a><br>
+            =A1=A4 <a href=3D"http://www.regexlab.com/zh/regref.htm#special=
+">=CC=D8=CA=E2=B7=FB=BA=C5</a><br>
+            ------------<br>
+            =A1=A4 <a href=3D"http://www.regexlab.com/zh/regref.htm#relucta=
+nt">=CC=B0=C0=B7=D3=EB=B7=C7=CC=B0=C0=B7</a><br>
+            =A1=A4 <a href=3D"http://www.regexlab.com/zh/regref.htm#backref=
+">=B7=B4=CF=F2=D2=FD=D3=C3</a><br>
+            =A1=A4 <a href=3D"http://www.regexlab.com/zh/regref.htm#forward=
+">=D4=A4=CB=D1=CB=F7</a><br>
+            ------------<br>
+            =A1=A4 <a href=3D"http://www.regexlab.com/zh/regref.htm#otherco=
+mmon">=C6=E4=CB=FB=B9=E6=D4=F2</a><br>
+            =A1=A4 <a href=3D"http://www.regexlab.com/zh/regref.htm#prompt"=
+>=B8=FC=B6=E0=CC=E1=CA=BE</a></p>
+            <hr size=3D"1" color=3D"#FEA089">
+            <div style=3D"background-color: #f8fff8; border:1px #88aa88 sol=
+id; padding: 10px 0px 10px 0px">
+			<p><font size=3D"4"><b>=CF=E0=B9=D8=D7=CA=D4=B4</b></font><br>
+            <br>
+            <a href=3D"http://www.regexlab.com/zh/mtracer/download.htm">=D5=
+=FD=D4=F2 Match Tracer<br>
+			=A3=A8=D2=D1=C3=E2=B7=D1=CE=DE=CF=DE=D6=C6=A3=A9</a><br></p>
+            <!--=A1=A4 <a href=3D"discuss/">=BD=BB=C1=F7=CC=D6=C2=DB</a></p=
+> -->
+            <!--hr size=3D"1" color=3D"#FEA089">
+			<h3><a class=3D"h" target=3D"_blank" href=3D"olympic2008.htm">=D6=D8=D2=
+=AA=CD=A8=D6=AA</a></h3>
+            <p>&nbsp;&nbsp;&nbsp; =CE=F7=B7=BD=B9=FA=BC=D2=D5=E2=B4=CE=CE=
+=AA=CA=B2=C3=B4=BB=E1=C8=E7=B4=CE=B5=C4=CD=C5=BD=E1=A3=BF=CE=AA=CA=B2=C3=B4=
+=BD=F1=CC=EC=BB=E1=C3=B0=D7=C5=D5=E2=C3=B4=B4=F3=B5=C4=B7=E7=CF=D5=B9=AB=C8=
+=BB=D3=EB=D6=D0=B9=FA=CE=AA=B5=D0=A3=BF=C4=D1=B5=BD=BE=CD=CA=C7=CE=AA=C1=CB=
+=BA=CD=D7=D4=BC=BA=B8=F9=B1=BE=B2=BB=CF=E0=B8=C9=B5=C4=CE=F7=B2=D8=BA=CD=B0=
+=C2=D4=CB=A3=BF......&nbsp; [<a target=3D"_blank" href=3D"olympic2008.htm">=
+=CD=A8=D6=AA=CF=EA=C7=E9</a>]</p--></div></td>
+          </tr>
+        </tbody></table>
+                    <!-- #EndEditable --></td>
+                <td rowspan=3D"2" style=3D"border-left: 1px solid #C0C0C0" =
+valign=3D"top"><!-- #BeginEditable "content" -->
+        <table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"8">
+          <tbody><tr>
+            <td>
+            <table border=3D"0" width=3D"100%">
+              <tbody><tr>
+                <td>
+            <h2><span style=3D"font-weight: 400"><a name=3D"title"></a>=BD=
+=D2=BF=AA=D5=FD=D4=F2=B1=ED=B4=EF=CA=BD=B5=C4=C9=F1=C3=D8=C3=E6=C9=B4</span=
+></h2>
+                </td>
+                <td align=3D"right"><p><a id=3D"swtch_1" name=3D"swtch" hre=
+f=3D"javascript:colorize()" title=3D"=B2=C9=D3=C3=CD=AC=D2=BB=D6=D6=D1=D5=
+=C9=AB=CF=D4=CA=BE=B1=ED=B4=EF=CA=BD">=B9=D8=B1=D5=B8=DF=C1=C1</a></p></td>
+                </tr>
+              </tbody></table>
+            <p><font size=3D"1">[=D4=AD=B4=B4=CE=C4=D5=C2=A3=AC=D7=AA=D4=D8=
+=C7=EB=B1=A3=C1=F4=BB=F2=D7=A2=C3=F7=B3=F6=B4=A6=A3=BA<a href=3D"http://www=
+.regexlab.com/zh/regref.htm">http://www.regexlab.com/zh/regref.htm</a>]</fo=
+nt></p>
+            <h4><a name=3D"intro"></a><b>=D2=FD=D1=D4</b></h4>
+            <p>&nbsp;&nbsp;&nbsp; =D5=FD=D4=F2=B1=ED=B4=EF=CA=BD=A3=A8regul=
+ar=20
+            expression=A3=A9=BE=CD=CA=C7=D3=C3=D2=BB=B8=F6=A1=B0=D7=D6=B7=
+=FB=B4=AE=A1=B1=C0=B4=C3=E8=CA=F6=D2=BB=B8=F6=CC=D8=D5=F7=A3=AC=C8=BB=BA=F3=
+=C8=A5=D1=E9=D6=A4=C1=ED=D2=BB=B8=F6=A1=B0=D7=D6=B7=FB=B4=AE=A1=B1=CA=C7=B7=
+=F1=B7=FB=BA=CF=D5=E2=B8=F6=CC=D8=D5=F7=A1=A3=B1=C8=C8=E7 =B1=ED=B4=EF=CA=
+=BD=A1=B0ab+=A1=B1 =C3=E8=CA=F6=B5=C4=CC=D8=D5=F7=CA=C7=A1=B0=D2=BB=B8=F6 '=
+a' =BA=CD =C8=CE=D2=E2=B8=F6 'b' =A1=B1=A3=AC=C4=C7=C3=B4 'ab', 'abb', 'abb=
+bbbbbbbb' =B6=BC=B7=FB=BA=CF=D5=E2=B8=F6=CC=D8=D5=F7=A1=A3</p>
+<table width=3D"208" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcol=
+or=3D"#eae7e3" id=3D"ggad_box_3" style=3D"float: right">
+  <tbody><tr>
+    <td><img src=3D"http://www.regexlab.com/images/ggad3box_01.gif" width=
+=3D"4" height=3D"4" alt=3D""></td>
+    <td background=3D"http://www.regexlab.com/images/ggad3box_02.gif" width=
+=3D"200"><img src=3D"http://www.regexlab.com/images/spacer.gif"></td>
+    <td><img src=3D"http://www.regexlab.com/images/ggad3box_03.gif" width=
+=3D"4" height=3D"4" alt=3D""></td>
+  </tr>
+  <tr>
+    <td background=3D"http://www.regexlab.com/images/ggad3box_04.gif"><img =
+src=3D"http://www.regexlab.com/images/spacer.gif"></td>
+    <td align=3D"right"><a href=3D"javascript:close_ggad_box(3)"><img src=
+=3D"http://www.regexlab.com/images/ggad3box_close.gif" border=3D"0"></a></t=
+d>
+    <td background=3D"http://www.regexlab.com/images/ggad3box_06.gif"><img =
+src=3D"http://www.regexlab.com/images/spacer.gif"></td>
+  </tr>
+  <tr>
+    <td background=3D"http://www.regexlab.com/images/ggad3box_04.gif"><img =
+src=3D"http://www.regexlab.com/images/spacer.gif"></td>
+    <td height=3D"200">
+      </td>
+    <td background=3D"http://www.regexlab.com/images/ggad3box_06.gif"><img =
+src=3D"http://www.regexlab.com/images/spacer.gif"></td>
+  </tr>
+  <tr>
+    <td><img src=3D"http://www.regexlab.com/images/ggad3box_07.gif" width=
+=3D"4" height=3D"4" alt=3D""></td>
+    <td background=3D"http://www.regexlab.com/images/ggad3box_08.gif" width=
+=3D"200" height=3D"4"><img src=3D"http://www.regexlab.com/images/spacer.gif=
+"></td>
+    <td><img src=3D"http://www.regexlab.com/images/ggad3box_09.gif" width=
+=3D"4" height=3D"4" alt=3D""></td>
+  </tr>
+</tbody></table>
+            <p>
+            &nbsp;&nbsp;&nbsp; =D5=FD=D4=F2=B1=ED=B4=EF=CA=BD=BF=C9=D2=D4=
+=D3=C3=C0=B4=A3=BA=A3=A81=A3=A9=D1=E9=D6=A4=D7=D6=B7=FB=B4=AE=CA=C7=B7=F1=
+=B7=FB=BA=CF=D6=B8=B6=A8=CC=D8=D5=F7=A3=AC=B1=C8=C8=E7=D1=E9=D6=A4=CA=C7=B7=
+=F1=CA=C7=BA=CF=B7=A8=B5=C4=D3=CA=BC=FE=B5=D8=D6=B7=A1=A3=A3=A82=A3=A9=D3=
+=C3=C0=B4=B2=E9=D5=D2=D7=D6=B7=FB=B4=AE=A3=AC=B4=D3=D2=BB=B8=F6=B3=A4=B5=C4=
+=CE=C4=B1=BE=D6=D0=B2=E9=D5=D2=B7=FB=BA=CF=D6=B8=B6=A8=CC=D8=D5=F7=B5=C4=D7=
+=D6=B7=FB=B4=AE=A3=AC=B1=C8=B2=E9=D5=D2=B9=CC=B6=A8=D7=D6=B7=FB=B4=AE=B8=FC=
+=BC=D3=C1=E9=BB=EE=B7=BD=B1=E3=A1=A3=A3=A83=A3=A9=D3=C3=C0=B4=CC=E6=BB=BB=
+=A3=AC=B1=C8=C6=D5=CD=A8=B5=C4=CC=E6=BB=BB=B8=FC=C7=BF=B4=F3=A1=A3<br>
+            <br>
+            &nbsp;&nbsp; =D5=FD=D4=F2=B1=ED=B4=EF=CA=BD=D1=A7=CF=B0=C6=F0=
+=C0=B4=C6=E4=CA=B5=CA=C7=BA=DC=BC=F2=B5=A5=B5=C4=A3=AC=B2=BB=B6=E0=B5=C4=BC=
+=B8=B8=F6=BD=CF=CE=AA=B3=E9=CF=F3=B5=C4=B8=C5=C4=EE=D2=B2=BA=DC=C8=DD=D2=D7=
+=C0=ED=BD=E2=A1=A3=D6=AE=CB=F9=D2=D4=BA=DC=B6=E0=C8=CB=B8=D0=BE=F5=D5=FD=D4=
+=F2=B1=ED=B4=EF=CA=BD=B1=C8=BD=CF=B8=B4=D4=D3=A3=AC=D2=BB=B7=BD=C3=E6=CA=C7=
+=D2=F2=CE=AA=B4=F3=B6=E0=CA=FD=B5=C4=CE=C4=B5=B5=C3=BB=D3=D0=D7=F6=B5=BD=D3=
+=C9=C7=B3=C8=EB=C9=EE=B5=D8=BD=B2=BD=E2=A3=AC=B8=C5=C4=EE=C9=CF=C3=BB=D3=D0=
+=D7=A2=D2=E2=CF=C8=BA=F3=CB=B3=D0=F2=A3=AC=B8=F8=B6=C1=D5=DF=B5=C4=C0=ED=BD=
+=E2=B4=F8=C0=B4=C0=A7=C4=D1=A3=BB=C1=ED=D2=BB=B7=BD=C3=E6=A3=AC=B8=F7=D6=D6=
+=D2=FD=C7=E6=D7=D4=B4=F8=B5=C4=CE=C4=B5=B5=D2=BB=B0=E3=B6=BC=D2=AA=BD=E9=C9=
+=DC=CB=FC=CC=D8=D3=D0=B5=C4=B9=A6=C4=DC=A3=AC=C8=BB=B6=F8=D5=E2=B2=BF=B7=D6=
+=CC=D8=D3=D0=B5=C4=B9=A6=C4=DC=B2=A2=B2=BB=CA=C7=CE=D2=C3=C7=CA=D7=CF=C8=D2=
+=AA=C0=ED=BD=E2=B5=C4=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; =CE=C4=D5=C2=D6=D0=B5=C4=C3=BF=D2=BB=B8=F6=
+=BE=D9=C0=FD=A3=AC=B6=BC=BF=C9=D2=D4=B5=E3=BB=F7=BD=F8=C8=EB=B5=BD=B2=E2=CA=
+=D4=D2=B3=C3=E6=BD=F8=D0=D0=B2=E2=CA=D4=A1=A3=CF=D0=BB=B0=C9=D9=CB=B5=A3=AC=
+=BF=AA=CA=BC=A1=A3</p>
+            <hr size=3D"1" color=3D"#FEA089">
+            <h4>1. =D5=FD=D4=F2=B1=ED=B4=EF=CA=BD=B9=E6=D4=F2</h4>
+            <h5><a name=3D"common"></a>1.1 =C6=D5=CD=A8=D7=D6=B7=FB</h5>
+            <p>&nbsp;&nbsp;&nbsp;=20
+            =D7=D6=C4=B8=A1=A2=CA=FD=D7=D6=A1=A2=BA=BA=D7=D6=A1=A2=CF=C2=BB=
+=AE=CF=DF=A1=A2=D2=D4=BC=B0=BA=F3=B1=DF=D5=C2=BD=DA=D6=D0=C3=BB=D3=D0=CC=D8=
+=CA=E2=B6=A8=D2=E5=B5=C4=B1=EA=B5=E3=B7=FB=BA=C5=A3=AC=B6=BC=CA=C7"=C6=D5=
+=CD=A8=D7=D6=B7=FB"=A1=A3=B1=ED=B4=EF=CA=BD=D6=D0=B5=C4=C6=D5=CD=A8=D7=D6=
+=B7=FB=A3=AC=D4=DA=C6=A5=C5=E4=D2=BB=B8=F6=D7=D6=B7=FB=B4=AE=B5=C4=CA=B1=BA=
+=F2=A3=AC=C6=A5=C5=E4=D3=EB=D6=AE=CF=E0=CD=AC=B5=C4=D2=BB=B8=F6=D7=D6=B7=FB=
+=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3Dc&amp;txt=3Dabcde"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" borde=
+r=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.regexlab.com/ima=
+ges/ans.jpg" width=3D"16" height=3D"16"> =BE=D9=C0=FD1=A3=BA=B1=ED=B4=EF=CA=
+=BD "c"=A3=AC=D4=DA=C6=A5=C5=E4=D7=D6=B7=FB=B4=AE "abcde"=20
+            =CA=B1</a>=A3=AC=C6=A5=C5=E4=BD=E1=B9=FB=CA=C7=A3=BA=B3=C9=B9=
+=A6=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=C4=DA=C8=DD=CA=C7=A3=BA"c"=A3=BB=C6=A5=C5=
+=E4=B5=BD=B5=C4=CE=BB=D6=C3=CA=C7=A3=BA=BF=AA=CA=BC=D3=DA2=A3=AC=BD=E1=CA=
+=F8=D3=DA3=A1=A3=A3=A8=D7=A2=A3=BA=CF=C2=B1=EA=B4=D30=BF=AA=CA=BC=BB=B9=CA=
+=C7=B4=D31=BF=AA=CA=BC=A3=AC=D2=F2=B5=B1=C7=B0=B1=E0=B3=CC=D3=EF=D1=D4=B5=
+=C4=B2=BB=CD=AC=B6=F8=BF=C9=C4=DC=B2=BB=CD=AC=A3=A9<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3Dbcd&amp;txt=3Dabcde"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" bor=
+der=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.regexlab.com/i=
+mages/ans.jpg" width=3D"16" height=3D"16"> =BE=D9=C0=FD2=A3=BA=B1=ED=B4=EF=
+=CA=BD "bcd"=A3=AC=D4=DA=C6=A5=C5=E4=D7=D6=B7=FB=B4=AE "abcde" =CA=B1</a>=
+=A3=AC=C6=A5=C5=E4=BD=E1=B9=FB=CA=C7=A3=BA=B3=C9=B9=A6=A3=BB=C6=A5=C5=E4=B5=
+=BD=B5=C4=C4=DA=C8=DD=CA=C7=A3=BA"bcd"=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=CE=BB=
+=D6=C3=CA=C7=A3=BA=BF=AA=CA=BC=D3=DA1=A3=AC=BD=E1=CA=F8=D3=DA4=A1=A3</p>
+            <hr size=3D"1" color=3D"#FEA089">
+            <h5><a name=3D"escaped"></a>1.2 =BC=F2=B5=A5=B5=C4=D7=AA=D2=E5=
+=D7=D6=B7=FB</h5>
+            <p>&nbsp;&nbsp;&nbsp; =D2=BB=D0=A9=B2=BB=B1=E3=CA=E9=D0=B4=B5=
+=C4=D7=D6=B7=FB=A3=AC=B2=C9=D3=C3=D4=DA=C7=B0=C3=E6=BC=D3 "\" =B5=C4=B7=BD=
+=B7=A8=A1=A3=D5=E2=D0=A9=D7=D6=B7=FB=C6=E4=CA=B5=CE=D2=C3=C7=B6=BC=D2=D1=BE=
+=AD=CA=EC=D6=AA=C1=CB=A1=A3</p>
+            <table border=3D"1" cellspacing=3D"0" style=3D"border-collapse:=
+ collapse" bgcolor=3D"#F8F8F8" cellpadding=3D"3">
+              <tbody><tr bgcolor=3D"#F0F0F0">
+                <td width=3D"70"><p>=B1=ED=B4=EF=CA=BD</p></td>
+                <td><p>=BF=C9=C6=A5=C5=E4</p></td>
+              </tr>
+              <tr>
+                <td><p>\r, \n</p></td>
+                <td><p>=B4=FA=B1=ED=BB=D8=B3=B5=BA=CD=BB=BB=D0=D0=B7=FB</p>=
+</td>
+              </tr>
+              <tr>
+                <td><p>\t</p></td>
+                <td><p>=D6=C6=B1=ED=B7=FB</p></td>
+              </tr>
+              <tr>
+                <td><p>\\</p></td>
+                <td><p>=B4=FA=B1=ED "\" =B1=BE=C9=ED</p></td>
+              </tr>
+            </tbody></table>
+            <p>&nbsp;&nbsp;&nbsp; =BB=B9=D3=D0=C6=E4=CB=FB=D2=BB=D0=A9=D4=
+=DA=BA=F3=B1=DF=D5=C2=BD=DA=D6=D0=D3=D0=CC=D8=CA=E2=D3=C3=B4=A6=B5=C4=B1=EA=
+=B5=E3=B7=FB=BA=C5=A3=AC=D4=DA=C7=B0=C3=E6=BC=D3 "\"=20
+            =BA=F3=A3=AC=BE=CD=B4=FA=B1=ED=B8=C3=B7=FB=BA=C5=B1=BE=C9=ED=A1=
+=A3=B1=C8=C8=E7=A3=BA^, $ =B6=BC=D3=D0=CC=D8=CA=E2=D2=E2=D2=E5=A3=AC=C8=E7=
+=B9=FB=D2=AA=CF=EB=C6=A5=C5=E4=D7=D6=B7=FB=B4=AE=D6=D0 "^" =BA=CD "$" =D7=
+=D6=B7=FB=A3=AC=D4=F2=B1=ED=B4=EF=CA=BD=BE=CD=D0=E8=D2=AA=D0=B4=B3=C9 "\^" =
+=BA=CD=20
+            "\$"=A1=A3</p>
+            <table border=3D"1" cellspacing=3D"0" style=3D"border-collapse:=
+ collapse" bgcolor=3D"#F8F8F8" cellpadding=3D"3">
+              <tbody><tr bgcolor=3D"#F0F0F0">
+                <td width=3D"66"><p>=B1=ED=B4=EF=CA=BD</p></td>
+                <td><p>=BF=C9=C6=A5=C5=E4</p></td>
+              </tr>
+              <tr>
+                <td><p>\^</p></td>
+                <td><p>=C6=A5=C5=E4 ^ =B7=FB=BA=C5=B1=BE=C9=ED</p></td>
+              </tr>
+              <tr>
+                <td><p>\$</p></td>
+                <td><p>=C6=A5=C5=E4 $ =B7=FB=BA=C5=B1=BE=C9=ED</p></td>
+              </tr>
+              <tr>
+                <td><p>\.</p></td>
+                <td><p>=C6=A5=C5=E4=D0=A1=CA=FD=B5=E3=A3=A8.=A3=A9=B1=BE=C9=
+=ED</p></td>
+              </tr>
+              </tbody></table>
+            <p>&nbsp;&nbsp;&nbsp; =D5=E2=D0=A9=D7=AA=D2=E5=D7=D6=B7=FB=B5=
+=C4=C6=A5=C5=E4=B7=BD=B7=A8=D3=EB "=C6=D5=CD=A8=D7=D6=B7=FB" =CA=C7=C0=E0=
+=CB=C6=B5=C4=A1=A3=D2=B2=CA=C7=C6=A5=C5=E4=D3=EB=D6=AE=CF=E0=CD=AC=B5=C4=D2=
+=BB=B8=F6=D7=D6=B7=FB=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3D%5C$d&amp;txt=3Dabc$de"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" =
+border=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.regexlab.co=
+m/images/ans.jpg" width=3D"16" height=3D"16"> =BE=D9=C0=FD1=A3=BA=B1=ED=B4=
+=EF=CA=BD "\$d"=A3=AC=D4=DA=C6=A5=C5=E4=D7=D6=B7=FB=B4=AE "abc$de"=20
+            =CA=B1</a>=A3=AC=C6=A5=C5=E4=BD=E1=B9=FB=CA=C7=A3=BA=B3=C9=B9=
+=A6=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=C4=DA=C8=DD=CA=C7=A3=BA"$d"=A3=BB=C6=A5=
+=C5=E4=B5=BD=B5=C4=CE=BB=D6=C3=CA=C7=A3=BA=BF=AA=CA=BC=D3=DA3=A3=AC=BD=E1=
+=CA=F8=D3=DA5=A1=A3</p><hr size=3D"1" color=3D"#FEA089">
+            <h5><a name=3D"multi"></a>1.3 =C4=DC=B9=BB=D3=EB '=B6=E0=D6=D6=
+=D7=D6=B7=FB' =C6=A5=C5=E4=B5=C4=B1=ED=B4=EF=CA=BD</h5>
+            <p>&nbsp;&nbsp;&nbsp; =D5=FD=D4=F2=B1=ED=B4=EF=CA=BD=D6=D0=B5=
+=C4=D2=BB=D0=A9=B1=ED=CA=BE=B7=BD=B7=A8=A3=AC=BF=C9=D2=D4=C6=A5=C5=E4 '=B6=
+=E0=D6=D6=D7=D6=B7=FB' =C6=E4=D6=D0=B5=C4=C8=CE=D2=E2=D2=BB=B8=F6=D7=D6=B7=
+=FB=A1=A3=B1=C8=C8=E7=A3=AC=B1=ED=B4=EF=CA=BD=20
+            "\d"=20
+            =BF=C9=D2=D4=C6=A5=C5=E4=C8=CE=D2=E2=D2=BB=B8=F6=CA=FD=D7=D6=A1=
+=A3=CB=E4=C8=BB=BF=C9=D2=D4=C6=A5=C5=E4=C6=E4=D6=D0=C8=CE=D2=E2=D7=D6=B7=FB=
+=A3=AC=B5=AB=CA=C7=D6=BB=C4=DC=CA=C7=D2=BB=B8=F6=A3=AC=B2=BB=CA=C7=B6=E0=B8=
+=F6=A1=A3=D5=E2=BE=CD=BA=C3=B1=C8=CD=E6=C6=CB=BF=CB=C5=C6=CA=B1=BA=F2=A3=AC=
+=B4=F3=D0=A1=CD=F5=BF=C9=D2=D4=B4=FA=CC=E6=C8=CE=D2=E2=D2=BB=D5=C5=C5=C6=A3=
+=AC=B5=AB=CA=C7=D6=BB=C4=DC=B4=FA=CC=E6=D2=BB=D5=C5=C5=C6=A1=A3</p>
+            <table border=3D"1" cellspacing=3D"0" style=3D"border-collapse:=
+ collapse" bgcolor=3D"#F8F8F8" cellpadding=3D"3">
+              <tbody><tr bgcolor=3D"#F0F0F0">
+                <td width=3D"66"><p>=B1=ED=B4=EF=CA=BD</p></td>
+                <td><p>=BF=C9=C6=A5=C5=E4</p></td>
+              </tr>
+              <tr>
+                <td><p><span id=3D"pattern" name=3D"pattern"><font color=3D=
+"#000000"><font color=3D"#900050">\d</font></font></span></p></td>
+                <td><p>=C8=CE=D2=E2=D2=BB=B8=F6=CA=FD=D7=D6=A3=AC0~9 =D6=D0=
+=B5=C4=C8=CE=D2=E2=D2=BB=B8=F6</p></td>
+              </tr>
+              <tr>
+                <td><p><span id=3D"pattern0" name=3D"pattern"><font color=
+=3D"#000000"><font color=3D"#900050">\w</font></font></span></p></td>
+                <td><p>=C8=CE=D2=E2=D2=BB=B8=F6=D7=D6=C4=B8=BB=F2=CA=FD=D7=
+=D6=BB=F2=CF=C2=BB=AE=CF=DF=A3=AC=D2=B2=BE=CD=CA=C7 A~Z,a~z,0~9,_ =D6=D0=C8=
+=CE=D2=E2=D2=BB=B8=F6</p></td>
+              </tr>
+              <tr>
+                <td><p><span id=3D"pattern1" name=3D"pattern"><font color=
+=3D"#000000"><font color=3D"#900050">\s</font></font></span></p></td>
+                <td><p>=B0=FC=C0=A8=BF=D5=B8=F1=A1=A2=D6=C6=B1=ED=B7=FB=A1=
+=A2=BB=BB=D2=B3=B7=FB=B5=C8=BF=D5=B0=D7=D7=D6=B7=FB=B5=C4=C6=E4=D6=D0=C8=CE=
+=D2=E2=D2=BB=B8=F6</p></td>
+              </tr>
+              <tr>
+                <td><p><span id=3D"pattern2" name=3D"pattern"><font color=
+=3D"#000000"><font color=3D"#900050">.</font></font></span></p></td>
+                <td><p>=D0=A1=CA=FD=B5=E3=BF=C9=D2=D4=C6=A5=C5=E4=B3=FD=C1=
+=CB=BB=BB=D0=D0=B7=FB=A3=A8\n=A3=A9=D2=D4=CD=E2=B5=C4=C8=CE=D2=E2=D2=BB=B8=
+=F6=D7=D6=B7=FB</p></td>
+              </tr>
+            </tbody></table>
+            <p>&nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/wor=
+kshop.htm?pat=3D%5Cd%5Cd&amp;txt=3Dabc123"><img alt=3D"=B5=E3=BB=F7=B2=E2=
+=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.reg=
+exlab.com/images/ans.jpg" width=3D"16" height=3D"16"> =BE=D9=C0=FD1=A3=BA=
+=B1=ED=B4=EF=CA=BD "<span id=3D"pattern3" name=3D"pattern"><font color=3D"#=
+000000"><font color=3D"#900050">\d</font><font color=3D"#900050">\d</font><=
+/font></span>"=A3=AC=D4=DA=C6=A5=C5=E4=20
+            "abc123" =CA=B1</a>=A3=AC=C6=A5=C5=E4=B5=C4=BD=E1=B9=FB=CA=C7=
+=A3=BA=B3=C9=B9=A6=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=C4=DA=C8=DD=CA=C7=A3=BA"12=
+"=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=CE=BB=D6=C3=CA=C7=A3=BA=BF=AA=CA=BC=D3=DA3=
+=A3=AC=BD=E1=CA=F8=D3=DA5=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3Da.%5Cd&amp;txt=3Daaa100"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4"=
+ border=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.regexlab.c=
+om/images/ans.jpg" width=3D"16" height=3D"16"> =BE=D9=C0=FD2=A3=BA=B1=ED=B4=
+=EF=CA=BD "<span id=3D"pattern4" name=3D"pattern"><font color=3D"#000000">a=
+<font color=3D"#900050">.</font><font color=3D"#900050">\d</font></font></s=
+pan>"=A3=AC=D4=DA=C6=A5=C5=E4 "aaa100" =CA=B1</a>=A3=AC=C6=A5=C5=E4=B5=C4=
+=BD=E1=B9=FB=CA=C7=A3=BA=B3=C9=B9=A6=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=C4=DA=C8=
+=DD=CA=C7=A3=BA"aa1"=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=CE=BB=D6=C3=CA=C7=A3=BA=
+=BF=AA=CA=BC=D3=DA1=A3=AC=BD=E1=CA=F8=D3=DA4=A1=A3</p>
+            <hr size=3D"1" color=3D"#FEA089">
+            <h5><a name=3D"custom"></a>1.4 =D7=D4=B6=A8=D2=E5=C4=DC=B9=BB=
+=C6=A5=C5=E4 '=B6=E0=D6=D6=D7=D6=B7=FB' =B5=C4=B1=ED=B4=EF=CA=BD</h5>
+            <p>&nbsp;&nbsp;&nbsp; =CA=B9=D3=C3=B7=BD=C0=A8=BA=C5 [ ] =B0=FC=
+=BA=AC=D2=BB=CF=B5=C1=D0=D7=D6=B7=FB=A3=AC=C4=DC=B9=BB=C6=A5=C5=E4=C6=E4=D6=
+=D0=C8=CE=D2=E2=D2=BB=B8=F6=D7=D6=B7=FB=A1=A3=D3=C3 [^ ]=20
+            =B0=FC=BA=AC=D2=BB=CF=B5=C1=D0=D7=D6=B7=FB=A3=AC=D4=F2=C4=DC=B9=
+=BB=C6=A5=C5=E4=C6=E4=D6=D0=D7=D6=B7=FB=D6=AE=CD=E2=B5=C4=C8=CE=D2=E2=D2=BB=
+=B8=F6=D7=D6=B7=FB=A1=A3=CD=AC=D1=F9=B5=C4=B5=C0=C0=ED=A3=AC=CB=E4=C8=BB=BF=
+=C9=D2=D4=C6=A5=C5=E4=C6=E4=D6=D0=C8=CE=D2=E2=D2=BB=B8=F6=A3=AC=B5=AB=CA=C7=
+=D6=BB=C4=DC=CA=C7=D2=BB=B8=F6=A3=AC=B2=BB=CA=C7=B6=E0=B8=F6=A1=A3</p>
+            <table border=3D"1" cellspacing=3D"0" style=3D"border-collapse:=
+ collapse" bgcolor=3D"#F8F8F8" cellpadding=3D"3">
+              <tbody><tr bgcolor=3D"#F0F0F0">
+                <td width=3D"80"><p>=B1=ED=B4=EF=CA=BD</p></td>
+                <td><p>=BF=C9=C6=A5=C5=E4</p></td>
+              </tr>
+              <tr>
+                <td><p><span id=3D"pattern5" name=3D"pattern"><font color=
+=3D"#000000"><font color=3D"#900050">[ab5@]</font></font></span></p></td>
+                <td><p>=C6=A5=C5=E4 "a" =BB=F2 "b" =BB=F2 "5" =BB=F2 "@"</p=
+></td>
+              </tr>
+              <tr>
+                <td><p><span id=3D"pattern6" name=3D"pattern"><font color=
+=3D"#000000"><font color=3D"#900050">[^abc]</font></font></span></p></td>
+                <td><p>=C6=A5=C5=E4 "a","b","c" =D6=AE=CD=E2=B5=C4=C8=CE=D2=
+=E2=D2=BB=B8=F6=D7=D6=B7=FB</p></td>
+              </tr>
+              <tr>
+                <td><p><span id=3D"pattern7" name=3D"pattern"><font color=
+=3D"#000000"><font color=3D"#900050">[f-k]</font></font></span></p></td>
+                <td><p>=C6=A5=C5=E4 "f"~"k" =D6=AE=BC=E4=B5=C4=C8=CE=D2=E2=
+=D2=BB=B8=F6=D7=D6=C4=B8</p></td>
+              </tr>
+              <tr>
+                <td><p><span id=3D"pattern8" name=3D"pattern"><font color=
+=3D"#000000"><font color=3D"#900050">[^A-F0-3]</font></font></span></p></td=
+>
+                <td><p>=C6=A5=C5=E4 "A"~"F","0"~"3" =D6=AE=CD=E2=B5=C4=C8=
+=CE=D2=E2=D2=BB=B8=F6=D7=D6=B7=FB</p></td>
+              </tr>
+            </tbody></table>
+            <p>&nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/wor=
+kshop.htm?pat=3D[bcd][bcd]&amp;txt=3Dabc123"><img alt=3D"=B5=E3=BB=F7=B2=E2=
+=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.reg=
+exlab.com/images/ans.jpg" width=3D"16" height=3D"16"> =BE=D9=C0=FD1=A3=BA=
+=B1=ED=B4=EF=CA=BD "<span id=3D"pattern9" name=3D"pattern"><font color=3D"#=
+000000"><font color=3D"#900050">[bcd]</font><font color=3D"#900050">[bcd]</=
+font></font></span>" =C6=A5=C5=E4=20
+            "abc123" =CA=B1</a>=A3=AC=C6=A5=C5=E4=B5=C4=BD=E1=B9=FB=CA=C7=
+=A3=BA=B3=C9=B9=A6=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=C4=DA=C8=DD=CA=C7=A3=BA"bc=
+"=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=CE=BB=D6=C3=CA=C7=A3=BA=BF=AA=CA=BC=D3=DA1=
+=A3=AC=BD=E1=CA=F8=D3=DA3=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3D%5B%5Eabc%5D&amp;txt=3Dabc123"><img alt=3D"=B5=E3=BB=F7=B2=E2=
+=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.reg=
+exlab.com/images/ans.jpg" width=3D"16" height=3D"16"> =BE=D9=C0=FD2=A3=BA=
+=B1=ED=B4=EF=CA=BD "<span id=3D"pattern10" name=3D"pattern"><font color=3D"=
+#000000"><font color=3D"#900050">[^abc]</font></font></span>" =C6=A5=C5=E4 =
+"abc123" =CA=B1</a>=A3=AC=C6=A5=C5=E4=B5=C4=BD=E1=B9=FB=CA=C7=A3=BA=B3=C9=
+=B9=A6=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=C4=DA=C8=DD=CA=C7=A3=BA"1"=A3=BB=C6=A5=
+=C5=E4=B5=BD=B5=C4=CE=BB=D6=C3=CA=C7=A3=BA=BF=AA=CA=BC=D3=DA3=A3=AC=BD=E1=
+=CA=F8=D3=DA4=A1=A3</p>
+            <hr size=3D"1" color=3D"#FEA089">
+            <h5><a name=3D"times"></a>1.5 =D0=DE=CA=CE=C6=A5=C5=E4=B4=CE=CA=
+=FD=B5=C4=CC=D8=CA=E2=B7=FB=BA=C5</h5>
+            <p>&nbsp;&nbsp;&nbsp; =C7=B0=C3=E6=D5=C2=BD=DA=D6=D0=BD=B2=B5=
+=BD=B5=C4=B1=ED=B4=EF=CA=BD=A3=AC=CE=DE=C2=DB=CA=C7=D6=BB=C4=DC=C6=A5=C5=E4=
+=D2=BB=D6=D6=D7=D6=B7=FB=B5=C4=B1=ED=B4=EF=CA=BD=A3=AC=BB=B9=CA=C7=BF=C9=D2=
+=D4=C6=A5=C5=E4=B6=E0=D6=D6=D7=D6=B7=FB=C6=E4=D6=D0=C8=CE=D2=E2=D2=BB=B8=F6=
+=B5=C4=B1=ED=B4=EF=CA=BD=A3=AC=B6=BC=D6=BB=C4=DC=C6=A5=C5=E4=D2=BB=B4=CE=A1=
+=A3=C8=E7=B9=FB=CA=B9=D3=C3=B1=ED=B4=EF=CA=BD=D4=D9=BC=D3=C9=CF=D0=DE=CA=CE=
+=C6=A5=C5=E4=B4=CE=CA=FD=B5=C4=CC=D8=CA=E2=B7=FB=BA=C5=A3=AC=C4=C7=C3=B4=B2=
+=BB=D3=C3=D6=D8=B8=B4=CA=E9=D0=B4=B1=ED=B4=EF=CA=BD=BE=CD=BF=C9=D2=D4=D6=D8=
+=B8=B4=C6=A5=C5=E4=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; =CA=B9=D3=C3=B7=BD=B7=A8=CA=C7=A3=BA"=B4=CE=
+=CA=FD=D0=DE=CA=CE"=B7=C5=D4=DA"=B1=BB=D0=DE=CA=CE=B5=C4=B1=ED=B4=EF=CA=BD"=
+=BA=F3=B1=DF=A1=A3=B1=C8=C8=E7=A3=BA"[bcd][bcd]" =BF=C9=D2=D4=D0=B4=B3=C9 "=
+[bcd]{2}"=A1=A3</p>
+            <table border=3D"1" cellspacing=3D"0" style=3D"border-collapse:=
+ collapse" bgcolor=3D"#F8F8F8" cellpadding=3D"3">
+              <tbody><tr bgcolor=3D"#F0F0F0">
+                <td width=3D"67"><p>=B1=ED=B4=EF=CA=BD</p></td>
+                <td><p>=D7=F7=D3=C3</p></td>
+              </tr>
+              <tr>
+                <td><p><span id=3D"pattern11" name=3D"pattern"><font color=
+=3D"#000000"><font color=3D"#e07000">{n}</font></font></span></p></td>
+                <td><p>=B1=ED=B4=EF=CA=BD=D6=D8=B8=B4n=B4=CE=A3=AC=B1=C8=C8=
+=E7=A3=BA<a href=3D"http://www.regexlab.com/zh/workshop.htm?pat=3D\w{2}&amp=
+;txt=3Dab+c6"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"v=
+ertical-align:middle;" src=3D"http://www.regexlab.com/images/ans.jpg" width=
+=3D"16" height=3D"16"> "\w{2}" =CF=E0=B5=B1=D3=DA "\w\w"</a>=A3=BB<a href=
+=3D"http://www.regexlab.com/zh/workshop.htm?pat=3Da{5}&amp;txt=3Dbbaaaaadde=
+e"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-ali=
+gn:middle;" src=3D"http://www.regexlab.com/images/ans.jpg" width=3D"16" hei=
+ght=3D"16"> "a{5}" =CF=E0=B5=B1=D3=DA "aaaaa"</a></p></td>
+              </tr>
+              <tr>
+                <td><p><span id=3D"pattern12" name=3D"pattern"><font color=
+=3D"#000000"><font color=3D"#e07000">{m,n}</font></font></span></p></td>
+                <td><p>=B1=ED=B4=EF=CA=BD=D6=C1=C9=D9=D6=D8=B8=B4m=B4=CE=A3=
+=AC=D7=EE=B6=E0=D6=D8=B8=B4n=B4=CE=A3=AC=B1=C8=C8=E7=A3=BA<a href=3D"http:/=
+/www.regexlab.com/zh/workshop.htm?pat=3Dba{1,3}&amp;txt=3Da,baaa,baa,b,ba">=
+<img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:=
+middle;" src=3D"http://www.regexlab.com/images/ans.jpg" width=3D"16" height=
+=3D"16"> "ba{1,3}"=BF=C9=D2=D4=C6=A5=C5=E4 "ba"=BB=F2"baa"=BB=F2"baaa"</a><=
+/p></td>
+              </tr>
+              <tr>
+                <td><p><span id=3D"pattern13" name=3D"pattern"><font color=
+=3D"#000000"><font color=3D"#e07000">{m,}</font></font></span></p></td>
+                <td><p>=B1=ED=B4=EF=CA=BD=D6=C1=C9=D9=D6=D8=B8=B4m=B4=CE=A3=
+=AC=B1=C8=C8=E7=A3=BA<a href=3D"http://www.regexlab.com/zh/workshop.htm?pat=
+=3D\w\d{2,}&amp;txt=3Db1,a12,_456,_4AA,M12344,12346546547446534543543"><img=
+ alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:midd=
+le;" src=3D"http://www.regexlab.com/images/ans.jpg" width=3D"16" height=3D"=
+16"> "\w\d{2,}"=BF=C9=D2=D4=C6=A5=C5=E4=20
+                "a12","_456","M12344"...</a></p></td>
+              </tr>
+              <tr>
+                <td><p><span id=3D"pattern14" name=3D"pattern"><font color=
+=3D"#000000"><font color=3D"#e07000">?</font></font></span></p></td>
+                <td><p>=C6=A5=C5=E4=B1=ED=B4=EF=CA=BD0=B4=CE=BB=F2=D5=DF1=
+=B4=CE=A3=AC=CF=E0=B5=B1=D3=DA {0,1}=A3=AC=B1=C8=C8=E7=A3=BA<a href=3D"http=
+://www.regexlab.com/zh/workshop.htm?pat=3Da[cd]%3F&amp;txt=3Da,c,d,ac,ad"><=
+img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:m=
+iddle;" src=3D"http://www.regexlab.com/images/ans.jpg" width=3D"16" height=
+=3D"16"> "a[cd]?"=BF=C9=D2=D4=C6=A5=C5=E4=20
+                "a","ac","ad"</a></p></td>
+              </tr>
+              <tr>
+                <td><p><span id=3D"pattern15" name=3D"pattern"><font color=
+=3D"#000000"><font color=3D"#e07000">+</font></font></span></p></td>
+                <td><p>=B1=ED=B4=EF=CA=BD=D6=C1=C9=D9=B3=F6=CF=D61=B4=CE=A3=
+=AC=CF=E0=B5=B1=D3=DA {1,}=A3=AC=B1=C8=C8=E7=A3=BA<a href=3D"http://www.reg=
+exlab.com/zh/workshop.htm?pat=3Da%2Bb&amp;txt=3Da%2Cb%2Cab%2Caab%2Caaab"><i=
+mg alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:mi=
+ddle;" src=3D"http://www.regexlab.com/images/ans.jpg" width=3D"16" height=
+=3D"16"> "a+b"=BF=C9=D2=D4=C6=A5=C5=E4=20
+                "ab","aab","aaab"...</a></p></td>
+              </tr>
+              <tr>
+                <td><p><span id=3D"pattern16" name=3D"pattern"><font color=
+=3D"#000000"><font color=3D"#e07000">*</font></font></span></p></td>
+                <td><p>=B1=ED=B4=EF=CA=BD=B2=BB=B3=F6=CF=D6=BB=F2=B3=F6=CF=
+=D6=C8=CE=D2=E2=B4=CE=A3=AC=CF=E0=B5=B1=D3=DA {0,}=A3=AC=B1=C8=C8=E7=A3=BA<=
+a href=3D"http://www.regexlab.com/zh/workshop.htm?pat=3D%5C%5E*b&amp;txt=3D=
+%5E%2Cb%2C%5E%5E%5Eb%2C%5E%5E%5E%5E%5E%5E%5Eb"><img alt=3D"=B5=E3=BB=F7=B2=
+=E2=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.=
+regexlab.com/images/ans.jpg" width=3D"16" height=3D"16"> "\^*b"=BF=C9=D2=D4=
+=C6=A5=C5=E4=20
+                "b","^^^b"...</a></p></td>
+              </tr>
+              </tbody></table>
+            <p>&nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/wor=
+kshop.htm?pat=3D%5Cd%2B%5C.%3F%5Cd*&amp;txt=3DIt%20costs%20%2412.5"><img al=
+t=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:middle;=
+" src=3D"http://www.regexlab.com/images/ans.jpg" width=3D"16" height=3D"16"=
+> =BE=D9=C0=FD1=A3=BA=B1=ED=B4=EF=CA=BD "<span id=3D"pattern17" name=3D"pat=
+tern"><font color=3D"#000000"><font color=3D"#900050">\d</font><font color=
+=3D"#e07000">+</font>\.<font color=3D"#e07000">?</font><font color=3D"#9000=
+50">\d</font><font color=3D"#e07000">*</font></font></span>" =D4=DA=C6=A5=
+=C5=E4=20
+            "It costs $12.5" =CA=B1</a>=A3=AC=C6=A5=C5=E4=B5=C4=BD=E1=B9=FB=
+=CA=C7=A3=BA=B3=C9=B9=A6=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=C4=DA=C8=DD=CA=C7=A3=
+=BA"12.5"=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=CE=BB=D6=C3=CA=C7=A3=BA=BF=AA=CA=BC=
+=D3=DA10=A3=AC=BD=E1=CA=F8=D3=DA14=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3Dgo{2,8}gle&amp;txt=3DAds%20by%20goooooogle%2C%20or%20gooogle">=
+<img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:=
+middle;" src=3D"http://www.regexlab.com/images/ans.jpg" width=3D"16" height=
+=3D"16"> =BE=D9=C0=FD2=A3=BA=B1=ED=B4=EF=CA=BD "<span id=3D"pattern18" name=
+=3D"pattern"><font color=3D"#000000">go<font color=3D"#e07000">{2,8}</font>=
+gle</font></span>" =D4=DA=C6=A5=C5=E4 "Ads by=20
+            goooooogle" =CA=B1</a>=A3=AC=C6=A5=C5=E4=B5=C4=BD=E1=B9=FB=CA=
+=C7=A3=BA=B3=C9=B9=A6=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=C4=DA=C8=DD=CA=C7=A3=BA=
+"goooooogle"=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=CE=BB=D6=C3=CA=C7=A3=BA=BF=AA=CA=
+=BC=D3=DA7=A3=AC=BD=E1=CA=F8=D3=DA17=A1=A3</p>
+            <hr size=3D"1" color=3D"#FEA089">
+            <h5><a name=3D"special"></a>1.6 =C6=E4=CB=FB=D2=BB=D0=A9=B4=FA=
+=B1=ED=B3=E9=CF=F3=D2=E2=D2=E5=B5=C4=CC=D8=CA=E2=B7=FB=BA=C5</h5>
+            <p>&nbsp;&nbsp;&nbsp; =D2=BB=D0=A9=B7=FB=BA=C5=D4=DA=B1=ED=B4=
+=EF=CA=BD=D6=D0=B4=FA=B1=ED=B3=E9=CF=F3=B5=C4=CC=D8=CA=E2=D2=E2=D2=E5=A3=BA=
+</p>
+            <table border=3D"1" cellspacing=3D"0" style=3D"border-collapse:=
+ collapse" bgcolor=3D"#F8F8F8" cellpadding=3D"3">
+              <tbody><tr bgcolor=3D"#F0F0F0">
+                <td width=3D"67"><p>=B1=ED=B4=EF=CA=BD</p></td>
+                <td><p>=D7=F7=D3=C3</p></td>
+              </tr>
+              <tr>
+                <td><p><span id=3D"pattern19" name=3D"pattern"><font color=
+=3D"#000000"><font color=3D"#ff00ff">^</font></font></span></p></td>
+                <td><p>=D3=EB=D7=D6=B7=FB=B4=AE=BF=AA=CA=BC=B5=C4=B5=D8=B7=
+=BD=C6=A5=C5=E4=A3=AC=B2=BB=C6=A5=C5=E4=C8=CE=BA=CE=D7=D6=B7=FB</p></td>
+              </tr>
+              <tr>
+                <td><p><span id=3D"pattern20" name=3D"pattern"><font color=
+=3D"#000000"><font color=3D"#ff00ff">$</font></font></span></p></td>
+                <td><p>=D3=EB=D7=D6=B7=FB=B4=AE=BD=E1=CA=F8=B5=C4=B5=D8=B7=
+=BD=C6=A5=C5=E4=A3=AC=B2=BB=C6=A5=C5=E4=C8=CE=BA=CE=D7=D6=B7=FB</p></td>
+              </tr>
+              <tr>
+                <td><p><span id=3D"pattern21" name=3D"pattern"><font color=
+=3D"#000000"><font color=3D"#ff00ff">\b</font></font></span></p></td>
+                <td><p>=C6=A5=C5=E4=D2=BB=B8=F6=B5=A5=B4=CA=B1=DF=BD=E7=A3=
+=AC=D2=B2=BE=CD=CA=C7=B5=A5=B4=CA=BA=CD=BF=D5=B8=F1=D6=AE=BC=E4=B5=C4=CE=BB=
+=D6=C3=A3=AC=B2=BB=C6=A5=C5=E4=C8=CE=BA=CE=D7=D6=B7=FB</p></td>
+              </tr>
+              </tbody></table>
+            <p>&nbsp;&nbsp;&nbsp; =BD=F8=D2=BB=B2=BD=B5=C4=CE=C4=D7=D6=CB=
+=B5=C3=F7=C8=D4=C8=BB=B1=C8=BD=CF=B3=E9=CF=F3=A3=AC=D2=F2=B4=CB=A3=AC=BE=D9=
+=C0=FD=B0=EF=D6=FA=B4=F3=BC=D2=C0=ED=BD=E2=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3D^aaa&amp;txt=3Dxxx+aaa+xxx"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=
+=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.regexl=
+ab.com/images/ans.jpg" width=3D"16" height=3D"16"> =BE=D9=C0=FD1=A3=BA=B1=
+=ED=B4=EF=CA=BD "<span id=3D"pattern22" name=3D"pattern"><font color=3D"#00=
+0000"><font color=3D"#ff00ff">^</font>aaa</font></span>" =D4=DA=C6=A5=C5=E4=
+ "xxx=20
+            aaa xxx" =CA=B1</a>=A3=AC=C6=A5=C5=E4=BD=E1=B9=FB=CA=C7=A3=BA=
+=CA=A7=B0=DC=A1=A3=D2=F2=CE=AA "^" =D2=AA=C7=F3=D3=EB=D7=D6=B7=FB=B4=AE=BF=
+=AA=CA=BC=B5=C4=B5=D8=B7=BD=C6=A5=C5=E4=A3=AC=D2=F2=B4=CB=A3=AC=D6=BB=D3=D0=
+=B5=B1 "aaa"=20
+            =CE=BB=D3=DA=D7=D6=B7=FB=B4=AE=B5=C4=BF=AA=CD=B7=B5=C4=CA=B1=BA=
+=F2=A3=AC"^aaa" =B2=C5=C4=DC=C6=A5=C5=E4=A3=AC<a href=3D"http://www.regexla=
+b.com/zh/workshop.htm?pat=3D^aaa&amp;txt=3Daaa+xxx+xxx"><img alt=3D"=B5=E3=
+=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D"ht=
+tp://www.regexlab.com/images/ans.jpg" width=3D"16" height=3D"16"> =B1=C8=C8=
+=E7=A3=BA"aaa xxx xxx"</a>=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3Daaa$&amp;txt=3Dxxx+aaa+xxx"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=
+=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.regexl=
+ab.com/images/ans.jpg" width=3D"16" height=3D"16"> =BE=D9=C0=FD2=A3=BA=B1=
+=ED=B4=EF=CA=BD=20
+            "<span id=3D"pattern23" name=3D"pattern"><font color=3D"#000000=
+">aaa<font color=3D"#ff00ff">$</font></font></span>" =D4=DA=C6=A5=C5=E4 "xx=
+x=20
+            aaa xxx" =CA=B1</a>=A3=AC=C6=A5=C5=E4=BD=E1=B9=FB=CA=C7=A3=BA=
+=CA=A7=B0=DC=A1=A3=D2=F2=CE=AA "$" =D2=AA=C7=F3=D3=EB=D7=D6=B7=FB=B4=AE=BD=
+=E1=CA=F8=B5=C4=B5=D8=B7=BD=C6=A5=C5=E4=A3=AC=D2=F2=B4=CB=A3=AC=D6=BB=D3=D0=
+=B5=B1 "aaa"=20
+            =CE=BB=D3=DA=D7=D6=B7=FB=B4=AE=B5=C4=BD=E1=CE=B2=B5=C4=CA=B1=BA=
+=F2=A3=AC"aaa$" =B2=C5=C4=DC=C6=A5=C5=E4=A3=AC<a href=3D"http://www.regexla=
+b.com/zh/workshop.htm?pat=3Daaa$&amp;txt=3Dxxx+xxx+aaa"><img alt=3D"=B5=E3=
+=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D"ht=
+tp://www.regexlab.com/images/ans.jpg" width=3D"16" height=3D"16"> =B1=C8=C8=
+=E7=A3=BA"xxx xxx=20
+            aaa"</a>=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3D.%5Cb.&amp;txt=3D@@@abc"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4"=
+ border=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.regexlab.c=
+om/images/ans.jpg" width=3D"16" height=3D"16"> =BE=D9=C0=FD3=A3=BA=B1=ED=B4=
+=EF=CA=BD "<span id=3D"pattern24" name=3D"pattern"><font color=3D"#000000">=
+<font color=3D"#900050">.</font><font color=3D"#ff00ff">\b</font><font colo=
+r=3D"#900050">.</font></font></span>" =D4=DA=C6=A5=C5=E4 "@@@abc" =CA=B1</a=
+>=A3=AC=C6=A5=C5=E4=BD=E1=B9=FB=CA=C7=A3=BA=B3=C9=B9=A6=A3=BB=C6=A5=C5=E4=
+=B5=BD=B5=C4=C4=DA=C8=DD=CA=C7=A3=BA"@a"=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=CE=
+=BB=D6=C3=CA=C7=A3=BA=BF=AA=CA=BC=D3=DA2=A3=AC=BD=E1=CA=F8=D3=DA4=A1=A3<br>
+            &nbsp;&nbsp;&nbsp; =BD=F8=D2=BB=B2=BD=CB=B5=C3=F7=A3=BA"\b"=20
+            =D3=EB "^" =BA=CD "$" =C0=E0=CB=C6=A3=AC=B1=BE=C9=ED=B2=BB=C6=
+=A5=C5=E4=C8=CE=BA=CE=D7=D6=B7=FB=A3=AC=B5=AB=CA=C7=CB=FC=D2=AA=C7=F3=CB=FC=
+=D4=DA=C6=A5=C5=E4=BD=E1=B9=FB=D6=D0=CB=F9=B4=A6=CE=BB=D6=C3=B5=C4=D7=F3=D3=
+=D2=C1=BD=B1=DF=A3=AC=C6=E4=D6=D0=D2=BB=B1=DF=CA=C7 "\w" =B7=B6=CE=A7=A3=AC=
+=C1=ED=D2=BB=B1=DF=CA=C7=20
+            =B7=C7"\w" =B5=C4=B7=B6=CE=A7=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3D%5Cbend%5Cb&amp;txt=3Dweekend,endfor,end"><img alt=3D"=B5=E3=
+=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D"ht=
+tp://www.regexlab.com/images/ans.jpg" width=3D"16" height=3D"16"> =BE=D9=C0=
+=FD4=A3=BA=B1=ED=B4=EF=CA=BD "<span id=3D"pattern25" name=3D"pattern"><font=
+ color=3D"#000000"><font color=3D"#ff00ff">\b</font>end<font color=3D"#ff00=
+ff">\b</font></font></span>" =D4=DA=C6=A5=C5=E4 "weekend,endfor,end" =CA=B1=
+</a>=A3=AC=C6=A5=C5=E4=BD=E1=B9=FB=CA=C7=A3=BA=B3=C9=B9=A6=A3=BB=C6=A5=C5=
+=E4=B5=BD=B5=C4=C4=DA=C8=DD=CA=C7=A3=BA"end"=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=
+=CE=BB=D6=C3=CA=C7=A3=BA=BF=AA=CA=BC=D3=DA15=A3=AC=BD=E1=CA=F8=D3=DA18=A1=
+=A3</p><p>&nbsp;&nbsp;&nbsp; =D2=BB=D0=A9=B7=FB=BA=C5=BF=C9=D2=D4=D3=B0=CF=
+=EC=B1=ED=B4=EF=CA=BD=C4=DA=B2=BF=B5=C4=D7=D3=B1=ED=B4=EF=CA=BD=D6=AE=BC=E4=
+=B5=C4=B9=D8=CF=B5=A3=BA</p>
+            <table border=3D"1" cellspacing=3D"0" style=3D"border-collapse:=
+ collapse" bgcolor=3D"#F8F8F8" cellpadding=3D"3">
+              <tbody><tr bgcolor=3D"#F0F0F0">
+                <td width=3D"65"><p>=B1=ED=B4=EF=CA=BD</p></td>
+                <td><p>=D7=F7=D3=C3</p></td>
+              </tr>
+              <tr>
+                <td><p>|</p></td>
+                <td><p>=D7=F3=D3=D2=C1=BD=B1=DF=B1=ED=B4=EF=CA=BD=D6=AE=BC=
+=E4 "=BB=F2" =B9=D8=CF=B5=A3=AC=C6=A5=C5=E4=D7=F3=B1=DF=BB=F2=D5=DF=D3=D2=
+=B1=DF</p></td>
+              </tr>
+              <tr>
+                <td><p>( )</p></td>
+                <td><p>(1). =D4=DA=B1=BB=D0=DE=CA=CE=C6=A5=C5=E4=B4=CE=CA=
+=FD=B5=C4=CA=B1=BA=F2=A3=AC=C0=A8=BA=C5=D6=D0=B5=C4=B1=ED=B4=EF=CA=BD=BF=C9=
+=D2=D4=D7=F7=CE=AA=D5=FB=CC=E5=B1=BB=D0=DE=CA=CE<br>
+                (2). =C8=A1=C6=A5=C5=E4=BD=E1=B9=FB=B5=C4=CA=B1=BA=F2=A3=AC=
+=C0=A8=BA=C5=D6=D0=B5=C4=B1=ED=B4=EF=CA=BD=C6=A5=C5=E4=B5=BD=B5=C4=C4=DA=C8=
+=DD=BF=C9=D2=D4=B1=BB=B5=A5=B6=C0=B5=C3=B5=BD</p></td>
+              </tr>
+            </tbody></table>
+            <p>&nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/wor=
+kshop.htm?pat=3DTom%7CJack&amp;txt=3DI%27m+Tom%2C+he+is+Jack"><img alt=3D"=
+=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=
+=3D"http://www.regexlab.com/images/ans.jpg" width=3D"16" height=3D"16"> =BE=
+=D9=C0=FD5=A3=BA=B1=ED=B4=EF=CA=BD "<span id=3D"pattern26" name=3D"pattern"=
+><font color=3D"#000000">Tom<font color=3D"#5050ff">|</font>Jack</font></sp=
+an>" =D4=DA=C6=A5=C5=E4=D7=D6=B7=FB=B4=AE "I'm Tom, he is Jack" =CA=B1</a>=
+=A3=AC=C6=A5=C5=E4=BD=E1=B9=FB=CA=C7=A3=BA=B3=C9=B9=A6=A3=BB=C6=A5=C5=E4=B5=
+=BD=B5=C4=C4=DA=C8=DD=CA=C7=A3=BA"Tom"=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=CE=BB=
+=D6=C3=CA=C7=A3=BA=BF=AA=CA=BC=D3=DA4=A3=AC=BD=E1=CA=F8=D3=DA7=A1=A3=C6=A5=
+=C5=E4=CF=C2=D2=BB=B8=F6=CA=B1=A3=AC=C6=A5=C5=E4=BD=E1=B9=FB=CA=C7=A3=BA=B3=
+=C9=B9=A6=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=C4=DA=C8=DD=CA=C7=A3=BA"Jack"=A3=BB=
+=C6=A5=C5=E4=B5=BD=B5=C4=CE=BB=D6=C3=CA=B1=A3=BA=BF=AA=CA=BC=D3=DA15=A3=AC=
+=BD=E1=CA=F8=D3=DA19=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3D%28go%5Cs*%29%2B&amp;txt=3DLet%27s%20go%20go%20go%21"><img alt=
+=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:middle;"=
+ src=3D"http://www.regexlab.com/images/ans.jpg" width=3D"16" height=3D"16">=
+ =BE=D9=C0=FD6=A3=BA=B1=ED=B4=EF=CA=BD "<span id=3D"pattern27" name=3D"patt=
+ern"><font color=3D"#000000"><font color=3D"#5050ff">(</font>go<font color=
+=3D"#900050">\s</font><font color=3D"#e07000">*</font><font color=3D"#5050f=
+f">)</font><font color=3D"#e07000">+</font></font></span>" =D4=DA=C6=A5=C5=
+=E4 "Let's go go go!" =CA=B1</a>=A3=AC=C6=A5=C5=E4=BD=E1=B9=FB=CA=C7=A3=BA=
+=B3=C9=B9=A6=A3=BB=C6=A5=C5=E4=B5=BD=C4=DA=C8=DD=CA=C7=A3=BA"go go go"=A3=
+=BB=C6=A5=C5=E4=B5=BD=B5=C4=CE=BB=D6=C3=CA=C7=A3=BA=BF=AA=CA=BC=D3=DA6=A3=
+=AC=BD=E1=CA=F8=D3=DA14=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3D%uFFE5%28%5Cd%2B%5C.%3F%5Cd*%29&amp;txt=3D%uFF0410.9%2C%uFFE52=
+0.5"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-a=
+lign:middle;" src=3D"http://www.regexlab.com/images/ans.jpg" width=3D"16" h=
+eight=3D"16"> =BE=D9=C0=FD7=A3=BA=B1=ED=B4=EF=CA=BD "<span id=3D"pattern28"=
+ name=3D"pattern"><font color=3D"#000000">=A3=A4<font color=3D"#5050ff">(</=
+font><font color=3D"#900050">\d</font><font color=3D"#e07000">+</font>\.<fo=
+nt color=3D"#e07000">?</font><font color=3D"#900050">\d</font><font color=
+=3D"#e07000">*</font><font color=3D"#5050ff">)</font></font></span>" =D4=DA=
+=C6=A5=C5=E4 "=A1=E710.9,=A3=A420.5" =CA=B1</a>=A3=AC=C6=A5=C5=E4=B5=C4=BD=
+=E1=B9=FB=CA=C7=A3=BA=B3=C9=B9=A6=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=C4=DA=C8=DD=
+=CA=C7=A3=BA"=A3=A420.5"=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=CE=BB=D6=C3=CA=C7=A3=
+=BA=BF=AA=CA=BC=D3=DA6=A3=AC=BD=E1=CA=F8=D3=DA10=A1=A3=B5=A5=B6=C0=BB=F1=C8=
+=A1=C0=A8=BA=C5=B7=B6=CE=A7=C6=A5=C5=E4=B5=BD=B5=C4=C4=DA=C8=DD=CA=C7=A3=BA=
+"20.5"=A1=A3</p><hr size=3D"1" color=3D"#FEA089">
+            <h4>2. =D5=FD=D4=F2=B1=ED=B4=EF=CA=BD=D6=D0=B5=C4=D2=BB=D0=A9=
+=B8=DF=BC=B6=B9=E6=D4=F2</h4><h5><a name=3D"reluctant"></a>2.1 =C6=A5=C5=E4=
+=B4=CE=CA=FD=D6=D0=B5=C4=CC=B0=C0=B7=D3=EB=B7=C7=CC=B0=C0=B7</h5>
+            <p>&nbsp;&nbsp;&nbsp; =D4=DA=CA=B9=D3=C3=D0=DE=CA=CE=C6=A5=C5=
+=E4=B4=CE=CA=FD=B5=C4=CC=D8=CA=E2=B7=FB=BA=C5=CA=B1=A3=AC=D3=D0=BC=B8=D6=D6=
+=B1=ED=CA=BE=B7=BD=B7=A8=BF=C9=D2=D4=CA=B9=CD=AC=D2=BB=B8=F6=B1=ED=B4=EF=CA=
+=BD=C4=DC=B9=BB=C6=A5=C5=E4=B2=BB=CD=AC=B5=C4=B4=CE=CA=FD=A3=AC=B1=C8=C8=E7=
+=A3=BA"{m,n}", "{m,}", "?", "*", "+"=A3=AC=BE=DF=CC=E5=C6=A5=C5=E4=B5=C4=B4=
+=CE=CA=FD=CB=E6=B1=BB=C6=A5=C5=E4=B5=C4=D7=D6=B7=FB=B4=AE=B6=F8=B6=A8=A1=A3=
+=D5=E2=D6=D6=D6=D8=B8=B4=C6=A5=C5=E4=B2=BB=B6=A8=B4=CE=CA=FD=B5=C4=B1=ED=B4=
+=EF=CA=BD=D4=DA=C6=A5=C5=E4=B9=FD=B3=CC=D6=D0=A3=AC=D7=DC=CA=C7=BE=A1=BF=C9=
+=C4=DC=B6=E0=B5=C4=C6=A5=C5=E4=A1=A3=B1=C8=C8=E7=A3=AC=D5=EB=B6=D4=CE=C4=B1=
+=BE "dxxxdxxxd"=A3=AC=BE=D9=C0=FD=C8=E7=CF=C2=A3=BA</p>
+            <table border=3D"1" cellspacing=3D"0" style=3D"border-collapse:=
+ collapse" bgcolor=3D"#F8F8F8" cellpadding=3D"3">
+              <tbody><tr bgcolor=3D"#F0F0F0">
+                <td width=3D"93"><p>=B1=ED=B4=EF=CA=BD</p></td>
+                <td><p>=C6=A5=C5=E4=BD=E1=B9=FB</p></td>
+              </tr>
+              <tr>
+                <td><p><a href=3D"http://www.regexlab.com/zh/workshop.htm?p=
+at=3D(d)(%5Cw%2B)&amp;txt=3Ddxxxdxxxd"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4=
+" border=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.regexlab.=
+com/images/ans.jpg" width=3D"16" height=3D"16">=20
+				<span id=3D"pattern29" name=3D"pattern"><font color=3D"#000000"><font c=
+olor=3D"#5050ff">(</font>d<font color=3D"#5050ff">)</font><font color=3D"#5=
+050ff">(</font><font color=3D"#900050">\w</font><font color=3D"#e07000">+</=
+font><font color=3D"#5050ff">)</font></font></span></a></p></td>
+                <td><p>"\w+" =BD=AB=C6=A5=C5=E4=B5=DA=D2=BB=B8=F6 "d" =D6=
+=AE=BA=F3=B5=C4=CB=F9=D3=D0=D7=D6=B7=FB "xxxdxxxd"</p></td>
+              </tr>
+              <tr>
+                <td><p><a href=3D"http://www.regexlab.com/zh/workshop.htm?p=
+at=3D(d)(%5Cw%2B)(d)&amp;txt=3Ddxxxdxxxd"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=
+=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.regexl=
+ab.com/images/ans.jpg" width=3D"16" height=3D"16">=20
+				<span id=3D"pattern30" name=3D"pattern"><font color=3D"#000000"><font c=
+olor=3D"#5050ff">(</font>d<font color=3D"#5050ff">)</font><font color=3D"#5=
+050ff">(</font><font color=3D"#900050">\w</font><font color=3D"#e07000">+</=
+font><font color=3D"#5050ff">)</font><font color=3D"#5050ff">(</font>d<font=
+ color=3D"#5050ff">)</font></font></span></a></p></td>
+                <td><p>"\w+" =BD=AB=C6=A5=C5=E4=B5=DA=D2=BB=B8=F6 "d" =BA=
+=CD=D7=EE=BA=F3=D2=BB=B8=F6 "d" =D6=AE=BC=E4=B5=C4=CB=F9=D3=D0=D7=D6=B7=FB =
+"xxxdxxx"=A1=A3=CB=E4=C8=BB "\w+" =D2=B2=C4=DC=B9=BB=C6=A5=C5=E4=C9=CF=D7=
+=EE=BA=F3=D2=BB=B8=F6 "d"=A3=AC=B5=AB=CA=C7=CE=AA=C1=CB=CA=B9=D5=FB=B8=F6=
+=B1=ED=B4=EF=CA=BD=C6=A5=C5=E4=B3=C9=B9=A6=A3=AC"\w+" =BF=C9=D2=D4 "=C8=C3=
+=B3=F6" =CB=FC=B1=BE=C0=B4=C4=DC=B9=BB=C6=A5=C5=E4=B5=C4=D7=EE=BA=F3=D2=BB=
+=B8=F6 "d"</p></td>
+              </tr>
+            </tbody></table>
+            <p>&nbsp;&nbsp;&nbsp; =D3=C9=B4=CB=BF=C9=BC=FB=A3=AC"\w+" =D4=
+=DA=C6=A5=C5=E4=B5=C4=CA=B1=BA=F2=A3=AC=D7=DC=CA=C7=BE=A1=BF=C9=C4=DC=B6=E0=
+=B5=C4=C6=A5=C5=E4=B7=FB=BA=CF=CB=FC=B9=E6=D4=F2=B5=C4=D7=D6=B7=FB=A1=A3=CB=
+=E4=C8=BB=B5=DA=B6=FE=B8=F6=BE=D9=C0=FD=D6=D0=A3=AC=CB=FC=C3=BB=D3=D0=C6=A5=
+=C5=E4=D7=EE=BA=F3=D2=BB=B8=F6 "d"=A3=AC=B5=AB=C4=C7=D2=B2=CA=C7=CE=AA=C1=
+=CB=C8=C3=D5=FB=B8=F6=B1=ED=B4=EF=CA=BD=C4=DC=B9=BB=C6=A5=C5=E4=B3=C9=B9=A6=
+=A1=A3=CD=AC=C0=ED=A3=AC=B4=F8 "*" =BA=CD "{m,n}" =B5=C4=B1=ED=B4=EF=CA=BD=
+=B6=BC=CA=C7=BE=A1=BF=C9=C4=DC=B5=D8=B6=E0=C6=A5=C5=E4=A3=AC=B4=F8 "?" =B5=
+=C4=B1=ED=B4=EF=CA=BD=D4=DA=BF=C9=C6=A5=C5=E4=BF=C9=B2=BB=C6=A5=C5=E4=B5=C4=
+=CA=B1=BA=F2=A3=AC=D2=B2=CA=C7=BE=A1=BF=C9=C4=DC=B5=C4 "=D2=AA=C6=A5=C5=E4"=
+=A1=A3=D5=E2
+            =D6=D6=C6=A5=C5=E4=D4=AD=D4=F2=BE=CD=BD=D0=D7=F7 "=CC=B0=C0=B7"=
+ =C4=A3=CA=BD
+            =A1=A3</p>
+            <p>&nbsp;&nbsp;&nbsp; =B7=C7=CC=B0=C0=B7=C4=A3=CA=BD=A3=BA<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; =D4=DA=D0=DE=CA=CE=C6=A5=C5=E4=B4=CE=CA=FD=
+=B5=C4=CC=D8=CA=E2=B7=FB=BA=C5=BA=F3=D4=D9=BC=D3=C9=CF=D2=BB=B8=F6 "?" =BA=
+=C5=A3=AC=D4=F2=BF=C9=D2=D4=CA=B9=C6=A5=C5=E4=B4=CE=CA=FD=B2=BB=B6=A8=B5=C4=
+=B1=ED=B4=EF=CA=BD=BE=A1=BF=C9=C4=DC=C9=D9=B5=C4=C6=A5=C5=E4=A3=AC=CA=B9=BF=
+=C9=C6=A5=C5=E4=BF=C9=B2=BB=C6=A5=C5=E4=B5=C4=B1=ED=B4=EF=CA=BD=A3=AC=BE=A1=
+=BF=C9=C4=DC=B5=C4 "=B2=BB=C6=A5=C5=E4"=A1=A3=D5=E2=D6=D6=C6=A5=C5=E4=D4=AD=
+=D4=F2=BD=D0=D7=F7 "=B7=C7=CC=B0=C0=B7" =C4=A3=CA=BD=A3=AC=D2=B2=BD=D0=D7=
+=F7 "=C3=E3=C7=BF" =C4=A3=CA=BD=A1=A3=C8=E7=B9=FB=C9=D9=C6=A5=C5=E4=BE=CD=
+=BB=E1=B5=BC=D6=C2=D5=FB=B8=F6=B1=ED=B4=EF=CA=BD=C6=A5=C5=E4=CA=A7=B0=DC=B5=
+=C4=CA=B1=BA=F2=A3=AC=D3=EB=CC=B0=C0=B7=C4=A3=CA=BD=C0=E0=CB=C6=A3=AC=B7=C7=
+=CC=B0=C0=B7=C4=A3=CA=BD=BB=E1=D7=EE=D0=A1=CF=DE=B6=C8=B5=C4=D4=D9=C6=A5=C5=
+=E4=D2=BB=D0=A9=A3=AC=D2=D4=CA=B9=D5=FB=B8=F6=B1=ED=B4=EF=CA=BD=C6=A5=C5=E4=
+=B3=C9=B9=A6=A1=A3=BE=D9=C0=FD=C8=E7=CF=C2=A3=AC=D5=EB=B6=D4=CE=C4=B1=BE "d=
+xxxdxxxd" =BE=D9=C0=FD=A3=BA</p>
+            <table border=3D"1" cellspacing=3D"0" style=3D"border-collapse:=
+ collapse" bgcolor=3D"#F8F8F8" cellpadding=3D"3">
+              <tbody><tr bgcolor=3D"#F0F0F0">
+                <td width=3D"93"><p>=B1=ED=B4=EF=CA=BD</p></td>
+                <td><p>=C6=A5=C5=E4=BD=E1=B9=FB</p></td>
+              </tr>
+              <tr>
+                <td><p><a href=3D"http://www.regexlab.com/zh/workshop.htm?p=
+at=3D(d)(%5Cw%2B%3F)&amp;txt=3Ddxxxdxxxd"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=
+=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.regexl=
+ab.com/images/ans.jpg" width=3D"16" height=3D"16">=20
+				<span id=3D"pattern31" name=3D"pattern"><font color=3D"#000000"><font c=
+olor=3D"#5050ff">(</font>d<font color=3D"#5050ff">)</font><font color=3D"#5=
+050ff">(</font><font color=3D"#900050">\w</font><font color=3D"#e07000">+</=
+font><font color=3D"#e07000">?</font><font color=3D"#5050ff">)</font></font=
+></span></a></p></td>
+                <td><p>"\w+?" =BD=AB=BE=A1=BF=C9=C4=DC=C9=D9=B5=C4=C6=A5=C5=
+=E4=B5=DA=D2=BB=B8=F6 "d" =D6=AE=BA=F3=B5=C4=D7=D6=B7=FB=A3=AC=BD=E1=B9=FB=
+=CA=C7=A3=BA"\w+?" =D6=BB=C6=A5=C5=E4=C1=CB=D2=BB=B8=F6 "x"</p></td>
+              </tr>
+              <tr>
+                <td><p><a href=3D"http://www.regexlab.com/zh/workshop.htm?p=
+at=3D(d)(%5Cw%2B%3F)(d)&amp;txt=3Ddxxxdxxxd"><img alt=3D"=B5=E3=BB=F7=B2=E2=
+=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.reg=
+exlab.com/images/ans.jpg" width=3D"16" height=3D"16">=20
+				<span id=3D"pattern32" name=3D"pattern"><font color=3D"#000000"><font c=
+olor=3D"#5050ff">(</font>d<font color=3D"#5050ff">)</font><font color=3D"#5=
+050ff">(</font><font color=3D"#900050">\w</font><font color=3D"#e07000">+</=
+font><font color=3D"#e07000">?</font><font color=3D"#5050ff">)</font><font =
+color=3D"#5050ff">(</font>d<font color=3D"#5050ff">)</font></font></span></=
+a></p></td>
+                <td><p>=CE=AA=C1=CB=C8=C3=D5=FB=B8=F6=B1=ED=B4=EF=CA=BD=C6=
+=A5=C5=E4=B3=C9=B9=A6=A3=AC"\w+?" =B2=BB=B5=C3=B2=BB=C6=A5=C5=E4 "xxx" =B2=
+=C5=BF=C9=D2=D4=C8=C3=BA=F3=B1=DF=B5=C4 "d" =C6=A5=C5=E4=A3=AC=B4=D3=B6=F8=
+=CA=B9=D5=FB=B8=F6=B1=ED=B4=EF=CA=BD=C6=A5=C5=E4=B3=C9=B9=A6=A1=A3=D2=F2=B4=
+=CB=A3=AC=BD=E1=B9=FB=CA=C7=A3=BA"\w+?" =C6=A5=C5=E4 "xxx"</p></td>
+              </tr>
+            </tbody></table>
+            <p>&nbsp;&nbsp;&nbsp; =B8=FC=B6=E0=B5=C4=C7=E9=BF=F6=A3=AC=BE=
+=D9=C0=FD=C8=E7=CF=C2=A3=BA<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3D%3Ctd%3E%28%2E%2A%29%3C%2Ftd%3E&amp;txt=3D%3Ctd%3E%3Cp%3Eaa%3C=
+%2Fp%3E%3C%2Ftd%3E%3Ctd%3E%3Cp%3Ebb%3C%2Fp%3E%3C%2Ftd%3E"><img alt=3D"=B5=
+=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D=
+"http://www.regexlab.com/images/ans.jpg" width=3D"16" height=3D"16"> =BE=D9=
+=C0=FD1=A3=BA=B1=ED=B4=EF=CA=BD "<span id=3D"pattern33" name=3D"pattern"><f=
+ont color=3D"#000000">&lt;td&gt;<font color=3D"#5050ff">(</font><font color=
+=3D"#900050">.</font><font color=3D"#e07000">*</font><font color=3D"#5050ff=
+">)</font>&lt;/td&gt;</font></span>" =D3=EB=D7=D6=B7=FB=B4=AE "&lt;td&gt;&l=
+t;p&gt;aa&lt;/p&gt;&lt;/td&gt; &lt;td&gt;&lt;p&gt;bb&lt;/p&gt;&lt;/td&gt;" =
+=C6=A5=C5=E4=CA=B1</a>=A3=AC=C6=A5=C5=E4=B5=C4=BD=E1=B9=FB=CA=C7=A3=BA=B3=
+=C9=B9=A6=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=C4=DA=C8=DD=CA=C7 "&lt;td&gt;&lt;p&=
+gt;aa&lt;/p&gt;&lt;/td&gt; &lt;td&gt;&lt;p&gt;bb&lt;/p&gt;&lt;/td&gt;" =D5=
+=FB=B8=F6=D7=D6=B7=FB=B4=AE=A3=AC
+            =B1=ED=B4=EF=CA=BD=D6=D0=B5=C4 "&lt;/td&gt;" =BD=AB=D3=EB=D7=D6=
+=B7=FB=B4=AE=D6=D0=D7=EE=BA=F3=D2=BB=B8=F6 "&lt;/td&gt;" =C6=A5=C5=E4=A1=A3=
+ <br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3D%3Ctd%3E%28%2E%2A%3F%29%3C%2Ftd%3E&amp;txt=3D%3Ctd%3E%3Cp%3Eaa=
+%3C%2Fp%3E%3C%2Ftd%3E%3Ctd%3E%3Cp%3Ebb%3C%2Fp%3E%3C%2Ftd%3E"><img alt=3D"=
+=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=
+=3D"http://www.regexlab.com/images/ans.jpg" width=3D"16" height=3D"16"> =BE=
+=D9=C0=FD2=A3=BA=CF=E0=B1=C8=D6=AE=CF=C2=A3=AC=B1=ED=B4=EF=CA=BD "<span id=
+=3D"pattern34" name=3D"pattern"><font color=3D"#000000">&lt;td&gt;<font col=
+or=3D"#5050ff">(</font><font color=3D"#900050">.</font><font color=3D"#e070=
+00">*</font><font color=3D"#e07000">?</font><font color=3D"#5050ff">)</font=
+>&lt;/td&gt;</font></span>" =C6=A5=C5=E4=BE=D9=C0=FD1=D6=D0=CD=AC=D1=F9=B5=
+=C4=D7=D6=B7=FB=B4=AE=CA=B1</a>=A3=AC=BD=AB=D6=BB=B5=C3=B5=BD "&lt;td&gt;&l=
+t;p&gt;aa&lt;/p&gt;&lt;/td&gt;"=A3=AC
+            =D4=D9=B4=CE=C6=A5=C5=E4=CF=C2=D2=BB=B8=F6=CA=B1=A3=AC=BF=C9=D2=
+=D4=B5=C3=B5=BD=B5=DA=B6=FE=B8=F6=20
+            "&lt;td&gt;&lt;p&gt;bb&lt;/p&gt;&lt;/td&gt;"=A1=A3</p>
+            <hr size=3D"1" color=3D"#FEA089">
+            <h5><a name=3D"backref"></a>2.2 =B7=B4=CF=F2=D2=FD=D3=C3 \1, \2=
+...</h5>
+            <p>&nbsp;&nbsp;&nbsp; =B1=ED=B4=EF=CA=BD=D4=DA=C6=A5=C5=E4=CA=
+=B1=A3=AC=B1=ED=B4=EF=CA=BD=D2=FD=C7=E6=BB=E1=BD=AB=D0=A1=C0=A8=BA=C5 "( )"=
+ =B0=FC=BA=AC=B5=C4=B1=ED=B4=EF=CA=BD=CB=F9=C6=A5=C5=E4=B5=BD=B5=C4=D7=D6=
+=B7=FB=B4=AE=BC=C7=C2=BC=CF=C2=C0=B4=A1=A3=D4=DA=BB=F1=C8=A1=C6=A5=C5=E4=BD=
+=E1=B9=FB=B5=C4=CA=B1=BA=F2=A3=AC=D0=A1=C0=A8=BA=C5=B0=FC=BA=AC=B5=C4=B1=ED=
+=B4=EF=CA=BD=CB=F9=C6=A5=C5=E4=B5=BD=B5=C4=D7=D6=B7=FB=B4=AE=BF=C9=D2=D4=B5=
+=A5=B6=C0=BB=F1=C8=A1=A1=A3=D5=E2=D2=BB=B5=E3=A3=AC=D4=DA=C7=B0=C3=E6=B5=C4=
+=BE=D9=C0=FD=D6=D0=A3=AC=D2=D1=BE=AD=B6=E0=B4=CE=D5=B9=CA=BE=C1=CB=A1=A3=D4=
+=DA=CA=B5=BC=CA=D3=A6=D3=C3=B3=A1=BA=CF=D6=D0=A3=AC=B5=B1=D3=C3=C4=B3=D6=D6=
+=B1=DF=BD=E7=C0=B4=B2=E9=D5=D2=A3=AC=B6=F8=CB=F9=D2=AA=BB=F1=C8=A1=B5=C4=C4=
+=DA=C8=DD=D3=D6=B2=BB=B0=FC=BA=AC=B1=DF=BD=E7=CA=B1=A3=AC=B1=D8=D0=EB=CA=B9=
+=D3=C3=D0=A1=C0=A8=BA=C5=C0=B4=D6=B8=B6=A8=CB=F9=D2=AA=B5=C4=B7=B6=CE=A7=A1=
+=A3=B1=C8=C8=E7=C7=B0=C3=E6=B5=C4 "<span id=3D"pattern35" name=3D"pattern">=
+<font color=3D"#000000">&lt;td&gt;<font color=3D"#5050ff">(</font><font col=
+or=3D"#900050">.</font><font color=3D"#e07000">*</font><font color=3D"#e070=
+00">?</font><font color=3D"#5050ff">)</font>&lt;/td&gt;</font></span>"=A1=
+=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; =C6=E4=CA=B5=A3=AC"=D0=A1=C0=A8=BA=C5=B0=FC=
+=BA=AC=B5=C4=B1=ED=B4=EF=CA=BD=CB=F9=C6=A5=C5=E4=B5=BD=B5=C4=D7=D6=B7=FB=B4=
+=AE" =B2=BB=BD=F6=CA=C7=D4=DA=C6=A5=C5=E4=BD=E1=CA=F8=BA=F3=B2=C5=BF=C9=D2=
+=D4=CA=B9=D3=C3=A3=AC=D4=DA=C6=A5=C5=E4=B9=FD=B3=CC=D6=D0=D2=B2=BF=C9=D2=D4=
+=CA=B9=D3=C3=A1=A3=B1=ED=B4=EF=CA=BD=BA=F3=B1=DF=B5=C4=B2=BF=B7=D6=A3=AC=BF=
+=C9=D2=D4=D2=FD=D3=C3=C7=B0=C3=E6 "=C0=A8=BA=C5=C4=DA=B5=C4=D7=D3=C6=A5=C5=
+=E4=D2=D1=BE=AD=C6=A5=C5=E4=B5=BD=B5=C4=D7=D6=B7=FB=B4=AE"=A1=A3=D2=FD=D3=
+=C3=B7=BD=B7=A8=CA=C7 "\" =BC=D3=C9=CF=D2=BB=B8=F6=CA=FD=D7=D6=A1=A3"\1" =
+=D2=FD=D3=C3=B5=DA1=B6=D4=C0=A8=BA=C5=C4=DA=C6=A5=C5=E4=B5=BD=B5=C4=D7=D6=
+=B7=FB=B4=AE=A3=AC"\2" =D2=FD=D3=C3=B5=DA2=B6=D4=C0=A8=BA=C5=C4=DA=C6=A5=C5=
+=E4=B5=BD=B5=C4=D7=D6=B7=FB=B4=AE=A1=AD=A1=AD=D2=D4=B4=CB=C0=E0=CD=C6=A3=AC=
+=C8=E7=B9=FB=D2=BB=B6=D4=C0=A8=BA=C5=C4=DA=B0=FC=BA=AC=C1=ED=D2=BB=B6=D4=C0=
+=A8=BA=C5=A3=AC=D4=F2=CD=E2=B2=E3=B5=C4=C0=A8=BA=C5=CF=C8=C5=C5=D0=F2=BA=C5=
+=A1=A3=BB=BB=BE=E4=BB=B0=CB=B5=A3=AC=C4=C4=D2=BB=B6=D4=B5=C4=D7=F3=C0=A8=BA=
+=C5 "(" =D4=DA=C7=B0=A3=AC=C4=C7=D5=E2=D2=BB=B6=D4=BE=CD=CF=C8=C5=C5=D0=F2=
+=BA=C5=A1=A3</p>
+            <p>&nbsp;&nbsp;&nbsp; =BE=D9=C0=FD=C8=E7=CF=C2=A3=BA<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3D%28%27%7C%22%29%28%2E%2A%3F%29%28%5C1%29&amp;txt=3D%27Hello%27=
+%2C+%22World%22"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=
+=3D"vertical-align:middle;" src=3D"http://www.regexlab.com/images/ans.jpg" =
+width=3D"16" height=3D"16"> =BE=D9=C0=FD1=A3=BA=B1=ED=B4=EF=CA=BD "<span id=
+=3D"pattern36" name=3D"pattern"><font color=3D"#000000"><font color=3D"#505=
+0ff">(</font>'<font color=3D"#5050ff">|</font>"<font color=3D"#5050ff">)</f=
+ont><font color=3D"#5050ff">(</font><font color=3D"#900050">.</font><font c=
+olor=3D"#e07000">*</font><font color=3D"#e07000">?</font><font color=3D"#50=
+50ff">)</font><font color=3D"#5050ff">(</font><font color=3D"#ff00ff">\1</f=
+ont><font color=3D"#5050ff">)</font></font></span>" =D4=DA=C6=A5=C5=E4 " 'H=
+ello', "World" " =CA=B1</a>=A3=AC=C6=A5=C5=E4=BD=E1=B9=FB=CA=C7=A3=BA=B3=C9=
+=B9=A6=A3=BB=C6=A5=C5=E4=B5=BD=B5=C4=C4=DA=C8=DD=CA=C7=A3=BA" 'Hello' "=A1=
+=A3=D4=D9=B4=CE=C6=A5=C5=E4=CF=C2=D2=BB=B8=F6=CA=B1=A3=AC=BF=C9=D2=D4=C6=A5=
+=C5=E4=B5=BD " "World" "=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3D%28%5Cw%29%5C1%7B4%2C%7D&amp;txt=3Daa%20bbbb%20abcdefg%20ccccc=
+%20111121111%20999999999"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0=
+" style=3D"vertical-align:middle;" src=3D"http://www.regexlab.com/images/an=
+s.jpg" width=3D"16" height=3D"16"> =BE=D9=C0=FD2=A3=BA=B1=ED=B4=EF=CA=BD "<=
+span id=3D"pattern37" name=3D"pattern"><font color=3D"#000000"><font color=
+=3D"#5050ff">(</font><font color=3D"#900050">\w</font><font color=3D"#5050f=
+f">)</font><font color=3D"#ff00ff">\1</font><font color=3D"#e07000">{4,}</f=
+ont></font></span>" =D4=DA=C6=A5=C5=E4 "aa bbbb abcdefg ccccc 111121111 999=
+999999" =CA=B1</a>=A3=AC=C6=A5=C5=E4=BD=E1=B9=FB=CA=C7=A3=BA=B3=C9=B9=A6=A3=
+=BB=C6=A5=C5=E4=B5=BD=B5=C4=C4=DA=C8=DD=CA=C7 "ccccc"=A1=A3=D4=D9=B4=CE=C6=
+=A5=C5=E4=CF=C2=D2=BB=B8=F6=CA=B1=A3=AC=BD=AB=B5=C3=B5=BD 999999999=A1=A3=
+=D5=E2=B8=F6=B1=ED=B4=EF=CA=BD=D2=AA=C7=F3 "\w" =B7=B6=CE=A7=B5=C4=D7=D6=B7=
+=FB=D6=C1=C9=D9=D6=D8=B8=B45=B4=CE=A3=AC<a href=3D"http://www.regexlab.com/=
+zh/workshop.htm?pat=3D%5Cw%7B5%2C%7D&amp;txt=3Daa%20bbbb%20abcdefg%20ccccc%=
+20111121111%20999999999"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0"=
+ style=3D"vertical-align:middle;" src=3D"http://www.regexlab.com/images/ans=
+.jpg" width=3D"16" height=3D"16"> =D7=A2=D2=E2=D3=EB "\w{5,}" =D6=AE=BC=E4=
+=B5=C4=C7=F8=B1=F0</a>=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3D%3C%28%5Cw%2B%29%5Cs%2A%28%5Cw%2B%28%3D%28%27%7C%22%29%2E%2A%3=
+F%5C4%29%3F%5Cs%2A%29%2A%3E%2E%2A%3F%3C%2F%5C1%3E&amp;txt=3D%3Ctd+id%3D%27t=
+d1%27+style%3D%22bgcolor%3Awhite%22%3E%3C%2Ftd%3E%0D%0A%3Cbody+onload%3D%22=
+doit%28%29%22%3E%3C%2Fbody%3E"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=
+=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.regexlab.com/imag=
+es/ans.jpg" width=3D"16" height=3D"16"> =BE=D9=C0=FD3=A3=BA=B1=ED=B4=EF=CA=
+=BD=20
+            "<span id=3D"pattern38" name=3D"pattern"><font color=3D"#000000=
+">&lt;<font color=3D"#5050ff">(</font><font color=3D"#900050">\w</font><fon=
+t color=3D"#e07000">+</font><font color=3D"#5050ff">)</font><font color=3D"=
+#900050">\s</font><font color=3D"#e07000">*</font><font color=3D"#5050ff">(=
+</font><font color=3D"#900050">\w</font><font color=3D"#e07000">+</font><fo=
+nt color=3D"#5050ff">(</font>=3D<font color=3D"#5050ff">(</font>'<font colo=
+r=3D"#5050ff">|</font>"<font color=3D"#5050ff">)</font><font color=3D"#9000=
+50">.</font><font color=3D"#e07000">*</font><font color=3D"#e07000">?</font=
+><font color=3D"#ff00ff">\4</font><font color=3D"#5050ff">)</font><font col=
+or=3D"#e07000">?</font><font color=3D"#900050">\s</font><font color=3D"#e07=
+000">*</font><font color=3D"#5050ff">)</font><font color=3D"#e07000">*</fon=
+t>&gt;<font color=3D"#900050">.</font><font color=3D"#e07000">*</font><font=
+ color=3D"#e07000">?</font>&lt;/<font color=3D"#ff00ff">\1</font>&gt;</font=
+></span>" =D4=DA=C6=A5=C5=E4 "&lt;td id=3D'td1' style=3D"bgcolor:white"&gt;=
+&lt;/td&gt;" =CA=B1</a>=A3=AC=C6=A5=C5=E4=BD=E1=B9=FB=CA=C7=B3=C9=B9=A6=A1=
+=A3=C8=E7=B9=FB "&lt;td&gt;" =D3=EB "&lt;/td&gt;" =B2=BB=C5=E4=B6=D4=A3=AC=
+=D4=F2=BB=E1=C6=A5=C5=E4=CA=A7=B0=DC=A3=BB=C8=E7=B9=FB=B8=C4=B3=C9=C6=E4=CB=
+=FB=C5=E4=B6=D4=A3=AC=D2=B2=BF=C9=D2=D4=C6=A5=C5=E4=B3=C9=B9=A6=A1=A3</p>
+            <hr size=3D"1" color=3D"#FEA089">
+            <h5><a name=3D"forward"></a>2.3 =D4=A4=CB=D1=CB=F7=A3=AC=B2=BB=
+=C6=A5=C5=E4=A3=BB=B7=B4=CF=F2=D4=A4=CB=D1=CB=F7=A3=AC=B2=BB=C6=A5=C5=E4</h=
+5>
+            <p>&nbsp;&nbsp;&nbsp; =C7=B0=C3=E6=B5=C4=D5=C2=BD=DA=D6=D0=A3=
+=AC=CE=D2=BD=B2=B5=BD=C1=CB=BC=B8=B8=F6=B4=FA=B1=ED=B3=E9=CF=F3=D2=E2=D2=E5=
+=B5=C4=CC=D8=CA=E2=B7=FB=BA=C5=A3=BA"^"=A3=AC"$"=A3=AC"\b"=A1=A3=CB=FC=C3=
+=C7=B6=BC=D3=D0=D2=BB=B8=F6=B9=B2=CD=AC=B5=E3=A3=AC=C4=C7=BE=CD=CA=C7=A3=BA=
+=CB=FC=C3=C7=B1=BE=C9=ED=B2=BB=C6=A5=C5=E4=C8=CE=BA=CE=D7=D6=B7=FB=A3=AC=D6=
+=BB=CA=C7=B6=D4 "=D7=D6=B7=FB=B4=AE=B5=C4=C1=BD=CD=B7" =BB=F2=D5=DF "=D7=D6=
+=B7=FB=D6=AE=BC=E4=B5=C4=B7=EC=CF=B6" =B8=BD=BC=D3=C1=CB=D2=BB=B8=F6=CC=F5=
+=BC=FE=A1=A3=C0=ED=BD=E2=B5=BD=D5=E2=B8=F6=B8=C5=C4=EE=D2=D4=BA=F3=A3=AC=B1=
+=BE=BD=DA=BD=AB=BC=CC=D0=F8=BD=E9=C9=DC=C1=ED=CD=E2=D2=BB=D6=D6=B6=D4 "=C1=
+=BD=CD=B7" =BB=F2=D5=DF "=B7=EC=CF=B6" =B8=BD=BC=D3=CC=F5=BC=FE=B5=C4=A3=AC=
+=B8=FC=BC=D3=C1=E9=BB=EE=B5=C4=B1=ED=CA=BE=B7=BD=B7=A8=A1=A3</p>
+            <p>&nbsp;&nbsp;&nbsp; =D5=FD=CF=F2=D4=A4=CB=D1=CB=F7=A3=BA"(?=
+=3Dxxxxx)"=A3=AC"(?!xxxxx)"<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; =B8=F1=CA=BD=A3=BA"(?=3Dxxxxx)"=A3=AC=D4=DA=
+=B1=BB=C6=A5=C5=E4=B5=C4=D7=D6=B7=FB=B4=AE=D6=D0=A3=AC=CB=FC=B6=D4=CB=F9=B4=
+=A6=B5=C4 "=B7=EC=CF=B6" =BB=F2=D5=DF "=C1=BD=CD=B7" =B8=BD=BC=D3=B5=C4=CC=
+=F5=BC=FE=CA=C7=A3=BA=CB=F9=D4=DA=B7=EC=CF=B6=B5=C4=D3=D2=B2=E0=A3=AC=B1=D8=
+=D0=EB=C4=DC=B9=BB=C6=A5=C5=E4=C9=CF xxxxx =D5=E2=B2=BF=B7=D6=B5=C4=B1=ED=
+=B4=EF=CA=BD=A1=A3=D2=F2=CE=AA=CB=FC=D6=BB=CA=C7=D4=DA=B4=CB=D7=F7=CE=AA=D5=
+=E2=B8=F6=B7=EC=CF=B6=C9=CF=B8=BD=BC=D3=B5=C4=CC=F5=BC=FE=A3=AC=CB=F9=D2=D4=
+=CB=FC=B2=A2=B2=BB=D3=B0=CF=EC=BA=F3=B1=DF=B5=C4=B1=ED=B4=EF=CA=BD=C8=A5=D5=
+=E6=D5=FD=C6=A5=C5=E4=D5=E2=B8=F6=B7=EC=CF=B6=D6=AE=BA=F3=B5=C4=D7=D6=B7=FB=
+=A1=A3=D5=E2=BE=CD=C0=E0=CB=C6 "\b"=A3=AC=B1=BE=C9=ED=B2=BB=C6=A5=C5=E4=C8=
+=CE=BA=CE=D7=D6=B7=FB=A1=A3"\b" =D6=BB=CA=C7=BD=AB=CB=F9=D4=DA=B7=EC=CF=B6=
+=D6=AE=C7=B0=A1=A2=D6=AE=BA=F3=B5=C4=D7=D6=B7=FB=C8=A1=C0=B4=BD=F8=D0=D0=C1=
+=CB=D2=BB=CF=C2=C5=D0=B6=CF=A3=AC=B2=BB=BB=E1=D3=B0=CF=EC=BA=F3=B1=DF=B5=C4=
+=B1=ED=B4=EF=CA=BD=C0=B4=D5=E6=D5=FD=B5=C4=C6=A5=C5=E4=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3DWindows+%28%3F%3DNT%7CXP%29&amp;txt=3DWindows+98%2C+Windows+NT=
+%2C+Windows+2000"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=
+=3D"vertical-align:middle;" src=3D"http://www.regexlab.com/images/ans.jpg" =
+width=3D"16" height=3D"16"> =BE=D9=C0=FD1=A3=BA=B1=ED=B4=EF=CA=BD "<span id=
+=3D"pattern39" name=3D"pattern"><font color=3D"#000000">Windows <font color=
+=3D"#999999">(?=3D</font>NT<font color=3D"#5050ff">|</font>XP<font color=3D=
+"#999999">)</font></font></span>" =D4=DA=C6=A5=C5=E4 "Windows 98, Windows N=
+T, Windows 2000" =CA=B1</a>=A3=AC=BD=AB=D6=BB=C6=A5=C5=E4 "Windows NT" =D6=
+=D0=B5=C4 "Windows "=A3=AC=C6=E4=CB=FB=B5=C4 "Windows " =D7=D6=D1=F9=D4=F2=
+=B2=BB=B1=BB=C6=A5=C5=E4=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3D%28%5Cw%29%28%28%3F%3D%5C1%5C1%5C1%29%28%5C1%29%29%2B&amp;txt=
+=3Daaa+ffffff+999999999"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0"=
+ style=3D"vertical-align:middle;" src=3D"http://www.regexlab.com/images/ans=
+.jpg" width=3D"16" height=3D"16"> =BE=D9=C0=FD2=A3=BA=B1=ED=B4=EF=CA=BD "<s=
+pan id=3D"pattern40" name=3D"pattern"><font color=3D"#000000"><font color=
+=3D"#5050ff">(</font><font color=3D"#900050">\w</font><font color=3D"#5050f=
+f">)</font><font color=3D"#5050ff">(</font><font color=3D"#999999">(?=3D</f=
+ont><font color=3D"#ff00ff">\1</font><font color=3D"#ff00ff">\1</font><font=
+ color=3D"#ff00ff">\1</font><font color=3D"#999999">)</font><font color=3D"=
+#5050ff">(</font><font color=3D"#ff00ff">\1</font><font color=3D"#5050ff">)=
+</font><font color=3D"#5050ff">)</font><font color=3D"#e07000">+</font></fo=
+nt></span>" =D4=DA=C6=A5=C5=E4=D7=D6=B7=FB=B4=AE "aaa ffffff 999999999" =CA=
+=B1</a>=A3=AC=BD=AB=BF=C9=D2=D4=C6=A5=C5=E46=B8=F6"f"=B5=C4=C7=B04=B8=F6=A3=
+=AC=BF=C9=D2=D4=C6=A5=C5=E49=B8=F6"9"=B5=C4=C7=B07=B8=F6=A1=A3=D5=E2=B8=F6=
+=B1=ED=B4=EF=CA=BD=BF=C9=D2=D4=B6=C1=BD=E2=B3=C9=A3=BA=D6=D8=B8=B44=B4=CE=
+=D2=D4=C9=CF=B5=C4=D7=D6=C4=B8=CA=FD=D7=D6=A3=AC=D4=F2=C6=A5=C5=E4=C6=E4=CA=
+=A3=CF=C2=D7=EE=BA=F32=CE=BB=D6=AE=C7=B0=B5=C4=B2=BF=B7=D6=A1=A3=B5=B1=C8=
+=BB=A3=AC=D5=E2=B8=F6=B1=ED=B4=EF=CA=BD=BF=C9=D2=D4=B2=BB=D5=E2=D1=F9=D0=B4=
+=A3=AC=D4=DA=B4=CB=B5=C4=C4=BF=B5=C4=CA=C7=D7=F7=CE=AA=D1=DD=CA=BE=D6=AE=D3=
+=C3=A1=A3</p>
+            <p>&nbsp;&nbsp;&nbsp; =B8=F1=CA=BD=A3=BA"(?!xxxxx)"=A3=AC=CB=F9=
+=D4=DA=B7=EC=CF=B6=B5=C4=D3=D2=B2=E0=A3=AC=B1=D8=D0=EB=B2=BB=C4=DC=C6=A5=C5=
+=E4 xxxxx =D5=E2=B2=BF=B7=D6=B1=ED=B4=EF=CA=BD=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3D%28%28%3F%21%5Cbstop%5Cb%29%2E%29%2B&amp;txt=3Dfdjka+ljfdl+sto=
+p+fjdsla+fdj"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"v=
+ertical-align:middle;" src=3D"http://www.regexlab.com/images/ans.jpg" width=
+=3D"16" height=3D"16"> =BE=D9=C0=FD3=A3=BA=B1=ED=B4=EF=CA=BD "<span id=3D"p=
+attern41" name=3D"pattern"><font color=3D"#000000"><font color=3D"#5050ff">=
+(</font><font color=3D"#999999">(?!</font><font color=3D"#ff00ff">\b</font>=
+stop<font color=3D"#ff00ff">\b</font><font color=3D"#999999">)</font><font =
+color=3D"#900050">.</font><font color=3D"#5050ff">)</font><font color=3D"#e=
+07000">+</font></font></span>" =D4=DA=C6=A5=C5=E4 "fdjka ljfdl stop fjdsla =
+fdj" =CA=B1</a>=A3=AC=BD=AB=B4=D3=CD=B7=D2=BB=D6=B1=C6=A5=C5=E4=B5=BD "stop=
+" =D6=AE=C7=B0=B5=C4=CE=BB=D6=C3=A3=AC=C8=E7=B9=FB=D7=D6=B7=FB=B4=AE=D6=D0=
+=C3=BB=D3=D0 "stop"=A3=AC=D4=F2=C6=A5=C5=E4=D5=FB=B8=F6=D7=D6=B7=FB=B4=AE=
+=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/worksh=
+op.htm?pat=3Ddo%28%3F%21%5Cw%29&amp;txt=3Ddone%2C+do%2C+dog"><img alt=3D"=
+=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=
+=3D"http://www.regexlab.com/images/ans.jpg" width=3D"16" height=3D"16"> =BE=
+=D9=C0=FD4=A3=BA=B1=ED=B4=EF=CA=BD "<span id=3D"pattern42" name=3D"pattern"=
+><font color=3D"#000000">do<font color=3D"#999999">(?!</font><font color=3D=
+"#900050">\w</font><font color=3D"#999999">)</font></font></span>" =D4=DA=
+=C6=A5=C5=E4=D7=D6=B7=FB=B4=AE "done, do, dog" =CA=B1</a>=A3=AC=D6=BB=C4=DC=
+=C6=A5=C5=E4 "do"=A1=A3=D4=DA=B1=BE=CC=F5=BE=D9=C0=FD=D6=D0=A3=AC"do" =BA=
+=F3=B1=DF=CA=B9=D3=C3 "(?!\w)" =BA=CD=CA=B9=D3=C3 "\b" =D0=A7=B9=FB=CA=C7=
+=D2=BB=D1=F9=B5=C4=A1=A3</p>
+            <p>&nbsp;&nbsp;&nbsp; =B7=B4=CF=F2=D4=A4=CB=D1=CB=F7=A3=BA"(?&l=
+t;=3Dxxxxx)"=A3=AC"(?&lt;!xxxxx)"<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; =D5=E2=C1=BD=D6=D6=B8=F1=CA=BD=B5=C4=B8=C5=
+=C4=EE=BA=CD=D5=FD=CF=F2=D4=A4=CB=D1=CB=F7=CA=C7=C0=E0=CB=C6=B5=C4=A3=AC=B7=
+=B4=CF=F2=D4=A4=CB=D1=CB=F7=D2=AA=C7=F3=B5=C4=CC=F5=BC=FE=CA=C7=A3=BA=CB=F9=
+=D4=DA=B7=EC=CF=B6=B5=C4 "=D7=F3=B2=E0"=A3=AC=C1=BD=D6=D6=B8=F1=CA=BD=B7=D6=
+=B1=F0=D2=AA=C7=F3=B1=D8=D0=EB=C4=DC=B9=BB=C6=A5=C5=E4=BA=CD=B1=D8=D0=EB=B2=
+=BB=C4=DC=B9=BB=C6=A5=C5=E4=D6=B8=B6=A8=B1=ED=B4=EF=CA=BD=A3=AC=B6=F8=B2=BB=
+=CA=C7=C8=A5=C5=D0=B6=CF=D3=D2=B2=E0=A1=A3=D3=EB "=D5=FD=CF=F2=D4=A4=CB=D1=
+=CB=F7" =D2=BB=D1=F9=B5=C4=CA=C7=A3=BA=CB=FC=C3=C7=B6=BC=CA=C7=B6=D4=CB=F9=
+=D4=DA=B7=EC=CF=B6=B5=C4=D2=BB=D6=D6=B8=BD=BC=D3=CC=F5=BC=FE=A3=AC=B1=BE=C9=
+=ED=B6=BC=B2=BB=C6=A5=C5=E4=C8=CE=BA=CE=D7=D6=B7=FB=A1=A3<br>
+            <br>
+            &nbsp;&nbsp;&nbsp; =BE=D9=C0=FD5=A3=BA=B1=ED=B4=EF=CA=BD "<span=
+ id=3D"pattern43" name=3D"pattern"><font color=3D"#000000"><font color=3D"#=
+999999">(?&lt;=3D</font><font color=3D"#900050">\d</font><font color=3D"#e0=
+7000">{4}</font><font color=3D"#999999">)</font><font color=3D"#900050">\d<=
+/font><font color=3D"#e07000">+</font><font color=3D"#999999">(?=3D</font><=
+font color=3D"#900050">\d</font><font color=3D"#e07000">{4}</font><font col=
+or=3D"#999999">)</font></font></span>" =D4=DA=C6=A5=C5=E4 "1234567890123456=
+" =CA=B1=A3=AC=BD=AB=C6=A5=C5=E4=B3=FD=C1=CB=C7=B04=B8=F6=CA=FD=D7=D6=BA=CD=
+=BA=F34=B8=F6=CA=FD=D7=D6=D6=AE=CD=E2=B5=C4=D6=D0=BC=E48=B8=F6=CA=FD=D7=D6=
+=A1=A3=D3=C9=D3=DA JScript.RegExp =B2=BB=D6=A7=B3=D6=B7=B4=CF=F2=D4=A4=CB=
+=D1=CB=F7=A3=AC=D2=F2=B4=CB=A3=AC=B1=BE=CC=F5=BE=D9=C0=FD=B2=BB=C4=DC=B9=BB=
+=BD=F8=D0=D0=D1=DD=CA=BE=A1=A3=BA=DC=B6=E0=C6=E4=CB=FB=B5=C4=D2=FD=C7=E6=BF=
+=C9=D2=D4=D6=A7=B3=D6=B7=B4=CF=F2=D4=A4=CB=D1=CB=F7=A3=AC=B1=C8=C8=E7=A3=BA=
+Java 1.4 =D2=D4=C9=CF=B5=C4 java.util.regex =B0=FC=A3=AC.NET =D6=D0System.T=
+ext.RegularExpressions=20
+            =C3=FC=C3=FB=BF=D5=BC=E4=A3=AC=D2=D4=BC=B0=B1=BE=D5=BE=CD=C6=BC=
+=F6=B5=C4<a href=3D"http://www.regexlab.com/zh/deelx/">=D7=EE=BC=F2=B5=A5=
+=D2=D7=D3=C3=B5=C4 DEELX =D5=FD=D4=F2=D2=FD=C7=E6</a>=A1=A3</p><hr size=3D"=
+1" color=3D"#FEA089">
+            <h4><a name=3D"othercommon"></a>3. =C6=E4=CB=FB=CD=A8=D3=C3=B9=
+=E6=D4=F2</h4>
+            <p>&nbsp;&nbsp;&nbsp; =BB=B9=D3=D0=D2=BB=D0=A9=D4=DA=B8=F7=B8=
+=F6=D5=FD=D4=F2=B1=ED=B4=EF=CA=BD=D2=FD=C7=E6=D6=AE=BC=E4=B1=C8=BD=CF=CD=A8=
+=D3=C3=B5=C4=B9=E6=D4=F2=A3=AC=D4=DA=C7=B0=C3=E6=B5=C4=BD=B2=BD=E2=B9=FD=B3=
+=CC=D6=D0=C3=BB=D3=D0=CC=E1=B5=BD=A1=A3</p>
+            <p>3.1 =B1=ED=B4=EF=CA=BD=D6=D0=A3=AC=BF=C9=D2=D4=CA=B9=D3=C3 "=
+\xXX" =BA=CD "\uXXXX" =B1=ED=CA=BE=D2=BB=B8=F6=D7=D6=B7=FB=A3=A8"X" =B1=ED=
+=CA=BE=D2=BB=B8=F6=CA=AE=C1=F9=BD=F8=D6=C6=CA=FD=A3=A9</p>
+            <table border=3D"1" cellspacing=3D"0" style=3D"border-collapse:=
+ collapse" bgcolor=3D"#F8F8F8" cellpadding=3D"3">
+              <tbody><tr bgcolor=3D"#F0F0F0">
+                <td width=3D"63"><p>=D0=CE=CA=BD</p></td>
+                <td><p>=D7=D6=B7=FB=B7=B6=CE=A7</p></td>
+              </tr>
+              <tr>
+                <td><p>\xXX</p></td>
+                <td><p>=B1=E0=BA=C5=D4=DA 0 ~ 255 =B7=B6=CE=A7=B5=C4=D7=D6=
+=B7=FB=A3=AC=B1=C8=C8=E7=A3=BA<a href=3D"http://www.regexlab.com/zh/worksho=
+p.htm?pat=3D%5Cx20&amp;txt=3DIt+is%2E"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4=
+" border=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.regexlab.=
+com/images/ans.jpg" width=3D"16" height=3D"16"> =BF=D5=B8=F1=BF=C9=D2=D4=CA=
+=B9=D3=C3 "\x20" =B1=ED=CA=BE</a></p></td>
+              </tr>
+              <tr>
+                <td><p>\uXXXX</p></td>
+                <td><p>=C8=CE=BA=CE=D7=D6=B7=FB=BF=C9=D2=D4=CA=B9=D3=C3 "\u=
+" =D4=D9=BC=D3=C9=CF=C6=E4=B1=E0=BA=C5=B5=C44=CE=BB=CA=AE=C1=F9=BD=F8=D6=C6=
+=CA=FD=B1=ED=CA=BE=A3=AC=B1=C8=C8=E7=A3=BA<a href=3D"http://www.regexlab.co=
+m/zh/workshop.htm?pat=3D%5Cu4E2D&amp;txt=3D%D6%D0%B9%FA"><img alt=3D"=B5=E3=
+=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D"ht=
+tp://www.regexlab.com/images/ans.jpg" width=3D"16" height=3D"16"> "\u4E2D"<=
+/a></p></td>
+              </tr>
+            </tbody></table>
+            <p>3.2 =D4=DA=B1=ED=B4=EF=CA=BD "\s"=A3=AC"\d"=A3=AC"\w"=A3=AC"=
+\b" =B1=ED=CA=BE=CC=D8=CA=E2=D2=E2=D2=E5=B5=C4=CD=AC=CA=B1=A3=AC=B6=D4=D3=
+=A6=B5=C4=B4=F3=D0=B4=D7=D6=C4=B8=B1=ED=CA=BE=CF=E0=B7=B4=B5=C4=D2=E2=D2=E5=
+</p>
+            <table border=3D"1" cellspacing=3D"0" style=3D"border-collapse:=
+ collapse" bgcolor=3D"#F8F8F8" cellpadding=3D"3">
+              <tbody><tr bgcolor=3D"#F0F0F0">
+                <td width=3D"55"><p>=B1=ED=B4=EF=CA=BD</p></td>
+                <td><p>=BF=C9=C6=A5=C5=E4</p></td>
+              </tr>
+              <tr>
+                <td><p>\S</p></td>
+                <td><p><a href=3D"http://www.regexlab.com/zh/workshop.htm?p=
+at=3D%5CS%2B&amp;txt=3Dabc+123+%40%23%24%25"><img alt=3D"=B5=E3=BB=F7=B2=E2=
+=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.reg=
+exlab.com/images/ans.jpg" width=3D"16" height=3D"16"> =C6=A5=C5=E4=CB=F9=D3=
+=D0=B7=C7=BF=D5=B0=D7=D7=D6=B7=FB=A3=A8"\s" =BF=C9=C6=A5=C5=E4=B8=F7=B8=F6=
+=BF=D5=B0=D7=D7=D6=B7=FB=A3=A9</a></p></td>
+              </tr>
+              <tr>
+                <td><p>\D</p></td>
+                <td><p><a href=3D"http://www.regexlab.com/zh/workshop.htm?p=
+at=3D%5CD%2B&amp;txt=3Dabc+123+%40%23%24%25"><img alt=3D"=B5=E3=BB=F7=B2=E2=
+=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.reg=
+exlab.com/images/ans.jpg" width=3D"16" height=3D"16"> =C6=A5=C5=E4=CB=F9=D3=
+=D0=B5=C4=B7=C7=CA=FD=D7=D6=D7=D6=B7=FB</a></p></td>
+              </tr>
+              <tr>
+                <td><p>\W</p></td>
+                <td><p><a href=3D"http://www.regexlab.com/zh/workshop.htm?p=
+at=3D%5CW%2B&amp;txt=3Dabc+123+%40%23%24%25"><img alt=3D"=B5=E3=BB=F7=B2=E2=
+=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D"http://www.reg=
+exlab.com/images/ans.jpg" width=3D"16" height=3D"16"> =C6=A5=C5=E4=CB=F9=D3=
+=D0=B5=C4=D7=D6=C4=B8=A1=A2=CA=FD=D7=D6=A1=A2=CF=C2=BB=AE=CF=DF=D2=D4=CD=E2=
+=B5=C4=D7=D6=B7=FB</a></p></td>
+              </tr>
+              <tr>
+                <td><p>\B</p></td>
+                <td><p><a href=3D"http://www.regexlab.com/zh/workshop.htm?p=
+at=3D%5CB%2E%5CB&amp;txt=3Dabc+123+%40%23%24%25"><img alt=3D"=B5=E3=BB=F7=
+=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=3D"http://w=
+ww.regexlab.com/images/ans.jpg" width=3D"16" height=3D"16"> =C6=A5=C5=E4=B7=
+=C7=B5=A5=B4=CA=B1=DF=BD=E7=A3=AC=BC=B4=D7=F3=D3=D2=C1=BD=B1=DF=B6=BC=CA=C7=
+ "\w" =B7=B6=CE=A7=BB=F2=D5=DF=D7=F3=D3=D2=C1=BD=B1=DF=B6=BC=B2=BB=CA=C7 "\=
+w" =B7=B6=CE=A7=CA=B1=B5=C4=D7=D6=B7=FB=B7=EC=CF=B6</a></p></td>
+              </tr>
+            </tbody></table>
+            <p>3.3 =D4=DA=B1=ED=B4=EF=CA=BD=D6=D0=D3=D0=CC=D8=CA=E2=D2=E2=
+=D2=E5=A3=AC=D0=E8=D2=AA=CC=ED=BC=D3 "\" =B2=C5=C4=DC=C6=A5=C5=E4=B8=C3=D7=
+=D6=B7=FB=B1=BE=C9=ED=B5=C4=D7=D6=B7=FB=BB=E3=D7=DC</p>
+            <table border=3D"1" cellspacing=3D"0" style=3D"border-collapse:=
+ collapse" bgcolor=3D"#F8F8F8" cellpadding=3D"3">
+              <tbody><tr bgcolor=3D"#F0F0F0">
+                <td width=3D"55"><p>=D7=D6=B7=FB</p></td>
+                <td><p>=CB=B5=C3=F7</p></td>
+              </tr>
+              <tr>
+                <td><p>^</p></td>
+                <td><p>=C6=A5=C5=E4=CA=E4=C8=EB=D7=D6=B7=FB=B4=AE=B5=C4=BF=
+=AA=CA=BC=CE=BB=D6=C3=A1=A3=D2=AA=C6=A5=C5=E4 "^" =D7=D6=B7=FB=B1=BE=C9=ED=
+=A3=AC=C7=EB=CA=B9=D3=C3 "\^"</p></td>
+              </tr>
+              <tr>
+                <td><p>$</p></td>
+                <td><p>=C6=A5=C5=E4=CA=E4=C8=EB=D7=D6=B7=FB=B4=AE=B5=C4=BD=
+=E1=CE=B2=CE=BB=D6=C3=A1=A3=D2=AA=C6=A5=C5=E4 "$" =D7=D6=B7=FB=B1=BE=C9=ED=
+=A3=AC=C7=EB=CA=B9=D3=C3 "\$"</p></td>
+              </tr>
+              <tr>
+                <td><p>( )</p></td>
+                <td><p>=B1=EA=BC=C7=D2=BB=B8=F6=D7=D3=B1=ED=B4=EF=CA=BD=B5=
+=C4=BF=AA=CA=BC=BA=CD=BD=E1=CA=F8=CE=BB=D6=C3=A1=A3=D2=AA=C6=A5=C5=E4=D0=A1=
+=C0=A8=BA=C5=A3=AC=C7=EB=CA=B9=D3=C3 "\(" =BA=CD "\)"</p></td>
+              </tr>
+              <tr>
+                <td><p>[ ]</p></td>
+                <td><p>=D3=C3=C0=B4=D7=D4=B6=A8=D2=E5=C4=DC=B9=BB=C6=A5=C5=
+=E4 '=B6=E0=D6=D6=D7=D6=B7=FB' =B5=C4=B1=ED=B4=EF=CA=BD=A1=A3=D2=AA=C6=A5=
+=C5=E4=D6=D0=C0=A8=BA=C5=A3=AC=C7=EB=CA=B9=D3=C3 "\[" =BA=CD "\]"</p></td>
+              </tr>
+              <tr>
+                <td><p>{ }</p></td>
+                <td><p>=D0=DE=CA=CE=C6=A5=C5=E4=B4=CE=CA=FD=B5=C4=B7=FB=BA=
+=C5=A1=A3=D2=AA=C6=A5=C5=E4=B4=F3=C0=A8=BA=C5=A3=AC=C7=EB=CA=B9=D3=C3 "\{" =
+=BA=CD "\}"</p></td>
+              </tr>
+              <tr>
+                <td><p>.</p></td>
+                <td><p>=C6=A5=C5=E4=B3=FD=C1=CB=BB=BB=D0=D0=B7=FB=A3=A8\n=
+=A3=A9=D2=D4=CD=E2=B5=C4=C8=CE=D2=E2=D2=BB=B8=F6=D7=D6=B7=FB=A1=A3=D2=AA=C6=
+=A5=C5=E4=D0=A1=CA=FD=B5=E3=B1=BE=C9=ED=A3=AC=C7=EB=CA=B9=D3=C3 "\."</p></t=
+d>
+              </tr>
+              <tr>
+                <td><p>?</p></td>
+                <td><p>=D0=DE=CA=CE=C6=A5=C5=E4=B4=CE=CA=FD=CE=AA 0 =B4=CE=
+=BB=F2 1 =B4=CE=A1=A3=D2=AA=C6=A5=C5=E4 "?" =D7=D6=B7=FB=B1=BE=C9=ED=A3=AC=
+=C7=EB=CA=B9=D3=C3 "\?"</p></td>
+              </tr>
+              <tr>
+                <td><p>+</p></td>
+                <td><p>=D0=DE=CA=CE=C6=A5=C5=E4=B4=CE=CA=FD=CE=AA=D6=C1=C9=
+=D9 1 =B4=CE=A1=A3=D2=AA=C6=A5=C5=E4 "+" =D7=D6=B7=FB=B1=BE=C9=ED=A3=AC=C7=
+=EB=CA=B9=D3=C3 "\+"</p></td>
+              </tr>
+              <tr>
+                <td><p>*</p></td>
+                <td><p>=D0=DE=CA=CE=C6=A5=C5=E4=B4=CE=CA=FD=CE=AA 0 =B4=CE=
+=BB=F2=C8=CE=D2=E2=B4=CE=A1=A3=D2=AA=C6=A5=C5=E4 "*" =D7=D6=B7=FB=B1=BE=C9=
+=ED=A3=AC=C7=EB=CA=B9=D3=C3 "\*"</p></td>
+              </tr>
+              <tr>
+                <td><p>|</p></td>
+                <td><p>=D7=F3=D3=D2=C1=BD=B1=DF=B1=ED=B4=EF=CA=BD=D6=AE=BC=
+=E4 "=BB=F2" =B9=D8=CF=B5=A1=A3=C6=A5=C5=E4 "|" =B1=BE=C9=ED=A3=AC=C7=EB=CA=
+=B9=D3=C3 "\|"</p></td>
+              </tr>
+            </tbody></table>
+            <p>3.4 =C0=A8=BA=C5 "( )" =C4=DA=B5=C4=D7=D3=B1=ED=B4=EF=CA=BD=
+=A3=AC=C8=E7=B9=FB=CF=A3=CD=FB=C6=A5=C5=E4=BD=E1=B9=FB=B2=BB=BD=F8=D0=D0=BC=
+=C7=C2=BC=B9=A9=D2=D4=BA=F3=CA=B9=D3=C3=A3=AC=BF=C9=D2=D4=CA=B9=D3=C3 "(?:x=
+xxxx)" =B8=F1=CA=BD</p>
+            <p>&nbsp;&nbsp;&nbsp; <a href=3D"http://www.regexlab.com/zh/wor=
+kshop.htm?pat=3D%28%3F%3A%28%5Cw%29%5C1%29%2B&amp;txt=3Da%20bbccdd%20efg"><=
+img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:m=
+iddle;" src=3D"http://www.regexlab.com/images/ans.jpg" width=3D"16" height=
+=3D"16"> =BE=D9=C0=FD1=A3=BA=B1=ED=B4=EF=CA=BD "<span id=3D"pattern44" name=
+=3D"pattern"><font color=3D"#000000"><font color=3D"#999999">(?:</font><fon=
+t color=3D"#5050ff">(</font><font color=3D"#900050">\w</font><font color=3D=
+"#5050ff">)</font><font color=3D"#ff00ff">\1</font><font color=3D"#999999">=
+)</font><font color=3D"#e07000">+</font></font></span>" =C6=A5=C5=E4 "a bbc=
+cdd efg" =CA=B1</a>=A3=AC=BD=E1=B9=FB=CA=C7 "bbccdd"=A1=A3=C0=A8=BA=C5 "(?:=
+)" =B7=B6=CE=A7=B5=C4=C6=A5=C5=E4=BD=E1=B9=FB=B2=BB=BD=F8=D0=D0=BC=C7=C2=BC=
+=A3=AC=D2=F2=B4=CB "(\w)" =CA=B9=D3=C3 "\1" =C0=B4=D2=FD=D3=C3=A1=A3</p>
+            <p>3.5 =B3=A3=D3=C3=B5=C4=B1=ED=B4=EF=CA=BD=CA=F4=D0=D4=C9=E8=
+=D6=C3=BC=F2=BD=E9=A3=BAIgnorecase=A3=ACSingleline=A3=ACMultiline=A3=ACGlob=
+al</p>
+            <table border=3D"1" cellspacing=3D"0" style=3D"border-collapse:=
+ collapse" bgcolor=3D"#F8F8F8" cellpadding=3D"3">
+              <tbody><tr bgcolor=3D"#F0F0F0">
+                <td width=3D"80"><p>=B1=ED=B4=EF=CA=BD=CA=F4=D0=D4</p></td>
+                <td><p>=CB=B5=C3=F7</p></td>
+              </tr>
+              <tr>
+                <td><p>Ignorecase</p></td>
+                <td><p>=C4=AC=C8=CF=C7=E9=BF=F6=CF=C2=A3=AC=B1=ED=B4=EF=CA=
+=BD=D6=D0=B5=C4=D7=D6=C4=B8=CA=C7=D2=AA=C7=F8=B7=D6=B4=F3=D0=A1=D0=B4=B5=C4=
+=A1=A3=C5=E4=D6=C3=CE=AA Ignorecase =BF=C9=CA=B9=C6=A5=C5=E4=CA=B1=B2=BB=C7=
+=F8=B7=D6=B4=F3=D0=A1=D0=B4=A1=A3=D3=D0=B5=C4=B1=ED=B4=EF=CA=BD=D2=FD=C7=E6=
+=A3=AC=B0=D1 "=B4=F3=D0=A1=D0=B4" =B8=C5=C4=EE=D1=D3=C9=EC=D6=C1 UNICODE =
+=B7=B6=CE=A7=B5=C4=B4=F3=D0=A1=D0=B4=A1=A3</p></td>
+              </tr>
+              <tr>
+                <td><p>Singleline</p></td>
+                <td><p>=C4=AC=C8=CF=C7=E9=BF=F6=CF=C2=A3=AC=D0=A1=CA=FD=B5=
+=E3 "." =C6=A5=C5=E4=B3=FD=C1=CB=BB=BB=D0=D0=B7=FB=A3=A8\n=A3=A9=D2=D4=CD=
+=E2=B5=C4=D7=D6=B7=FB=A1=A3=C5=E4=D6=C3=CE=AA Singleline =BF=C9=CA=B9=D0=A1=
+=CA=FD=B5=E3=BF=C9=C6=A5=C5=E4=B0=FC=C0=A8=BB=BB=D0=D0=B7=FB=D4=DA=C4=DA=B5=
+=C4=CB=F9=D3=D0=D7=D6=B7=FB=A1=A3</p></td>
+              </tr>
+              <tr>
+                <td><p>Multiline</p></td>
+                <td><p>=C4=AC=C8=CF=C7=E9=BF=F6=CF=C2=A3=AC=B1=ED=B4=EF=CA=
+=BD "^" =BA=CD "$" =D6=BB=C6=A5=C5=E4=D7=D6=B7=FB=B4=AE=B5=C4=BF=AA=CA=BC =
+=A2=D9 =BA=CD=BD=E1=CE=B2 =A2=DC =CE=BB=D6=C3=A1=A3=C8=E7=A3=BA<br>
+                <br>
+                =A2=D9xxxxxxxxx=A2=DA\n<br>
+                =A2=DBxxxxxxxxx=A2=DC<br>
+                <br>
+                =C5=E4=D6=C3=CE=AA Multiline =BF=C9=D2=D4=CA=B9 "^" =C6=A5=
+=C5=E4 =A2=D9 =CD=E2=A3=AC=BB=B9=BF=C9=D2=D4=C6=A5=C5=E4=BB=BB=D0=D0=B7=FB=
+=D6=AE=BA=F3=A3=AC=CF=C2=D2=BB=D0=D0=BF=AA=CA=BC=C7=B0 =A2=DB =B5=C4=CE=BB=
+=D6=C3=A3=AC=CA=B9 "$" =C6=A5=C5=E4 =A2=DC =CD=E2=A3=AC=BB=B9=BF=C9=D2=D4=
+=C6=A5=C5=E4=BB=BB=D0=D0=B7=FB=D6=AE=C7=B0=A3=AC=D2=BB=D0=D0=BD=E1=CA=F8 =
+=A2=DA =B5=C4=CE=BB=D6=C3=A1=A3</p></td>
+              </tr>
+              <tr>
+                <td><p>Global</p></td>
+                <td><p>=D6=F7=D2=AA=D4=DA=BD=AB=B1=ED=B4=EF=CA=BD=D3=C3=C0=
+=B4=CC=E6=BB=BB=CA=B1=C6=F0=D7=F7=D3=C3=A3=AC=C5=E4=D6=C3=CE=AA Global =B1=
+=ED=CA=BE=CC=E6=BB=BB=CB=F9=D3=D0=B5=C4=C6=A5=C5=E4=A1=A3</p></td>
+              </tr>
+            </tbody></table>
+            <p></p><hr size=3D"1" color=3D"#FEA089"><p></p>
+            <h4><a name=3D"prompt"></a>4. =C6=E4=CB=FB=CC=E1=CA=BE</h4>
+            <p>4.1 =C8=E7=B9=FB=CF=EB=D2=AA=C1=CB=BD=E2=B8=DF=BC=B6=B5=C4=
+=D5=FD=D4=F2=D2=FD=C7=E6=BB=B9=D6=A7=B3=D6=C4=C7=D0=A9=B8=B4=D4=D3=B5=C4=D5=
+=FD=D4=F2=D3=EF=B7=A8=A3=AC=BF=C9=B2=CE=BC=FB<a href=3D"http://www.regexlab=
+.com/zh/deelx/syntax.htm">=B1=BE=D5=BE DEELX =D5=FD=D4=F2=D2=FD=C7=E6=B5=C4=
+=CB=B5=C3=F7=CE=C4=B5=B5</a>=A1=A3</p>
+            <p>4.2 =C8=E7=B9=FB=D2=AA=D2=AA=C7=F3=B1=ED=B4=EF=CA=BD=CB=F9=
+=C6=A5=C5=E4=B5=C4=C4=DA=C8=DD=CA=C7=D5=FB=B8=F6=D7=D6=B7=FB=B4=AE=A3=AC=B6=
+=F8=B2=BB=CA=C7=B4=D3=D7=D6=B7=FB=B4=AE=D6=D0=D5=D2=D2=BB=B2=BF=B7=D6=A3=AC=
+=C4=C7=C3=B4=BF=C9=D2=D4=D4=DA=B1=ED=B4=EF=CA=BD=B5=C4=CA=D7=CE=B2=CA=B9=D3=
+=C3 "^" =BA=CD "$"=A3=AC=B1=C8=C8=E7=A3=BA"<span id=3D"pattern45" name=3D"p=
+attern"><font color=3D"#000000"><font color=3D"#ff00ff">^</font><font color=
+=3D"#900050">\d</font><font color=3D"#e07000">+</font><font color=3D"#ff00f=
+f">$</font></font></span>" =D2=AA=C7=F3=D5=FB=B8=F6=D7=D6=B7=FB=B4=AE=D6=BB=
+=D3=D0=CA=FD=D7=D6=A1=A3</p>
+            <p>4.3 =C8=E7=B9=FB=D2=AA=C7=F3=C6=A5=C5=E4=B5=C4=C4=DA=C8=DD=
+=CA=C7=D2=BB=B8=F6=CD=EA=D5=FB=B5=C4=B5=A5=B4=CA=A3=AC=B6=F8=B2=BB=BB=E1=CA=
+=C7=B5=A5=B4=CA=B5=C4=D2=BB=B2=BF=B7=D6=A3=AC=C4=C7=C3=B4=D4=DA=B1=ED=B4=EF=
+=CA=BD=CA=D7=CE=B2=CA=B9=D3=C3 "\b"=A3=AC=B1=C8=C8=E7=A3=BA<a href=3D"http:=
+//www.regexlab.com/zh/workshop.htm?pat=3D%5Cb%28if%7Cwhile%7Celse%7Cvoid%7C=
+int%29%5Cb&amp;txt=3Dif%28ifdo%29%0D%0A++++dosome%28%29%3B%0D%0Aelse%0D%0A+=
++++doelse%28%29%3B"><img alt=3D"=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" styl=
+e=3D"vertical-align:middle;" src=3D"http://www.regexlab.com/images/ans.jpg"=
+ width=3D"16" height=3D"16"> =CA=B9=D3=C3 "<span id=3D"pattern46" name=3D"p=
+attern"><font color=3D"#000000"><font color=3D"#ff00ff">\b</font><font colo=
+r=3D"#5050ff">(</font>if<font color=3D"#5050ff">|</font>while<font color=3D=
+"#5050ff">|</font>else<font color=3D"#5050ff">|</font>void<font color=3D"#5=
+050ff">|</font>int=A1=AD=A1=AD<font color=3D"#5050ff">)</font><font color=
+=3D"#ff00ff">\b</font></font></span>" =C0=B4=C6=A5=C5=E4=B3=CC=D0=F2=D6=D0=
+=B5=C4=B9=D8=BC=FC=D7=D6</a>=A1=A3</p>
+            <p>4.4 =B1=ED=B4=EF=CA=BD=B2=BB=D2=AA=C6=A5=C5=E4=BF=D5=D7=D6=
+=B7=FB=B4=AE=A1=A3=B7=F1=D4=F2=BB=E1=D2=BB=D6=B1=B5=C3=B5=BD=C6=A5=C5=E4=B3=
+=C9=B9=A6=A3=AC=B6=F8=BD=E1=B9=FB=CA=B2=C3=B4=B6=BC=C3=BB=D3=D0=C6=A5=C5=E4=
+=B5=BD=A1=A3=B1=C8=C8=E7=A3=BA=D7=BC=B1=B8=D0=B4=D2=BB=B8=F6=C6=A5=C5=E4 "1=
+23"=A1=A2"123."=A1=A2"123.5"=A1=A2".5" =D5=E2=BC=B8=D6=D6=D0=CE=CA=BD=B5=C4=
+=B1=ED=B4=EF=CA=BD=CA=B1=A3=AC=D5=FB=CA=FD=A1=A2=D0=A1=CA=FD=B5=E3=A1=A2=D0=
+=A1=CA=FD=CA=FD=D7=D6=B6=BC=BF=C9=D2=D4=CA=A1=C2=D4=A3=AC=B5=AB=CA=C7=B2=BB=
+=D2=AA=BD=AB=B1=ED=B4=EF=CA=BD=D0=B4=B3=C9=A3=BA"<span id=3D"pattern47" nam=
+e=3D"pattern"><font color=3D"#000000"><font color=3D"#900050">\d</font><fon=
+t color=3D"#e07000">*</font>\.<font color=3D"#e07000">?</font><font color=
+=3D"#900050">\d</font><font color=3D"#e07000">*</font></font></span>"=A3=AC=
+=D2=F2=CE=AA=C8=E7=B9=FB=CA=B2=C3=B4=B6=BC=C3=BB=D3=D0=A3=AC=D5=E2=B8=F6=B1=
+=ED=B4=EF=CA=BD=D2=B2=BF=C9=D2=D4=C6=A5=C5=E4=B3=C9=B9=A6=A1=A3<a href=3D"h=
+ttp://www.regexlab.com/zh/workshop.htm?pat=3D%5Cd%2B%5C%2E%3F%5Cd%2A%7C%5C%=
+2E%5Cd%2B&amp;txt=3D123%2C+123%2E%2C+123%2E5%2C+%2E5%2C+%2E"><img alt=3D"=
+=B5=E3=BB=F7=B2=E2=CA=D4" border=3D"0" style=3D"vertical-align:middle;" src=
+=3D"http://www.regexlab.com/images/ans.jpg" width=3D"16" height=3D"16"> =B8=
+=FC=BA=C3=B5=C4=D0=B4=B7=A8=CA=C7=A3=BA"<span id=3D"pattern48" name=3D"patt=
+ern"><font color=3D"#000000"><font color=3D"#900050">\d</font><font color=
+=3D"#e07000">+</font>\.<font color=3D"#e07000">?</font><font color=3D"#9000=
+50">\d</font><font color=3D"#e07000">*</font><font color=3D"#5050ff">|</fon=
+t>\.<font color=3D"#900050">\d</font><font color=3D"#e07000">+</font></font=
+></span>"</a>=A1=A3</p>
+            <p>4.5 =C4=DC=C6=A5=C5=E4=BF=D5=D7=D6=B7=FB=B4=AE=B5=C4=D7=D3=
+=C6=A5=C5=E4=B2=BB=D2=AA=D1=AD=BB=B7=CE=DE=CF=DE=B4=CE=A1=A3=C8=E7=B9=FB=C0=
+=A8=BA=C5=C4=DA=B5=C4=D7=D3=B1=ED=B4=EF=CA=BD=D6=D0=B5=C4=C3=BF=D2=BB=B2=BF=
+=B7=D6=B6=BC=BF=C9=D2=D4=C6=A5=C5=E4 0 =B4=CE=A3=AC=B6=F8=D5=E2=B8=F6=C0=A8=
+=BA=C5=D5=FB=CC=E5=D3=D6=BF=C9=D2=D4=C6=A5=C5=E4=CE=DE=CF=DE=B4=CE=A3=AC=C4=
+=C7=C3=B4=C7=E9=BF=F6=BF=C9=C4=DC=B1=C8=C9=CF=D2=BB=CC=F5=CB=F9=CB=B5=B5=C4=
+=B8=FC=D1=CF=D6=D8=A3=AC=C6=A5=C5=E4=B9=FD=B3=CC=D6=D0=BF=C9=C4=DC=CB=C0=D1=
+=AD=BB=B7=A1=A3=CB=E4=C8=BB=CF=D6=D4=DA=D3=D0=D0=A9=D5=FD=D4=F2=B1=ED=B4=EF=
+=CA=BD=D2=FD=C7=E6=D2=D1=BE=AD=CD=A8=B9=FD=B0=EC=B7=A8=B1=DC=C3=E2=C1=CB=D5=
+=E2=D6=D6=C7=E9=BF=F6=B3=F6=CF=D6=CB=C0=D1=AD=BB=B7=C1=CB=A3=AC=B1=C8=C8=E7=
+ .NET =B5=C4=D5=FD=D4=F2=B1=ED=B4=EF=CA=BD=A3=AC=B5=AB=CA=C7=CE=D2=C3=C7=C8=
+=D4=C8=BB=D3=A6=B8=C3=BE=A1=C1=BF=B1=DC=C3=E2=B3=F6=CF=D6=D5=E2=D6=D6=C7=E9=
+=BF=F6=A1=A3=C8=E7=B9=FB=CE=D2=C3=C7=D4=DA=D0=B4=B1=ED=B4=EF=CA=BD=CA=B1=D3=
+=F6=B5=BD=C1=CB=CB=C0=D1=AD=BB=B7=A3=AC=D2=B2=BF=C9=D2=D4=B4=D3=D5=E2=D2=BB=
+=B5=E3=C8=EB=CA=D6=A3=AC=B2=E9=D5=D2=D2=BB=CF=C2=CA=C7=B7=F1=CA=C7=B1=BE=CC=
+=F5=CB=F9=CB=B5=B5=C4=D4=AD=D2=F2=A1=A3</p>
+            <p>4.6 =BA=CF=C0=ED=D1=A1=D4=F1=CC=B0=C0=B7=C4=A3=CA=BD=D3=EB=
+=B7=C7=CC=B0=C0=B7=C4=A3=CA=BD=A3=AC=B2=CE=BC=FB<a href=3D"http://www.regex=
+lab.com/zh/regtopic.htm#reluctant">=BB=B0=CC=E2=CC=D6=C2=DB</a>=A1=A3</p>
+            <p>4.7 =BB=F2 "|" =B5=C4=D7=F3=D3=D2=C1=BD=B1=DF=A3=AC=B6=D4=C4=
+=B3=B8=F6=D7=D6=B7=FB=D7=EE=BA=C3=D6=BB=D3=D0=D2=BB=B1=DF=BF=C9=D2=D4=C6=A5=
+=C5=E4=A3=AC=D5=E2=D1=F9=A3=AC=B2=BB=BB=E1=D2=F2=CE=AA "|" =C1=BD=B1=DF=B5=
+=C4=B1=ED=B4=EF=CA=BD=D2=F2=CE=AA=BD=BB=BB=BB=CE=BB=D6=C3=B6=F8=D3=D0=CB=F9=
+=B2=BB=CD=AC=A1=A3</p><hr size=3D"1" color=3D"#FEA089">
+            <h4>5. =BD=F8=BD=D7=D3=EB=CA=B5=D5=BD</h4>
+            <div style=3D"background-color: #f8fff8; border:1px #88aa88 sol=
+id; padding: 10px 0px 10px 0px">
+              <p>5.1 <strong>=D6=D8=D2=AA=CC=E1=CA=BE=A3=BA</strong>=B1=BE=
+=D5=BE =D5=FD=D4=F2=B9=A4=BE=DF Regex Match Tracer 2.1=20
+				<strong>=A3=A8=C3=E2=B7=D1=A3=A9</strong>=D2=D1=BF=C9=D2=D4=C3=E2=B7=D1=
+=CE=DE=CF=DE=D6=C6=CA=B9=D3=C3=A3=BA</p>
+            <p>&nbsp;&nbsp;&nbsp; <font size=3D"4">[<a href=3D"http://www.r=
+egexlab.com/zh/mtracer/download.htm"><font color=3D"#008000"><img border=3D=
+"0" src=3D"http://www.regexlab.com/images/download.gif" width=3D"16" height=
+=3D"16"></font>=20
+			=C3=E2=B7=D1=CF=C2=D4=D8 Match Tracer</a>]</font> -=20
+            396kb</p>
+				</div>
+              <p><br>
+				5.2 =CF=C2=D4=D8=D5=FD=D4=F2=B1=ED=B4=EF=CA=BD=CE=C4=B5=B5 chm =B0=E6=
+=B1=BE</p>
+            <p>&nbsp;&nbsp;&nbsp; <font size=3D"4">[<a href=3D"http://www.r=
+egexlab.com/download/?/deelx/deelx_zh.zip"><img border=3D"0" src=3D"http://=
+www.regexlab.com/images/chm.gif" width=3D"15" height=3D"16"> =B5=E3=BB=F7=
+=CF=C2=D4=D8 chm =B0=E6=B1=BE</a>]</font> - DEELX =D5=FD=D4=F2=D3=EF=B7=A8=
+=A3=AC=B0=FC=BA=AC=C6=E4=CB=FB=B8=DF=BC=B6=D3=EF=B7=A8=B5=C4 chm =B0=E6=B1=
+=BE=A1=A3</p>
+            <p><br>
+            5.3 =B8=FC=B6=E0=C9=EE=C8=EB=BB=B0=CC=E2=BC=B0=CA=B9=D3=C3=B0=
+=B8=C0=FD</p>
+            <p>&nbsp;&nbsp;&nbsp; <font size=3D"4">[<a href=3D"http://www.r=
+egexlab.com/zh/regtopic.htm"><img border=3D"0" src=3D"http://www.regexlab.c=
+om/images/ans.jpg" width=3D"16" height=3D"16"> =B9=D8=D3=DA=B5=DD=B9=E9=C6=
+=A5=C5=E4=B5=C4=CC=D6=C2=DB</a>]</font> - =CC=D6=C2=DB=C8=E7=BA=CE=CA=B9=D3=
+=C3=B2=BB=D6=A7=B3=D6=B5=DD=B9=E9=B5=C4=D5=FD=D4=F2=D2=FD=C7=E6=C6=A5=C5=E4=
+=C7=B6=CC=D7=BD=E1=B9=B9</p>
+            <p>&nbsp;&nbsp;&nbsp; <font size=3D"4">[<a href=3D"javascript:a=
+lert('%E7%BB%86%E5%BF%83%E7%9A%84%E8%AF%BB%E8%80%85%EF%BC%8C%E5%8F%AF%E9%87=
+%87%E7%94%A8%E5%8F%A6%E5%AD%98%E4%B8%BA%E7%9A%84%E6%96%B9%E5%BC%8F%EF%BC%8C=
+%E5%8F%82%E8%80%83%E6%9C%AC%E9%A1%B5%E4%BD%BF%E7%94%A8%E7%9A%84%E8%84%9A%E6=
+%9C%AC%E3%80%82')"><img border=3D"0" src=3D"http://www.regexlab.com/images/=
+download.gif" width=3D"16" height=3D"16"> =B1=BE=D2=B3=BD=C5=B1=BE</a>]</fo=
+nt> - =B1=BE=D2=B3=B5=C4=A1=B0<a id=3D"swtch_2" name=3D"swtch" href=3D"java=
+script:colorize()" title=3D"=B2=C9=D3=C3=CD=AC=D2=BB=D6=D6=D1=D5=C9=AB=CF=
+=D4=CA=BE=B1=ED=B4=EF=CA=BD">=B9=D8=B1=D5=B8=DF=C1=C1</a>=A1=B1=B9=A6=C4=DC=
+=A3=AC=B2=C9=D3=C3 javascript =B5=C4=D5=FD=D4=F2=B1=ED=B4=EF=CA=BD=CA=B5=CF=
+=D6=B5=C4=A1=A3<br>
+            <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =B1=C8=C8=E7=B1=ED=B4=EF=CA=BD=
+=A3=BA <b><font size=3D"2">
+			<span id=3D"pattern49" name=3D"pattern"><font color=3D"#000000"><font co=
+lor=3D"#5050ff">(</font>a<font color=3D"#e07000">+</font>b<font color=3D"#5=
+050ff">|</font><font color=3D"#900050">[cd]</font><font color=3D"#5050ff">)=
+</font><font color=3D"#ff00ff">$</font></font></span></font></b></p><p>=A1=
+=A1</p></td>
+          </tr>
+        </tbody></table>
+
+                  <!-- #EndEditable --></td>
+              </tr>
+              <tr>
+                <td bgcolor=3D"#F3F3F3" valign=3D"bottom"><!-- #BeginEditab=
+le "left_bottom" -->
+              <table border=3D"0" width=3D"100%" cellpadding=3D"8" borderco=
+lor=3D"#FFCC99" cellspacing=3D"0">
+                <tbody><tr>
+                  <td>=A1=A1</td>
+                </tr>
+              </tbody></table>
+                  <!-- #EndEditable --></td>
+              </tr>
+            </tbody></table></td>
+          </tr>
+          <tr>
+            <td valign=3D"top" height=3D"10" bgcolor=3D"#D37954"><img borde=
+r=3D"0" src=3D"http://www.regexlab.com/images/spacer.gif" width=3D"1" heigh=
+t=3D"1"></td>
+          </tr>
+        </tbody></table>
+        </td>
+      </tr>
+      <tr>
+        <td height=3D"40" align=3D"center">
+          <p><a href=3D"mailto:regexlab@gmail.com" title=3D"Regular Express=
+ion Laboratory"><font color=3D"#999999">RegExLab.com</font></a><font color=
+=3D"#999999"> &#169; 2005 - 2015&nbsp; </font> <a href=3D"http://www.miibei=
+an.gov.cn/"><font color=3D"#999999">=D3=E5ICP=B1=B805015140=BA=C5</font></a=
+>
+        </p></td>
+      </tr>
+    </tbody></table>
+    </td>
+    <td><img border=3D"0" src=3D"http://www.regexlab.com/images/spacer.gif"=
+ width=3D"1" height=3D"1"></td>
+  </tr>
+</tbody></table>
+
+<div style=3D"width:0px; height:0px; overflow:hidden;"><img src=3D"http://w=
+ww.regexlab.com/ipr/480"></div>
+
+
+
+<!-- #EndTemplate -->
+
+
+</body></html>
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.regexlab.com/sites/all/themes/regexlabt/images/menu_bk.gif
+
+R0lGODlhKwAaAOYAAOCYZM5uT8xrTd+VY9R8VuKgaMZcRcpkSdyOX8hhSdaBWc5tT96VY9J5VNuO
+X+KfaMhhSNiFW+GeZsRYQ9B1U+Siad6VYuCXZMVbRcZbRtuPX9+YZNmIXMlkSdaCWdJ6VNqMXdF2
+U89uT9aAWNJ6VdyPX9mMXcZeR89xUdWBWMdeRuKeZuOgaMVbRtJ5VdN5VM9yUspkSslkStySYdaB
+WNiIW+OfaMhiSOGbZtN6VMhiScVZRdiFWslhSMpjSctoTNeFWtWAWOKeZ89tT8tnTMljSdB2U9+V
+Yt2SYMVXQuKgZ9iEWt+XZMlhSdN6VdmLXcpjSsVXQ9mJXOOfZ8RXQ9ySYMxnTOSka8liSM5vUOOg
+Z+GeZ9F1U9eEWs1qTdR9V8VYQ9iHW9qLXcdeR89yUeOiad2SYctnS+GbZcVaROSkagAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwA
+AAAAKwAaAEAH/4BqgoOEhYaHaleIhQglJQ4OCBqTj5IakQiQGgicmJEOl40lm5CNkghkqTCpqSis
+ZK6wr6yxZDCuq6y5uGQ7ab/AwL7BxMVpw8bBO2jMzTjN0MzP0tHR09XNIx4KNDQjKSkKIwoK2+JB
+HinbIzQe5uHl40Ep3ePpQQodHTI+UAdFBwIGjHGgg8AiMWTs+xfDYEF+Cg/4MNghBsEDBR4UKGAj
+IwstGzV6VCKSBUcWIpWYtPFAo0gbKKe0HEBzAAObNBlYqDlgp82bPS3cFNpT5xGhQhkcsSk0jFMO
+HMLU4DA1TNQaTq1mlWoVq9anYaRs3eqkAYkGDXK8MEsih4sGTv9evDhrtoELFx/y5k37Ya3bBh/e
+fiAx14sXAQIOJ15sGHFixY0NS0asmLLkyCpOZFYxhvMYzWM6hx5NmvSJ0qg/ny7DurXrCmUqwG4t
+2zXr2bVf266wYssKCVu2AP8dHLhw48KFBN8iBHlvISt6L5dAfcsFABeub9h+nQl2AOCvXwcPYDv5
+DeHBo0fPBH12M1XMzDBjBgn9+/ft458/H7///vuZIYYJIIghBghPGHigCQoOaGCBDCZYYIMmMNhg
+gRN20UUEEQCxBA8RbMiDhhGMuGEXHpqoIYonhhjiii128cWMBMxoY4010vgFATzm2OOOOOp4441c
+UGBECFwUiaSykkkiSQEFXIRgBJRPLpnklUhOCeWVXCyQxQIBiBCmmGIGYKaZIoAZwAJgsrnmAkOA
+SaaabwYwxBBn5KnnnnoSccYPfwbKp598DpqnFWfckEAPCSQAwaM6KKpDE5BW6ugNN0DAaAJYQNDo
+ok304OmnjWZgQAsZYGBABi2cioGpq5qKQasGrHqqARjMWiuuqb66aq61giHssBNEAcYEVEww7LBJ
+gJGEssdCu6yyE0Ar7QSBAAA7
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.regexlab.com/sites/all/themes/regexlabt/css/styles.css
+
+body { margin-top: 0px; line-height: 1.5; font-size: 80%; background-color:=
+ white; }
+
+#block-system-main tr td, #block-system-main tr th { padding: 4px 5px; bord=
+er-width: 0px; }
+
+#block-system-main tr th { border: 1px solid rgb(221, 221, 221); background=
+-color: rgb(238, 238, 238); }
+
+#block-system-main tr.odd td, #block-system-main tr.even td { border: 1px s=
+olid rgb(221, 221, 221); text-align: left; background-color: white; }
+
+#admin-menu { font-size: 13px; position: fixed; }
+
+#logoregion { background-image: url(http://www.regexlab.com/sites/all/theme=
+s/regexlabt/images/logo_s.gif); background-position: 0% 50%; background-rep=
+eat: no-repeat; }
+
+#menu2region { font-size: 12px; padding: 3px; font-family: Arial; }
+
+#menuregion { height: 26px; border-top-width: 1px; border-top-color: rgb(20=
+4, 204, 204); border-top-style: solid; border-bottom-width: 1px; border-bot=
+tom-color: rgb(204, 204, 204); border-bottom-style: solid; background-image=
+: url(http://www.regexlab.com/sites/all/themes/regexlabt/images/menu_bk.gif=
+); background-repeat: repeat-x; }
+
+#leftcontainer { border-right-width: 1px; border-right-color: rgb(204, 204,=
+ 204); border-right-style: solid; background-color: rgb(243, 243, 243); }
+
+#mainregion { border-left-width: 1px; border-left-color: rgb(204, 204, 204)=
+; border-left-style: solid; border-right-width: 1px; border-right-color: rg=
+b(204, 204, 204); border-right-style: solid; }
+
+#content { padding: 12px; }
+
+#footregion, #footregion a { color: rgb(170, 170, 170); }
+
+#menuregion ul { margin: 0px; padding-left: 2px; list-style-type: none; lis=
+t-style-image: none; }
+
+#menuregion ul li { list-style-type: none; list-style-image: none; float: l=
+eft; border-right-style: solid; border-right-width: 1px; border-right-color=
+: rgb(255, 255, 255); display: block; height: 16px; margin-top: 3px; margin=
+-left: 0px; padding-right: 3px; padding-top: 2.5px; }
+
+#menuregion ul li.last { border-right-width: 0px; }
+
+#menuregion ul li a { font-family: 'Trebuchet MS'; width: 88px; color: whit=
+e; font-weight: bold; display: block; text-align: center; border: 1px solid=
+ transparent; margin-top: -4px; margin-left: 3px; }
+
+#menuregion ul li a:hover { text-decoration: none; border: 1px solid rgb(25=
+5, 255, 255); }
+
+#menuregion ul li a > .sf-sub-indicator { top: 0.4em; }
+
+#menuregion ul li.sf-depth-1 > a > .sf-sub-indicator { display: none; }
+
+#menuregion ul li.sfhover ul { margin-left: 0px; margin-top: 0px; top: 24px=
+; left: 0px; padding-right: 3px; padding-top: 2px; background-color: rgb(21=
+1, 121, 84); }
+
+#menuregion ul li.sfhover ul li { height: 22px; }
+
+#menuregion ul li.sfhover ul li a { height: 20px; margin-left: 1px; }
+
+#menuregion ul li.sfhover ul li ul { top: -5px; }
+
+#menu2region ul { list-style-type: none; list-style-image: none; display: b=
+lock; margin: 0px; }
+
+#menu2region ul li { list-style-type: none; list-style-image: none; display=
+: block; border-right-style: solid; border-right-width: 1px; border-right-c=
+olor: rgb(0, 0, 0); float: left; height: 12px; margin-top: 3px; margin-left=
+: 3px; padding-right: 3px; }
+
+#menu2region ul li.last { border-right-width: 0px; }
+
+#menu2region ul li a { font-family: Arial; display: block; text-align: cent=
+er; color: black; border: 1px solid transparent; margin-top: -5px; height: =
+15px; padding: 0px 3px 1px; }
+
+#menu2region ul li a:hover { text-decoration: none; border: 1px solid rgb(0=
+, 0, 0); }
+
+h1 { font-family: 'Trebuchet MS', Arial, Tahoma, SimSun; margin-top: 5px; m=
+argin-bottom: 20px; color: rgb(255, 0, 0); font-weight: normal; }
+
+h2 { font-family: 'Trebuchet MS', Arial, Tahoma, =E5=B9=BC=E5=9C=86, SimSun=
+; font-size: 1.5em; font-weight: normal; }
+
+h2.line { padding-top: 18px; border-top-style: solid; border-top-width: 1px=
+; border-top-color: rgb(136, 136, 136); }
+
+div.line { border-top-style: solid; border-top-width: 1px; border-top-color=
+: rgb(136, 136, 136); }
+
+p, li, label, div { line-height: 150%; }
+
+p, td, li, h3, h4, h5, label, div { font-family: 'Segoe UI', 'Myriad Pro', =
+Myriad, Arial, Helvetica, sans-serif, SimSun; }
+
+ul.indent, ol.indent { margin-left: 38px; }
+
+ul.iindent, ol.iindent { margin-left: 54px; }
+
+p.indent { text-indent: 16px; }
+
+p.iindent { text-indent: 16px; margin-left: 16px; }
+
+p.rindent { text-indent: -19px; margin-left: 19px; }
+
+p.rrindent { text-indent: -38px; margin-left: 38px; }
+
+.close { margin-bottom: 0px; }
+
+.closep { margin-top: 0px; }
+
+.desc { color: rgb(136, 136, 136); }
+
+table.indent { margin-left: 9.5px; }
+
+.tabs ul.primary li a { padding-top: 2px; padding-bottom: 2px; }
+
+.tabs ul.primary li { height: 20px; }
+
+.tabs ul.primary { height: 20px; }
+
+.form-item { margin-bottom: 1em; margin-top: 2px; }
+
+a { text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+#content .content li { margin-top: 8px; margin-bottom: 8px; }
+
+#leftcontainer nav h2 { display: none; }
+
+#leftcontainer ul.menu { padding-left: 0px; max-width: 120px; width: 100%; =
+margin-left: auto; margin-right: auto; }
+
+#leftcontainer ul.menu li { list-style-type: none; list-style-image: none; =
+margin-left: 0px; text-align: center; margin-bottom: 5px; padding: 0px; lin=
+e-height: 22px; }
+
+#leftcontainer ul.menu li a { color: white; display: block; height: 100%; b=
+ackground-color: rgb(254, 160, 137); }
+
+#leftcontainer ul.menu li a.active { text-decoration: underline; }
+
+#leftcontainer ul.menu li ul.menu { margin-top: 5px; max-width: 112px; }
+
+#leftcontainer ul.menu li ul.menu li a { background-color: rgb(170, 170, 17=
+0); }
+
+#leftcontainer ul.menu li ul.menu li ul.menu li a { color: rgb(170, 170, 17=
+0); border: 1px solid rgb(170, 170, 170); background-color: transparent; }
+
+#leftsidebar1 .block { margin-top: 10px; margin-bottom: 15px; }
+
+#leftsidebar2 .block { margin-top: 10px; margin-bottom: 10px; }
+
+#secondarycontainer { width: 100%; }
+
+#tertiarycontainer { width: 100%; }
+
+ul.crumbs { list-style-type: none; margin: 0px 0px 15px; width: 100%; displ=
+ay: block; height: 20px; padding: 0px; }
+
+li.crumb { float: left; font-size: 0.846em; color: rgb(170, 170, 170); }
+
+li.crumb, li.crumb span { margin-right: 5px; }
+
+.book-navigation ul.menu { display: none; }
+
+.book-navigation .page-links .page-up { text-transform: capitalize; }
+
+.key { color: rgb(0, 0, 255); }
+
+.h_attr { color: rgb(255, 0, 0); }
+
+.h_value { color: rgb(0, 0, 255); }
+
+.h_tag { color: rgb(128, 0, 128); }
+
+.h_rem { color: rgb(187, 187, 187); }
+
+.h_amps { color: rgb(109, 102, 165); }
+
+.pw { color: rgb(255, 0, 0); }
+
+.var { color: rgb(128, 0, 128); }
+
+.number { color: rgb(109, 102, 165); }
+
+.string { color: rgb(255, 0, 255); }
+
+.rem { color: rgb(51, 153, 51); }
+
+table.simple { border-width: 1px 0px 0px 1px; border-left-style: solid; bor=
+der-left-color: rgb(136, 136, 136); border-top-style: solid; border-top-col=
+or: rgb(136, 136, 136); }
+
+table.simple td, table.simple th { border-width: 0px 1px 1px 0px; border-ri=
+ght-style: solid; border-right-color: rgb(136, 136, 136); border-bottom-sty=
+le: solid; border-bottom-color: rgb(136, 136, 136); }
+
+hr { border-width: 0px 0px 1px; height: 0px; border-bottom-style: solid; bo=
+rder-bottom-color: rgb(254, 160, 137); }
+
+blockquote { margin-left: 20px; margin-right: 0px; }
+
+.codebox { padding: 5px; border: 1px dotted rgb(0, 0, 0); margin: 5px 5px 5=
+px 12px; }
+
+.syntaxhighlighter { margin: 0px !important; }
+
+.syntaxhighlighter .string, .syntaxhighlighter .string a { color: rgb(255, =
+0, 255) !important; }
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.regexlab.com/images/newf_zh.css
+
+p, li, .ps { font-size: 80%; line-height: 140%; }
+
+li li { font-size: 100%; }
+
+ul { list-style-image: url(http://www.regexlab.com/images/dot.gif); }
+
+td.high { border: 1px solid rgb(255, 255, 255); cursor: pointer; }
+
+a { color: rgb(0, 0, 128); text-decoration: none; }
+
+a:hover { color: rgb(128, 0, 0); text-decoration: underline; }
+
+a:visited { color: rgb(128, 0, 0); }
+
+a.bb, a:visited.bb { border: 1px solid rgb(255, 255, 255); text-decoration:=
+ none; color: rgb(0, 0, 0); font-family: Arial, SimSun; }
+
+a:hover.bb { border: 1px solid rgb(0, 0, 0); text-decoration: none; color: =
+rgb(0, 0, 0); }
+
+a.w { color: rgb(255, 255, 255); text-decoration: none; }
+
+a:visited.w { color: rgb(255, 255, 255); }
+
+a:hover.w { color: rgb(255, 255, 255); text-decoration: underline; }
+
+a.wh { color: rgb(255, 255, 255); text-decoration: none; font-size: 80%; }
+
+a:visited.wh { color: rgb(255, 255, 255); }
+
+a:hover.wh { color: rgb(255, 255, 255); text-decoration: none; }
+
+a.h { color: rgb(0, 0, 0); text-decoration: none; }
+
+a:visited.h { color: rgb(0, 0, 0); }
+
+a:hover.h { color: rgb(0, 0, 0); text-decoration: underline; }
+
+h1, h2 { font-family: 'Trebuchet MS'; margin-top: 5px; margin-bottom: 1px; =
+color: rgb(255, 0, 0); font-weight: 400; }
+
+.tlc { table-layout: fixed; empty-cells: show; width: 100%; white-space: no=
+wrap; overflow: hidden; text-overflow: ellipsis; }
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: chrome-extension://fidicgekecdkdmkjghdgadgdmcfodfid/themes/default/content.css
+
+#hldict-pop { position: absolute; font-family: 'Helvetica Neue', Helvetica,=
+ Arial, sans-serif; font-size: 13px; line-height: 1.5em; color: black; z-in=
+dex: 2014112700; background: transparent; }
+
+#hldict-pop-texture { height: 0px; border-style: solid none none; border-to=
+p-width: 1px; border-top-color: rgb(204, 204, 204); box-shadow: rgba(0, 0, =
+0, 0.4) 0px 1px 2px; }
+
+#hldict-pop-close { float: right; margin: 1px 1px 0px 0px; width: 15px; hei=
+ght: 15px; cursor: pointer; display: none; background: url(chrome-extension=
+://fidicgekecdkdmkjghdgadgdmcfodfid/themes/default/img/header-buttons.png) =
+-5px -3px; }
+
+#hldict-pop-close.hldict-hover { background-position: -5px -19px; }
+
+#hldict-pop-content { padding: 10px; border-radius: 0px 0px 2px 2px; border=
+-top-style: none; box-shadow: rgba(0, 0, 0, 0.298039) 0px 2px 3px; backgrou=
+nd: white; }
+
+#hldict-poparrow-w { position: relative; height: 7px; }
+
+#hldict-poparrow-w.up { margin: 0px 0px -1px; }
+
+#hldict-poparrow-w.down { margin: -2px 0px 0px; }
+
+#hldict-poparrow { width: 14px; height: 7px; left: 50%; margin-left: -7px; =
+position: absolute; z-index: 20130907; }
+
+#hldict-poparrow.up { background: url(chrome-extension://fidicgekecdkdmkjgh=
+dgadgdmcfodfid/themes/default/img/poparrow.png); }
+
+#hldict-poparrow.down { background: url(chrome-extension://fidicgekecdkdmkj=
+ghdgadgdmcfodfid/themes/default/img/poparrow.png) 50% 100%; }
+
+#hldict-pop-title { font-size: 16px; color: rgb(153, 153, 153); }
+
+#hldict-pop-title strong { margin-right: 10px; color: rgb(221, 75, 57); fon=
+t-weight: bold; }
+
+#hldict-pop-title #hldict-pop-play { float: right; margin: 1px 0px 0px; cur=
+sor: pointer; width: 16px; height: 16px; opacity: 0.55; display: none; back=
+ground: url(chrome-extension://fidicgekecdkdmkjghdgadgdmcfodfid/themes/defa=
+ult/img/sound.png); }
+
+#hldict-pop-title #hldict-pop-play:hover { opacity: 1; }
+
+#hldict-pop-detail { padding: 10px 0px; font-size: 14px; text-align: left; =
+font-weight: normal; color: rgb(51, 51, 51); line-height: 1.8em; }
+
+#hldict-pop-more { color: rgb(66, 127, 237); text-align: right; cursor: poi=
+nter; padding: 0px 2px; }
+
+#hanlin-dict-w { position: fixed; right: 0px; top: 0px; width: 0px; height:=
+ 100%; z-index: 2014083000; }
+
+#hanlin-dict { border: none; margin: 0px; padding: 0px; }
+
+#hanlin-dict-minwidth { width: 67px; height: 0px; }
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.regexlab.com/images/spacer.gif
+
+R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.regexlab.com/images/logo_s.gif
+
+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
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.regexlab.com/images/menu_bk.gif
+
+R0lGODlhKwAaAOYAAOCYZM5uT8xrTd+VY9R8VuKgaMZcRcpkSdyOX8hhSdaBWc5tT96VY9J5VNuO
+X+KfaMhhSNiFW+GeZsRYQ9B1U+Siad6VYuCXZMVbRcZbRtuPX9+YZNmIXMlkSdaCWdJ6VNqMXdF2
+U89uT9aAWNJ6VdyPX9mMXcZeR89xUdWBWMdeRuKeZuOgaMVbRtJ5VdN5VM9yUspkSslkStySYdaB
+WNiIW+OfaMhiSOGbZtN6VMhiScVZRdiFWslhSMpjSctoTNeFWtWAWOKeZ89tT8tnTMljSdB2U9+V
+Yt2SYMVXQuKgZ9iEWt+XZMlhSdN6VdmLXcpjSsVXQ9mJXOOfZ8RXQ9ySYMxnTOSka8liSM5vUOOg
+Z+GeZ9F1U9eEWs1qTdR9V8VYQ9iHW9qLXcdeR89yUeOiad2SYctnS+GbZcVaROSkagAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwA
+AAAAKwAaAEAH/4BqgoOEhYaHaleIhQglJQ4OCBqTj5IakQiQGgicmJEOl40lm5CNkghkqTCpqSis
+ZK6wr6yxZDCuq6y5uGQ7ab/AwL7BxMVpw8bBO2jMzTjN0MzP0tHR09XNIx4KNDQjKSkKIwoK2+JB
+HinbIzQe5uHl40Ep3ePpQQodHTI+UAdFBwIGjHGgg8AiMWTs+xfDYEF+Cg/4MNghBsEDBR4UKGAj
+IwstGzV6VCKSBUcWIpWYtPFAo0gbKKe0HEBzAAObNBlYqDlgp82bPS3cFNpT5xGhQhkcsSk0jFMO
+HMLU4DA1TNQaTq1mlWoVq9anYaRs3eqkAYkGDXK8MEsih4sGTv9evDhrtoELFx/y5k37Ya3bBh/e
+fiAx14sXAQIOJ15sGHFixY0NS0asmLLkyCpOZFYxhvMYzWM6hx5NmvSJ0qg/ny7DurXrCmUqwG4t
+2zXr2bVf266wYssKCVu2AP8dHLhw48KFBN8iBHlvISt6L5dAfcsFABeub9h+nQl2AOCvXwcPYDv5
+DeHBo0fPBH12M1XMzDBjBgn9+/ft458/H7///vuZIYYJIIghBghPGHigCQoOaGCBDCZYYIMmMNhg
+gRN20UUEEQCxBA8RbMiDhhGMuGEXHpqoIYonhhjiii128cWMBMxoY4010vgFATzm2OOOOOp4441c
+UGBECFwUiaSykkkiSQEFXIRgBJRPLpnklUhOCeWVXCyQxQIBiBCmmGIGYKaZIoAZwAJgsrnmAkOA
+SaaabwYwxBBn5KnnnnoSccYPfwbKp598DpqnFWfckEAPCSQAwaM6KKpDE5BW6ugNN0DAaAJYQNDo
+ok304OmnjWZgQAsZYGBABi2cioGpq5qKQasGrHqqARjMWiuuqb66aq61giHssBNEAcYEVEww7LBJ
+gJGEssdCu6yyE0Ar7QSBAAA7
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.regexlab.com/images/ggad3box_01.gif
+
+R0lGODlhBAAEAJECABQ5bf///////wAAACH5BAEAAAIALAAAAAAEAAQAAAIHjA8QILJdAAA7
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.regexlab.com/images/ggad3box_02.gif
+
+R0lGODlhxgAEAIABABQ5bf///yH5BAEAAAEALAAAAADGAAQAAAIlhI+py+0Po5y02suC3rz7D4bi
+SJbmiabqyrbuC8fyTNf2jed5AQA7
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.regexlab.com/images/ggad3box_03.gif
+
+R0lGODlhBAAEAJECABQ5bf///////wAAACH5BAEAAAIALAAAAAAEAAQAAAIHjANgIspaAAA7
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.regexlab.com/images/ggad3box_04.gif
+
+R0lGODlhBADtAIABABQ5bf///yH5BAEAAAEALAAAAAAEAO0AAAI/RG54kbwNn1TU1Xin3ZjrDn5i
+RnpleI7mirJqC79ySrt1fM/2jvN6D/wJc0RfMXgcGpdIprIJfUqTVGc1Wi0AADs=
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.regexlab.com/images/ggad3box_close.gif
+
+R0lGODlhEAAQAIAAAAAAAAAAACH5BAEAAAEALAAAAAAQABAAAAIjjI+pq+APQZKMHtumsRQH/l2a
+SJYSiHSk56XjwkYRQ9f2HRQAOw==
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.regexlab.com/images/ggad3box_06.gif
+
+R0lGODlhBADtAIABABQ5bf///yH5BAEAAAEALAAAAAAEAO0AAAJAjGGBl6sNmXzT2UjzrXjrDnLi
+N3pmSKZnia5qC7PyO7t2TOd3je96D+QJf0OfMUhMHovIpbIJZUqfU6c1SlUUAAA7
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.regexlab.com/images/ggad3box_07.gif
+
+R0lGODlhBAAEAJECABQ5bf///////wAAACH5BAEAAAIALAAAAAAEAAQAAAIHDCSGYcBcAAA7
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.regexlab.com/images/ggad3box_08.gif
+
+R0lGODlhxgAEAIABABQ5bf///yH5BAEAAAEALAAAAADGAAQAAAIljI+py+0Po5y02ouz3rz7D4bi
+SJYlgKbqyrbuC8fyTNf2jeduAQA7
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.regexlab.com/images/ggad3box_09.gif
+
+R0lGODlhBAAEAJECABQ5bf///////wAAACH5BAEAAAIALAAAAAAEAAQAAAIHlBCGgOFeAAA7
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://www.regexlab.com/images/ans.jpg
+
+/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAPAAA/+4ADkFkb2JlAGTAAAAAAf/b
+AIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxsc
+Hx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f
+Hx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAEAAQAwERAAIRAQMRAf/EAGUAAQEBAAAAAAAAAAAAAAAA
+AAUEBwEAAwEAAAAAAAAAAAAAAAAAAAEDBRAAAgMAAgIDAQAAAAAAAAAAAgMBBAUSBgARMYEToREA
+AgIDAQADAAAAAAAAAAAAAQIRAwAxEgRBUbH/2gAMAwEAAhEDEQA/ANEss7Lo6znITo2c5V1qbR0m
+HBcVsmJgI5QPKB9eZjFyxjqJ+Mx2axnMdcydYF3Uu89O07FlOnaitNDSs5lk2EyJJNBzghimyY/o
+swGZiY9fXuPGgdLgCTycaLYl6gklTP5hO1qPw+56FXTsVhQu+xz6Ba9OmZqaf6jBAdhZhJAUfI/z
+yTUW9kxKz95F/Nd2TEr0TuMi7Bv6/ddewCrFOw51G/Ty8upoU7R8rNN1dKlJQ5pzMm0ZM5jiI+yO
+REZmCmm9rw7iFGFHn9LekWWCFGhOs//Z
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.regexlab.com/images/download.gif
+
+R0lGODlhEAAQALMIAAD/AACAAIAAAMDAwP8AAP///wAAAH9/f////wAAAAAAAAAAAAAAAAAAAAAA
+AAAAACH5BAEAAAgALAAAAAAQABAAQARDEMmJhDB0nsG75wdGWQJhnNR2rGw7rGJWxpls1tvnBQDc
+/j/a6FarzYo2AjEDNAARh4J0SpX6dLprtfoKIU7gcFgSAQA7
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.regexlab.com/images/chm.gif
+
+R0lGODlhDwAQAKIAAAAAgMDAwICAAICAgAAAAP//AP///wAAACH5BAAAAAAALAAAAAAPABAAAANK
+aLoq7iyKQksQsdUahqxORQwkSVDdEFDjEhCwMJyslwG01TLzhBIGW8njeylskuHxWFIAeRmDAEbA
+BJkkQ+6JZGyXmWnsSC3DIgkAOw==
+------=_NextPart_000_5866_DA237640.3F1A5909
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.regexlab.com/ipr/480
+
+iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAAK/INwWK6QAAABl0RVh0
+U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAQSURBVHjaYvj//z8DQIABAAj8Av7bok0W
+AAAAAElFTkSuQmCC
+------=_NextPart_000_5866_DA237640.3F1A5909--

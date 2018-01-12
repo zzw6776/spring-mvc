@@ -1,0 +1,2063 @@
+From: <Saved by Blink>
+Subject: ????binlog???????binlog?????_mysql?? - ????
+Date: Sat, 20 Nov 2015 09:29:09 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_D5ED_C571625D.9AAD2E86"
+
+------=_NextPart_000_D5ED_C571625D.9AAD2E86
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.jbxue.com/db/12803.html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><html><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DGBK">
+
+<meta http-equiv=3D"Content-Language" content=3D"zh-CN">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3DEmulateIE7">
+<title>=D7=D4=B6=AF=C7=E5=C0=EDbinlog=C8=D5=D6=BE=D3=EB=CA=D6=B6=AF=C9=BE=
+=B3=FDbinlog=C8=D5=D6=BE=B5=C4=B7=BD=B7=A8_mysql=C8=D5=D6=BE  - =BD=C5=B1=
+=BE=D1=A7=CC=C3</title>
+<meta name=3D"keywords" content=3D"=C7=E5=C0=EDbinlog=C8=D5=D6=BE">
+<meta name=3D"description" content=3D"=B1=BE=CE=C4=BD=E9=C9=DC=CF=C2=A3=AC=
+=C9=E8=D6=C3=D7=D4=B6=AF=C7=E5=C0=EDbinlog=C8=D5=D6=BE=CE=C4=BC=FE=A3=AC=D2=
+=D4=BC=B0=CA=D6=B6=AF=C9=BE=B3=FDbinlog=C8=D5=D6=BE=CE=C4=BC=FE=B5=C4=B7=BD=
+=B7=A8=A3=AC=D3=D0=D0=CB=C8=A4=B5=C4=C5=F3=D3=D1=B2=CE=BF=BC=D1=A7=CF=B0=CF=
+=C2=A1=A3">
+<link rel=3D"canonical" href=3D"http://www.jbxue.com/db/12803.html">
+<link href=3D"http://www.jbxue.com/skin/blue/css/gray.css" rel=3D"styleshee=
+t" type=3D"text/css">
+<style type=3D"text/css"></style> =20
+<link rel=3D"icon" href=3D"http://img.jbxue.com/img/favicon.ico" type=3D"im=
+age/x-icon">
+<link rel=3D"shortcut icon" href=3D"http://img.jbxue.com/img/favicon.ico" t=
+ype=3D"image/x-icon">
+ =20
+
+ =20
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"chrome-extension://fidic=
+gekecdkdmkjghdgadgdmcfodfid/themes/default/content.css"></head>
+<body>
+<ul class=3D"header"><li><h1>=D7=D4=B6=AF=C7=E5=C0=EDbinlog=C8=D5=D6=BE=D3=
+=EB=CA=D6=B6=AF=C9=BE=B3=FDbinlog=C8=D5=D6=BE=B5=C4=B7=BD=B7=A8</h1></li></=
+ul>
+
+<div class=3D"header_c">
+<div class=3D"logo"><a href=3D"http://www.jbxue.com/"><img src=3D"http://ww=
+w.jbxue.com/skin/blue/images/logo.png" alt=3D"=BD=C5=B1=BE=D1=A7=CC=C3"></a=
+></div>
+<!--end=B1=EA=D6=BE-->
+<div class=3D"h_adv">
+<ul>
+<li><a href=3D"http://www.jbxue.com/js/" target=3D"_blank">javascript</a></=
+li>=20
+<li><a href=3D"http://www.jbxue.com/jb/python/" target=3D"_blank">python</a=
+></li>
+<li><a href=3D"http://www.jbxue.com/jb/shell/" target=3D"_blank">shell</a><=
+/li>
+<li><a href=3D"http://www.jbxue.com/powershell/" target=3D"_blank">powershe=
+ll</a></li>
+<li><a href=3D"http://www.jbxue.com/python_module/" target=3D"_blank">pytho=
+n=C4=A3=BF=E9</a></li>
+<li><a href=3D"http://www.jbxue.com/wb/php/" target=3D"_blank">php=B1=E0=B3=
+=CC</a></li>
+<li><a href=3D"http://www.jbxue.com/php/" target=3D"_blank">php=CA=B5=C0=FD=
+</a></li>
+<li><a href=3D"http://www.jbxue.com/wb/aspnet/" target=3D"_blank">asp.net</=
+a></li>
+<li><a href=3D"http://www.jbxue.com/wb/regular/" target=3D"_blank">=D5=FD=
+=D4=F2=B1=ED=B4=EF=CA=BD</a></li>
+<div class=3D"both"></div>
+</ul>
+
+<ul>
+<li><a href=3D"http://www.jbxue.com/nginx/" target=3D"_blank">nginx</a></li=
+>
+<li><a href=3D"http://www.jbxue.com/apache/" target=3D"_blank">apache</a></=
+li>
+<li><a href=3D"http://www.jbxue.com/os/linux/" target=3D"_blank">linux</a><=
+/li>
+<li><a href=3D"http://www.jbxue.com/os/linuxcmd/" target=3D"_blank">linux=
+=C3=FC=C1=EE</a></li>
+<li><a href=3D"http://www.jbxue.com/os/centos/" target=3D"_blank">centos</a=
+></li>
+<li><a href=3D"http://www.jbxue.com/os/ubuntu/" target=3D"_blank">ubuntu</a=
+></li>
+<li><a href=3D"http://www.jbxue.com/mysql/" target=3D"_blank">mysql</a></li=
+>
+<li><a href=3D"http://www.jbxue.com/sql_server/" target=3D"_blank">sql=CA=
+=FD=BE=DD=BF=E2</a></li>
+<li><a href=3D"http://www.jbxue.com/web/css/" target=3D"_blank">css=BD=CC=
+=B3=CC</a></li>
+</ul>
+</div>
+<!--end menu-->
+</div>
+<!--end=CD=B7=CE=C4=BC=FE=D6=D0-->
+
+<ul class=3D"nav">
+<li class=3D"nav_current"><a href=3D"http://www.jbxue.com/">=CA=D7=D2=B3</a=
+></li>
+<li id=3D"nav_hover02"><a href=3D"http://www.jbxue.com/jb/">=BD=C5=B1=BE=B1=
+=E0=B3=CC</a></li>
+<li id=3D"nav_hover03"><a href=3D"http://www.jbxue.com/wb/">=CD=F8=D5=BE=B1=
+=E0=B3=CC</a></li>
+<li id=3D"nav_hover04"><a href=3D"http://www.jbxue.com/db/">=CA=FD=BE=DD=BF=
+=E2</a></li>
+<li id=3D"nav_hover05"><a href=3D"http://www.jbxue.com/os/">=CF=B5=CD=B3=B9=
+=DC=C0=ED</a></li>
+<li id=3D"nav_hover06"><a href=3D"http://www.jbxue.com/server/">=B7=FE=CE=
+=F1=C6=F7=B9=DC=C0=ED</a></li>
+<li id=3D"nav_hover07"><a href=3D"http://www.jbxue.com/web/">=CD=F8=D2=B3=
+=BD=CC=B3=CC</a></li>
+<li id=3D"nav_hover08"><a href=3D"http://www.jbxue.com/softjc/">=C8=ED=BC=
+=FE=BD=CC=B3=CC</a></li>
+<li id=3D"nav_hover11"><a href=3D"http://www.jbxue.com/diannao/">=B5=E7=C4=
+=D4=BD=CC=B3=CC</a></li>
+<li id=3D"nav_hover12"><a href=3D"http://www.jbxue.com/shouji/">=CA=D6=BB=
+=FA=BD=CC=B3=CC</a></li>
+<li id=3D"nav_hover09"><a href=3D"http://www.jbxue.com/tools/">=B9=A4=BE=DF=
+=C8=ED=BC=FE</a></li>
+<li id=3D"nav_hover10"><a href=3D"http://www.jbxue.com/ebooks/">=B5=E7=D7=
+=D3=CA=E9=BC=AE</a></li>
+</ul>
+<!--end=B5=BC=BA=BD-->
+<div class=3D"search">
+<div class=3D"form">
+    <form name=3D"formsearch" action=3D"http://so.jbxue.com/cse/search" tar=
+get=3D"_blank">
+    <input type=3D"hidden" name=3D"kwtype" value=3D"0">
+    <input type=3D"hidden" name=3D"s" value=3D"14243723904981554297">
+    <input type=3D"hidden" name=3D"ie" value=3D"gbk">
+    <input name=3D"q" type=3D"text" class=3D"search-keyword" id=3D"search-k=
+eyword">
+    <input type=3D"submit" value=3D"=CB=D1=CB=F7" class=3D"search-submit">
+</form>
+</div>
+
+<div class=3D"tags">
+<div style=3D"text-align:left">
+<a href=3D"http://www.jbxue.com/php/">php=CA=B5=C0=FD</a> <a href=3D"http:/=
+/www.jbxue.com/jb/shell/">shell=BD=C5=B1=BE</a> <a href=3D"http://www.jbxue=
+.com/jquery/xuanzeqi/">jquery=D1=A1=D4=F1=C6=F7</a>
+<a href=3D"http://www.jbxue.com/python/login/">python=C4=A3=C4=E2=B5=C7=C2=
+=BC</a> <a href=3D"http://www.jbxue.com/os/linuxcmd/">linux=C3=FC=C1=EE</a>
+<a href=3D"http://www.jbxue.com/nginx/">nginx</a> <a href=3D"http://www.jbx=
+ue.com/apache/">apache</a>
+</div>
+</div>=20
+</div>
+<div class=3D"clear_div h_one">
+<div class=3D"i_left">
+
+<dl class=3D"l_site black_link"><dd>=B5=B1=C7=B0=CE=BB=D6=C3=A3=BA<a href=
+=3D"http://www.jbxue.com/">=BD=C5=B1=BE=D1=A7=CC=C3</a>&nbsp;&gt;&nbsp;<a h=
+ref=3D"http://www.jbxue.com/db/">=CA=FD=BE=DD=BF=E2=BD=CC=B3=CC</a>&nbsp;&g=
+t;&nbsp;<a href=3D"http://www.jbxue.com/mysql/">mysql</a>&nbsp;&gt;&nbsp;<a=
+ href=3D"http://www.jbxue.com/mysql/log/">mysql=C8=D5=D6=BE</a>  &gt; =D5=
+=FD=CE=C4</dd></dl>
+
+<div class=3D"clear_div gray_border display_box">
+
+<dl class=3D"clear_div display_th"><dt><h2>=D7=D4=B6=AF=C7=E5=C0=EDbinlog=
+=C8=D5=D6=BE=D3=EB=CA=D6=B6=AF=C9=BE=B3=FDbinlog=C8=D5=D6=BE=B5=C4=B7=BD=B7=
+=A8</h2>
+</dt>
+<dd><span>=B7=A2=B2=BC=CA=B1=BC=E4=A3=BA2015-01-01</span><span>=B1=E0=BC=AD=
+=A3=BA<a href=3D"http://www.jbxue.com/">=BD=C5=B1=BE=D1=A7=CC=C3</a></span>=
+</dd></dl>
+
+<div class=3D"clear_div display_wen">
+<div class=3D"summary">=B1=BE=CE=C4=BD=E9=C9=DC=CF=C2=A3=AC=C9=E8=D6=C3=D7=
+=D4=B6=AF=C7=E5=C0=EDbinlog=C8=D5=D6=BE=CE=C4=BC=FE=A3=AC=D2=D4=BC=B0=CA=D6=
+=B6=AF=C9=BE=B3=FDbinlog=C8=D5=D6=BE=CE=C4=BC=FE=B5=C4=B7=BD=B7=A8=A3=AC=D3=
+=D0=D0=CB=C8=A4=B5=C4=C5=F3=D3=D1=B2=CE=BF=BC=D1=A7=CF=B0=CF=C2=A1=A3</div>
+<!--ad-->
+<div id=3D"con_all">
+<div id=3D"con_ad1"></div>
+<div id=3D"con_ad8"></div>
+<div class=3D"bk24"></div>
+</div><!--ad--end-->
+
+<div id=3D"zth_content">
+<p>MYSQL=D6=F7=B4=D3=B8=B4=D6=C6(replication)=B2=C9=D3=C3 RBR =C4=A3=CA=BD=
+=BA=F3=A3=ACbinlog=B5=C4=B8=F1=CA=BD=CE=AA"ROW"=A3=AC=C4=DC=BD=E2=BE=F6=BA=
+=DC=B6=E0=D4=AD=CF=C8=B3=F6=CF=D6=B5=C4=D6=F7=BC=FC=D6=D8=B8=B4=CE=CA=CC=E2=
+=A1=A3<br>
+=D4=DA=D2=BB=B8=F6=B7=B1=C3=A6=B5=C4master db server=C9=CF=A3=ACbinlog<a hr=
+ef=3D"http://www.jbxue.com/article/957.html" target=3D"_blank" class=3D"inf=
+otextkey">=C8=D5=D6=BE=CE=C4=BC=FE</a>=D4=F6=B3=A4=CB=D9=B6=C8=BA=DC=BF=EC=
+=A3=AC=C8=E7=B9=FB=B2=BB=B6=A8=CA=B1=C7=E5=B3=FD=A3=AC=D3=B2=C5=CC=BF=D5=BC=
+=E4=BA=DC=BF=EC=BE=CD=BB=E1=B1=BB=B3=E4=C2=FA=A1=A3<br>
+=C9=E8=D6=C3=D7=D4=B6=AF=C7=E5=C0=ED<a href=3D"http://www.jbxue.com/mysql/"=
+ target=3D"_blank" class=3D"infotextkey">mysql</a> binlog=C8=D5=D6=BE:<br>
+=C5=E4=D6=C3my.cnf=A3=BA<br>
+<span style=3D"background-color: #ffff99">expire_logs_days =3D 10<br>
+</span>&nbsp;<br>
+=D4=DA=D4=CB=D0=D0=CA=B1=D0=DE=B8=C4=A3=BA<br>
+&nbsp;</p>
+<div class=3D"codetitle"><span onclick=3D"doCopy('c_Hei3Nb7p')" style=3D"cu=
+rsor: pointer"><u>=B8=B4=D6=C6=B4=FA=C2=EB</u></span> =B4=FA=C2=EB=CA=BE=C0=
+=FD:</div>
+<div id=3D"c_Hei3Nb7p" class=3D"codebody">show binary logs;&nbsp; <br>
+show variables like '%log%';&nbsp; <br>
+set global expire_logs_days =3D 10;</div>
+<p>=C7=E5=B3=FD=D6=AE=C7=B0=BF=C9=D2=D4=B2=C9=D3=C3=CF=E0=D3=A6=B5=C4=B1=B8=
+=B7=DD=B2=DF=C2=D4=A1=A3</p>
+<p>=CA=D6=B6=AF=C9=BE=B3=FD10=CC=EC=C7=B0=B5=C4mysql binlog=C8=D5=D6=BE=A3=
+=BA<br>
+&nbsp;</p>
+<div class=3D"codetitle"><span onclick=3D"doCopy('c_cwaLvRCF')" style=3D"cu=
+rsor: pointer"><u>=B8=B4=D6=C6=B4=FA=C2=EB</u></span> =B4=FA=C2=EB=CA=BE=C0=
+=FD:</div>
+<div id=3D"c_cwaLvRCF" class=3D"codebody">PURGE MASTER LOGS BEFORE DATE_SUB=
+(CURRENT_DATE, INTERVAL 10 DAY);&nbsp; <br>
+show master logs;&nbsp; <br>
+&nbsp;</div>
+<p>=CB=B5=C3=F7=A3=BA<br>
+MASTER=BA=CDBINARY=CA=C7=CD=AC=D2=E5=B4=CA=A1=A3<br>
+&nbsp;</p>
+<p><span>=C4=FA=BF=C9=C4=DC=B8=D0=D0=CB=C8=A4=B5=C4=CE=C4=D5=C2=A3=BA</span=
+></p>
+<a title=3D"=D7=D4=B6=AF=D3=EB=CA=D6=B6=AF=C7=E5=C0=EDmysql-binlog=C8=D5=D6=
+=BE=B5=C4=B7=BD=B7=A8" target=3D"_blank" href=3D"http://www.jbxue.com/db/12=
+286.html"><font color=3D"#002280">=D7=D4=B6=AF=D3=EB=CA=D6=B6=AF=C7=E5=C0=
+=EDmysql-binlog=C8=D5=D6=BE=B5=C4=B7=BD=B7=A8</font></a><br>
+<a title=3D"mysql=C9=E8=D6=C3=D7=D4=B6=AF=C7=E5=C0=EDbinlog=C8=D5=D6=BE=B5=
+=C4=B7=BD=B7=A8" target=3D"_blank" href=3D"http://www.jbxue.com/db/8993.htm=
+l"><font color=3D"#002280">mysql=C9=E8=D6=C3=D7=D4=B6=AF=C7=E5=C0=EDbinlog=
+=C8=D5=D6=BE=B5=C4=B7=BD=B7=A8</font></a><br>
+<a title=3D"mysql=C9=BE=B3=FDbinlog=C8=D5=D6=BE=BC=B0=CA=B9=D3=C3=C8=D5=D6=
+=BE=BB=D6=B8=B4=CA=FD=BE=DD=B5=C4=B7=BD=B7=A8" target=3D"_blank" href=3D"ht=
+tp://www.jbxue.com/db/8673.html"><font color=3D"#002280">mysql=C9=BE=B3=FDb=
+inlog=C8=D5=D6=BE=BC=B0=CA=B9=D3=C3=C8=D5=D6=BE=BB=D6=B8=B4=CA=FD=BE=DD=B5=
+=C4=B7=BD=B7=A8</font></a><br>
+<a title=3D"=C9=BE=B3=FDMysql=D6=D0binlog=C8=D5=D6=BE=B5=C4=B6=FE=D6=D6=B7=
+=BD=B7=A8" target=3D"_blank" href=3D"http://www.jbxue.com/db/6108.html"><fo=
+nt color=3D"#002280">=C9=BE=B3=FDMysql=D6=D0binlog=C8=D5=D6=BE=B5=C4=B6=FE=
+=D6=D6=B7=BD=B7=A8</font></a>
+<p>&nbsp;</p><div class=3D"clear_div page"></div>
+<!--end=D2=B3=C2=EB-->
+</div>
+
+<div class=3D"contentBottomAd">
+
+<!--=B9=E3=B8=E6=CE=BB-->
+</div>
+
+</div>
+<!--end=D5=FD=CE=C4-->
+
+</div>
+<!--end=B1=DF=BF=F2-->
+
+<div class=3D"prev_next">
+<b>=C9=CF=D2=BB=C6=AA=A3=BA</b><a href=3D"http://www.jbxue.com/db/12286.htm=
+l">=D7=D4=B6=AF=D3=EB=CA=D6=B6=AF=C7=E5=C0=EDmysql-binlog=C8=D5=D6=BE=B5=C4=
+=B7=BD=B7=A8</a><br>
+<b>=CF=C2=D2=BB=C6=AA=A3=BA</b><a href=3D"http://www.jbxue.com/db/12839.htm=
+l">=CF=EA=BD=E2MySQL InnoDB=B9=DC=C0=ED=D3=EB=B1=B8=B7=DD=B6=FE=BD=F8=D6=C6=
+=C8=D5=D6=BE=B5=C4=B7=BD=B7=A8</a><br>
+</div>
+
+<div class=3D"bottomAd">
+<!--=D4=AD=C9=FAad-->
+<!--=B9=E3=B8=E6=CE=BB-->
+</div>
+
+<div class=3D"otherlink">
+<h4>=D3=EB =D7=D4=B6=AF=C7=E5=C0=EDbinlog=C8=D5=D6=BE=D3=EB=CA=D6=B6=AF=C9=
+=BE=B3=FDbinlog=C8=D5=D6=BE=B5=C4=B7=BD=B7=A8 =D3=D0=B9=D8=B5=C4=CE=C4=D5=
+=C2</h4>
+<ul class=3D"h_list">
+<li><a href=3D"http://www.jbxue.com/db/8645.html" title=3D"=C0=ED=BD=E2Mysq=
+l binlog =C8=D5=D6=BE=B5=C4=C8=FD=D6=D6=C4=A3=CA=BD" target=3D"_blank">=C0=
+=ED=BD=E2Mysql binlog =C8=D5=D6=BE=B5=C4=C8=FD=D6=D6=C4=A3=CA=BD</a></li><l=
+i><a href=3D"http://www.jbxue.com/db/2646.html" title=3D"=BD=CC=C4=E3=C9=BE=
+=B3=FDMYSQl=B5=C4BIN-LOG=C8=D5=D6=BE" target=3D"_blank">=BD=CC=C4=E3=C9=BE=
+=B3=FDMYSQl=B5=C4BIN-LOG=C8=D5=D6=BE</a></li><li><a href=3D"http://www.jbxu=
+e.com/db/6175.html" title=3D"=C8=E7=BA=CE=BF=AA=C6=F4windows mysql=C8=D5=D6=
+=BE=D3=EB=B2=E9=D1=AF=B9=A6=C4=DC" target=3D"_blank">=C8=E7=BA=CE=BF=AA=C6=
+=F4windows mysql=C8=D5=D6=BE=D3=EB=B2=E9=D1=AF=B9=A6=C4=DC</a></li><li><a h=
+ref=3D"http://www.jbxue.com/db/8673.html" title=3D"mysql=C9=BE=B3=FDbinlog=
+=C8=D5=D6=BE=BC=B0=CA=B9=D3=C3=C8=D5=D6=BE=BB=D6=B8=B4=CA=FD=BE=DD=B5=C4=B7=
+=BD=B7=A8" target=3D"_blank">mysql=C9=BE=B3=FDbinlog=C8=D5=D6=BE=BC=B0=CA=
+=B9=D3=C3=C8=D5=D6=BE=BB=D6=B8=B4=CA=FD=BE=DD=B5=C4=B7=BD=B7=A8</a></li><li=
+><a href=3D"http://www.jbxue.com/db/14944.html" title=3D"=BD=E2=BE=F6=BF=AA=
+=C6=F4bin-log=C8=D5=D6=BEmysql=B1=A8=B4=ED=B5=C4=CE=CA=CC=E2" target=3D"_bl=
+ank">=BD=E2=BE=F6=BF=AA=C6=F4bin-log=C8=D5=D6=BEmysql=B1=A8=B4=ED=B5=C4=CE=
+=CA=CC=E2</a></li><li><a href=3D"http://www.jbxue.com/db/mysql/21193.html" =
+title=3D"mysql=D6=D0=BF=AA=C6=F4=C2=FDsql=B2=E9=D1=AF(mysql=C2=FD=B2=E9=D1=
+=AF=C8=D5=D6=BE)=B5=C4=B7=BD=B7=A8" target=3D"_blank">mysql=D6=D0=BF=AA=C6=
+=F4=C2=FDsql=B2=E9=D1=AF(mysql=C2=FD=B2=E9=D1=AF=C8=D5=D6=BE)=B5=C4=B7=BD=
+=B7=A8</a></li><li><a href=3D"http://www.jbxue.com/db/4644.html" title=3D"=
+=CA=B9=D3=C3mysqlbinlog=B9=A4=BE=DF=BB=D6=B8=B4MySQL=CA=FD=BE=DD=BF=E2=B5=
+=C4=B7=BD=B7=A8" target=3D"_blank">=CA=B9=D3=C3mysqlbinlog=B9=A4=BE=DF=BB=
+=D6=B8=B4MySQL=CA=FD=BE=DD=BF=E2=B5=C4=B7=BD=B7=A8</a></li><li><a href=3D"h=
+ttp://www.jbxue.com/db/3119.html" title=3D"MySQL 5.1.6=D2=D4=C9=CF=B0=E6=B1=
+=BE=B6=AF=CC=AC=BF=AA=C6=F4=C2=FD=B2=E9=D1=AF=C8=D5=D6=BE=B5=C4=B7=BD=B7=A8=
+" target=3D"_blank">MySQL 5.1.6=D2=D4=C9=CF=B0=E6=B1=BE=B6=AF=CC=AC=BF=AA=
+=C6=F4=C2=FD=B2=E9=D1=AF=C8=D5=D6=BE=B5=C4=B7=BD=B7=A8</a></li><li><a href=
+=3D"http://www.jbxue.com/db/1568.html" title=3D"mysql=C8=D5=D6=BE=C5=E4=D6=
+=C3(linux=D3=EBwindows)" target=3D"_blank">mysql=C8=D5=D6=BE=C5=E4=D6=C3(li=
+nux=D3=EBwindows)</a></li><li><a href=3D"http://www.jbxue.com/db/4079.html"=
+ title=3D"=D3=D0=B9=D8mysql=B5=C4=C8=D5=D6=BE=CE=C4=BC=FE=BC=B0=C5=E4=D6=C3=
+" target=3D"_blank">=D3=D0=B9=D8mysql=B5=C4=C8=D5=D6=BE=CE=C4=BC=FE=BC=B0=
+=C5=E4=D6=C3</a></li><li><a href=3D"http://www.jbxue.com/db/6497.html" titl=
+e=3D"=D1=A7=CF=B0mysql binlog=C8=D5=D6=BE=C7=E5=C0=ED" target=3D"_blank">=
+=D1=A7=CF=B0mysql binlog=C8=D5=D6=BE=C7=E5=C0=ED</a></li><li><a href=3D"htt=
+p://www.jbxue.com/db/13113.html" title=3D"logrotate=B6=D4MySQL=C8=D5=D6=BE=
+=C2=D6=CC=E6=B5=C4=CA=B5=C0=FD=B7=D6=CF=ED" target=3D"_blank">logrotate=B6=
+=D4MySQL=C8=D5=D6=BE=C2=D6=CC=E6=B5=C4=CA=B5=C0=FD=B7=D6=CF=ED</a></li></ul=
+>
+</div>
+
+<div class=3D"bottomAd">
+<!--=D4=AD=C9=FAad-->
+<!--=B9=E3=B8=E6=CE=BB-->
+</div>
+
+<div class=3D"clear_div gray_border list_o">
+<ul class=3D"l_text clear_div">
+<li><b>=B1=BE=CE=C4=B1=EA=CC=E2=A3=BA</b><a href=3D"http://www.jbxue.com/db=
+/12803.html">=D7=D4=B6=AF=C7=E5=C0=EDbinlog=C8=D5=D6=BE=D3=EB=CA=D6=B6=AF=
+=C9=BE=B3=FDbinlog=C8=D5=D6=BE=B5=C4=B7=BD=B7=A8</a></li>
+<li><b>=B1=BE=D2=B3=C1=B4=BD=D3=A3=BA</b><a href=3D"http://www.jbxue.com/db=
+/12803.html">http://www.jbxue.com/db/12803.html</a></li>
+</ul>
+</div>
+<!--end=B1=DF=BF=F2-->
+
+</div>
+<!--end=D7=F3=B1=DF-->
+
+<!--=D3=D2=B1=DF-->
+<div class=3D"i_right">
+<div class=3D"clear_div gray_border">
+
+
+
+
+
+</div>
+<!--end=CD=C6=B9=E3=C4=DA=C8=DD-->
+
+<div class=3D"clear_div gray_border list_o">
+<div class=3D"tab_nav r_tab_nav"><dl><dt><h3>=E4=AF=C0=C0=C5=C5=D0=D0</h3><=
+/dt></dl></div>
+<!--end=B1=EA=C7=A9=B5=BC=BA=BD-->
+<div class=3D"tab_box r_tab_box">
+<div>
+<ul class=3D"clear_div r_tad tad_list">
+<li class=3D"light"><span class=3D"r_num">1</span><a href=3D"http://www.jbx=
+ue.com/db/8645.html" title=3D"=C0=ED=BD=E2Mysql binlog =C8=D5=D6=BE=B5=C4=
+=C8=FD=D6=D6=C4=A3=CA=BD">=C0=ED=BD=E2Mysql binlog =C8=D5=D6=BE=B5=C4=C8=FD=
+=D6=D6=C4=A3=CA=BD</a></li><li class=3D"light"><span class=3D"r_num">2</spa=
+n><a href=3D"http://www.jbxue.com/db/2646.html" title=3D"=BD=CC=C4=E3=C9=BE=
+=B3=FDMYSQl=B5=C4BIN-LOG=C8=D5=D6=BE">=BD=CC=C4=E3=C9=BE=B3=FDMYSQl=B5=C4BI=
+N-LOG=C8=D5=D6=BE</a></li><li class=3D"light"><span class=3D"r_num">3</span=
+><a href=3D"http://www.jbxue.com/db/6175.html" title=3D"=C8=E7=BA=CE=BF=AA=
+=C6=F4windows mysql=C8=D5=D6=BE=D3=EB=B2=E9=D1=AF=B9=A6=C4=DC">=C8=E7=BA=CE=
+=BF=AA=C6=F4windows mysql=C8=D5=D6=BE=D3=EB=B2=E9=D1=AF=B9=A6=C4=DC</a></li=
+><li><span class=3D"r_num">4</span><a href=3D"http://www.jbxue.com/db/15297=
+.html" title=3D"mysql =CE=F3=C9=BE=B3=FDibdata1=B5=C4=BB=D6=B8=B4=B7=BD=B7=
+=A8">mysql =CE=F3=C9=BE=B3=FDibdata1=B5=C4=BB=D6=B8=B4=B7=BD=B7=A8</a></li>=
+<li><span class=3D"r_num">5</span><a href=3D"http://www.jbxue.com/db/8673.h=
+tml" title=3D"mysql=C9=BE=B3=FDbinlog=C8=D5=D6=BE=BC=B0=CA=B9=D3=C3=C8=D5=
+=D6=BE=BB=D6=B8=B4=CA=FD=BE=DD=B5=C4=B7=BD=B7=A8">mysql=C9=BE=B3=FDbinlog=
+=C8=D5=D6=BE=BC=B0=CA=B9=D3=C3=C8=D5=D6=BE=BB=D6=B8=B4=CA=FD=BE=DD=B5=C4=B7=
+=BD</a></li><li><span class=3D"r_num">6</span><a href=3D"http://www.jbxue.c=
+om/db/15083.html" title=3D"mysql general log=B5=C4=C5=E4=D6=C3=B7=BD=B7=A8"=
+>mysql general log=B5=C4=C5=E4=D6=C3=B7=BD=B7=A8</a></li><li><span class=3D=
+"r_num">7</span><a href=3D"http://www.jbxue.com/db/14944.html" title=3D"=BD=
+=E2=BE=F6=BF=AA=C6=F4bin-log=C8=D5=D6=BEmysql=B1=A8=B4=ED=B5=C4=CE=CA=CC=E2=
+">=BD=E2=BE=F6=BF=AA=C6=F4bin-log=C8=D5=D6=BEmysql=B1=A8=B4=ED=B5=C4=CE=CA=
+=CC=E2</a></li><li><span class=3D"r_num">8</span><a href=3D"http://www.jbxu=
+e.com/db/mysql/21193.html" title=3D"mysql=D6=D0=BF=AA=C6=F4=C2=FDsql=B2=E9=
+=D1=AF(mysql=C2=FD=B2=E9=D1=AF=C8=D5=D6=BE)=B5=C4=B7=BD=B7=A8">mysql=D6=D0=
+=BF=AA=C6=F4=C2=FDsql=B2=E9=D1=AF(mysql=C2=FD=B2=E9=D1=AF=C8=D5=D6=BE)=B5=
+=C4=B7=BD</a></li><li><span class=3D"r_num">9</span><a href=3D"http://www.j=
+bxue.com/db/4644.html" title=3D"=CA=B9=D3=C3mysqlbinlog=B9=A4=BE=DF=BB=D6=
+=B8=B4MySQL=CA=FD=BE=DD=BF=E2=B5=C4=B7=BD=B7=A8">=CA=B9=D3=C3mysqlbinlog=B9=
+=A4=BE=DF=BB=D6=B8=B4MySQL=CA=FD=BE=DD=BF=E2=B5=C4=B7=BD=B7=A8</a></li><li>=
+<span class=3D"r_num">10</span><a href=3D"http://www.jbxue.com/db/3119.html=
+" title=3D"MySQL 5.1.6=D2=D4=C9=CF=B0=E6=B1=BE=B6=AF=CC=AC=BF=AA=C6=F4=C2=
+=FD=B2=E9=D1=AF=C8=D5=D6=BE=B5=C4=B7=BD=B7=A8">MySQL 5.1.6=D2=D4=C9=CF=B0=
+=E6=B1=BE=B6=AF=CC=AC=BF=AA=C6=F4=C2=FD=B2=E9=D1=AF=C8=D5=D6=BE=B5=C4=B7=BD=
+</a></li>=20
+</ul>
+</div>
+</div>
+<!--end=B1=EA=C7=A9=C4=DA=C8=DD-->
+</div>
+
+<div class=3D"clear_div list_o gray_border">
+<h3 class=3D"h_r_th">=C0=B8=C4=BF=B7=D6=C0=E0</h3>
+<ul class=3D"r_nav">
+<li><span><a href=3D"http://www.jbxue.com/mysql/fenye/">mysql=B7=D6=D2=B3</=
+a></span></li><li><span><a href=3D"http://www.jbxue.com/mysql/procedure/">m=
+ysql=B4=E6=B4=A2=B9=FD=B3=CC</a></span></li><li><span><a href=3D"http://www=
+.jbxue.com/mysql/chufaqi/">mysql=B4=A5=B7=A2=C6=F7</a></span></li><li><span=
+><a href=3D"http://www.jbxue.com/mysql/shitu/">mysql=CA=D3=CD=BC</a></span>=
+</li><li><span><a href=3D"http://www.jbxue.com/mysql/index/">mysql=CB=F7=D2=
+=FD</a></span></li><li><span><a href=3D"http://www.jbxue.com/mysql/password=
+/">mysql=C3=DC=C2=EB</a></span></li><li><span><a href=3D"http://www.jbxue.c=
+om/mysql/command/">mysql=C3=FC=C1=EE</a></span></li><li><span><a href=3D"ht=
+tp://www.jbxue.com/mysql/cursor/">mysql=D3=CE=B1=EA</a></span></li><li><spa=
+n><a href=3D"http://www.jbxue.com/mysql/yuju/">mysql=D3=EF=BE=E4</a></span>=
+</li><li><span><a href=3D"http://www.jbxue.com/mysql/log/">mysql=C8=D5=D6=
+=BE</a></span></li><li><span><a href=3D"http://www.jbxue.com/mysql/function=
+/">mysql=BA=AF=CA=FD</a></span></li><li><span><a href=3D"http://www.jbxue.c=
+om/mysql/performance/">mysql=D0=D4=C4=DC</a></span></li><li><span><a href=
+=3D"http://www.jbxue.com/mysqljiaocheng/">mysql=BD=CC=B3=CC</a></span></li>=
+</ul>
+</div><!--end=B7=D6=C0=E0-->
+<div class=3D"clear_div list_o gray_border">
+
+
+
+</div>
+<div class=3D"clear_div list_o gray_border">
+<h3 class=3D"h_r_th">=C0=B8=C4=BF=B5=BC=BA=BD</h3>
+<ul class=3D"clear_div box_list">
+<li><a href=3D"http://www.jbxue.com/jb/" target=3D"_blank">=BD=C5=B1=BE</a>=
+</li>
+<li><a href=3D"http://www.jbxue.com/server/" target=3D"_blank">=B7=FE=CE=F1=
+=C6=F7</a></li>
+<li><a href=3D"http://www.jbxue.com/db/" target=3D"_blank">=CA=FD=BE=DD=BF=
+=E2</a></li>
+<li><a href=3D"http://www.jbxue.com/jb/python/" target=3D"_blank">python</a=
+></li>
+<li><a href=3D"http://www.jbxue.com/os/linux/" target=3D"_blank">linux</a><=
+/li>
+<li><a href=3D"http://www.jbxue.com/os/linuxcmd/" target=3D"_blank">linux=
+=C3=FC=C1=EE</a></li>
+<li><a href=3D"http://www.jbxue.com/jb/shell/" target=3D"_blank">shell=BD=
+=C5=B1=BE</a></li>
+<li><a href=3D"http://www.jbxue.com/js/" target=3D"_blank">javascript</a></=
+li>
+<li><a href=3D"http://www.jbxue.com/js_array/" target=3D"_blank">javascript=
+=CA=FD=D7=E9</a></li>
+<li><a href=3D"http://www.jbxue.com/jb/jquery/" target=3D"_blank">jquery</a=
+></li>
+<li><a href=3D"http://www.jbxue.com/jquery/xuanzeqi/" target=3D"_blank">jqu=
+ery=D1=A1=D4=F1=C6=F7</a></li>
+<li><a href=3D"http://www.jbxue.com/jquery_event/" target=3D"_blank">jquery=
+=CA=C2=BC=FE</a></li>
+<li><a href=3D"http://www.jbxue.com/jquery_caidan/" target=3D"_blank">jquer=
+y=B2=CB=B5=A5</a></li>
+
+<li><a href=3D"http://www.jbxue.com/python_list/" target=3D"_blank">python=
+=C1=D0=B1=ED</a></li>
+<li><a href=3D"http://www.jbxue.com/python/pachong/" target=3D"_blank">pyth=
+on=C5=C0=B3=E6</a></li>
+<li><a href=3D"http://www.jbxue.com/python/login/" target=3D"_blank">python=
+=C4=A3=C4=E2=B5=C7=C2=BC</a></li>
+
+<li><a href=3D"http://www.jbxue.com/wb/php/" target=3D"_blank">php=B1=E0=B3=
+=CC</a></li>
+<li><a href=3D"http://www.jbxue.com/php_jiaocheng/" target=3D"_blank">php=
+=BD=CC=B3=CC</a></li>
+<li><a href=3D"http://www.jbxue.com/php/phpmianshiti/" target=3D"_blank">ph=
+p=C3=E6=CA=D4=CC=E2</a></li>
+<li><a href=3D"http://www.jbxue.com/php/php_suijishu/" target=3D"_blank">ph=
+p=CB=E6=BB=FA=CA=FD</a></li>
+<li><a href=3D"http://www.jbxue.com/php/phpshuzu/" target=3D"_blank">php=CA=
+=FD=D7=E9</a></li>
+<li><a href=3D"http://www.jbxue.com/php/fenye/" target=3D"_blank">php=B7=D6=
+=D2=B3</a></li>
+<li><a href=3D"http://www.jbxue.com/php/zhengze/" target=3D"_blank">php=D5=
+=FD=D4=F2</a></li>
+<li><a href=3D"http://www.jbxue.com/php/sort/" target=3D"_blank">php=C5=C5=
+=D0=F2</a></li>
+<li><a href=3D"http://www.jbxue.com/wb/aspnet/" target=3D"_blank">asp.net</=
+a></li>
+<li><a href=3D"http://www.jbxue.com/jb/dos/" target=3D"_blank">=C5=FA=B4=A6=
+=C0=ED</a></li>
+
+<li><a href=3D"http://www.jbxue.com/wb/regular/" target=3D"_blank">=D5=FD=
+=D4=F2=B1=ED=B4=EF=CA=BD</a></li>
+<li><a href=3D"http://www.jbxue.com/mysql/" target=3D"_blank">mysql</a></li=
+>
+<li><a href=3D"http://www.jbxue.com/mysql/fenye/" target=3D"_blank">mysql=
+=B7=D6=D2=B3</a></li>
+<li><a href=3D"http://www.jbxue.com/mysql/procedure/" target=3D"_blank">mys=
+ql=B4=E6=B4=A2=B9=FD=B3=CC</a></li>
+<li><a href=3D"http://www.jbxue.com/mysql/log/" target=3D"_blank">mysql=C8=
+=D5=D6=BE</a></li>
+<li><a href=3D"http://www.jbxue.com/mysqljiaocheng/" target=3D"_blank">mysq=
+l=BD=CC=B3=CC</a></li>
+
+<li><a href=3D"http://www.jbxue.com/sql_server/" target=3D"_blank">sql=CA=
+=FD=BE=DD=BF=E2</a></li>
+
+<li><a href=3D"http://www.jbxue.com/nginx/" target=3D"_blank">nginx</a></li=
+>
+<li><a href=3D"http://www.jbxue.com/apache/" target=3D"_blank">apache</a></=
+li>
+<li><a href=3D"http://www.jbxue.com/shouji/" target=3D"_blank">=CA=D6=BB=FA=
+=BD=CC=B3=CC</a></li>
+</ul>
+</div>
+<!--end=C0=B8=C4=BF=B5=BC=BA=BD-->
+
+<div class=3D"clear_div gray_border list_o">
+<div class=3D"tab_nav r_tab_nav"><dl><dt><h3>=C8=C8=B5=E3=CE=C4=D5=C2</h3><=
+/dt></dl></div>
+<!--end=B1=EA=C7=A9=B5=BC=BA=BD-->
+<div class=3D"tab_box r_tab_box">
+<div>
+<ul class=3D"clear_div r_tad tad_list">
+<li class=3D"light"><span class=3D"r_num">1</span><a href=3D"http://www.jbx=
+ue.com/db/3374.html" title=3D"mysql =C4=DA=B4=E6=B1=ED=D4=DA=D6=F7=B4=D3=CD=
+=AC=B2=BD=CA=B1=B5=C4=D7=A2=D2=E2=CA=C2=CF=EE">mysql =C4=DA=B4=E6=B1=ED=D4=
+=DA=D6=F7=B4=D3=CD=AC=B2=BD=CA=B1=B5=C4=D7=A2=D2=E2=CA=C2=CF=EE</a></li><li=
+ class=3D"light"><span class=3D"r_num">2</span><a href=3D"http://www.jbxue.=
+com/db/3649.html" title=3D"Mysql =A1=B0Table 'mysql.servers' doesn't exist=
+=A1=B1=B5=C4=BD=E2=BE=F6=B7=BD=B7=A8">Mysql =A1=B0Table 'mysql.servers' doe=
+sn't</a></li><li class=3D"light"><span class=3D"r_num">3</span><a href=3D"h=
+ttp://www.jbxue.com/db/4079.html" title=3D"=D3=D0=B9=D8mysql=B5=C4=C8=D5=D6=
+=BE=CE=C4=BC=FE=BC=B0=C5=E4=D6=C3">=D3=D0=B9=D8mysql=B5=C4=C8=D5=D6=BE=CE=
+=C4=BC=FE=BC=B0=C5=E4=D6=C3</a></li><li><span class=3D"r_num">4</span><a hr=
+ef=3D"http://www.jbxue.com/db/4644.html" title=3D"=CA=B9=D3=C3mysqlbinlog=
+=B9=A4=BE=DF=BB=D6=B8=B4MySQL=CA=FD=BE=DD=BF=E2=B5=C4=B7=BD=B7=A8">=CA=B9=
+=D3=C3mysqlbinlog=B9=A4=BE=DF=BB=D6=B8=B4MySQL=CA=FD=BE=DD=BF=E2=B5=C4=B7=
+=BD=B7=A8</a></li><li><span class=3D"r_num">5</span><a href=3D"http://www.j=
+bxue.com/db/5447.html" title=3D"=CA=B9=D3=C3bin-log=C8=D5=D6=BE=BB=B9=D4=AD=
+=CA=FD=BE=DD=BF=E2=B5=C4=C0=FD=D7=D3">=CA=B9=D3=C3bin-log=C8=D5=D6=BE=BB=B9=
+=D4=AD=CA=FD=BE=DD=BF=E2=B5=C4=C0=FD=D7=D3</a></li><li><span class=3D"r_num=
+">6</span><a href=3D"http://www.jbxue.com/db/5448.html" title=3D"=C3=B2=CB=
+=C6=BA=DC=C7=BF=B5=C4mysql=B1=B8=B7=DD=B2=DF=C2=D4">=C3=B2=CB=C6=BA=DC=C7=
+=BF=B5=C4mysql=B1=B8=B7=DD=B2=DF=C2=D4</a></li><li><span class=3D"r_num">7<=
+/span><a href=3D"http://www.jbxue.com/db/6108.html" title=3D"=C9=BE=B3=FDMy=
+sql=D6=D0binlog=C8=D5=D6=BE=B5=C4=B6=FE=D6=D6=B7=BD=B7=A8">=C9=BE=B3=FDMysq=
+l=D6=D0binlog=C8=D5=D6=BE=B5=C4=B6=FE=D6=D6=B7=BD=B7=A8</a></li><li><span c=
+lass=3D"r_num">8</span><a href=3D"http://www.jbxue.com/db/6175.html" title=
+=3D"=C8=E7=BA=CE=BF=AA=C6=F4windows mysql=C8=D5=D6=BE=D3=EB=B2=E9=D1=AF=B9=
+=A6=C4=DC">=C8=E7=BA=CE=BF=AA=C6=F4windows mysql=C8=D5=D6=BE=D3=EB=B2=E9=D1=
+=AF=B9=A6=C4=DC</a></li><li><span class=3D"r_num">9</span><a href=3D"http:/=
+/www.jbxue.com/db/6497.html" title=3D"=D1=A7=CF=B0mysql binlog=C8=D5=D6=BE=
+=C7=E5=C0=ED">=D1=A7=CF=B0mysql binlog=C8=D5=D6=BE=C7=E5=C0=ED</a></li><li>=
+<span class=3D"r_num">10</span><a href=3D"http://www.jbxue.com/db/8645.html=
+" title=3D"=C0=ED=BD=E2Mysql binlog =C8=D5=D6=BE=B5=C4=C8=FD=D6=D6=C4=A3=CA=
+=BD">=C0=ED=BD=E2Mysql binlog =C8=D5=D6=BE=B5=C4=C8=FD=D6=D6=C4=A3=CA=BD</a=
+></li></ul>
+</div>
+</div>
+<!--end=B1=EA=C7=A9=C4=DA=C8=DD-->
+</div>
+<!--end=CD=C6=BC=F6=CE=C4=D5=C2-->
+
+<div class=3D"clear_div gray_border list_o">
+
+
+
+</div>
+<!--end=CD=C6=B9=E3=C4=DA=C8=DD-->
+
+</div>
+<!--end=D3=D2=B1=DF-->
+</div>
+<!--end=D6=D0=BC=E4=C7=F8=D3=F2-->
+
+<dl class=3D"clear_div2 footer">
+<dt><a href=3D"http://www.jbxue.com/about.html" rel=3D"nofollow">=B9=D8=D3=
+=DA=B1=BE=D5=BE</a> | =20
+<a href=3D"http://www.jbxue.com/sitemap.html">=CD=F8=D5=BE=B5=D8=CD=BC</a> =
+| =20
+<a href=3D"http://www.jbxue.com/contact.html" rel=3D"nofollow">=C1=AA=CF=B5=
+=CE=D2=C3=C7</a> | =20
+<a href=3D"http://www.jbxue.com/mianze.html" rel=3D"nofollow">=C3=E2=D4=F0=
+=C9=F9=C3=F7</a> |=20
+<a href=3D"http://www.jbxue.com/link.html" rel=3D"nofollow">=D3=D1=C7=E9=C1=
+=B4=BD=D3</a>
+</dt>=20
+<dd>=BE=A9ICP=B1=B809034670=BA=C5-2=20
+<p>CopyRight &#169; 2010-2012 <a href=3D"http://www.jbxue.com/"><strong>=BD=
+=C5=B1=BE=D1=A7=CC=C3</strong></a> JbXue.com , All Rights Reserved.</p></dd=
+>
+</dl>
+
+<!--end=CE=C4=BC=FE=B5=D7-->
+
+
+<div class=3D"tongji">
+<a href=3D"http://www.51.la/?17788391" target=3D"_blank" title=3D"51.La =CD=
+=F8=D5=BE=C1=F7=C1=BF=CD=B3=BC=C6=CF=B5=CD=B3">=CD=F8=D5=BE=CD=B3=BC=C6</a>
+
+=20
+</div>
+
+
+
+
+
+
+</body></html>
+------=_NextPart_000_D5ED_C571625D.9AAD2E86
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.jbxue.com/skin/blue/images/header.gif
+
+R0lGODlhAwAgAKIAAAAAAP////f39+rq6v///wAAAAAAAAAAACH5BAEAAAQALAAAAAADACAAAAML
+KLrc/jDKSasaOAEAOw==
+------=_NextPart_000_D5ED_C571625D.9AAD2E86
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.jbxue.com/skin/blue/images/nav_dot.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAh1BMVEX///89m+Y4lN8uh9Ij
+ecMYarUNXKcLRn4+nOc/neg4lN8uh9IjecMYarUNXKcAAAAEPXUFUJsEPXUAAAAAAAAAAAAAAACT
+3/6N2f2M2P2R3f6Dz/luuvFmsupfq+NxvetuvOxGl9RBks9WpdpCtO0ioeYzq+knvv0Vt/0Stv0P
+tf0Ttv3///9GmDpnAAAAF3RSTlMAAAAAAAAAAJnMzMzMzMwFo8ylCRcaGTxiOA0AAAABYktHRACI
+BR1IAAAAWElEQVQY063IRxZAMBQAwEghQvQSnRD1/vfzsvhOYJaD0D8c7lvcgcCiVqppBYYgQdcP
+4xQQCBrOi9ZrSCGY3Iwxu2QQbnSc1/1EHkScpFaWf1GUVpWjn7y9tQVoXGj8dwAAACV0RVh0ZGF0
+ZTpjcmVhdGUAMjAxMy0wNC0wM1QxNzoxODowNCswODowMIB/P3kAAAAldEVYdGRhdGU6bW9kaWZ5
+ADIwMTAtMDgtMTFUMDA6MDA6MDArMDg6MDDu/4jLAAAATXRFWHRzb2Z0d2FyZQBJbWFnZU1hZ2lj
+ayA2LjguOC03IFExNiB4ODZfNjQgMjAxNC0wMi0yOCBodHRwOi8vd3d3LmltYWdlbWFnaWNrLm9y
+Z1mkX38AAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMAMaf/uy8AAAAXdEVYdFRodW1iOjpJ
+bWFnZTo6SGVpZ2h0ADE2Ha9ebwAAABZ0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAAxNuUAnuIAAAAZ
+dEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRpbWUAMTI4
+MTQ1NjAwMFxrrNQAAAARdEVYdFRodW1iOjpTaXplADMyNkJCV4kw7QAAAGB0RVh0VGh1bWI6OlVS
+SQBmaWxlOi8vL2hvbWUvZnRwLzE1MjAvZWFzeWljb24uY24vZWFzeWljb24uY24vY2RuLWltZy5l
+YXN5aWNvbi5jbi9wbmcvNTEyOS81MTI5NDIucG5n9q0YCAAAAABJRU5ErkJggg==
+------=_NextPart_000_D5ED_C571625D.9AAD2E86
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.jbxue.com/skin/blue/images/blue_arrow.gif
+
+R0lGODlhBAAEAIAAAAJZjgAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlk
+PSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpu
+czptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4zLWMwMTEgNjYuMTQ1NjYxLCAyMDEy
+LzAyLzA2LTE0OjU2OjI3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cu
+dzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjph
+Ym91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnht
+cE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDov
+L25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29s
+PSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlp
+ZDo5NDgwMTgwOTBDMzAxMUU0QUNENkZBNTVDNDc2QUFGOSIgeG1wTU06RG9jdW1lbnRJRD0ieG1w
+LmRpZDo5NDgwMTgwQTBDMzAxMUU0QUNENkZBNTVDNDc2QUFGOSI+IDx4bXBNTTpEZXJpdmVkRnJv
+bSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk0ODAxODA3MEMzMDExRTRBQ0Q2RkE1NUM0NzZB
+QUY5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjk0ODAxODA4MEMzMDExRTRBQ0Q2RkE1NUM0
+NzZBQUY5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hw
+YWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX
+1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+e
+nZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2Zl
+ZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0s
+KyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAA
+AAQABAAAAgSEjwkFADs=
+------=_NextPart_000_D5ED_C571625D.9AAD2E86
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.jbxue.com/skin/blue/images/tab_nav.gif
+
+R0lGODlhAQBAAJEAAAJZjv////Pz8wAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLv
+u78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJh
+ZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4zLWMwMTEgNjYuMTQ1NjYx
+LCAyMDEyLzAyLzA2LTE0OjU2OjI3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6
+Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9u
+IHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHht
+bG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0i
+aHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0
+b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0i
+eG1wLmlpZDpBRjBCNzg2RTBDMzAxMUU0QjVFRUEyNzFGRkNFODdFQSIgeG1wTU06RG9jdW1lbnRJ
+RD0ieG1wLmRpZDpBRjBCNzg2RjBDMzAxMUU0QjVFRUEyNzFGRkNFODdFQSI+IDx4bXBNTTpEZXJp
+dmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkFGMEI3ODZDMEMzMDExRTRCNUVFQTI3
+MUZGQ0U4N0VBIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkFGMEI3ODZEMEMzMDExRTRCNUVF
+QTI3MUZGQ0U4N0VBIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRh
+PiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d
+3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWk
+o6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxr
+amloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMy
+MTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAA
+AAAsAAAAAAEAQAAAAgwEgqnLjQKjnLRGUAAAOw==
+------=_NextPart_000_D5ED_C571625D.9AAD2E86
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.jbxue.com/skin/blue/images/green_skin.png
+
+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
+------=_NextPart_000_D5ED_C571625D.9AAD2E86
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.jbxue.com/skin/blue/images/search-bt.gif
+
+R0lGODlhRAAVANUAAPr6+vj4+P///zMzM5mZmZqamvv7+/z8/P39/fn5+aSkpP38/G1ra+Xl5TEs
+LzcyNfv5+ff09Xl3d3NxcWdjZGtpaU5JTHdydXd1ddbW1lRSUlpYWGlnZ/Pu8EhDRjs5OTk0N0E8
+P2dhZFBLTu7u7tzc3C0rKz86PUpFSGBbXu3t7VJNUE5MTN7e3l5cXERAQXFvb1ZRVODg4ExHSgAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAABEABUAAAb/QJKC
+UCgaj8ikcslsLhUqhUxArVqv2Kx2y92WhoKDAUAum8/otHrNRiMEBIKgTa/b7XD5fc/f5+dqEhIT
+E3cDZod2iXR/ahhWHIoAA4eUlGqWmZdrjWgXVAxVKW2aZImLa6hsnWcwAhVWG4BslbWbZ5q5nHGz
+ZqEiVQsavZibp2mLx5O7emgUwRARI8Rol7mqiJl1fwHd3t0uC9EdFigC3+gBA+rf6+nv7PHwAdzw
+MSssMx4vIfPe67nmXaPkrx48Kyc+gHiXoGGCAQ0hPnToMB1AefMM+uv24IGDBKnK3EoVsZu7jLw2
+UkzgwMQcAzBjWjJACebMmDJPJSuYkiFIUjRUcB4YSrSo0aI4k45Bg05jt5UJlB5FQLWq1atUjw5V
+CpOiNzgFBBh4R4argalY06Y9yrWhtwNwFLToQreuXbsZFDQYEqev37+AAwseTHiw3iAAOw==
+------=_NextPart_000_D5ED_C571625D.9AAD2E86
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.jbxue.com/skin/blue/css/gray.css
+
+* { margin: 0px; padding: 0px; }
+
+body { font-family: Arial, =CB=CE=CC=E5; font-size: 12px; color: rgb(0, 0, =
+0); line-height: 1.6em; }
+
+h1 { line-height: 1.3em; }
+
+a:hover img, img { border: none; }
+
+ul { list-style: none; }
+
+input, button, select, textarea { outline: none; font-family: Arial, =CB=CE=
+=CC=E5; font-size: 12px; }
+
+table input, table button, table select, table textarea { vertical-align: m=
+iddle; }
+
+textarea { resize: none; }
+
+table { border-collapse: collapse; }
+
+a { text-decoration: none; color: rgb(0, 0, 0); }
+
+a:hover { text-decoration: underline; color: rgb(255, 102, 0); }
+
+.clear_div { overflow: hidden; zoom: 1; }
+
+.clear_div2 { zoom: 1; }
+
+.clear_div2::after { content: ""; display: block; height: 0px; clear: both;=
+ }
+
+input.checlass { margin: 0px 5px 0px 0px; vertical-align: middle; }
+
+html { background: rgb(255, 255, 255); }
+
+ul.header { clear: both; height: 28px; line-height: 28px; background: url(h=
+ttp://www.jbxue.com/skin/blue/images/header.gif) 0% 100% repeat-x; }
+
+ul.header li { clear: both; width: 1000px; margin: 0px auto; height: 28px; =
+background: url(http://www.jbxue.com/skin/blue/images/header.gif) 0% 100% r=
+epeat-x; }
+
+ul.header li h1 { display: inline; font-size: 12px; height: 28px; overflow:=
+ hidden; line-height: 28px; font-weight: normal; color: rgb(30, 30, 30); }
+
+div.header_c { clear: both; width: 1000px; margin: 5px auto; height: 70px; =
+}
+
+div.logo { float: left; margin-top: 5px; margin-right: 20px; }
+
+div.h_sg { width: 660px; height: 60px; float: right; margin-left: 10px; mar=
+gin-bottom: 5px; }
+
+div.h_bds { float: left; margin-top: 10px; margin-right: 5px; padding-botto=
+m: 5px; }
+
+div.gg_c_ad { margin-bottom: 10px; }
+
+ul.nav { clear: both; color: rgb(255, 255, 255); height: 34px; line-height:=
+ 34px; width: 1000px; margin: 0px auto; text-align: center; font-family: 'M=
+icrosoft YaHei', =CE=A2=C8=ED=D1=C5=BA=DA, 'Microsoft JhengHei', =CB=CE=CC=
+=E5; font-weight: bold; font-size: 14px; background: rgb(2, 89, 142); }
+
+ul.nav li { float: left; text-align: center; width: 8.3%; }
+
+ul.nav li a { color: rgb(255, 255, 255); display: block; }
+
+ul.nav li a:hover { color: rgb(255, 255, 255); text-decoration: none; backg=
+round: rgb(23, 108, 159); }
+
+.nav_current { background: rgb(23, 108, 159); }
+
+div.h_adv { float: right; margin-top: 7px; width: 740px; height: 60px; over=
+flow: hidden; }
+
+div.h_adv li { float: left; margin: 6px 1px; height: 18px; line-height: 18p=
+x; width: 78px; overflow: hidden; text-align: center; border-right-width: 1=
+px; border-right-style: solid; border-right-color: rgb(221, 221, 221); }
+
+div.h_adv li a { padding: 0px 5px; color: rgb(80, 80, 80); }
+
+div.h_adv li a:hover { color: rgb(255, 51, 0); text-decoration: underline; =
+}
+
+ul.nav_d { clear: both; line-height: 28px; margin: 0px auto; width: 1000px;=
+ background: rgb(246, 246, 246); }
+
+ul.nav_d li { padding: 0px 2px; color: rgb(204, 204, 204); }
+
+ul.nav_d li a { margin: 0px 8px; color: rgb(5, 5, 5); }
+
+ul.nav_d span { padding-left: 15px; margin-right: 8px; overflow: hidden; ba=
+ckground: url(http://www.jbxue.com/skin/blue/images/nav_dot.png) 0px 1px no=
+-repeat; }
+
+ul.nav_d a { color: rgb(57, 57, 57); text-decoration: none; height: 24px; l=
+ine-height: 24px; }
+
+ul.nav_d a:hover { color: rgb(255, 102, 0); text-decoration: none; height: =
+24px; line-height: 24px; }
+
+ul.r_nav { clear: both; line-height: 24px; margin: 0px auto; background: rg=
+b(246, 246, 246); }
+
+ul.r_nav li { padding: 0px 2px; color: rgb(204, 204, 204); width: 45%; floa=
+t: left; overflow: hidden; }
+
+ul.r_nav li a { margin: 0px 8px; color: rgb(5, 5, 5); }
+
+ul.r_nav span { padding-left: 10px; margin-right: 8px; overflow: hidden; ba=
+ckground: url(http://www.jbxue.com/skin/blue/images/nav_dot.png) 0px 1px no=
+-repeat; }
+
+ul.r_nav a { color: rgb(57, 57, 57); text-decoration: none; height: 24px; l=
+ine-height: 24px; }
+
+ul.r_nav a:hover { color: rgb(255, 51, 51); text-decoration: underline; hei=
+ght: 24px; line-height: 24px; }
+
+div.adv_w { clear: both; margin: 5px auto; width: 1000px; background-color:=
+ rgb(243, 243, 243); }
+
+div.list_o { clear: both; margin: 10px 0px; }
+
+div.list_t { clear: both; margin: 5px 0px 10px; }
+
+div.list_d { clear: both; margin: 10px 0px 0px; }
+
+div.list_n { clear: both; margin: 0px; }
+
+div.h_one { clear: both; margin: 5px auto; width: 1000px; }
+
+div.h_left { float: left; width: 685px; }
+
+div.h_right { float: right; width: 300px; }
+
+.gray_border { border: 1px solid rgb(219, 219, 219); background: rgb(255, 2=
+55, 255); }
+
+.blue_border { border: 1px solid rgb(157, 179, 219); background: rgb(255, 2=
+55, 255); }
+
+.black_border { border: 1px solid rgb(200, 200, 200); background: rgb(255, =
+255, 255); }
+
+.sky_border { border-bottom-width: 2px; border-bottom-style: solid; border-=
+bottom-color: rgb(242, 242, 242); background: rgb(255, 255, 255); }
+
+dl.h_th { clear: both; height: 35px; line-height: 35px; overflow: hidden; b=
+ackground: url(http://www.jbxue.com/skin/blue/images/th_line.gif) 0% 100% r=
+epeat-x; }
+
+dl.h_th dt { font-family: =CB=CE=CC=E5; float: right; }
+
+dl.h_th dd { float: left; padding: 0px 4px; height: 100%; font-size: 14px; =
+font-weight: bold; color: rgb(2, 89, 143); background: url(http://www.jbxue=
+.com/skin/blue/images/th_line_blue.gif) 0% 100% repeat-x; }
+
+dl.h_th dd h2 { font-size: 14px; }
+
+dl.h_th dt.r { color: rgb(204, 204, 204); }
+
+dl.h_th dt.r a { margin: 0px 8px; font-family: Arial, =CB=CE=CC=E5; }
+
+dl.h_th_w { margin: 10px auto; width: 1000px; }
+
+dl.h_r_th { clear: both; height: 24px; line-height: 24px; border-bottom-wid=
+th: 1px; border-bottom-style: solid; border-bottom-color: rgb(243, 243, 243=
+); overflow: hidden; background: rgb(243, 243, 243); }
+
+dl.h_r_th dt { font-family: =CB=CE=CC=E5; float: right; padding-right: 10px=
+; }
+
+dl.h_r_th dd { float: left; padding-left: 16px; font-size: 14px; font-weigh=
+t: bold; color: rgb(2, 89, 143); }
+
+dl.h_r_th dd h3 { font-size: 14px; }
+
+div.h_list { float: left; width: 48%; }
+
+ul.h_list { margin-top: 3px; }
+
+ul.h_list li { width: 310px; float: left; padding-left: 18px; line-height: =
+2.4em; height: 2.4em; overflow: hidden; background: url(http://www.jbxue.co=
+m/skin/blue/images/blue_arrow.gif) 4px 12px no-repeat; }
+
+div.s_list { float: left; width: 100%; margin-bottom: 10px; }
+
+div.s_list .h_news a { font-size: 14px; }
+
+div.s_list h3 { font-size: 14px; font-weight: normal; display: inline; }
+
+div.s_list .infotype { font-size: 14px; color: rgb(147, 147, 147); }
+
+ul.s_list { margin-top: 5px; clear: both; }
+
+ul.s_list li { padding-left: 18px; clear: both; line-height: 2.4em; height:=
+ 2.4em; overflow: hidden; border-bottom-width: 1px; border-bottom-style: do=
+tted; border-bottom-color: rgb(230, 230, 230); background: url(http://www.j=
+bxue.com/skin/blue/images/blue_arrow.gif) 4px 12px no-repeat; }
+
+ul.r_tad { clear: both; width: 90%; margin: 8px auto; }
+
+ul.r_tad li { clear: both; line-height: 2em; height: 2em; margin: 5px 0px; =
+overflow: hidden; }
+
+span.r_num { display: block; float: left; margin: 0px 10px 0px 0px; text-al=
+ign: center; width: 18px; height: 18px; line-height: 18px; overflow: hidden=
+; background: rgb(133, 133, 133); }
+
+.light span.r_num { color: rgb(255, 255, 255); background: rgb(242, 64, 91)=
+; }
+
+h2.h_th { clear: both; font-size: 14px; height: 26px; line-height: 26px; ov=
+erflow: hidden; border-left-width: 2px; border-left-style: solid; border-le=
+ft-color: rgb(2, 89, 142); padding: 0px 10px 0px 16px; background: rgb(240,=
+ 240, 240); }
+
+h2.h_th span { float: right; font-family: =CB=CE=CC=E5; font-size: 12px; fo=
+nt-weight: normal; }
+
+ul.h_news { clear: both; margin: 8px 0px 0px; }
+
+ul.h_news li { clear: both; line-height: 2em; height: 2em; overflow: hidden=
+; padding-left: 16px; background: url(http://www.jbxue.com/skin/blue/images=
+/blue_arrow.gif) 0% 10px no-repeat; }
+
+ul.h_news .line { clear: both; list-style-type: none; background: url(http:=
+//www.jbxue.com/skin/blue/images/uline.gif) 50% 50% repeat-x; }
+
+div.r_tab_nav { clear: both; height: 32px; line-height: 32px; overflow: hid=
+den; background: url(http://www.jbxue.com/skin/blue/images/tab_nav.gif) 0% =
+-32px repeat-x; }
+
+div.r_tab_nav dl { clear: both; }
+
+div.r_tab_nav dt { float: left; font-size: 14px; width: 160px; padding-left=
+: 16px; color: rgb(2, 89, 143); font-weight: bold; }
+
+div.r_tab_nav dt h3 { font-size: 14px; }
+
+div.r_tab_nav dd { float: left; padding: 0px 7px; cursor: pointer; }
+
+div.r_tab_nav dd.tab_light { margin-right: 3px; border-right-width: 1px; bo=
+rder-left-width: 1px; border-style: none solid; border-right-color: rgb(2, =
+89, 142); border-left-color: rgb(2, 89, 142); background: url(http://www.jb=
+xue.com/skin/blue/images/tab_nav.gif) 0% 0% repeat-x; }
+
+div.r_tab_box { clear: both; }
+
+.none { display: none; }
+
+h3.h_r_th { clear: both; height: 32px; line-height: 32px; overflow: hidden;=
+ font-size: 14px; color: rgb(2, 89, 143); padding: 0px 10px 0px 16px; backg=
+round: url(http://www.jbxue.com/skin/blue/images/tab_nav.gif) 0% -32px repe=
+at-x; }
+
+div.h_right ul.h_news, div.i_right ul.h_news { width: 90%; margin: 10px aut=
+o; }
+
+div.i_right ul.box_list { width: 98%; margin: 5px auto; }
+
+div.i_right ul.box_list li { margin: 1px 2px 2px; float: left; padding: 2px=
+ 4px; height: 24px; line-height: 24px; background-color: rgb(251, 251, 255)=
+; }
+
+div.i_right ul.box_list li a:link { color: rgb(0, 0, 0); text-decoration: n=
+one; font-size: 14px; }
+
+div.i_right ul.box_list li a:visited { color: rgb(70, 70, 70); text-decorat=
+ion: underline; }
+
+div.i_right ul.box_list li a:hover { color: rgb(255, 153, 0); text-decorati=
+on: underline; }
+
+.otherlink { width: 692px; font-size: 12px; border: 1px solid rgb(216, 216,=
+ 216); overflow: hidden; }
+
+.otherlink h4 { height: 32px; line-height: 32px; padding-left: 10px; color:=
+ rgb(0, 0, 0); font-size: 12px; background-color: rgb(246, 246, 246); }
+
+.otherlink .l_link { width: 340px; float: left; margin-top: 10px; padding-l=
+eft: 5px; }
+
+.otherlink .r_link { width: 320px; float: left; margin-left: 10px; }
+
+div.h_right ul.h_news li, div.i_right ul.h_news li { margin: 5px 0px; }
+
+div.h_one_o { clear: both; margin: 10px auto; width: 1015px; padding-left: =
+0.6%; }
+
+div.h_list_o { float: left; width: 32%; padding: 0px 0.5%; }
+
+div.box_o { clear: both; margin: 10px auto; width: 998px; }
+
+h3.gray_th, h4.gray_th { color: rgb(2, 89, 143); font-size: 14px; padding: =
+0px 10px 0px 16px; clear: both; height: 34px; line-height: 34px; overflow: =
+hidden; border-bottom-width: 1px; border-bottom-style: solid; border-bottom=
+-color: rgb(243, 243, 243); background: rgb(250, 250, 250); }
+
+h4.gray_th { color: rgb(51, 51, 51); }
+
+h3.gray_th span, h2.gray_th span { font-family: =CB=CE=CC=E5; float: right;=
+ font-size: 12px; font-weight: normal; }
+
+ul.h_link { clear: both; width: 96%; margin: 15px auto; line-height: 2.4em;=
+ color: rgb(204, 204, 204); }
+
+ul.h_link li { clear: both; }
+
+ul.h_link li a { margin: 0px 7px; }
+
+div.footer { clear: both; background: rgb(250, 250, 250); }
+
+dl.footer { clear: both; padding: 28px 0px; text-align: center; width: 1000=
+px; margin: 0px auto; line-height: 2.2em; color: rgb(136, 136, 136); backgr=
+ound: rgb(250, 250, 250); }
+
+div.footer a { color: rgb(136, 136, 136); }
+
+div.footer a:hover { color: rgb(255, 102, 0); }
+
+dl.footer dt, dl.footer dd { clear: both; }
+
+dl.footer dt a { margin: 0px 8px; }
+
+dl.footer p { clear: both; }
+
+dl.site_th { clear: both; height: 25px; line-height: 25px; width: 1000px; m=
+argin: 10px auto; overflow: hidden; }
+
+dl.site_th dt { float: right; }
+
+dl.site_th dd { float: left; font-size: 12px; }
+
+dl.site_th dd .china { margin: 0px 8px; }
+
+dl.site_th dd span { color: rgb(2, 89, 143); }
+
+div.i_left { float: left; width: 692px; }
+
+div.i_right { float: right; width: 302px; }
+
+dl.r_search { clear: both; margin-bottom: 10px; height: 30px; background: u=
+rl(http://www.jbxue.com/skin/blue/images/search.jpg) no-repeat; }
+
+dl.r_search dt { float: right; }
+
+dl.r_search dd { float: left; }
+
+input.r_search_text, input.r_search_btn { border: none; vertical-align: mid=
+dle; background: none; }
+
+input.r_search_text { height: 20px; line-height: 20px; padding: 5px 0px 5px=
+ 15px; width: 205px; font-size: 14px; color: rgb(153, 153, 153); }
+
+input.r_search_text:hover { color: rgb(51, 51, 51); }
+
+input.r_search_btn, input.s_search_btn { width: 75px; height: 30px; line-he=
+ight: 30px; text-align: center; color: rgb(255, 255, 255); font-size: 14px;=
+ font-weight: bold; cursor: pointer; }
+
+input.r_search_btn:hover { background: url(http://www.jbxue.com/skin/blue/i=
+mages/search.jpg) 100% 100% no-repeat; }
+
+dl.r_search_o { clear: both; height: 23px; background: url(http://www.jbxue=
+.com/skin/blue/images/search_r.jpg) no-repeat; }
+
+dl.r_search_o dt { float: right; }
+
+dl.r_search_o dd { float: left; }
+
+input.s_search_text, input.s_search_btn { border: none; vertical-align: mid=
+dle; background: none; }
+
+input.s_search_text { height: 13px; line-height: 13px; color: rgb(153, 153,=
+ 153); padding: 5px 0px 5px 15px; width: 205px; }
+
+input.s_search_text:hover { color: rgb(51, 51, 51); }
+
+input.s_search_btn { height: 23px; line-height: 23px; }
+
+input.s_search_btn:hover { background: url(http://www.jbxue.com/skin/blue/i=
+mages/search_r.jpg) 100% 100% no-repeat; }
+
+div.display_box { clear: both; margin-bottom: 10px; border-top-width: 1px; =
+border-top-style: solid; border-top-color: rgb(201, 198, 206); background-c=
+olor: rgb(255, 255, 255); }
+
+dl.display_th { clear: both; text-align: center; border-bottom-width: 1px; =
+border-bottom-style: solid; border-bottom-color: rgb(243, 243, 243); paddin=
+g: 10px 0px; width: 95%; margin: 10px auto; }
+
+dl.display_th dt { line-height: 1.5em; clear: both; font-size: 16px; font-w=
+eight: bold; }
+
+dl.display_th dt h2 { font-size: 20px; color: rgb(36, 36, 36); font-family:=
+ =CB=CE=CC=E5; }
+
+dl.display_th dd { clear: both; color: rgb(153, 153, 153); margin-top: 10px=
+; padding-top: 10px; line-height: 1em; }
+
+dl.display_th dd span { margin: 0px 10px; }
+
+div.display_wen { font-size: 14px; clear: both; margin: 0px auto 10px; widt=
+h: 95%; }
+
+dl.display_th dd a { color: rgb(164, 164, 164); }
+
+div.display_wen p { clear: both; line-height: 24px; margin: 10px 0px; }
+
+div.display_wen a { color: rgb(51, 102, 204); font-size: 14px; height: 24px=
+; line-height: 24px; text-decoration: none; }
+
+div.display_wen a:hover { color: rgb(255, 102, 0); font-size: 14px; text-de=
+coration: underline; }
+
+div.display_wen #zth_content { clear: both; margin-top: 15px; }
+
+div.display_wen #zth_content img { border: 1px solid rgb(204, 204, 204); pa=
+dding: 3px; max-width: 660px; }
+
+div.display_wen #zth_content p span { font-size: 14px; color: rgb(0, 102, 2=
+04); font-weight: bold; }
+
+div.display_wen .summary { width: 640px; font-size: 14px; line-height: 24px=
+; margin: 0px 0px 2px; padding: 5px; text-indent: 1em; background-color: rg=
+b(249, 249, 249); }
+
+div.display_wen #farticle { text-align: left; padding: 5px 0px 0px; margin:=
+ 0px; clear: both; overflow: hidden; }
+
+div.display_wen #farticle h4 { color: rgb(0, 51, 153); font-size: 14px; fon=
+t-weight: bold; }
+
+div.display_wen #farticle ul { margin: 0px; padding: 0px; }
+
+div.display_wen #farticle ul li { text-align: left; padding: 0px 0px 0px 25=
+px; margin: 0px 0px 0px 5px; color: rgb(109, 125, 169); height: 24px; line-=
+height: 24px; font-size: 14px; background: url(http://www.jbxue.com/skin/bl=
+ue/images/fav.png) 0% 50% no-repeat; }
+
+div.display_wen #farticle ul li a:link { color: rgb(0, 0, 204); font-size: =
+14px; }
+
+div.display_wen #farticle ul li a:visited { color: rgb(255, 102, 0); font-s=
+ize: 14px; }
+
+div.display_wen #farticle ul li a:hover { color: rgb(255, 102, 0); font-siz=
+e: 14px; text-decoration: underline; }
+
+.jc_tj { width: 600px; padding: 0px; text-align: left; clear: both; }
+
+.jc_tj h4 { width: 110px; font-size: 14px; color: rgb(0, 0, 255); padding-l=
+eft: 20px; line-height: 24px; height: 24px; margin: 0px; background-color: =
+rgb(221, 230, 255); }
+
+.jc_tj ul { list-style-type: none; border: 1px solid rgb(181, 187, 247); ma=
+rgin: 0px; width: 600px; overflow: hidden; padding: 5px 0px; background-col=
+or: rgb(245, 248, 254); }
+
+.jc_tj ul li { float: left; width: 45%; text-align: left; padding: 0px 0px =
+0px 25px; margin: 0px 0px 0px 5px; color: rgb(109, 125, 169); height: 24px;=
+ line-height: 24px; font-size: 14px; background: url(http://www.jbxue.com/s=
+kin/blue/images/tj01.gif) 0% 50% no-repeat; }
+
+.jc_tj ul li a:link { color: rgb(0, 51, 204); font-size: 14px; }
+
+.jc_tj ul li a:visited { color: rgb(97, 97, 97); font-size: 14px; }
+
+.jc_tj ul li a:hover { color: rgb(255, 0, 0); font-size: 14px; text-decorat=
+ion: underline; }
+
+a.infotextkey:link, a.infotextkey:visited { color: rgb(0, 51, 204); text-de=
+coration: underline; font-size: 14px; font-weight: bold; }
+
+a.infotextkey:hover, a.infotextkey:active { color: rgb(255, 128, 0); text-d=
+ecoration: underline; }
+
+div.page { clear: both; text-align: center; margin: 10px auto; width: 95%; =
+padding: 10px 0px; font-size: 12px; }
+
+div.page b, div.page a, div.page em { color: rgb(102, 102, 102); display: i=
+nline-block; vertical-align: middle; margin: 0px 3px; line-height: 1.8em; h=
+eight: 1.8em; padding: 0px 10px; border: 1px solid rgb(243, 243, 243); back=
+ground: rgb(255, 255, 255); }
+
+div.page a { font-size: 12px; }
+
+div.page b { color: rgb(255, 255, 255); background: rgb(2, 89, 142); }
+
+div.page a:hover { border: 1px solid rgb(2, 89, 142); color: rgb(2, 89, 142=
+); text-decoration: none; font-size: 12px; background: rgb(248, 248, 248); =
+}
+
+ul.share { clear: both; width: 95%; margin: 20px auto; }
+
+ul.share li { font-size: 14px; line-height: 24px; float: right; text-align:=
+ right; }
+
+dl.other_news { clear: both; height: 25px; line-height: 25px; overflow: hid=
+den; margin: 10px 0px; }
+
+dl.other_news dt { float: right; }
+
+dl.other_news dd { float: left; }
+
+dl.other_news b { font-size: 14px; }
+
+div.l_hot { clear: both; line-height: 24px; font-size: 14px; padding: 4px; =
+color: rgb(0, 0, 0); }
+
+div.l_hot a { font-size: 14px; margin: 0px 6px; color: rgb(0, 51, 204); }
+
+ul.l_text { clear: both; margin: 8px auto; width: 95%; line-height: 2em; }
+
+ul.l_text li { clear: both; }
+
+h2.gray_th_o { font-size: 14px; color: rgb(2, 89, 142); padding-left: 16px;=
+ border-left-width: 2px; border-left-style: solid; border-left-color: rgb(2=
+, 89, 142); overflow: hidden; clear: both; height: 40px; line-height: 40px;=
+ background: rgb(239, 239, 239); }
+
+div.about_box { clear: both; border-top-style: none; margin-bottom: 10px; }
+
+dl.about_text { clear: both; width: 95%; margin: 20px auto; }
+
+dl.about_text dd { float: left; width: 50%; }
+
+dl.about_text dd p { clear: both; line-height: 2em; padding: 6px 5px; borde=
+r-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(=
+176, 176, 176); overflow: hidden; zoom: 1; }
+
+dl.about_text dt { padding-top: 15px; float: right; width: 300px; }
+
+div.display_text { clear: both; width: 95%; margin: 20px auto; }
+
+div.display_text p { clear: both; line-height: 2em; text-indent: 2em; }
+
+ul.l_down { clear: both; width: 95%; margin: 15px auto; line-height: 2em; f=
+ont-size: 14px; }
+
+ul.l_down a { text-decoration: underline; }
+
+ul.l_down a:hover { text-decoration: none; }
+
+#dlist { border-width: 2px 1px 1px; border-style: solid; border-color: rgb(=
+0, 51, 102) rgb(234, 235, 244) rgb(234, 235, 244); margin: 5px auto; paddin=
+g: 10px; }
+
+#dlist p { color: rgb(0, 0, 0); font-size: 12px; font-weight: bold; height:=
+ 24px; line-height: 24px; border-bottom-width: 1px; border-bottom-style: do=
+tted; border-bottom-color: rgb(201, 201, 201); margin: 5px 10px 10px; paddi=
+ng-bottom: 3px; }
+
+#dlist ul { overflow: hidden; zoom: 1; margin: 2px; }
+
+#dlist ul li { list-style-type: none; margin-top: 5px; background: rgb(255,=
+ 255, 255); }
+
+#dlist li a.title { font-size: 12px; font-weight: bold; text-decoration: no=
+ne; color: rgb(34, 89, 166); padding-left: 20px; background: url(http://www=
+.jbxue.com/skin/blue/images/downleft.png) no-repeat; }
+
+#dlist li a.title:hover { color: rgb(255, 51, 0); text-decoration: underlin=
+e; }
+
+#dlist li a.cate { font-size: 12px; color: rgb(89, 100, 200); }
+
+#dlist li a.cate:hover { color: rgb(255, 0, 0); font-size: 12px; text-decor=
+ation: underline; }
+
+#dlist .softintro { color: rgb(0, 0, 0); margin: 5px 0px; font-size: 12px; =
+white-space: normal; }
+
+#dlist .softmeta { color: rgb(153, 153, 153); margin: 5px 0px; padding-bott=
+om: 5px; border-bottom-width: 1px; border-bottom-style: dotted; border-bott=
+om-color: rgb(201, 201, 201); }
+
+.block { margin-top: 5px; }
+
+.bd { border-width: 2px 1px 1px; border-style: solid; border-color: rgb(51,=
+ 102, 204) rgb(223, 230, 247) rgb(223, 230, 247); background: rgb(255, 255,=
+ 255); }
+
+.taglist { float: left; width: 680px; }
+
+.taglist .content li { margin: 10px 10px 0px; border-bottom-width: 1px; bor=
+der-bottom-style: dashed; border-bottom-color: rgb(204, 204, 204); padding-=
+bottom: 10px; }
+
+.taglist .content h4 { height: 25px; }
+
+.taglist .content h4, .taglist .content p { padding: 0px 10px; }
+
+.taglist .content h4 a { color: rgb(51, 102, 204); float: left; font-size: =
+14px; }
+
+.taglist .content h4 em { float: right; font-size: 12px; font-weight: norma=
+l; font-style: normal; color: rgb(136, 136, 136); }
+
+.taglist .content p { margin-top: 5px; color: rgb(0, 0, 0); }
+
+.taglist .tagfl .more { float: right; height: 20px; line-height: 20px; disp=
+lay: block; color: rgb(61, 61, 61); padding: 2px 8px; margin-right: 5px; }
+
+.taglist .tagfl .fenlei { float: left; height: 20px; line-height: 20px; dis=
+play: block; color: rgb(61, 61, 61); padding: 2px; margin-left: 0px; }
+
+.cl { clear: both; height: 0px; }
+
+.tagr { width: 310px; float: right; }
+
+.tagr .tagbox { width: 302px; margin-top: 5px; border-top-width: 2px; borde=
+r-top-style: solid; border-top-color: rgb(51, 102, 204); }
+
+.tagr .tagbox h3 { height: 24px; line-height: 24px; font-size: 14px; paddin=
+g: 5px 10px; background-color: rgb(240, 243, 251); }
+
+.tagr .tagbox .tagad, .tagr .tagbox .hottags { width: 300px; border-left-wi=
+dth: 1px; border-left-style: solid; border-left-color: rgb(243, 243, 252); =
+border-right-width: 1px; border-right-style: solid; border-right-color: rgb=
+(243, 243, 252); border-bottom-width: 1px; border-bottom-style: solid; bord=
+er-bottom-color: rgb(243, 243, 252); padding-top: 2px; padding-bottom: 5px;=
+ overflow: hidden; }
+
+.tagr .tagbox .hottags ul { padding-left: 5px; }
+
+.tagr .tagbox .hottags li { list-style-type: none; float: left; width: 48%;=
+ margin: 2px; }
+
+.tagr .tagbox .hottags li a { font-size: 14px; height: 24px; line-height: 2=
+4px; color: rgb(0, 0, 0); margin: 1px; display: block; padding: 2px 5px; bo=
+rder: 1px solid rgb(181, 190, 244); background-color: rgb(249, 249, 253); }
+
+#pages { padding: 12px 0px 10px; font-family: =CB=CE=CC=E5; text-align: cen=
+ter; }
+
+#pages a { height: 24px; line-height: 24px; text-align: center; color: rgb(=
+51, 51, 51); border: 1px solid rgb(130, 160, 223); padding: 3px 6px; text-d=
+ecoration: none; background: rgb(240, 240, 255); }
+
+#pages a.a1 { width: 56px; padding: 0px; background: url(http://www.jbxue.c=
+om/skin/blue/images/pages.png) 0px 5px no-repeat; }
+
+#pages a:hover { color: rgb(0, 0, 0); text-decoration: none; background: rg=
+b(216, 222, 245); }
+
+#pages span { display: inline-block; height: 22px; line-height: 22px; borde=
+r: 1px solid rgb(90, 133, 178); color: rgb(255, 255, 255); text-align: cent=
+er; padding: 0px 10px; background: rgb(90, 133, 178); }
+
+.blue_link a, .blue_text { color: rgb(2, 89, 143); }
+
+.blue_link a:hover { color: rgb(255, 102, 0); }
+
+.black_link a, .black_text { color: rgb(47, 47, 47); }
+
+.black_link a:hover { color: rgb(255, 102, 0); }
+
+.blue_related { padding: 0px 2px; border-left-width: 1px; border-left-style=
+: solid; border-left-color: rgb(231, 232, 250); border-right-width: 1px; bo=
+rder-right-style: solid; border-right-color: rgb(231, 232, 250); background=
+-color: rgb(247, 250, 255); }
+
+.blue_related a { color: rgb(51, 51, 204); font-size: 13px; }
+
+.blue_related a:hover { color: rgb(255, 102, 0); }
+
+.gray_related { padding: 0px 15px; border-left-width: 1px; border-left-styl=
+e: dotted; border-left-color: rgb(230, 230, 230); border-right-width: 1px; =
+border-right-style: dotted; border-right-color: rgb(230, 230, 230); }
+
+.gray_related a { color: rgb(0, 0, 0); font-size: 13px; }
+
+.gray_related a:hover { color: rgb(255, 102, 0); }
+
+.th { font-family: 'Microsoft YaHei'; }
+
+.date { float: right; color: rgb(153, 153, 153); font-size: 12px; font-weig=
+ht: normal; }
+
+.l { float: left; }
+
+.r { float: right; }
+
+.china { font-family: =CB=CE=CC=E5; }
+
+#con_all { padding: 10px 0px 0px; margin: 2px auto; width: 650px; clear: bo=
+th; text-align: center; }
+
+#con_ad1 { text-align: left; padding: 0px; margin: 0px; width: 310px; float=
+: left; clear: left; overflow: hidden; }
+
+#con_ad2 { text-align: left; padding: 0px; margin: 0px auto; clear: both; }
+
+#con_ad3 { text-align: left; padding: 0px; margin: 0px; width: 300px; float=
+: left; clear: right; overflow: hidden; }
+
+#con_ad4 { text-align: center; margin: 0px; width: 625px; padding: 3px 5px;=
+ border: none; }
+
+#con_ad8 { text-align: left; padding: 0px; margin: 0px; float: right; clear=
+: right; overflow: hidden; }
+
+#con_right { width: 336px; float: right; height: 280px; }
+
+#tlad { padding-bottom: 0px; margin: 5px auto; padding-left: 0px; width: 96=
+0px; padding-right: 0px; clear: both; }
+
+#tlad1 { padding-bottom: 0px; margin: 5px auto; padding-left: 0px; width: 9=
+60px; padding-right: 0px; clear: both; }
+
+#tlad2 { padding-bottom: 0px; margin: 5px auto; padding-left: 0px; width: 9=
+60px; padding-right: 0px; clear: both; }
+
+.codetitle { border-left-color: rgb(162, 183, 219); border-left-width: 1px;=
+ border-left-style: solid; padding: 2px 3px; margin: 3px auto 0px; width: 6=
+25px; clear: both; font-size: 14px; border-top-color: rgb(162, 183, 219); b=
+order-top-width: 1px; border-top-style: solid; border-right-color: rgb(162,=
+ 183, 219); border-right-width: 1px; border-right-style: solid; background:=
+ rgb(242, 246, 251); }
+
+.codetitle span { float: right; }
+
+.codetitle u { color: rgb(0, 0, 0); font-size: 14px; }
+
+.codebody { border: 1px solid rgb(162, 183, 219); padding: 0px 3px 5px 5px;=
+ margin: 0px auto 3px; width: 623px; clear: both; font-family: Arial; font-=
+size: 18px; line-height: 30px; background: url(http://www.jbxue.com/skin/bl=
+ue/images/logo.png) 100% 0% no-repeat rgb(204, 204, 204); }
+
+.codetext { width: 620px; font-size: 14px; line-height: 22px; border-width:=
+ 1px 1px 1px 2px; border-style: solid; border-color: rgb(201, 214, 241) rgb=
+(201, 214, 241) rgb(201, 214, 241) rgb(199, 199, 235); padding: 5px; backgr=
+ound-color: rgb(243, 245, 252); }
+
+.contentBottomAd { padding: 3px; margin-left: 30px; text-align: left; margi=
+n-top: 1px; margin-bottom: 5px; }
+
+.ad_680 { margin: 3px 0px 2px; padding: 8px 3px; border: 1px solid rgb(181,=
+ 187, 247); height: 150px; overflow: hidden; }
+
+.bottomAd { margin: 5px auto 10px; clear: both; background: rgb(255, 255, 2=
+55); }
+
+.fl336 { text-align: left; padding: 0px; margin: 0px; width: 336px; float: =
+left; overflow: hidden; }
+
+.fr336 { text-align: left; padding: 0px; margin: 0px; width: 336px; float: =
+right; overflow: hidden; border: 1px solid rgb(243, 243, 243); }
+
+#ss { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-c=
+olor: rgb(2, 89, 142); padding-bottom: 5px; }
+
+.bk, .bk3, .bk6, .bk8, .bk10, .bk15, .bk20, .bk24 { clear: both; font-size:=
+ 1px; height: 0px; line-height: 1px; }
+
+.tongji { display: none; }
+
+dl.l_site { clear: both; height: 25px; line-height: 25px; margin-bottom: 5p=
+x; overflow: hidden; border-top-width: 1px; border-top-style: solid; border=
+-top-color: rgb(224, 224, 224); border-bottom-width: 1px; border-bottom-sty=
+le: solid; border-bottom-color: rgb(224, 224, 224); background: url(http://=
+www.jbxue.com/skin/blue/images/green_skin.png) 0px -188px repeat-x scroll t=
+ransparent; }
+
+dl.l_site dt { float: right; padding-right: 10px; }
+
+dl.l_site dd { padding-left: 5px; float: left; font-size: 12px; color: rgb(=
+47, 47, 47); }
+
+dl.l_site dd .china { margin: 0px 8px; }
+
+dl.l_site dd span { color: rgb(2, 89, 143); }
+
+.e2 li { width: 98%; overflow: hidden; clear: both; padding: 12px 0px; bord=
+er-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(=
+238, 238, 238); }
+
+.e2 li a.preview { width: 84px; float: left; margin-right: 7px; margin-bott=
+om: 3px; margin-left: 10px; display: inline; }
+
+.e2 li a { color: rgb(0, 60, 183); }
+
+.e2 li a:hover { color: rgb(255, 51, 51); }
+
+.e2 li a.preview img { width: 80px; height: 60px; display: block; padding: =
+1px; border: 1px solid rgb(238, 238, 238); }
+
+.e2 li a.title { overflow: hidden; line-height: 25px; font-weight: bold; fo=
+nt-size: 14px; margin-left: 2px; }
+
+.e2 span.info { display: block; line-height: 24px; color: rgb(85, 85, 85); =
+padding-left: 12px; }
+
+.e2 span.info small { color: rgb(170, 170, 170); font-size: 12px; margin-le=
+ft: 3px; }
+
+.e2 p.intro { color: rgb(113, 113, 113); line-height: 20px; margin-left: 5p=
+x; padding-left: 10px; padding-right: 10px; }
+
+.e2 span.info2 { display: block; line-height: 24px; color: rgb(85, 85, 85);=
+ }
+
+.e2 span.info2 small { color: rgb(170, 170, 170); font-size: 12px; }
+
+.e2 p.intro2 { color: rgb(119, 105, 85); line-height: 20px; padding-right: =
+10px; }
+
+div.prev_next { margin-top: 10px; margin-bottom: 10px; padding: 2px 8px; li=
+ne-height: 24px; font-size: 12px; border: 1px solid rgb(228, 228, 228); }
+
+div.prev_next a { color: rgb(58, 58, 58); font-size: 12px; }
+
+div.prev_next a:hover { color: rgb(0, 51, 255); font-size: 12px; }
+
+div.bq_ad { border-top-width: 1px; border-top-style: solid; border-top-colo=
+r: rgb(246, 246, 246); border-bottom-width: 1px; border-bottom-style: solid=
+; border-bottom-color: rgb(246, 246, 246); margin-top: 20px; margin-bottom:=
+ 10px; padding: 5px 0px; text-align: center; background-color: rgb(255, 255=
+, 255); }
+
+.search-keyword { width: 210px; height: 18px; padding-top: 2px; padding-lef=
+t: 6px; border: 1px solid rgb(186, 218, 161); color: rgb(68, 68, 68); backg=
+round: rgb(255, 255, 255); }
+
+.search-submit { cursor: pointer; width: 68px; height: 22px; font-size: 0px=
+; line-height: 32px; color: rgb(250, 250, 250); border: 0px; background: ur=
+l(http://www.jbxue.com/skin/blue/images/search-bt.gif) no-repeat; }
+
+.search-option { margin-left: 3px; margin-right: 3px; border: 1px solid rgb=
+(186, 218, 161); height: 22px; }
+
+.search { width: 995px; padding-left: 5px; line-height: 32px; margin: 0px a=
+uto; background-image: url(http://www.jbxue.com/skin/blue/images/green_skin=
+.png); background-position: 0px -112px; background-repeat: repeat-x; }
+
+.form h4 { display: none; }
+
+.form { float: left; margin: 0px 10px 0px 0px; }
+
+.tags { width: 600px; height: 32px; line-height: 32px; overflow: hidden; co=
+lor: rgb(130, 130, 130); }
+
+.tags a { font-family: =CB=CE=CC=E5; color: rgb(0, 0, 255); height: 32px; l=
+ine-height: 32px; margin-right: 10px; }
+
+.tags a:hover { color: rgb(255, 0, 0); height: 32px; line-height: 32px; mar=
+gin-right: 10px; }
+
+.tags h4 { float: left; margin-right: 6px; height: 26px; font-size: 12px; c=
+olor: rgb(119, 119, 119); }
+
+.tags li { float: left; margin-right: 6px; }
+
+.syntaxhighlighter a, .syntaxhighlighter div, .syntaxhighlighter code, .syn=
+taxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table=
+ tr, .syntaxhighlighter table tbody, .syntaxhighlighter table thead, .synta=
+xhighlighter table caption, .syntaxhighlighter textarea { border-radius: 0p=
+x !important; border: 0px !important; bottom: auto !important; float: none =
+!important; height: auto !important; left: auto !important; line-height: 1.=
+1em !important; margin: 0px !important; outline: 0px !important; overflow: =
+visible !important; padding: 0px !important; position: static !important; r=
+ight: auto !important; text-align: left !important; top: auto !important; v=
+ertical-align: baseline !important; width: auto !important; box-sizing: con=
+tent-box !important; font-family: Consolas, 'Bitstream Vera Sans Mono', 'Co=
+urier New', Courier, monospace !important; font-weight: normal !important; =
+font-style: normal !important; font-size: 1em !important; min-height: auto =
+!important; background: none !important; }
+
+.syntaxhighlighter { width: 100% !important; margin: 1em 0px !important; po=
+sition: relative !important; overflow: auto !important; font-size: 1em !imp=
+ortant; }
+
+.syntaxhighlighter.source { overflow: hidden !important; }
+
+.syntaxhighlighter .bold { font-weight: bold !important; }
+
+.syntaxhighlighter .italic { font-style: italic !important; }
+
+.syntaxhighlighter .line { white-space: pre !important; }
+
+.syntaxhighlighter table { width: 100% !important; }
+
+.syntaxhighlighter table caption { text-align: left !important; padding: 0.=
+5em 0px 0.5em 1em !important; }
+
+.syntaxhighlighter table td.code { width: 100% !important; }
+
+.syntaxhighlighter table td.code .container { position: relative !important=
+; }
+
+.syntaxhighlighter table td.code .container textarea { box-sizing: border-b=
+ox !important; position: absolute !important; left: 0px !important; top: 0p=
+x !important; width: 100% !important; height: 100% !important; border: none=
+ !important; padding-left: 1em !important; overflow: hidden !important; whi=
+te-space: pre !important; background: white !important; }
+
+.syntaxhighlighter table td.gutter .line { text-align: right !important; pa=
+dding: 0px 0.5em 0px 1em !important; }
+
+.syntaxhighlighter table td.code .line { padding: 0px 1em !important; }
+
+.syntaxhighlighter.nogutter td.code .container textarea, .syntaxhighlighter=
+.nogutter td.code .line { padding-left: 0em !important; }
+
+.syntaxhighlighter.show { display: block !important; }
+
+.syntaxhighlighter.collapsed table { display: none !important; }
+
+.syntaxhighlighter.collapsed .toolbar { padding: 0.1em 0.8em 0em !important=
+; font-size: 1em !important; position: static !important; width: auto !impo=
+rtant; height: auto !important; }
+
+.syntaxhighlighter.collapsed .toolbar span { display: inline !important; ma=
+rgin-right: 1em !important; }
+
+.syntaxhighlighter.collapsed .toolbar span a { padding: 0px !important; dis=
+play: none !important; }
+
+.syntaxhighlighter.collapsed .toolbar span a.expandSource { display: inline=
+ !important; }
+
+.syntaxhighlighter .toolbar { position: absolute !important; right: 1px !im=
+portant; top: 1px !important; width: 11px !important; height: 11px !importa=
+nt; font-size: 10px !important; z-index: 10 !important; }
+
+.syntaxhighlighter .toolbar span.title { display: inline !important; }
+
+.syntaxhighlighter .toolbar a { display: block !important; text-align: cent=
+er !important; text-decoration: none !important; padding-top: 1px !importan=
+t; }
+
+.syntaxhighlighter .toolbar a.expandSource { display: none !important; }
+
+.syntaxhighlighter.ie { font-size: 0.9em !important; padding: 1px 0px !impo=
+rtant; }
+
+.syntaxhighlighter.ie .toolbar { line-height: 8px !important; }
+
+.syntaxhighlighter.ie .toolbar a { padding-top: 0px !important; }
+
+.syntaxhighlighter.printing .line.alt1 .content, .syntaxhighlighter.printin=
+g .line.alt2 .content, .syntaxhighlighter.printing .line.highlighted .numbe=
+r, .syntaxhighlighter.printing .line.highlighted.alt1 .content, .syntaxhigh=
+lighter.printing .line.highlighted.alt2 .content { background: none !import=
+ant; }
+
+.syntaxhighlighter.printing .line .number { color: rgb(187, 187, 187) !impo=
+rtant; }
+
+.syntaxhighlighter.printing .line .content { color: black !important; }
+
+.syntaxhighlighter.printing .toolbar { display: none !important; }
+
+.syntaxhighlighter.printing a { text-decoration: none !important; }
+
+.syntaxhighlighter.printing .plain, .syntaxhighlighter.printing .plain a { =
+color: black !important; }
+
+.syntaxhighlighter.printing .comments, .syntaxhighlighter.printing .comment=
+s a { color: rgb(0, 130, 0) !important; }
+
+.syntaxhighlighter.printing .string, .syntaxhighlighter.printing .string a =
+{ color: blue !important; }
+
+.syntaxhighlighter.printing .keyword { color: rgb(0, 102, 153) !important; =
+font-weight: bold !important; }
+
+.syntaxhighlighter.printing .preprocessor { color: gray !important; }
+
+.syntaxhighlighter.printing .variable { color: rgb(170, 119, 0) !important;=
+ }
+
+.syntaxhighlighter.printing .value { color: rgb(0, 153, 0) !important; }
+
+.syntaxhighlighter.printing .functions { color: rgb(255, 20, 147) !importan=
+t; }
+
+.syntaxhighlighter.printing .constants { color: rgb(0, 102, 204) !important=
+; }
+
+.syntaxhighlighter.printing .script { font-weight: bold !important; }
+
+.syntaxhighlighter.printing .color1, .syntaxhighlighter.printing .color1 a =
+{ color: gray !important; }
+
+.syntaxhighlighter.printing .color2, .syntaxhighlighter.printing .color2 a =
+{ color: rgb(255, 20, 147) !important; }
+
+.syntaxhighlighter.printing .color3, .syntaxhighlighter.printing .color3 a =
+{ color: red !important; }
+
+.syntaxhighlighter.printing .break, .syntaxhighlighter.printing .break a { =
+color: black !important; }
+
+.syntaxhighlighter { background-color: white !important; }
+
+.syntaxhighlighter .line.alt1 { background-color: white !important; }
+
+.syntaxhighlighter .line.alt2 { background-color: white !important; }
+
+.syntaxhighlighter .line.highlighted.alt1, .syntaxhighlighter .line.highlig=
+hted.alt2 { background-color: rgb(224, 224, 224) !important; }
+
+.syntaxhighlighter .line.highlighted.number { color: black !important; }
+
+.syntaxhighlighter table caption { color: black !important; }
+
+.syntaxhighlighter .gutter { color: rgb(175, 175, 175) !important; }
+
+.syntaxhighlighter .gutter .line { border-right-width: 3px !important; bord=
+er-right-style: solid !important; border-right-color: rgb(108, 226, 108) !i=
+mportant; }
+
+.syntaxhighlighter .gutter .line.highlighted { color: white !important; bac=
+kground-color: rgb(108, 226, 108) !important; }
+
+.syntaxhighlighter.printing .line .content { border: none !important; }
+
+.syntaxhighlighter.collapsed { overflow: visible !important; }
+
+.syntaxhighlighter.collapsed .toolbar { color: blue !important; border: 1px=
+ solid rgb(108, 226, 108) !important; background: white !important; }
+
+.syntaxhighlighter.collapsed .toolbar a { color: blue !important; }
+
+.syntaxhighlighter.collapsed .toolbar a:hover { color: red !important; }
+
+.syntaxhighlighter .toolbar { color: white !important; border: none !import=
+ant; background: rgb(108, 226, 108) !important; }
+
+.syntaxhighlighter .toolbar a { color: white !important; }
+
+.syntaxhighlighter .toolbar a:hover { color: black !important; }
+
+.syntaxhighlighter .plain, .syntaxhighlighter .plain a { color: black !impo=
+rtant; }
+
+.syntaxhighlighter .comments, .syntaxhighlighter .comments a { color: rgb(0=
+, 130, 0) !important; }
+
+.syntaxhighlighter .string, .syntaxhighlighter .string a { color: blue !imp=
+ortant; }
+
+.syntaxhighlighter .keyword { color: rgb(0, 102, 153) !important; }
+
+.syntaxhighlighter .preprocessor { color: gray !important; }
+
+.syntaxhighlighter .variable { color: rgb(170, 119, 0) !important; }
+
+.syntaxhighlighter .value { color: rgb(0, 153, 0) !important; }
+
+.syntaxhighlighter .functions { color: rgb(255, 20, 147) !important; }
+
+.syntaxhighlighter .constants { color: rgb(0, 102, 204) !important; }
+
+.syntaxhighlighter .script { font-weight: bold !important; color: rgb(0, 10=
+2, 153) !important; }
+
+.syntaxhighlighter .color1, .syntaxhighlighter .color1 a { color: gray !imp=
+ortant; }
+
+.syntaxhighlighter .color2, .syntaxhighlighter .color2 a { color: rgb(255, =
+20, 147) !important; }
+
+.syntaxhighlighter .color3, .syntaxhighlighter .color3 a { color: red !impo=
+rtant; }
+
+.syntaxhighlighter .keyword { font-weight: bold !important; }
+------=_NextPart_000_D5ED_C571625D.9AAD2E86
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: chrome-extension://fidicgekecdkdmkjghdgadgdmcfodfid/themes/default/img/header-buttons.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAiCAYAAACp43wlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAA2RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEz
+NDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEu
+MC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVz
+b3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1N
+Ok9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpDQjJGMUU3RDA5MTVFMzExQjg1QkZCOTgyNUJE
+RTlCMiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGRjA2ODk4QTMwQTkxMUU0OUQ2OUM5NTFC
+OUM0ODAzMCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGRjA2ODk4OTMwQTkxMUU0OUQ2OUM5
+NTFCOUM0ODAzMCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3Mi
+PiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCMzExRjY1ODI0
+MTVFMzExQjgzNTg5Q0RCNUI4RTEwRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDQjJGMUU3
+RDA5MTVFMzExQjg1QkZCOTgyNUJERTlCMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRG
+PiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvyGPwMAAAwpSURBVHja7Fp7XFRVHufe
+ed6ZOwMzAwMqLzEDQtdAifWRVp/dlTJ3tyW13f5Idz9ttpmagGmwpWambeyuFB/NIvpopQHlA1RQ
+trBSAc0NQYMB+6wB8lJe87rv2d8ZGBdpZu6MYp92l8PnfO49c8/9nt89v9c55wvmcDgCxsqPp+Bj
+U/DjKlKxDhiG6eGihSof8YiHaoHaDV4muHuXo07c0JYR94lisfbKG7CkynmjLtftxLpVTMxTyAJA
+GVzioerh3m2foXftUC/AvcWTQkARfmGBUiyeFDIact0OrNHC9Bay7vAGOjQ4qgTcJsDVI5ZcLp8s
+k0kNCoUCU6lVuFarkQyv6Df0DPqpZDLZFFDgDyLXKGONCqbUwwvo91CJROJsR0ZEKOLjYgPLj1d0
+ofaUhLvUWo1Wfqqqqhe1BUEgQNMhcNs5Eith2u+RxYQqlUoMTTpBKABWgsmkUqfEvCA4WJZz2O0U
+z3FcAFwJtVplhEcdYnKJFW9yjcRa8fTTCRlr165ubmr6+trVq1fv+enMnx0uKSlasWrlMTEsMfnQ
+92avX5887755Mwb6BwbUpJrMezOv5JODB9tGYnrKIeSQFgMiw8MV+e+8szRIpwslCCL/0qVLfW++
+mfck3BPPPbd656mq6l4c+vEOh8odUGdnNwnegRFKBQZKkahUhESpVEikEngLxzFQhsAwjIDaVquN
+43kp+k0lJhcqc+fMNqTOT40d3uHcuXMtxfv3tzjd34tcLqz75t5r0AXpiBCjUQsG4YB3ZEF6vYFl
+GUajIckFqanjrDYrU3ni82tesNzK5yqhRqMsaXpS7MkvvvzqxU2bqksOHFi6aNHilAOHDn0yEtOT
+QiQu19Lp9XKlkiCVhFK1YcPGp0BQmlCpNCzD2sPDwzUYVtPrGBQAc2+lDokUvAHCEQ4YOKlWSQmV
+Ugoe4nRVnufBO2gOjcULkOUcDh7HJbiYXKgsf2r5/ckp99w7vMOsWbOaPz5w4A1nrPYilwvrpQ0b
+l4aHR8SBUdD5b7/91jcNDZ0GvZ6gaLosIzPzqZmz5zzY1tbaUPnAAzlesL4n36O/eSRSr9OrAJeL
+iorSGwzBIfBtjVqtFm9saPw2Ni42JsCNfFKRBBVQV19vfnbls7t27Njxp0mTYhJhsqSdnZ3NW7e+
+WlD8yf7vnJPjJV4ShBKDSQ+QK0AhCrlk585dK8LCxkeP7PfLXz2UTjMsZreLh2mXQnAIBd97hsOf
+Sx4ME8X6x/GKz1MfTFUPmM09jSZT58pVq34H4Yk/XFp6/NxXX52adnfiLNTHF6zh8q1Zk/7Y+AkT
+7nCARQ7KhePzU1PlpYdLG0pKS+rr6uva3GFKvSYefHByIM4LACw4tQm/oxFYluVdzzFBbEWIOf+8
+xX5QNBrRp491jetxLB/lQlgfFRXWJUxJiAXDUUdGRurtNpt9YGCgNzo6Koyy29lr1651oT6YH8pA
+40skuNTZhLD8n1yC4woI219WVfWgivmzD0HA8H5AXOyd6jdy33hSG6g1dHZ2mSBkcRB+iKys7D/A
+0PmlR4+2CV6sB5K0AykC3NXBMKywc0deoV6vUyHhhpaA8DvHo1zCC7zDlw+WuCbcw7iu54KIVaP3
+t2/f/sz4CePjGJq1NzY2HjQajefVJKkqLv747MZNm57RG/SRqM/DCxfm+KoQND6EaZkbo0OfjXmT
+z5NCHAFDyYmmaYg4MF8sZ9+2dWuBqbmpN3d77h9hxaS0WCyMuyQ2EgutpGia4aUQYs6eO9ehkMtw
+SPT40OoF5RCeoigO8pKAHBHit0NMLlTq6+q+hRVg1PAOsEpqdj0XkwthnampqYFc+B3Edh3kjKdr
+qqsrB/r7revWrVtms1ltsIgpa7/S1oX5FrKuy8fQDDUUrpAtOkAXUjSPKNp4k8/txhA6qiHkJcPy
+09mOiohUxsXG6sorjrej9l1x8RqDQa/84uTJbtSmKBqFMBNgXRm5MRwXkUZaLNbkoEAtLpPLMAUk
+d5RPIEA53RmWVQK8i5a+6Cr09Q1AeORN/T1lbSM3hiPlEiue5HKH9Wha2uQVK1asBTlsDE1bYWka
+UlFRsXfzK698KoY1mvJJPewkrQBuYViOlMtkAZdbWiio7a4FwcWGBjNczKiNEjbKJ9C+6g6rveVj
+i0r7c7PVZtcowTjACxwSiuJd1oEMgud4534EQhpUGoWvbl/k8lbE5BqJZbNa6Y72jqaSkkOHILl3
+Z6RnLOvq7Or15RtHUz5vRydquPwE8oUC4qFb9wLrDqApCmXOBsDp8nJ0ch0LbRDdeT8SEDwJCdjA
+2iu7vByd3LJctwNrtDAxb8fvQzvPSKgaN97kGPSSALTbtIkdLoJSfMICZdjEDhdvVa7bhTUamNjt
+5ENGnvbe1HG0h9Pe/9WCjRFUY3zIGB8yxoeM8SE3FIVSMVkulxmUhBLTaEhcpwuSDK/oN/QM+qkU
+Cvn/NR+Ci53r44PHJ8Tjv30sCt2jOjMlJWjhgofGudpD4CHusKbfs1wG6wp0dI8FarWSYINOZtAH
+ycLCQhSoGkMM8uBgvQw9I9VqHDaLhFarMfoil1j1JtdIrJeys2cwLPvZ+drazZ9WVDxDM+xnRfv2
+LfYFy5t827ZsmdVkMv3N1NDw1zNVVc/Hx8WpvGGK8iGT75hEHDlyZFtwiDFaQ2oyzted7yosKs6B
+CdYue+KJlYfLytq98Q6tbR2kQiHDVIQSR1wI7GKlKpVSikgbdK4DkyDQ1OCxitls4Ti5HIMNk098
+COIq0tLSpg/vcPr0adPb775r8pUPeXD+/LCQkGBVWFiYnqZpAd6R6w2GULvVQqtJUrv40bQokIs+
+WlbW4S8fMm3qVM3ChQsXVBw7diRvx46TH7y/Z21mevr9Ty5fftiTfKJ8SKgxlFCp1EEkSWr+kpOT
+Y7NZ+0OMoROssIuLiYlBrtkuzofIEFuIgxIhPKllpJqQQQhzjsGxnGCVUyw6A4INE+JD0KmwT3xI
+Zmbmotlz5z5yAx8yZ07tOwUFq33lQ7a99traqOjoRJpm7G/l5W2qq69v0et0JBjK3vVZWRt2zZ37
++HeXL//zaHn5Gn/4EGd0SEoKs9pslt179tQ0NDbaTlSeqIyPv+vO66cUN8OHnKqq6nlsyZLVRcXF
+uYbg4AlgNSRlt9v/nJX1fN7OnRfE+BDwCozjOJQfcEKpkOz9sPDViKiJcSP7zZ4549foANJms/O+
+8iGIY/jejCC384MPOVZeXrLg4Yc1ZrO5q/7ChdY1GZmrAhwCf3D//qKzNWfK706cNh/18ZcPQWXx
+kiX3R0RGxr+yZcvjFFjyhPDwScEhwRHwfJcn+XziQ1iOFZyEt8vqQbng3qzPvMNQlUglHr8Kl7jm
+UfzIHBM5fveHDyl4773qKVOnJqpUKs3EiRONYGzW/v6+7phJkyIpyk739PS1oT7+8iGoJCQkpBhD
+QyNQ9VU+UT5kemJiUGFhYY4xLCzKZrXaaIoy6yDGbnv99dehT0bB7t0mb7wDWDziQxyInkUekLs9
+J89gMJAuClcYPFTkoPIsxwuD9JdvfIjHuOEHH5Kfn/9yeER4EkUx1osXLxSEhoaeRlHg/T27P4MQ
+vTk4OHgy6jNr9ux0f/iQofM5zl/5RPkQm83GMizDgDKsL2ZnP/91bW37h3v3/h0xbH19fXaf+BDI
+DRRF8TLwkC++PHVZqZRL5NAYPGgTBLud4mw2imNoRuCd/IjdJz6k7nxtXSSEhOEdmkxNtf7wITXV
+1Z+2X2m7RGq0hnUvZG2srqo6aO7vN2/c9PI6+GQL4O3raL/S6i8fMhg+JXKvIfdm+ZDYyXeqZyQl
+jfvgo33NqJ2SnKwHS1IfKi1tEeNDwqMXkQNmS7IuMBCHPQaOcgni1lGox9F/nXDov05YJxdCgUJ6
++/p5iOGm3u4jPygfsuyJpVOfS1+TyzCMBcKWWRsYOK68rDw3c23m/pvlQ6pPV22GeYrhBf56XoQF
+jjwqOmrJLfEhjU1NVqjNrvhefeZsD1x6fOEKWv9VZCGDfgFrMhs5xBwKVqmUdxkHsgfITy5W0cHQ
+NA8K+sH5EIvZTLW2tJ4/dPDAexcvfnNl/Qvr13V2dHTfCh+SMnNmtqes+qPhQ2APgrlL3EhAWO+P
+8SFjfMgYHzLGh4zxIf895d8CDADiR5RStfMpDgAAAABJRU5ErkJggg==
+------=_NextPart_000_D5ED_C571625D.9AAD2E86
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: chrome-extension://fidicgekecdkdmkjghdgadgdmcfodfid/themes/default/img/poparrow.png
+
+iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEz
+NDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlE
+PSJ4bXAuaWlkOjc1MzYyODU0NzYwRDExRTQ4QkVFRDQ3NzI5NUM1MTI0IiB4bXBNTTpEb2N1bWVu
+dElEPSJ4bXAuZGlkOjc1MzYyODU1NzYwRDExRTQ4QkVFRDQ3NzI5NUM1MTI0Ij4gPHhtcE1NOkRl
+cml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NzUzNjI4NTI3NjBEMTFFNDhCRUVE
+NDc3Mjk1QzUxMjQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NzUzNjI4NTM3NjBEMTFFNDhC
+RUVENDc3Mjk1QzUxMjQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1l
+dGE+IDw/eHBhY2tldCBlbmQ9InIiPz4UqbRwAAABK0lEQVR42pzST0uEQBgG8FFHBLU0Mdmr0CFa
+OkTsuUPd+god+nB9hW4VdF6WDkvRIey6iJiWEiiOPW8wIIOb0AvDuzM+v/HPrNb3PftP8SRJxtZP
+dV2/5ZxnTdMsMP9WA/oY0jTtYR9lWdbcNM1nrHlTkNBdFEWu4zg6LEOPDcN4xbXZNkjoHmiXkFwM
+goD5vj/Do79geqBCiXaGSJbneSwMwz3gJWUljP9CslzXZcj4yD5iekzBdxzJNbqBoU0NZK/Q15w0
+drnBcKbODkgg94V+Qndc48dZmqZFVVVbUV3XAhlC5/SU8p1WQohFlmUfZVlOoZV6HG/AR0VRbPI8
+V9HnEP3+5ZTNN13XHSL8hB7btk2oAroYojFIVbZtO8dHWGKDEOhSRVQ/AgwABfaNFLFN77sAAAAA
+SUVORK5CYII=
+------=_NextPart_000_D5ED_C571625D.9AAD2E86
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: chrome-extension://fidicgekecdkdmkjghdgadgdmcfodfid/themes/default/content.css
+
+#hldict-pop { position: absolute; font-family: 'Helvetica Neue', Helvetica,=
+ Arial, sans-serif; font-size: 13px; line-height: 1.5em; color: black; z-in=
+dex: 2014112700; background: transparent; }
+
+#hldict-pop-texture { height: 0px; border-style: solid none none; border-to=
+p-width: 1px; border-top-color: rgb(204, 204, 204); box-shadow: rgba(0, 0, =
+0, 0.4) 0px 1px 2px; }
+
+#hldict-pop-close { float: right; margin: 1px 1px 0px 0px; width: 15px; hei=
+ght: 15px; cursor: pointer; display: none; background: url(chrome-extension=
+://fidicgekecdkdmkjghdgadgdmcfodfid/themes/default/img/header-buttons.png) =
+-5px -3px; }
+
+#hldict-pop-close.hldict-hover { background-position: -5px -19px; }
+
+#hldict-pop-content { padding: 10px; border-radius: 0px 0px 2px 2px; border=
+-top-style: none; box-shadow: rgba(0, 0, 0, 0.298039) 0px 2px 3px; backgrou=
+nd: white; }
+
+#hldict-poparrow-w { position: relative; height: 7px; }
+
+#hldict-poparrow-w.up { margin: 0px 0px -1px; }
+
+#hldict-poparrow-w.down { margin: -2px 0px 0px; }
+
+#hldict-poparrow { width: 14px; height: 7px; left: 50%; margin-left: -7px; =
+position: absolute; z-index: 20130907; }
+
+#hldict-poparrow.up { background: url(chrome-extension://fidicgekecdkdmkjgh=
+dgadgdmcfodfid/themes/default/img/poparrow.png); }
+
+#hldict-poparrow.down { background: url(chrome-extension://fidicgekecdkdmkj=
+ghdgadgdmcfodfid/themes/default/img/poparrow.png) 50% 100%; }
+
+#hldict-pop-title { font-size: 16px; color: rgb(153, 153, 153); }
+
+#hldict-pop-title strong { margin-right: 10px; color: rgb(221, 75, 57); fon=
+t-weight: bold; }
+
+#hldict-pop-title #hldict-pop-play { float: right; margin: 1px 0px 0px; cur=
+sor: pointer; width: 16px; height: 16px; opacity: 0.55; display: none; back=
+ground: url(chrome-extension://fidicgekecdkdmkjghdgadgdmcfodfid/themes/defa=
+ult/img/sound.png); }
+
+#hldict-pop-title #hldict-pop-play:hover { opacity: 1; }
+
+#hldict-pop-detail { padding: 10px 0px; font-size: 14px; text-align: left; =
+font-weight: normal; color: rgb(51, 51, 51); line-height: 1.8em; }
+
+#hldict-pop-more { color: rgb(66, 127, 237); text-align: right; cursor: poi=
+nter; padding: 0px 2px; }
+
+#hanlin-dict-w { position: fixed; right: 0px; top: 0px; width: 0px; height:=
+ 100%; z-index: 2014083000; }
+
+#hanlin-dict { border: none; margin: 0px; padding: 0px; }
+
+#hanlin-dict-minwidth { width: 67px; height: 0px; }
+------=_NextPart_000_D5ED_C571625D.9AAD2E86--
