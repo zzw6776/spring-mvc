@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <title>xx信息查询</title>
     <script type="text/javascript" src="/js/jquery1.8.3.min.js"></script>
-<!--    <script type="text/javascript" src="/js/ai/ai-lib.js"></script>
-    <script src="/js/cheat-order.js"></script>-->
 </head>
 
 <body>
-<div >
-操作说明:点击自己的姓名缩写删除该条基金记录(别点错成别人的了!!!!)
-    <input type="button" value="搜索" id="btSearch" />
-    <div >
-        <table  id="table-result" border="1">
+<div>
+    操作说明:点击自己的姓名缩写删除该条基金记录(别点错成别人的了!!!!)
+    <br>
+    <br>
+    <br>
+    <div>
+        <table id="table-result" border="1">
             <thead>
             <tr>
                 <th>基金ID</th>
@@ -27,6 +27,10 @@
         </table>
     </div>
 </div>
+<br>
+<br>
+<br>
+
 添加基金
 基金ID:<input id="fundId" size="30"/>
 账户:<select id="account">
@@ -34,27 +38,78 @@
     <option value="zzw">zzw</option>
     <option value="sxl">sxl</option>
 </select>
-<button id="btMove" >添加</button>
+<button id="btMove">添加</button>
 </body>
 </html>
 <script>
+    function deleteFund(id, account) {
+        $.ajax({
+            type: "post",
+            dataType: "text",
+            url: "/fund/delete",
+            data: {
+                fundId: id,
+                account: account
+            },
+            success: function (data) {
+                if (data) {
+                    alert(data);
+                    getFund();
+                }
+            }
+        });
+    }
+    function getFund() {
+        var tbody = window.document.getElementById("tbody-result");
+        $.ajax({
+            type: "post",
+            dataType: "json",
+            url: "/fund/select",
+            data: {},
+            success: function (msg) {
+                if (msg) {
+                    var str = "";
+                    var data = msg;
+
+                    for (i in data) {
+                        var accountArray = data[i].accounts.split(",");
+                        var href="";
+                        for (u in accountArray) {
+                            var s = "<a href='javascript:deleteFund(\"" + data[i].fundId + "\",\"" + accountArray[u] + "\")'>"+ accountArray[u]+ "</a>"
+                            href += s;
+                            href += "-----------";
+                        }
+                        href = href.substring(0, href.length-11);
+                        str += "<tr>" +
+                            "<td>" + data[i].fundId + "</td>" +
+                            "<td>" + data[i].fundName + "</td>" +
+                            "<td>" + href+ "</td>" +
+                            "<td>" + data[i].lastActualTime + "</td>" +
+                            "</tr>";
+                    }
+                    tbody.innerHTML = str;
+                }
+            },
+            error: function () {
+                alert("查询失败")
+            }
+        });
+    }
 
     $(function () {
 
         $("#btMove").click(function () {
             $.ajax({
-                type:"post",
-                url:"/fund/add",
-                data:{
-                    fundId:$("#fundId").val(),
+                type: "post",
+                dataType: "text",
+                url: "/fund/add",
+                data: {
+                    fundId: $("#fundId").val(),
                     account: $("#account").val()
                 },
-                success:function (data) {
-                    if(data){
-                        alert("添加成功"+data.message);
-                        getFund();
-                    }else {
-                        alert("添加失败:"+data.message);
+                success: function (data) {
+                    if (data) {
+                        alert(data);
                         getFund();
                     }
                 }
@@ -64,34 +119,6 @@
 
 
 
-        function getFund() {
-            var tbody = window.document.getElementById("tbody-result");
-            $.ajax({
-                type: "post",
-                dataType: "json",
-                url: "/fund/select",
-                data: {},
-                success: function (msg) {
-                    if (msg) {
-                        var str = "";
-                        var data = msg;
-
-                        for (i in data) {
-                            str += "<tr>" +
-                                "<td>" + data[i].fundId + "</td>" +
-                                "<td>" + data[i].fundName + "</td>" +
-                                "<td>" + data[i].accounts + "</td>" +
-                                "<td>" + data[i].lastActualTime + "</td>" +
-                                "</tr>";
-                        }
-                        tbody.innerHTML = str;
-                    }
-                },
-                error: function () {
-                    alert("查询失败")
-                }
-            });
-        }
 
         getFund()
     });
