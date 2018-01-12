@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>xx信息查询</title>
+    <script type="text/javascript" src="/js/jquery1.8.3.min.js"></script>
+<!--    <script type="text/javascript" src="/js/ai/ai-lib.js"></script>
+    <script src="/js/cheat-order.js"></script>-->
+</head>
+
+<body>
+<div >
+操作说明:点击自己的姓名缩写删除该条基金记录(别点错成别人的了!!!!)
+    <input type="button" value="搜索" id="btSearch" />
+    <div >
+        <table  id="table-result" border="1">
+            <thead>
+            <tr>
+                <th>基金ID</th>
+                <th>基金名字</th>
+                <th>推送人</th>
+                <th>最后推送日期</th>
+            </tr>
+            </thead>
+            <tbody id="tbody-result">
+            </tbody>
+        </table>
+    </div>
+</div>
+添加基金
+基金ID:<input id="fundId" size="30"/>
+账户:<select id="account">
+    <option value="zhh">zhh</option>
+    <option value="zzw">zzw</option>
+    <option value="sxl">sxl</option>
+</select>
+<button id="btMove" >添加</button>
+</body>
+</html>
+<script>
+
+    $(function () {
+
+        $("#btMove").click(function () {
+            $.ajax({
+                type:"post",
+                url:"/fund/add",
+                data:{
+                    fundId:$("#fundId").val(),
+                    account: $("#account").val()
+                },
+                success:function (data) {
+                    if(data){
+                        alert("添加成功"+data.message);
+                        getFund();
+                    }else {
+                        alert("添加失败:"+data.message);
+                        getFund();
+                    }
+                }
+            });
+        });
+
+
+
+
+        function getFund() {
+            var tbody = window.document.getElementById("tbody-result");
+            $.ajax({
+                type: "post",
+                dataType: "json",
+                url: "/fund/select",
+                data: {},
+                success: function (msg) {
+                    if (msg) {
+                        var str = "";
+                        var data = msg;
+
+                        for (i in data) {
+                            str += "<tr>" +
+                                "<td>" + data[i].fundId + "</td>" +
+                                "<td>" + data[i].fundName + "</td>" +
+                                "<td>" + data[i].accounts + "</td>" +
+                                "<td>" + data[i].lastActualTime + "</td>" +
+                                "</tr>";
+                        }
+                        tbody.innerHTML = str;
+                    }
+                },
+                error: function () {
+                    alert("查询失败")
+                }
+            });
+        }
+
+        getFund()
+    });
+</script>
