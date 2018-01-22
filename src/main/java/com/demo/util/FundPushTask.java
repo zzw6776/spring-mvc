@@ -2,12 +2,7 @@ package com.demo.util;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -17,7 +12,9 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
+import com.demo.hibernate.dao.KeyValueDao;
 import com.demo.hibernate.entity.FundPush;
+import com.demo.hibernate.entity.KeyValue;
 import com.demo.hibernate.entity.User;
 import com.demo.service.impl.FundPushServiceImpl;
 import com.demo.service.impl.UserServiceImpl;
@@ -48,12 +45,24 @@ public class FundPushTask {
     private UserServiceImpl userService;
     @Resource(name = "keyValue")
     Map<String, String> keyValueMap;
+    @Autowired
+    KeyValueDao keyValueDao;
 
     private Set<String> ids = new HashSet<>();
 
     public static final String GET_ESTIMATE_FUND_URL = "http://fundgz.1234567.com.cn/js/ID.js";
 
     public static final String GET_ACTUAL_FUND_URL = "https://fundmobapi.eastmoney.com/FundMApi/FundBaseTypeInformation.ashx?FCODE=ID&deviceid=Wap&plat=Wap&product=EFund&version=2.0.0";
+
+
+    @Scheduled(cron = "0 0/30 * * * ?")
+    public void flushMap() {
+        List<KeyValue> keyValues = keyValueDao.findAll();
+        for (KeyValue keyValue : keyValues) {
+            keyValueMap.put(keyValue.getKey(), keyValue.getValue());
+        }
+    }
+
 
     @Scheduled(cron = "0 45 14 ? * 1-5")
     public void fundEstimatePush() {
@@ -63,7 +72,7 @@ public class FundPushTask {
         }
         List<FundPush> fundList = fundPushService.findAll();
         for (FundPush fundPush : fundList) {
-            log.info("估值播报开始:"+fundPush.getFundName());
+            log.info("估值播报开始:" + fundPush.getFundName());
             String fundId = fundPush.getFundId();
             String result = HttpClientUtil.get(GET_ESTIMATE_FUND_URL.replace("ID", fundId));
             String fundText = getEstimateFundTextByJson(result);
@@ -131,7 +140,7 @@ public class FundPushTask {
                 }
             }
         } catch (Exception e) {
-            log.error("获取基金净值失败",e);
+            log.error("获取基金净值失败", e);
         }
     }
 
