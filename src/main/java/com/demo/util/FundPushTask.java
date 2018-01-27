@@ -18,6 +18,7 @@ import com.demo.hibernate.entity.KeyValue;
 import com.demo.hibernate.entity.User;
 import com.demo.service.impl.FundPushServiceImpl;
 import com.demo.service.impl.UserServiceImpl;
+import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
 import lombok.extern.log4j.Log4j;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -56,6 +57,8 @@ public class FundPushTask {
 
     private static  boolean ERROR_NOTICE = false;
 
+    private static  boolean FIRST_RUN = false;
+
     public static void main(String[] args) {
         FundPushTask fundPushTask = new FundPushTask();
         fundPushTask.test();
@@ -63,6 +66,10 @@ public class FundPushTask {
 
     @Scheduled(cron = "0 0/1 * * * ?")
     public void test() {
+        if (!FIRST_RUN) {
+            WeChatPushUtil.weChatPush("SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d","开始运行",System.currentTimeMillis()+"开始运行");
+            FIRST_RUN = true;
+        }
         String result = HttpClientUtil.get("https://c0.3.cn/stock?skuId=6023789&area=15_1213_3411_52667&cat=1,1,1&buyNum=1&extraParam=%7B%22originid%22:%221%22%7D");
         try {
             JSONObject jsonObject = JSON.parseObject(result);
