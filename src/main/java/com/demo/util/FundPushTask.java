@@ -54,6 +54,33 @@ public class FundPushTask {
 
     public static final String GET_ACTUAL_FUND_URL = "https://fundmobapi.eastmoney.com/FundMApi/FundBaseTypeInformation.ashx?FCODE=ID&deviceid=Wap&plat=Wap&product=EFund&version=2.0.0";
 
+    private static  boolean ERROR_NOTICE = false;
+
+    public static void main(String[] args) {
+        FundPushTask fundPushTask = new FundPushTask();
+        fundPushTask.test();
+    }
+
+    @Scheduled(cron = "0 0/1 * * * ?")
+    public void test() {
+        String result = HttpClientUtil.get("https://c0.3.cn/stock?skuId=6023789&area=15_1213_3411_52667&cat=1,1,1&buyNum=1&extraParam=%7B%22originid%22:%221%22%7D");
+        try {
+            JSONObject jsonObject = JSON.parseObject(result);
+            int intValue = jsonObject.getJSONObject("stock").getIntValue("StockState");
+            if (intValue != 34) {
+                WeChatPushUtil.weChatPush("SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d","有货啦",System.currentTimeMillis()+"有货啦");
+            }
+        } catch (Exception e) {
+            log.error(e);
+            if (!ERROR_NOTICE) {
+                WeChatPushUtil.weChatPush("SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d","系统出错",TypeUtil.getErrorInfoFromException(e));
+                ERROR_NOTICE = true;
+            }
+        }
+
+
+    }
+
 
     @Scheduled(cron = "0 0/30 * * * ?")
     public void flushMap() {
@@ -210,8 +237,4 @@ public class FundPushTask {
         }
     }
 
-    public static void main(String[] args) throws IOException {
-        FundPushTask fundPushTask = new FundPushTask();
-
-    }
 }

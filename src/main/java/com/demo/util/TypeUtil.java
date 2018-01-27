@@ -1,5 +1,8 @@
 package com.demo.util;
 
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -58,5 +61,23 @@ public class TypeUtil {
 		String head = in.substring(0, 1);
 		String out = head.toUpperCase() + in.substring(1, in.length());
 		return out;
+	}
+
+	public static String getErrorInfoFromException(Exception e) {
+		StringWriter sw = new StringWriter();
+		PrintWriter pw =  new PrintWriter(sw);
+		try {
+			e.printStackTrace(pw);
+			return "\r\n" + sw.toString() + "\r\n";
+		} catch (Exception e2) {
+			return "ErrorInfoFromException";
+		}finally {
+			try {
+				sw.close();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+			pw.close();
+		}
 	}
 }
