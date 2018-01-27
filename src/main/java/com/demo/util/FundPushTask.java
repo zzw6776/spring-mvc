@@ -64,7 +64,7 @@ public class FundPushTask {
         fundPushTask.test();
     }
 
-    @Scheduled(cron = "0 0/1 * * * ?")
+    @Scheduled(cron = "0/20 * * * * ?")
     public void test() {
         if (!FIRST_RUN) {
             WeChatPushUtil.weChatPush("SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d","开始运行",System.currentTimeMillis()+"开始运行");
