@@ -64,7 +64,7 @@ public class FundPushTask {
         fundPushTask.test();
     }
 
-    @Scheduled(cron = "0/40 * * * * ?")
+    @Scheduled(cron = "0/30 * * * * ?")
     public void test() {
         if (!FIRST_RUN) {
             WeChatPushUtil.weChatPush("SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d","开始运行",System.currentTimeMillis()+"开始运行");
@@ -74,9 +74,11 @@ public class FundPushTask {
         try {
             JSONObject jsonObject = JSON.parseObject(result);
             int intValue = jsonObject.getJSONObject("stock").getIntValue("StockState");
-            System.out.println(intValue);
+           log.info(intValue);
             if (intValue != 34) {
                 WeChatPushUtil.weChatPush("SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d","有货啦",System.currentTimeMillis()+"有货啦");
+                //勾选购物车商品
+
             }
         } catch (Exception e) {
             log.error(e);
