@@ -1,11 +1,5 @@
 package com.demo.util;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import lombok.extern.log4j.Log4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.NameValuePair;
@@ -20,16 +14,46 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.springframework.util.CollectionUtils;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
  * httpClient工具类
  */
 @Log4j
 public class HttpClientUtil {
+
+    public static Map<String, String> toMap(String param) {
+        String[] split = param.split("\\n");
+        System.out.println(split.length);
+        return null;
+    }
+
+    public static void main(String[] args) {
+        toMap("outSkus:\n" +
+                "pid:6023789\n" +
+                "ptype:1\n" +
+                "packId:0\n" +
+                "targetId:0\n" +
+                "promoID:0\n" +
+                "locationId:15-1213-3411-52667\n" +
+                "t:0");
+    }
+
+
     public static String post(String url, Map<String, String> value) {
+        return post(url, value, "");
+    }
+
+    public static String post(String url, Map<String, String> value, String cookieString) {
         CloseableHttpClient client = HttpClients.createDefault();
         CloseableHttpResponse httpResponse = null;
         try {
             HttpPost httpPost = new HttpPost(url);
+
             List<NameValuePair> list = new ArrayList<NameValuePair>();
             for (String key : value.keySet()) {
                 list.add(new BasicNameValuePair(key, value.get(key)));
@@ -38,10 +62,12 @@ public class HttpClientUtil {
             httpPost.setEntity(entity);
             RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(10000).setConnectTimeout(10000).build();//设置请求和传输超时时间
             httpPost.setConfig(requestConfig);
+            httpPost.setHeader("Cookie", cookieString);
+
             httpResponse = client.execute(httpPost);
             return EntityUtils.toString(httpResponse.getEntity(), "utf8");
         } catch (Exception e) {
-            log.error(e);
+            log.error(TypeUtil.getErrorInfoFromException(e));
         } finally {
             try {
                 if (null != httpResponse) {
@@ -49,13 +75,13 @@ public class HttpClientUtil {
                 }
                 client.close();
             } catch (IOException e) {
-                log.error(e);
+                log.error(TypeUtil.getErrorInfoFromException(e);
             }
         }
         return null;
     }
 
-    public static  String get(String url, Map<String, String> value) {
+    public static String get(String url, Map<String, String> value) {
         CloseableHttpClient client = HttpClients.createDefault();
         CloseableHttpResponse httpResponse = null;
         try {
@@ -75,7 +101,7 @@ public class HttpClientUtil {
             httpResponse = client.execute(httpGet);
             return EntityUtils.toString(httpResponse.getEntity(), "utf8");
         } catch (Exception e) {
-            log.error(e);
+            log.error(TypeUtil.getErrorInfoFromException(e);
         } finally {
             try {
                 if (null != httpResponse) {
@@ -83,23 +109,17 @@ public class HttpClientUtil {
                 }
                 client.close();
             } catch (IOException e) {
-                log.error(e);
+                log.error(TypeUtil.getErrorInfoFromException(e);
             }
         }
         return null;
     }
 
-    public static  String get(String url) {
-       return get(url, new HashMap<>());
+    public static String get(String url) {
+        return get(url, new HashMap<>());
     }
 
-    public static void main(String[] args) {
-        get("www.baidu.com");
-        Map<String, String> map = new HashMap<>();
-        map.put("a", "a");
-        map.put("b", "b");
-        get("www.baidu.com", map);
-    }
+
 }
 
 

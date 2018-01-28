@@ -1,24 +1,14 @@
 package com.demo.util;
 
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import javax.annotation.Resource;
-
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-
 import com.demo.hibernate.dao.KeyValueDao;
 import com.demo.hibernate.entity.FundPush;
 import com.demo.hibernate.entity.KeyValue;
 import com.demo.hibernate.entity.User;
 import com.demo.service.impl.FundPushServiceImpl;
 import com.demo.service.impl.UserServiceImpl;
-import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
 import lombok.extern.log4j.Log4j;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -34,6 +24,13 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
+
+import javax.annotation.Resource;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @Component
 @EnableScheduling
@@ -55,39 +52,9 @@ public class FundPushTask {
 
     public static final String GET_ACTUAL_FUND_URL = "https://fundmobapi.eastmoney.com/FundMApi/FundBaseTypeInformation.ashx?FCODE=ID&deviceid=Wap&plat=Wap&product=EFund&version=2.0.0";
 
-    private static  boolean ERROR_NOTICE = false;
 
-    private static  boolean FIRST_RUN = false;
 
     public static void main(String[] args) {
-        FundPushTask fundPushTask = new FundPushTask();
-        fundPushTask.test();
-    }
-
-    @Scheduled(cron = "0/30 * * * * ?")
-    public void test() {
-        if (!FIRST_RUN) {
-            WeChatPushUtil.weChatPush("SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d","开始运行",System.currentTimeMillis()+"开始运行");
-            FIRST_RUN = true;
-        }
-        String result = HttpClientUtil.get("https://c0.3.cn/stock?skuId=6023789&area=15_1213_3411_52667&cat=1,1,1&buyNum=1&extraParam=%7B%22originid%22:%221%22%7D");
-        try {
-            JSONObject jsonObject = JSON.parseObject(result);
-            int intValue = jsonObject.getJSONObject("stock").getIntValue("StockState");
-           log.info(intValue);
-            if (intValue != 34) {
-                WeChatPushUtil.weChatPush("SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d","有货啦",System.currentTimeMillis()+"有货啦");
-                //勾选购物车商品
-
-            }
-        } catch (Exception e) {
-            log.error(e);
-            if (!ERROR_NOTICE) {
-                WeChatPushUtil.weChatPush("SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d","系统出错",TypeUtil.getErrorInfoFromException(e));
-                ERROR_NOTICE = true;
-            }
-        }
-
 
     }
 
