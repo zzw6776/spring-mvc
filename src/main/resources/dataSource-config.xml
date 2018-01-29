@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿﻿<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:aop="http://www.springframework.org/schema/aop"
 	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
@@ -11,7 +11,7 @@
 
 	<bean id="dataSourceMySQL" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
 		<property name="driverClass" value="com.mysql.jdbc.Driver" />
-		<property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/zzw?serverTimezone=UTC" />
+		<property name="jdbcUrl" value="jdbc:mysql://35.194.228.215:3306/zzw?serverTimezone=UTC" />
 		<property name="user" value="root" />
 		<property name="password" value="" />
 		<property name="maxIdleTime" value="1800"/>
