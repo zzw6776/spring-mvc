@@ -64,11 +64,12 @@ public class TypeUtil {
 	}
 
 	public static String getErrorInfoFromException(Exception e) {
+		String result = "";
 		StringWriter sw = new StringWriter();
 		PrintWriter pw =  new PrintWriter(sw);
 		try {
 			e.printStackTrace(pw);
-			return "\r\n" + sw.toString() + "\r\n";
+			result = "\r\n" + sw.toString() + "\r\n";
 		} catch (Exception e2) {
 			return "ErrorInfoFromException";
 		}finally {
@@ -79,5 +80,8 @@ public class TypeUtil {
 			}
 			pw.close();
 		}
+		//微信推送
+		WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY,"系统出错",result);
+		return result;
 	}
 }

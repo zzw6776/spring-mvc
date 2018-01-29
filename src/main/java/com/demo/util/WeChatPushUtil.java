@@ -12,6 +12,8 @@ import lombok.extern.log4j.Log4j;
 public class WeChatPushUtil {
     private static final String URL = "https://sc.ftqq.com/url.send";
 
+    public static final String MY_SCKEY = "SCU12427T981f7b2e2ed51c827ba5ffa7f65f18d559c5dc3614d0d";
+
     /**
      * server酱的微信推送系统
      *

@@ -26,10 +26,14 @@ import java.util.Map;
 @Log4j
 public class HttpClientUtil {
 
-    public static Map<String, String> toMap(String param) {
-        String[] split = param.split("\\n");
-        System.out.println(split.length);
-        return null;
+    public static Map<String, String> toMap(String paramString) {
+        String[] split = paramString.split("\\n");
+        Map<String, String> param = new HashMap<>();
+        for (String s : split) {
+            int i = s.indexOf(":");
+            param.put(s.substring(0, i), s.substring(i + 1));
+        }
+        return param;
     }
 
     public static void main(String[] args) {
@@ -75,7 +79,7 @@ public class HttpClientUtil {
                 }
                 client.close();
             } catch (IOException e) {
-                log.error(TypeUtil.getErrorInfoFromException(e);
+                log.error(TypeUtil.getErrorInfoFromException(e));
             }
         }
         return null;
@@ -101,7 +105,7 @@ public class HttpClientUtil {
             httpResponse = client.execute(httpGet);
             return EntityUtils.toString(httpResponse.getEntity(), "utf8");
         } catch (Exception e) {
-            log.error(TypeUtil.getErrorInfoFromException(e);
+            log.error(TypeUtil.getErrorInfoFromException(e));
         } finally {
             try {
                 if (null != httpResponse) {
@@ -109,7 +113,7 @@ public class HttpClientUtil {
                 }
                 client.close();
             } catch (IOException e) {
-                log.error(TypeUtil.getErrorInfoFromException(e);
+                log.error(TypeUtil.getErrorInfoFromException(e));
             }
         }
         return null;
