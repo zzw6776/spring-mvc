@@ -23,7 +23,6 @@ public class JDTask {
     @Scheduled(cron = "0/30 * * * * ?")
     public void test() {
         if (run) {
-            log.info("京东监控开始运行");
             String result = HttpClientUtil.get("https://c0.3.cn/stock?skuId=6023789&area=15_1213_3411_52667&cat=1,1,1&buyNum=1&extraParam=%7B%22originid%22:%221%22%7D");
             try {
                 JSONObject jsonObject = JSON.parseObject(result);
