@@ -41,12 +41,12 @@ public class JDTask {
                         //下单
                         Map<String, String> submitParam = HttpClientUtil.toMap("overseaPurchaseCookies:\n" +
                                 "submitOrderParam.sopNotPutInvoice:false\n" +
-                                "submitOrderParam.trackID:1lqkF7NlRAU7xy4fAJpwMNG289jJnUmztBMzrUKaqSPzXuV8RvwoYse5ncivD8jBDayAOz7AOm9heN5j-Wi3p-dPzdfJns8I55iS3X1QAo57yI5hyet1gWSEtdpVHXSNX\n" +
+                                "submitOrderParam.trackID:15tAsNbWfZUQ7t-5kK0BJLGVWdBlaNNBker_CHrm7gEq2fc_rMO0Q7uXYY4jxmeBZB0yfLFKnlzIDTTfQGB_cto2DEkHx7H8RHRoDogEuJtLRc5FCl9O5lm8xTh1769fh\n" +
                                 "submitOrderParam.ignorePriceChange:0\n" +
                                 "submitOrderParam.btSupport:0\n" +
-                                "submitOrderParam.eid:HQQS7Z63J3BOPOYJYLUGMIO7YZTI4ZU3H4M3UPLM44ZINLYZHERNGBIMJI624ZCEUGIFPJAAO7KDINRNHPQTED2G7A\n" +
+                                "submitOrderParam.eid:UIYZNIFSFKSWYWULEVAAM26BGU57K46OMP7FRXDXTUTUZKJNPIY2DL7GMHKMLNIGT62SU4STSIHMYNXTMEUXCCMIUQ\n" +
                                 "submitOrderParam.fp:67394e74e4eaa61cbab24cdb4d448e90\n" +
-                                "riskControl:D0E404CB705B9732A413F41984FFC112AB90B48EA65326D0B8CC44D715A74398");
+                                "riskControl:D0E404CB705B9732A413F41984FFC1121390510A21284B28F2CBEC1FDCA75647");
                         String submitResult = HttpClientUtil.post("https://trade.jd.com/shopping/order/submitOrder.action", selectParam, keyValueMap.get("JDCookie"));
                         if (JSON.parseObject(submitResult).getBoolean("success")) {
                             WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "JD下单成功", "JD下单成功");
