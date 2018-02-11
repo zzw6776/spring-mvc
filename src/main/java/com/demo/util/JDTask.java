@@ -23,7 +23,7 @@ public class JDTask {
     @Scheduled(cron = "0/15 * * * * ?")
     public void test() {
         if (run) {
-            String result = HttpClientUtil.get("https://c0.3.cn/stock?skuId=6023789&area=15_1213_3411_52667&cat=1,1,1&buyNum=1&extraParam=%7B%22originid%22:%221%22%7D");
+            String result = HttpClientUtil.get("https://c0.3.cn/stock?skuId=6023789&area=15_1213_3411_52667&cat=1,1,1&buyNum=1&extraParam=%7B%22originid%22:%221%22%7D",keyValueMap.get("JDCookie"));
             try {
                 JSONObject jsonObject = JSON.parseObject(result);
                 int intValue = jsonObject.getJSONObject("stock").getIntValue("StockState");

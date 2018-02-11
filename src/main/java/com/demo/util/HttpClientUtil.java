@@ -86,6 +86,10 @@ public class HttpClientUtil {
     }
 
     public static String get(String url, Map<String, String> value) {
+        return get( url, value, "");
+    }
+
+    public static String get(String url, Map<String, String> value, String cookieString) {
         CloseableHttpClient client = HttpClients.createDefault();
         CloseableHttpResponse httpResponse = null;
         try {
@@ -102,6 +106,7 @@ public class HttpClientUtil {
             HttpGet httpGet = new HttpGet(url);
             RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(10000).setConnectTimeout(10000).build();//设置请求和传输超时时间
             httpGet.setConfig(requestConfig);
+            httpGet.setHeader("Cookie", cookieString);
             httpResponse = client.execute(httpGet);
             return EntityUtils.toString(httpResponse.getEntity(), "utf8");
         } catch (Exception e) {
@@ -123,7 +128,9 @@ public class HttpClientUtil {
         return get(url, new HashMap<>());
     }
 
-
+    public static String get(String url,String cookieString) {
+        return get(url, new HashMap<>(),cookieString);
+    }
 }
 
 
