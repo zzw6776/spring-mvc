@@ -1,5 +1,8 @@
 package com.demo.util;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -8,9 +11,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class TypeUtil {
 	private static final Logger logger = LoggerFactory.getLogger(TypeUtil.class);
@@ -81,7 +81,7 @@ public class TypeUtil {
 			pw.close();
 		}
 		//微信推送
-		WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY,"系统出错",result);
+		//WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY,"系统出错",result);
 		return result;
 	}
 }
