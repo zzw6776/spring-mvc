@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import lombok.extern.log4j.Log4j;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -19,10 +20,10 @@ public class JDTask {
 
     private boolean run = true;
 
-    //@Scheduled(cron = "0/15 * * * * ?")
+    @Scheduled(cron = "0/15 * * * * ?")
     public void test() {
         if (run) {
-            String result = HttpClientUtil.get("https://c0.3.cn/stock?skuId=6023789&area=15_1213_3411_52667&cat=1,1,1&buyNum=1&extraParam=%7B%22originid%22:%221%22%7D",keyValueMap.get("JDCookie"));
+            String result = HttpClientUtil.get("https://c0.3.cn/stock?skuId=7428766&area=15_1213_3411_52667&cat=1,1,1&buyNum=1&extraParam=%7B%22originid%22:%221%22%7D",keyValueMap.get("JDCookie"));
             try {
                 JSONObject jsonObject = JSON.parseObject(result);
                 int intValue = jsonObject.getJSONObject("stock").getIntValue("StockState");
@@ -30,7 +31,7 @@ public class JDTask {
                 if (intValue != 34) {
                     WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "有货啦", "有货啦");
                     //勾选购物车商品
-                    Map<String, String> selectParam = HttpClientUtil.toMap("pid:6023789\n" +
+                    Map<String, String> selectParam = HttpClientUtil.toMap("pid:7428766\n" +
                             "ptype:1");
                     String selectResult = HttpClientUtil.post("https://cart.jd.com/selectItem.action", selectParam, keyValueMap.get("JDCookie"));
                     if (JSON.parseObject(selectResult).getInteger("isLogin") != 1) {
