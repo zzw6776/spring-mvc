@@ -8,6 +8,8 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 @Component
@@ -19,11 +21,17 @@ public class JDTask {
     Map<String, String> keyValueMap;
 
     private boolean run = true;
-
     @Scheduled(cron = "0/15 * * * * ?")
-    public void test() {
+    public void test1() {
+        List<String> ids = Arrays.asList("11563575745","26631305622");
+        for (String id : ids) {
+            test(id);
+        }
+    }
+
+    public void test(String jdId) {
         if (run) {
-            String result = HttpClientUtil.get("https://c0.3.cn/stock?skuId=7428766&area=15_1213_3411_52667&cat=1,1,1&buyNum=1&extraParam=%7B%22originid%22:%221%22%7D",keyValueMap.get("JDCookie"));
+            String result = HttpClientUtil.get("https://c0.3.cn/stock?skuId=" + jdId + "&area=15_1213_3411_52667&cat=1,1,1&buyNum=1&extraParam=%7B%22originid%22:%221%22%7D",keyValueMap.get("JDCookie"));
             try {
                 JSONObject jsonObject = JSON.parseObject(result);
                 int intValue = jsonObject.getJSONObject("stock").getIntValue("StockState");
@@ -31,7 +39,7 @@ public class JDTask {
                 if (intValue != 34) {
                     WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "有货啦", "有货啦");
                     //勾选购物车商品
-                    Map<String, String> selectParam = HttpClientUtil.toMap("pid:7428766\n" +
+                    Map<String, String> selectParam = HttpClientUtil.toMap("pid:" + jdId + "\n" +
                             "ptype:1");
                     String selectResult = HttpClientUtil.post("https://cart.jd.com/selectItem.action", selectParam, keyValueMap.get("JDCookie"));
                     if (JSON.parseObject(selectResult).getInteger("isLogin") != 1) {
@@ -65,6 +73,6 @@ public class JDTask {
 
     public static void main(String[] args) {
         JDTask jdTask = new JDTask();
-        jdTask.test();
+        jdTask.test1();
     }
 }
