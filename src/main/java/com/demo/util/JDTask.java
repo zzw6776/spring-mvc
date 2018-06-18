@@ -2,14 +2,15 @@ package com.demo.util;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.demo.hibernate.dao.KeyValueDao;
+import com.demo.hibernate.entity.KeyValue;
 import lombok.extern.log4j.Log4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Map;
 
 @Component
@@ -20,17 +21,28 @@ public class JDTask {
     @Resource(name = "keyValue")
     Map<String, String> keyValueMap;
 
-    private boolean run = true;
+    @Autowired
+    KeyValueDao keyValueDao;
+
     @Scheduled(cron = "0/5 * * * * ?")
     public void test1() {
-        List<String> ids = Arrays.asList("11563575745","26631305622");
+        String jdIdemId = keyValueMap.get("JDIdemId");
+        String[] ids = jdIdemId.split(",");
         for (String id : ids) {
             test(id);
         }
     }
 
+    public void closeRun() {
+        KeyValue obj = new KeyValue();
+        obj.setKey("JDRunStatus");
+        obj.setValue("false");
+        keyValueDao.update(obj);
+    }
+
     public void test(String jdId) {
-        if (run) {
+        String isRun = keyValueMap.get("JDRunStatus");
+        if (isRun.equals("true")) {
             String result = HttpClientUtil.get("https://c0.3.cn/stock?skuId=" + jdId + "&area=15_1213_3411_52667&cat=1,1,1&buyNum=1&extraParam=%7B%22originid%22:%221%22%7D",keyValueMap.get("JDCookie"));
             try {
                 JSONObject jsonObject = JSON.parseObject(result);
@@ -44,7 +56,7 @@ public class JDTask {
                     String selectResult = HttpClientUtil.post("https://cart.jd.com/selectItem.action", selectParam, keyValueMap.get("JDCookie"));
                     if (JSON.parseObject(selectResult).getInteger("isLogin") != 1) {
                         WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "JD登录失效", "JD登录失效");
-                        run = false;
+                        closeRun();
                     } else {
                         //下单
                         Map<String, String> submitParam = HttpClientUtil.toMap("overseaPurchaseCookies:\n" +
@@ -58,7 +70,7 @@ public class JDTask {
                         String submitResult = HttpClientUtil.post("https://trade.jd.com/shopping/order/submitOrder.action", selectParam, keyValueMap.get("JDCookie"));
                         if (JSON.parseObject(submitResult).getBoolean("success")) {
                             WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "JD下单成功", "JD下单成功");
-                            run = false;
+                            closeRun();
                         } else {
                             WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "JD下单失败", submitResult);
                         }

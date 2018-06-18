@@ -1,33 +1,6 @@
 package com.demo.hibernate.dao;
 
-import java.io.Serializable;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Types;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.UUID;
-
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
+import com.demo.hibernate.annotation.BatchSaveIgnore;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.Query;
@@ -40,7 +13,16 @@ import org.hibernate.jdbc.Work;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 
-import com.demo.hibernate.annotation.BatchSaveIgnore;
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.io.Serializable;
+import java.lang.reflect.*;
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.sql.*;
+import java.util.*;
+import java.util.Date;
 
 public abstract class HGenericDao<T, I extends Serializable> {
 
@@ -179,7 +161,7 @@ public abstract class HGenericDao<T, I extends Serializable> {
 		return queryObject.list();
 	}
 
-	protected int bulkUpdate(String queryString, Object... values) {
+	public int bulkUpdate(String queryString, Object... values) {
 		Session session = getCurrentSession();
 		Query queryObject = session.createSQLQuery(queryString);
 		if (values != null) {

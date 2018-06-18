@@ -1,17 +1,17 @@
 package hibernate;
 
-import static org.junit.Assert.*;
-
-import java.util.List;
-
+import base.BaseTest;
+import com.demo.hibernate.dao.HDao;
+import com.demo.hibernate.dao.KeyValueDao;
+import com.demo.hibernate.dao.ShiroRoleDao;
+import com.demo.hibernate.entity.HEntity;
+import com.demo.util.JDTask;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.demo.hibernate.dao.HDao;
-import com.demo.hibernate.dao.ShiroRoleDao;
-import com.demo.hibernate.entity.HEntity;
+import java.util.List;
 
-import base.BaseTest;
+import static org.junit.Assert.assertEquals;
 
 public class HTest extends BaseTest {
 	@Autowired
@@ -19,6 +19,13 @@ public class HTest extends BaseTest {
 
 	@Autowired
 	ShiroRoleDao roleDao;
+
+	@Autowired
+	KeyValueDao keyValueDao;
+
+
+	@Autowired
+	JDTask jdTask;
 	@Test
 	public void insert() {
 		HEntity entity = new HEntity();
@@ -30,8 +37,9 @@ public class HTest extends BaseTest {
 	
 	@Test
 	public void test1(){
-		
-		System.out.println(roleDao.queryResoureceByAccount("1"));
+
+		jdTask.test1();
 		
 	}
+
 }
