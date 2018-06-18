@@ -21,7 +21,7 @@ public class JDTask {
     Map<String, String> keyValueMap;
 
     private boolean run = true;
-    @Scheduled(cron = "0/15 * * * * ?")
+    @Scheduled(cron = "0/5 * * * * ?")
     public void test1() {
         List<String> ids = Arrays.asList("11563575745","26631305622");
         for (String id : ids) {
