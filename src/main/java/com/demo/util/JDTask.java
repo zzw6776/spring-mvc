@@ -1,6 +1,7 @@
 package com.demo.util;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.demo.hibernate.dao.KeyValueDao;
 import com.demo.hibernate.entity.KeyValue;
@@ -32,6 +33,23 @@ public class JDTask {
             test(id);
         }
     }
+
+
+    @Scheduled(cron = "0/5 * * * * ?")
+    public void test2() {
+        try {
+            String result = HttpClientUtil.get("https://details.jd.com/lazy/getOrderTrackInfoMultiPackage.action?orderId=76314393020",keyValueMap.get("JDCookie"));
+            JSONObject jsonObject = JSON.parseObject(result);
+            JSONArray jsonArray = jsonObject.getJSONArray("multiPackageTrackInfoList").getJSONObject(0).getJSONObject("trackGroupInfo").getJSONArray("orderTrackShowList");
+            if (jsonArray.size() > 2) {
+                WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "已发货", "已发货");
+            }
+        } catch (Exception e) {
+            WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "登陆失效", "登陆失效");
+        }
+
+    }
+
 
     public void closeRun() {
         KeyValue obj = new KeyValue();
@@ -85,6 +103,6 @@ public class JDTask {
 
     public static void main(String[] args) {
         JDTask jdTask = new JDTask();
-        jdTask.test1();
+        jdTask.test2();
     }
 }
