@@ -41,8 +41,8 @@ public class JDTask {
             String result = HttpClientUtil.get("https://details.jd.com/lazy/getOrderTrackInfoMultiPackage.action?orderId=76314393020",keyValueMap.get("JDCookie"));
             JSONObject jsonObject = JSON.parseObject(result);
             JSONArray jsonArray = jsonObject.getJSONArray("multiPackageTrackInfoList").getJSONObject(0).getJSONObject("trackGroupInfo").getJSONArray("orderTrackShowList");
-            if (jsonArray.size() > 2) {
-                WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "已发货", "已发货");
+            if (jsonArray.size() > 3) {
+                WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "已发货", jsonArray.get(2).toString());
             }
         } catch (Exception e) {
             WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "登陆失效", "登陆失效");
