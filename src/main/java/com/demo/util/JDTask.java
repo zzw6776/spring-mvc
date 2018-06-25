@@ -37,7 +37,7 @@ public class JDTask {
     }
 
 
-    @Scheduled(cron = "0 0 0/1 * * ?")
+    //@Scheduled(cron = "0 0 0/1 * * ?")
     public void test2() {
         try {
             String result = HttpClientUtil.get("https://details.jd.com/lazy/getOrderTrackInfoMultiPackage.action?orderId=76314393020",keyValueMap.get("JDCookie"));
