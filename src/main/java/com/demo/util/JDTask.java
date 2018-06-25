@@ -25,6 +25,8 @@ public class JDTask {
     @Autowired
     KeyValueDao keyValueDao;
 
+    private int index = 4;
+
     @Scheduled(cron = "0/5 * * * * ?")
     public void test1() {
         String jdIdemId = keyValueMap.get("JDIdemId");
@@ -41,8 +43,9 @@ public class JDTask {
             String result = HttpClientUtil.get("https://details.jd.com/lazy/getOrderTrackInfoMultiPackage.action?orderId=76314393020",keyValueMap.get("JDCookie"));
             JSONObject jsonObject = JSON.parseObject(result);
             JSONArray jsonArray = jsonObject.getJSONArray("multiPackageTrackInfoList").getJSONObject(0).getJSONObject("trackGroupInfo").getJSONArray("orderTrackShowList");
-            if (jsonArray.size() > 3) {
-                WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "已发货", jsonArray.get(2).toString());
+            if (jsonArray.size() > index) {
+                index = jsonArray.size();
+                WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "已发货", jsonArray.get(index).toString());
             }
         } catch (Exception e) {
             WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "登陆失效", "登陆失效");
