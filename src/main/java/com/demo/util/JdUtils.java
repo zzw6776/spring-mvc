@@ -50,24 +50,34 @@ public class JdUtils {
             if (jsonArray.size() > index) {
                 //Integer为final,无法进行引用更新,所以需要重新put
                 logisticsTemp.put(orderId, jsonArray.size());
-                WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "订单" + orderId + "物流已更新", jsonArray.toString());
+                String message = "";
+                for (int i = jsonArray.size()-1 ; i >= 0; i--) {
+                    message += jsonArray.getJSONObject(i).getString("Content")+"  \n";
+                }
+                WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "订单" + orderId + "物流已更新",message);
             }
         } catch (Exception e) {
+            log.error(TypeUtil.getErrorInfoFromException(e));
             //偷懒,认为只要报错就是没登录引起的,出问题再说吧
-            //尝试登陆
-            Long intervalTime = 0L;
-            Boolean isLogin = false;
-            while (!isLogin) {
-                try {
-                    Thread.sleep(intervalTime);
-                } catch (InterruptedException e1) { }
-                intervalTime += 30000;
-                WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "JD登录失效,开始重试", "目前重试时间间隔为" + intervalTime);
-                isLogin = login();
-            }
-
+            retryLogin();
         }
 
+    }
+
+    private synchronized void retryLogin() {
+        //尝试登陆
+        Long intervalTime = 0L;
+        Boolean isLogin = false;
+        while (!isLogin) {
+            try {
+                Thread.sleep(intervalTime);
+            } catch (InterruptedException e1) { }
+            intervalTime += 30000;
+            if (intervalTime > 300000) {
+                WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "JD登录失效,开始重试", "目前重试时间间隔为" + intervalTime);
+            }
+            isLogin = login();
+        }
     }
 
     //自动监控库存下单,下单的前提为已经存在购物车
@@ -85,16 +95,7 @@ public class JdUtils {
                         "ptype:1");
                     String selectResult = HttpClientUtil.post("https://cart.jd.com/selectItem.action", selectParam);
                     if (JSON.parseObject(selectResult).getInteger("isLogin") != 1) {
-                        //尝试登陆
-                        Long intervalTime = 0L;
-                        Boolean isLogin = false;
-                        while (!isLogin) {
-                            Thread.sleep(intervalTime);
-                            intervalTime += 30000;
-                            WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "JD登录失效,开始重试",
-                                "目前重试时间间隔为" + intervalTime);
-                            isLogin = login();
-                        }
+                        retryLogin();
                     } else {
                         //下单
                         Map<String, String> submitParam = HttpClientUtil.toMap("overseaPurchaseCookies:\n" +
@@ -125,10 +126,6 @@ public class JdUtils {
 
     }
 
-    public static void main(String[] args) {
-        JdUtils jdUtils = new JdUtils();
-        jdUtils.login();
-    }
 
     public synchronized boolean login() {
 
