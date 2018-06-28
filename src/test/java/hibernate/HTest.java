@@ -35,11 +35,6 @@ public class HTest extends BaseTest {
 		assertEquals("插入测试", hEntities.get(0).getMessage());
 	}
 	
-	@Test
-	public void test1(){
 
-		jdTask.test1();
-		
-	}
 
 }

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 
+import com.demo.util.JdUtils;
 import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -35,6 +36,23 @@ public class Tsetms {
 
 	@Autowired
 	ExpireJobTask expireJobTask;
+
+	@Autowired
+	JdUtils jdUtils;
+
+	@RequestMapping("jdLogin")
+	@ResponseBody
+	public boolean login() throws Exception {
+		return jdUtils.login();
+	}
+
+	@RequestMapping("monitorLogistics")
+	@ResponseBody
+	public void login(String order) throws Exception {
+		 jdUtils.monitorLogistics(order);
+	}
+
+
 	@RequestMapping("mysql")
 	public void mysql() throws Exception {
 		expireJobTask.exportSql();
