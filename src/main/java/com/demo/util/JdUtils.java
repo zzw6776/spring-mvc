@@ -140,6 +140,7 @@ public class JdUtils {
 
         try {
             Document doc = Jsoup.parse(HttpClientUtil.get("https://passport.jd.com/new/login.aspx"));
+            Thread.sleep(1000);
             Elements elements = doc.select("form[id=formlogin] input[type=hidden]");
             Map<String, String> map = new HashMap<String, String>();
             String k, v;
@@ -159,6 +160,7 @@ public class JdUtils {
 
             String result = HttpClientUtil.get(
                 "https://seq.jd.com/jseqf.html?bizId=passport_jd_com_login_pc&platform=js&version=1");
+            Thread.sleep(1000);
             String pattern = "sessionId=.+_jdtdseq_config_data";
             // 创建 Pattern 对象
             Pattern p = Pattern.compile(pattern);
