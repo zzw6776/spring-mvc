@@ -64,18 +64,16 @@ public class JdUtils {
 
     }
 
-    private synchronized void retryLogin() {
+    private void retryLogin() {
+        System.out.println("尝试登陆");
         //尝试登陆
-        Long intervalTime = 0L;
+        Integer time = 3;
         Boolean isLogin = false;
-        while (!isLogin) {
+        while (!isLogin&&time>0) {
+            time--;
             try {
-                Thread.sleep(intervalTime);
+                Thread.sleep(60000);
             } catch (InterruptedException e1) { }
-            intervalTime += 30000;
-            if (intervalTime > 300000) {
-                WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "JD登录失效,开始重试", "目前重试时间间隔为" + intervalTime);
-            }
             isLogin = login();
         }
     }
@@ -152,8 +150,8 @@ public class JdUtils {
             map.put("loginname", keyValueMap.get("JDAccount"));
             map.put("nloginpwd", keyValueMap.get("JDPassword"));
             map.put("eid",
-                "RXI4RZELZBUFTKRYDTWZHA734GHXAKCA5SJQSPGLJ2RXCIZUT3PAYXSRGSC57USYLK6432Z7WJW36ZEEGVWMLILT3E");
-            map.put("fp", "ccbe046c9993c80f4838e591159ce563");
+                "5IHVYPPYV6J2MMNWCTU4D36JSWJ2PNNJPI7ZKCQUCJ5GZATRWVMJOWR273DE3FE62RFTWKT2W3FOCYTZZRKOIWHPLY");
+            map.put("fp", "6db6dd56a3c895c6a6e18e6863fbc5e9");
 
             String result = HttpClientUtil.get(
                 "https://seq.jd.com/jseqf.html?bizId=passport_jd_com_login_pc&platform=js&version=1");
