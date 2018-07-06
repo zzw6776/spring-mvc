@@ -41,7 +41,7 @@ public class JDTask {
         }
     }
 
-    @Scheduled(cron = "0 0/10 * * * ?")
+    //@Scheduled(cron = "0 0/10 * * * ?")
     public void monitorLogistics() {
         jdUtils.monitorLogistics("76602995224");
     }
