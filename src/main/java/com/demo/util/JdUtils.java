@@ -76,6 +76,9 @@ public class JdUtils {
             } catch (InterruptedException e1) { }
             isLogin = login();
         }
+        if (!isLogin) {
+            WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY,"京东登录失效","京东登录失效");
+        }
     }
 
     //自动监控库存下单,下单的前提为已经存在购物车
