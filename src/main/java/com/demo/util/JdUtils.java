@@ -89,7 +89,7 @@ public class JdUtils {
                 JSONObject jsonObject = JSON.parseObject(result);
                 int intValue = jsonObject.getJSONObject("stock").getIntValue("StockState");
                 log.info(intValue);
-                if (intValue != 34) {
+                if (intValue != 34&&intValue != 33) {
                     WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, "有货啦", "有货啦");
                     //勾选购物车商品
                     Map<String, String> selectParam = HttpClientUtil.toMap("pid:" + jdId + "\n" +
