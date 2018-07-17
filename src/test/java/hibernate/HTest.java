@@ -6,6 +6,7 @@ import com.demo.hibernate.dao.KeyValueDao;
 import com.demo.hibernate.dao.ShiroRoleDao;
 import com.demo.hibernate.entity.HEntity;
 import com.demo.util.JDTask;
+import com.demo.util.JdUtils;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -23,6 +24,8 @@ public class HTest extends BaseTest {
 	@Autowired
 	KeyValueDao keyValueDao;
 
+	@Autowired
+	JdUtils jdUtils;
 
 	@Autowired
 	JDTask jdTask;
@@ -34,7 +37,11 @@ public class HTest extends BaseTest {
 		List<HEntity> hEntities = hDao.findByHql("from HEntity where Message  = '插入测试'");
 		assertEquals("插入测试", hEntities.get(0).getMessage());
 	}
-	
 
 
+	@Test
+	public void  testJd() {
+		jdUtils.login();
+		jdUtils.monitorAndOrder("7428764");
+	}
 }
