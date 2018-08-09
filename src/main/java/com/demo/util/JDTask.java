@@ -31,9 +31,9 @@ public class JDTask {
 
     @Scheduled(cron = "0/5 * * * * ?")
     public void monitorAndOrder() {
-        String isRun = keyValueMap.get("JDRunStatus");
+        String isRun = keyValueMap.get("JDOrderRunStatus");
         if (isRun.equals("true")) {
-            String jdIdemId = keyValueMap.get("JDIdemId");
+            String jdIdemId = keyValueMap.get("JDItemId");
             String[] ids = jdIdemId.split(",");
             for (String id : ids) {
                 jdUtils.monitorAndOrder(id);
@@ -41,9 +41,16 @@ public class JDTask {
         }
     }
 
-    //@Scheduled(cron = "0 0/10 * * * ?")
+    @Scheduled(cron = "0 0/10 * * * ?")
     public void monitorLogistics() {
-        jdUtils.monitorLogistics("76602995224");
+        String isRun = keyValueMap.get("JDLogisticsRunStatus");
+        if (isRun.equals("true")) {
+            String jdIdemId = keyValueMap.get("JDOrderId");
+            String[] ids = jdIdemId.split(",");
+            for (String id : ids) {
+                jdUtils.monitorLogistics(id);
+            }
+        }
     }
 
     public static void main(String[] args) {
