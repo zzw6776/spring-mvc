@@ -125,7 +125,7 @@ public class FundPushTask {
                     String fundId = fundPush.getFundId();
                     String result = HttpClientUtil.get(GET_ACTUAL_FUND_URL.replace("ID", fundId));
                     log.info(fundPush.getFundName());
-                    String fundText = getActualFundText(result);
+                    String fundText = getActualFundText(result,fundPush.getLastActualTime() );
                     if (!StringUtils.isEmpty(fundText)) {
                         String[] accounds = fundPush.getAccounts().split(",");
                         for (String accound : accounds) {
@@ -138,7 +138,7 @@ public class FundPushTask {
                                 WeChatPushUtil.weChatPush(scKey, "基金净值", fundText);
                             }
                         }
-                        fundPush.setLastActualTime(now);
+                        fundPush.setLastActualTime(JSON.parseObject(result).getJSONObject("Datas").getString("FSRQ"));
                         fundPushService.update(fundPush);
                     }
                 }
@@ -148,13 +148,14 @@ public class FundPushTask {
         }
     }
 
-    private String getActualFundText(String result) {
+    private String getActualFundText(String result, String newData) {
         JSONObject jsonObject = JSON.parseObject(result).getJSONObject("Datas");
         String now = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
-        if (now.equals(jsonObject.getString("FSRQ"))) {
+        String fsrq = jsonObject.getString("FSRQ");
+        if (!newData.equals(fsrq)) {
             String rzdf = (String) jsonObject.get("RZDF");
             String shortname = (String) jsonObject.get("SHORTNAME");
-            String res = "截至" + now + "," + shortname + "  实际净值为" + String.format("%.2f", new Double(rzdf)).toString().replace("-", "负") + "%";
+            String res = "截至" + fsrq + "," + shortname + "  实际净值为" + String.format("%.2f", new Double(rzdf)).toString().replace("-", "负") + "%";
 
             log.info(res);
             return res;
