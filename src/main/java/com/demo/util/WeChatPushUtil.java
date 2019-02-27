@@ -22,7 +22,7 @@ public class WeChatPushUtil {
      * @param desp  内容
      */
     public static void weChatPush(String scKey, String title, String desp) {
-
+        log.info("推送"+title+"~~~"+desp);
         Map<String, String> value = new HashMap<>();
         value.put("text", title);
         value.put("desp", desp);
