@@ -28,7 +28,7 @@ public class BankPushTask {
 
 
 
-    @Scheduled(cron = "0/30 * * * * ?")
+    @Scheduled(cron = "0/10 * * * * ?")
     public void push() {
         log.info("理财监控开始");
         for (String code : ids) {
