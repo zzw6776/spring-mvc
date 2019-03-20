@@ -20,13 +20,16 @@ public class MonitorPushTask {
     private List<String> surfaceProIds = Arrays.asList("mic2408");
 
 
-    public static final String GET_SURFACE_BOOK_URL = "https://www.microsoftstore.com.cn/refurbishedsurface/certified-refurbished-surface-book/p/ID";
+    public static final String GET_SURFACE_BOOK_URL = "https://www.microsoftstore.com.cn/refurbishedsurface/certified-refurbished-surface-book123/p/ID";
 
     public static final String GET_SURFACE_PRO_URL
         = "https://www.microsoftstore.com.cn/refurbishedsurface/certified-refurbished-surface-pro/p/ID";
 
-
-    
+    //public static void main(String[] args) {
+    //    MonitorPushTask monitorPushTask = new MonitorPushTask();
+    //    monitorPushTask.push1();
+    //    monitorPushTask.push2();
+    //}
 
 
     @Scheduled(cron = "1/5 * * * * ?")
@@ -36,13 +39,17 @@ public class MonitorPushTask {
             log.info("微软库存监控开始:" + code);
             String result = HttpClientUtil.get(GET_SURFACE_BOOK_URL.replace("ID", code));
             if (!StringUtils.isEmpty(result)) {
-                log.info(result);
                 int index = result.indexOf("加入购物车");
                 log.info(index +code);
 
                 if (index>-1) {
                     WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, code+"有货啦", code+"有货啦");
                 }
+            }
+            int i = result.indexOf("到货通知");
+            log.info(i +code);
+            if (i<0) {
+                WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, code+"出错啦", code+"出错啦");
             }
         }
     }
@@ -62,6 +69,11 @@ public class MonitorPushTask {
                 if (index>-1) {
                     WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, code+"有货啦", code+"有货啦");
                 }
+            }
+            int i = result.indexOf("到货通知");
+            log.info(i +code);
+            if (i < 0) {
+                WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, code+"出错啦", code+"出错啦");
             }
         }
     }
