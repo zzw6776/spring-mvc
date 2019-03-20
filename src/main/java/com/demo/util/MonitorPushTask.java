@@ -36,6 +36,7 @@ public class MonitorPushTask {
             log.info("微软库存监控开始:" + code);
             String result = HttpClientUtil.get(GET_SURFACE_BOOK_URL.replace("ID", code));
             if (!StringUtils.isEmpty(result)) {
+                log.info(result);
                 int index = result.indexOf("加入购物车");
                 log.info(index +code);
 
