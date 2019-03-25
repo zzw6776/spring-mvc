@@ -54,7 +54,7 @@ public class MonitorPushTask {
         }
     }
 
-    //@Scheduled(cron = "1/5 * * * * ?")
+    @Scheduled(cron = "1/5 * * * * ?")
     public void push2() {
         log.info("微软库存监控开始");
         for (String code : surfaceProIds) {
