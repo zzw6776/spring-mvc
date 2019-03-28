@@ -15,7 +15,7 @@ import java.util.List;
 public class MonitorPushTask {
 
 
-    private List<String> surfaceBookIds = Arrays.asList("mic2173");
+    private List<String> surfaceBookIds = Arrays.asList("mic2173","mic2188");
 
     private List<String> surfaceProIds = Arrays.asList("mic2408");
 
