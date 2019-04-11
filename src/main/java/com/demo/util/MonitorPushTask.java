@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Component
-@EnableScheduling
+//@EnableScheduling
 @Log4j
 public class MonitorPushTask {
 

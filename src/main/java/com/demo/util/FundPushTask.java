@@ -33,7 +33,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 @Component
-@EnableScheduling
+//@EnableScheduling
 @Log4j
 public class FundPushTask {
 
