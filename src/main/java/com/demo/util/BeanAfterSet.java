@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 @Component
-public class Test2 implements InitializingBean {
+public class BeanAfterSet implements InitializingBean {
 
     @Override
     public void afterPropertiesSet() throws Exception {
