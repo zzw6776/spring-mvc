@@ -32,8 +32,8 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-//@Component
-//@EnableScheduling
+@Component
+@EnableScheduling
 @Log4j
 public class FundPushTask {
 
@@ -68,7 +68,7 @@ public class FundPushTask {
     }
 
 
-    @Scheduled(cron = "0 45 14 ? * 1-5")
+    //@Scheduled(cron = "0 45 14 ? * 1-5")
     public void fundEstimatePush() {
         log.info("估值播报开始");
         if (!keyValueMap.get("FundEstimateSwitch").equals("true")) {
@@ -112,7 +112,7 @@ public class FundPushTask {
         return null;
     }
 
-    @Scheduled(cron = "0/20 * 18-23,0 ? * 1-5")
+    //@Scheduled(cron = "0/20 * 18-23,0 ? * 1-5")
     public void fundActualPush() {
         try {
             if (!keyValueMap.get("FundActualSwitch").equals("true")) {

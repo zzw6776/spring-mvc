@@ -9,8 +9,8 @@ import org.springframework.util.StringUtils;
 import java.util.Arrays;
 import java.util.List;
 
-//@Component
-//@EnableScheduling
+@Component
+@EnableScheduling
 @Log4j
 public class MonitorPushTask {
 
@@ -36,18 +36,15 @@ public class MonitorPushTask {
     public void push1() {
         log.info("微软库存监控开始");
         for (String code : surfaceBookIds) {
-            log.info("微软库存监控开始:" + code);
             String result = HttpClientUtil.get(GET_SURFACE_BOOK_URL.replace("ID", code));
             if (!StringUtils.isEmpty(result)) {
                 int index = result.indexOf("加入购物车");
-                log.info(index +code);
 
                 if (index>-1) {
                     WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, code+"有货啦", code+"有货啦");
                 }
             }
             int i = result.indexOf("到货通知");
-            log.info(i +code);
             if (i<0) {
                 WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, code+"出错啦", code+"出错啦");
             }
@@ -58,20 +55,16 @@ public class MonitorPushTask {
     public void push2() {
         log.info("微软库存监控开始");
         for (String code : surfaceProIds) {
-            log.info("微软库存监控开始:" + code);
             String url = GET_SURFACE_PRO_URL.replace("ID", code);
-            log.info(url);
             String result = HttpClientUtil.get(url);
             if (!StringUtils.isEmpty(result)) {
                 int index = result.indexOf("加入购物车");
-                log.info(index +code);
 
                 if (index>-1) {
                     WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, code+"有货啦", code+"有货啦");
                 }
             }
             int i = result.indexOf("到货通知");
-            log.info(i +code);
             if (i < 0) {
                 WeChatPushUtil.weChatPush(WeChatPushUtil.MY_SCKEY, code+"出错啦", code+"出错啦");
             }
