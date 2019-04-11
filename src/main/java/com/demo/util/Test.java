@@ -54,7 +54,7 @@ public class Test {
         Integer addTime = 60;
 
         while (currentTime < totalTime) {
-            System.out.println(currentTime+"~~~~~~~~~~~"+addTime);
+            System.out.println(itemId+"~~~~~~~~~~"+currentTime+"~~~~~~~~~~~"+addTime);
 
             param.put("totalTime", totalTime.toString());
             if (!addTime.equals(60)) {

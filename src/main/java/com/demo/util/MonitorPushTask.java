@@ -34,7 +34,6 @@ public class MonitorPushTask {
 
     @Scheduled(cron = "1/5 * * * * ?")
     public void push1() {
-        log.info("微软库存监控开始");
         for (String code : surfaceBookIds) {
             String result = HttpClientUtil.get(GET_SURFACE_BOOK_URL.replace("ID", code));
             if (!StringUtils.isEmpty(result)) {
@@ -53,7 +52,6 @@ public class MonitorPushTask {
 
     @Scheduled(cron = "1/5 * * * * ?")
     public void push2() {
-        log.info("微软库存监控开始");
         for (String code : surfaceProIds) {
             String url = GET_SURFACE_PRO_URL.replace("ID", code);
             String result = HttpClientUtil.get(url);
