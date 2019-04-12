@@ -10,7 +10,7 @@ public class Test {
     }
 
     public static void run() throws InterruptedException {
-        List<String> itemId = Arrays.asList("13573","13574","13575","13576","33938","33940","33941","33942","33943","33944","33945","33946","33947","33948","33949","33950","33951","33952","33953","33954","33955","33956","33957","33959","33963","33965","33967","33971","33973","33974","33975","33976","33980");
+        List<String> itemId = Arrays.asList("33938","33940","33941","33942","33943","33944","33945","33946","33947","33948","33949","33950","33951","33952","33953","33954","33955","33956","33957","33959","33963","33965","33967","33971","33973","33974","33975","33976","33980");
         for (String s : itemId) {
             double time = Math.random() * (3600000 - 1800000) + 1800000;
             System.out.println("休息"+time);
@@ -40,7 +40,7 @@ public class Test {
         System.out.println(historyId);
         Map<String, String> param = HttpClientUtil.toMap(
             "userId: 450329199801231727\n"
-            + "courseId: 20\n"
+            + "courseId: 18\n"
                 //第一
             + "scoId: "+itemId+"\n"
                 //第二
