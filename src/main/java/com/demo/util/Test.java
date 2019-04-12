@@ -10,7 +10,7 @@ public class Test {
     }
 
     public static void run() throws InterruptedException {
-        List<String> itemId = Arrays.asList("33938","33940","33941","33942","33943","33944","33945","33946","33947","33948","33949","33950","33951","33952","33953","33954","33955","33956","33957","33959","33963","33965","33967","33971","33973","33974","33975","33976","33980");
+        List<String> itemId = Arrays.asList("33940","33941","33942","33943","33944","33945","33946","33947","33948","33949","33950","33951","33952","33953","33954","33955","33956","33957","33959","33963","33965","33967","33971","33973","33974","33975","33976","33980");
         for (String s : itemId) {
             hahaha(s);
             double time = Math.random() * (3600000 - 1800000) + 1800000;
@@ -23,7 +23,7 @@ public class Test {
     private static void hahaha(String itemId) throws InterruptedException {
         Map<String, String> head = HttpClientUtil.toMap("Accept: application/xml, text/xml, */*; q=0.01\n"
             + "Content-Type: application/x-www-form-urlencoded; charset=UTF-8\n"
-            + "Cookie: _csrf=9893f4881ed6a6e4e315e03d50a57eab801f38a0fbfe76edc3083741747001c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nn-o2FZAJUiWbc3vfzJDHtD6kq_iI20s%22%3B%7D; Hm_lvt_fc82d39d0aabdf72237c051c09b9428e=1554988835; PHPFRONTSESSID=jg7245ps6kpeovpe752a4bhku7; contact=%5B%7B%22id%22%3A%221%22%2C%22teacher_name%22%3A%22%5Cu9ea6%5Cu80fd%5Cu7f51%5Cu54a8%5Cu8be21%22%2C%22qq_number%22%3A%222924134909%22%7D%2C%7B%22id%22%3A%222%22%2C%22teacher_name%22%3A%22%5Cu9ea6%5Cu80fd%5Cu7f51%5Cu54a8%5Cu8be22%22%2C%22qq_number%22%3A%221283346554%22%7D%5D; noticeNumber=2; Hm_lpvt_fc82d39d0aabdf72237c051c09b9428e=1554990691\n"
+            + "Cookie: _csrf=5bc5248414517005b6874deb85c92f9e2a02dc76b18ef206fe8ea6c567e14283a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NKyEHoma7OvgFgT9s4qRX4pZ5U-E7uB0%22%3B%7D; Hm_lvt_fc82d39d0aabdf72237c051c09b9428e=1555040372; PHPFRONTSESSID=vub75hleiht3ei68uu12mtfqo2; contact=%5B%7B%22id%22%3A%221%22%2C%22teacher_name%22%3A%22%5Cu9ea6%5Cu80fd%5Cu7f51%5Cu54a8%5Cu8be21%22%2C%22qq_number%22%3A%222924134909%22%7D%2C%7B%22id%22%3A%222%22%2C%22teacher_name%22%3A%22%5Cu9ea6%5Cu80fd%5Cu7f51%5Cu54a8%5Cu8be22%22%2C%22qq_number%22%3A%221283346554%22%7D%5D; noticeNumber=2; Hm_lpvt_fc82d39d0aabdf72237c051c09b9428e=1555040408\n"
             + "Host: zgs.cjnep.net\n"
             + "Origin: http://zgs.cjnep.net\n"
             + "Pragma: no-cache\n"
