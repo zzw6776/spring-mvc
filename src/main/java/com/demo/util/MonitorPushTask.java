@@ -9,9 +9,9 @@ import org.springframework.util.StringUtils;
 import java.util.Arrays;
 import java.util.List;
 
-@Component
-@EnableScheduling
-@Log4j
+//@Component
+//@EnableScheduling
+//@Log4j
 public class MonitorPushTask {
 
 
