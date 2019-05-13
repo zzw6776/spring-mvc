@@ -10,7 +10,7 @@ public class Test {
     }
 
     public static void run() throws InterruptedException {
-        List<String> itemId = Arrays.asList("33940","33941","33942","33943","33944","33945","33946","33947","33948","33949","33950","33951","33952","33953","33954","33955","33956","33957","33959","33963","33965","33967","33971","33973","33974","33975","33976","33980");
+        List<String> itemId = Arrays.asList("33951","33952","33953","33954","33955","33956","33957","33959","33963","33965","33967","33971","33973","33974","33975","33976","33980");
         for (String s : itemId) {
             hahaha(s);
             double time = Math.random() * (3600000 - 1800000) + 1800000;
@@ -22,13 +22,7 @@ public class Test {
 
     private static void hahaha(String itemId) throws InterruptedException {
         Map<String, String> head = HttpClientUtil.toMap(""
-            + "Cookie: _csrf=9cac7ec3c9bb88a3e241039fb2013a39f51b61a0a1bc39f7d86e9ed70198a708a%3A2%3A%7Bi%3A0%3Bs%3A5"
-            + "%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NUzEryUmvwL4e7MndrUjfB1qCt22lcaE%22%3B%7D; "
-            + "Hm_lvt_fc82d39d0aabdf72237c051c09b9428e=1555040670; PHPFRONTSESSID=oen8erus58buoo3142olqaics2; "
-            + "contact=%5B%7B%22id%22%3A%221%22%2C%22teacher_name%22%3A%22%5Cu9ea6%5Cu80fd%5Cu7f51%5Cu54a8%5Cu8be21"
-            + "%22%2C%22qq_number%22%3A%222924134909%22%7D%2C%7B%22id%22%3A%222%22%2C%22teacher_name%22%3A%22%5Cu9ea6"
-            + "%5Cu80fd%5Cu7f51%5Cu54a8%5Cu8be22%22%2C%22qq_number%22%3A%221283346554%22%7D%5D; noticeNumber=2; "
-            + "Hm_lpvt_fc82d39d0aabdf72237c051c09b9428e=1555040686\n"
+            + "Cookie: _csrf=8918ed985b4c8aa957a4e33c96e3dd748f755e0d01ee66161d09b42c0597fb3ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pvLToed7DpqBEP_NMmLyKho82Ok0bYCJ%22%3B%7D; Hm_lvt_fc82d39d0aabdf72237c051c09b9428e=1557741935; PHPFRONTSESSID=b86d44sc56tl88edd5nc60qnq7; contact=%5B%7B%22id%22%3A%221%22%2C%22teacher_name%22%3A%22%5Cu9ea6%5Cu80fd%5Cu7f51%5Cu54a8%5Cu8be21%22%2C%22qq_number%22%3A%222924134909%22%7D%2C%7B%22id%22%3A%222%22%2C%22teacher_name%22%3A%22%5Cu9ea6%5Cu80fd%5Cu7f51%5Cu54a8%5Cu8be22%22%2C%22qq_number%22%3A%221283346554%22%7D%5D; noticeNumber=2; Hm_lpvt_fc82d39d0aabdf72237c051c09b9428e=1557742028\n"
             + "Host: zgs.cjnep.net\n"
             + "Pragma: no-cache\n"
             + "Referer: http://zgs.cjnep.net/lms/web/course/18?itemid=33940\n"
