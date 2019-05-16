@@ -10,7 +10,8 @@ public class Test {
     }
 
     public static void run() throws InterruptedException {
-        List<String> itemId = Arrays.asList("33951","33952","33953","33954","33955","33956","33957","33959","33963","33965","33967","33971","33973","33974","33975","33976","33980");
+
+        List<String> itemId = Arrays.asList("9275","9308","9309","9343","9781","9345","9782","10105","10106","10107","10108","10109","10110","13875","13876","13877","13878","13879","13880","13881","13882","13883","13884","13885","13886","13887","13888");
         for (String s : itemId) {
             hahaha(s);
             double time = Math.random() * (3600000 - 1800000) + 1800000;
@@ -22,7 +23,7 @@ public class Test {
 
     private static void hahaha(String itemId) throws InterruptedException {
         Map<String, String> head = HttpClientUtil.toMap(""
-            + "Cookie: _csrf=8918ed985b4c8aa957a4e33c96e3dd748f755e0d01ee66161d09b42c0597fb3ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pvLToed7DpqBEP_NMmLyKho82Ok0bYCJ%22%3B%7D; Hm_lvt_fc82d39d0aabdf72237c051c09b9428e=1557741935; PHPFRONTSESSID=b86d44sc56tl88edd5nc60qnq7; contact=%5B%7B%22id%22%3A%221%22%2C%22teacher_name%22%3A%22%5Cu9ea6%5Cu80fd%5Cu7f51%5Cu54a8%5Cu8be21%22%2C%22qq_number%22%3A%222924134909%22%7D%2C%7B%22id%22%3A%222%22%2C%22teacher_name%22%3A%22%5Cu9ea6%5Cu80fd%5Cu7f51%5Cu54a8%5Cu8be22%22%2C%22qq_number%22%3A%221283346554%22%7D%5D; noticeNumber=2; Hm_lpvt_fc82d39d0aabdf72237c051c09b9428e=1557742028\n"
+            + "Cookie:_csrf=8918ed985b4c8aa957a4e33c96e3dd748f755e0d01ee66161d09b42c0597fb3ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pvLToed7DpqBEP_NMmLyKho82Ok0bYCJ%22%3B%7D; Hm_lvt_fc82d39d0aabdf72237c051c09b9428e=1557741935; PHPFRONTSESSID=jve2fqdlkci54ap7v1694al4c2; contact=%5B%7B%22id%22%3A%221%22%2C%22teacher_name%22%3A%22%5Cu9ea6%5Cu80fd%5Cu7f51%5Cu54a8%5Cu8be21%22%2C%22qq_number%22%3A%222924134909%22%7D%2C%7B%22id%22%3A%222%22%2C%22teacher_name%22%3A%22%5Cu9ea6%5Cu80fd%5Cu7f51%5Cu54a8%5Cu8be22%22%2C%22qq_number%22%3A%221283346554%22%7D%5D; noticeNumber=2; Hm_lpvt_fc82d39d0aabdf72237c051c09b9428e=1557972042\n"
             + "Host: zgs.cjnep.net\n"
             + "Pragma: no-cache\n"
             + "Referer: http://zgs.cjnep.net/lms/web/course/18?itemid=33940\n"
@@ -30,7 +31,7 @@ public class Test {
             + "Chrome/73.0.3683.86 Safari/537.36\n"
             + "X-Requested-With: XMLHttpRequest");
 
-        String getUrl = "http://zgs.cjnep.net/lms/web/course/18?itemid="+itemId;
+        String getUrl = "http://zgs.cjnep.net/lms/web/course/28?itemid="+itemId;
         String getResult = HttpClientUtil.get(getUrl,new HashMap<>(),head);
         System.out.println(getResult);
         int historyidIndex = getResult.indexOf("historyid");
@@ -56,7 +57,7 @@ public class Test {
         Integer addTime = 60;
 
         while (currentTime < totalTime) {
-            System.out.println(itemId+"~~~~~~~~~~"+currentTime+"~~~~~~~~~~~"+addTime);
+            System.out.println(itemId+"~~~~~~~~~~"+currentTime+"~~~~~~~~~~~"+addTime+"~~~~~~"+totalTime);
 
             param.put("totalTime", totalTime.toString());
             if (!addTime.equals(60)) {
@@ -74,4 +75,5 @@ public class Test {
             }
         }
     }
+
 }
